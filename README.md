@@ -1,10 +1,11 @@
 # BottargaBOT
 Giocatore per progetto di Algoritmi e strutture dati UniBO 2020/21
 ## Cose da fare
-- [] Eval -> patta
-- [] Alpha-Beta intelligente
-- [] Precalcolo dati
-- [] Pattern Matching
+- [ ] Eval -> patta
+- [ ] Alpha-Beta intelligente
+- [ ] Precalcolo dati
+- [ ] Pattern Matching
+- [ ] Hashing con Zobrist (https://levelup.gitconnected.com/zobrist-hashing-305c6c3c54d0)
 
 ### Altre info
 
