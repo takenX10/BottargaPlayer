@@ -22,6 +22,8 @@ Costruiamo 4 matrici (una per ogni direzione in cui è possibile vincere), in mo
 - L'alpha beta elimina in range, non con strettamente inferiore e superiore.
 - Per ogni passaggio fai eval di tutte le mosse direttamente inferiori e le metti in coda in ordine decrescente
 - Dopo il numero di livelli prestabilito continueremo a scendere in maniera dinamica, quindi se l'eval sembra promettente scendiamo, altrimenti rimaniamo fermi. Il controllo avviene ad ogni passaggio di discesa, e ad ogni passaggio il controllo si fa più stringente, per questo la discesa è dinamica e non sappiamo precisamente quanto vogliamo andare in fondo in partenza.
+- Iterative deepening
+- aspiration window
 
 ### Precalcolo dati
 
