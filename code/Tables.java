@@ -8,35 +8,39 @@ public class Tables {
     protected int[][] N_Matrix;
     protected int[][] K1_Matrix; // Matrice diagonali che vanno dal basso verso l'alto. (Lettura da sinistra a destra)
     protected int[][] K2_Matrix; // Matrice diagonali che vanno dall'alto verso il basso. (Lettura da sinistra a destra)
-    int diagonalMatrixM; //Righe matrice delle diagonali
-    int diagonalMatrixN; //Colonne matrice delle diagonali
+    int value1; //(M - K + 1) = 3 //TODO Dare un nome migliore a questa variabile
+    int value2; //(N - K + 1) = 2 //TODO Dare un nome migliore a questa variabile
 
     public Tables (int m, int n, int k){
         this.M = m;
         this.N = n;
         this.K = k;
-        this.diagonalMatrixM = (M - K + 1);
-        this.diagonalMatrixN= (N - K + 1);
+        this.value1 = (M - K + 1);
+        this.value2= (N - K + 1);
 
         //Creazione matrici
-        M_Matrix = new int[M][1];
-        N_Matrix = new int[1][N];
-        K1_Matrix = new int[diagonalMatrixM][diagonalMatrixN];
-        K2_Matrix = new int[diagonalMatrixM][diagonalMatrixN]; //Si, le due matrici hanno lo stesso numeri di righe e colonne.
+        M_Matrix = new int[M][value2];
+        N_Matrix = new int[value1][N];
+        K1_Matrix = new int[value1][value2];
+        K2_Matrix = new int[value1][value2]; //Si, le due matrici hanno lo stesso numero di righe e colonne.
     }
 
     public void initMatrix(){ //Inizializza tutte le matrici con un valore di default: 0
         //Inizializzo matrice righe
         for (int i = 0; i < M; i ++){
-            M_Matrix[i][0] = init_value;
+            for (int j = 0; j < value2; j ++){
+                M_Matrix[i][j] = init_value;
+            }
         }
         //Inizializzo matrice colonne
-        for (int i = 0; i < N; i ++){
-            N_Matrix[0][i] = init_value;
+        for (int i = 0; i < value1; i ++){
+            for (int j = 0; j < N; j ++){
+                N_Matrix[i][j] = init_value;
+            }
         }
         //Inizializzo le due matrici delle diagonali
-        for (int i = 0; i < diagonalMatrixM; i ++){
-            for (int j = 0; j < diagonalMatrixN; j ++){
+        for (int i = 0; i < value1; i ++){
+            for (int j = 0; j < value2; j ++){
                 K1_Matrix[i][j] = init_value;
                 K2_Matrix[i][j] = init_value;
             }
@@ -65,24 +69,29 @@ public class Tables {
 
     public void printM_Matrix(){
         System.out.println("\nMatrice delle righe (M_Matrix) ");
-        for (int i = 0; i < M; i++){
-            System.out.print(M_Matrix[i][0] + " ");
-            System.out.println(); //Essendo una matrice colonna la printo come tale aggiungendo un a capo dopo ogni cella.
+        for (int i = 0; i < M; i ++){
+            for (int j = 0; j < value2; j ++){
+                System.out.print(M_Matrix[i][j] + " ");
+            }
+            System.out.println();
         }
     }
 
     public void printN_Matrix(){
         System.out.println("\nMatrice delle colonne (N_Matrix) ");
-        for (int i = 0; i < N; i++){
-            System.out.print(N_Matrix[0][i] + " ");
+        for (int i = 0; i < value1; i ++){
+            for (int j = 0; j < N; j ++){
+                System.out.print(N_Matrix[i][j] + " ");
+            }
+            System.out.println();
         }
     }
 
     public void printK1_Matrix(){
         System.out.println("\nMatrice delle diagonali dal basso verso l'alto ( K1 )  ");
-        for (int i = 0; i < diagonalMatrixM; i ++){
+        for (int i = 0; i < value1; i ++){
             System.out.println();
-            for (int j = 0; j < diagonalMatrixN; j ++){
+            for (int j = 0; j < value2; j ++){
                 System.out.print(K1_Matrix[i][j] + " ");
             }
         }
@@ -90,9 +99,9 @@ public class Tables {
 
     public void printK2_Matrix(){
         System.out.println("\nMatrice delle diagonali dall'alto verso il basso ( K2 ) ");
-        for (int i = 0; i < diagonalMatrixM; i ++){
+        for (int i = 0; i < value1; i ++){
             System.out.println();
-            for (int j = 0; j < diagonalMatrixN; j ++){
+            for (int j = 0; j < value2; j ++){
                 System.out.print(K1_Matrix[i][j] + " ");
             }
         }
