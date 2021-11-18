@@ -1,4 +1,3 @@
-import javax.print.attribute.standard.Finishings;
 
 public class Tables {
     protected int init_value = 0; //Valore con il quale inizializzo le matrici.
@@ -12,7 +11,7 @@ public class Tables {
     int diagonalMatrixM; //Righe matrice delle diagonali
     int diagonalMatrixN; //Colonne matrice delle diagonali
 
-    public Tables (int n, int m, int k){
+    public Tables (int m, int n, int k){
         this.M = m;
         this.N = n;
         this.K = k;
@@ -20,20 +19,20 @@ public class Tables {
         this.diagonalMatrixN= (N - K + 1);
 
         //Creazione matrici
-        M_Matrix = new int[1][M];
-        N_Matrix = new int[N][1];
+        M_Matrix = new int[M][1];
+        N_Matrix = new int[1][N];
         K1_Matrix = new int[diagonalMatrixM][diagonalMatrixN];
         K2_Matrix = new int[diagonalMatrixM][diagonalMatrixN]; //Si, le due matrici hanno lo stesso numeri di righe e colonne.
     }
 
-    public void initMatrix(){ //Inizializza tutte le matrici con un valore di default: 0 //TODO 0 va bene?
+    public void initMatrix(){ //Inizializza tutte le matrici con un valore di default: 0
         //Inizializzo matrice righe
         for (int i = 0; i < M; i ++){
-            M_Matrix[0][i] = init_value;
+            M_Matrix[i][0] = init_value;
         }
         //Inizializzo matrice colonne
         for (int i = 0; i < N; i ++){
-            N_Matrix[i][0] = init_value;
+            N_Matrix[0][i] = init_value;
         }
         //Inizializzo le due matrici delle diagonali
         for (int i = 0; i < diagonalMatrixM; i ++){
@@ -60,26 +59,27 @@ public class Tables {
         return K2_Matrix;
     }
 
-    
+
     // Metodi per la stampa delle matrici
     // #ForDebugPurpose
 
     public void printM_Matrix(){
         System.out.println("\nMatrice delle righe (M_Matrix) ");
         for (int i = 0; i < M; i++){
-            System.out.print(M_Matrix[0][i] + " ");
+            System.out.print(M_Matrix[i][0] + " ");
+            System.out.println(); //Essendo una matrice colonna la printo come tale aggiungendo un a capo dopo ogni cella.
         }
     }
-    
+
     public void printN_Matrix(){
         System.out.println("\nMatrice delle colonne (N_Matrix) ");
         for (int i = 0; i < N; i++){
-            System.out.print(N_Matrix[i][0] + " ");
+            System.out.print(N_Matrix[0][i] + " ");
         }
-    }   
-    
+    }
+
     public void printK1_Matrix(){
-       System.out.println("\nMatrice delle diagonali dal basso verso l'alto ( K1 )  ");
+        System.out.println("\nMatrice delle diagonali dal basso verso l'alto ( K1 )  ");
         for (int i = 0; i < diagonalMatrixM; i ++){
             System.out.println();
             for (int j = 0; j < diagonalMatrixN; j ++){
@@ -89,7 +89,7 @@ public class Tables {
     }
 
     public void printK2_Matrix(){
-        System.out.println("Matrice delle diagonali dall'alto verso il basso ( K2 ) ");
+        System.out.println("\nMatrice delle diagonali dall'alto verso il basso ( K2 ) ");
         for (int i = 0; i < diagonalMatrixM; i ++){
             System.out.println();
             for (int j = 0; j < diagonalMatrixN; j ++){
@@ -97,5 +97,5 @@ public class Tables {
             }
         }
     }
-    
+
 }
