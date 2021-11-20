@@ -1,4 +1,4 @@
-
+//todo gestione caso in cui valori in input non sono validi
 public class Tables {
     protected int init_value = 0; //Valore con il quale inizializzo le matrici.
     protected int M; //Righe
@@ -11,38 +11,53 @@ public class Tables {
     int value1; //(M - K + 1) = 3 //TODO Dare un nome migliore a questa variabile
     int value2; //(N - K + 1) = 2 //TODO Dare un nome migliore a questa variabile
 
-    public Tables (int m, int n, int k){
+    public Tables (int m, int n, int k){ //Le dimensioni devono essere reali. Ex: 3 3 3 creerà il classico tris 3righe/colonne/simboli
         this.M = m;
         this.N = n;
         this.K = k;
         this.value1 = (M - K + 1);
-        this.value2= (N - K + 1);
+        this.value2 = (N - K + 1);
 
         //Creazione matrici
-        M_Matrix = new int[M][value2];
-        N_Matrix = new int[value1][N];
-        K1_Matrix = new int[value1][value2];
-        K2_Matrix = new int[value1][value2]; //Si, le due matrici hanno lo stesso numero di righe e colonne.
-    }
+
+        if (value2 > 0) M_Matrix = new int[M][value2];
+        else M_Matrix = null;
+
+        if (value1 > 0) N_Matrix = new int[value1][N];
+        else N_Matrix = null;
+
+        if (value1 > 0 && value2 > 0){
+            K1_Matrix = new int[value1][value2];
+            K2_Matrix = new int[value1][value2]; //Si, le due matrici hanno lo stesso numero di righe e colonne.
+        }else K1_Matrix = K2_Matrix = null;
+   }
 
     public void initMatrix(){ //Inizializza tutte le matrici con un valore di default: 0
         //Inizializzo matrice righe
-        for (int i = 0; i < M; i ++){
-            for (int j = 0; j < value2; j ++){
-                M_Matrix[i][j] = init_value;
+        if(M_Matrix != null){
+            for (int i = 0; i < M; i ++){
+                for (int j = 0; j < value2; j ++){
+                    M_Matrix[i][j] = init_value;
+                }
             }
         }
+
         //Inizializzo matrice colonne
-        for (int i = 0; i < value1; i ++){
-            for (int j = 0; j < N; j ++){
-                N_Matrix[i][j] = init_value;
+        if (N_Matrix != null){
+            for (int i = 0; i < value1; i ++){
+                for (int j = 0; j < N; j ++){
+                    N_Matrix[i][j] = init_value;
+                }
             }
         }
+
         //Inizializzo le due matrici delle diagonali
-        for (int i = 0; i < value1; i ++){
-            for (int j = 0; j < value2; j ++){
-                K1_Matrix[i][j] = init_value;
-                K2_Matrix[i][j] = init_value;
+        if (K1_Matrix != null){
+            for (int i = 0; i < value1; i ++){
+                for (int j = 0; j < value2; j ++){
+                    K1_Matrix[i][j] = init_value;
+                    K2_Matrix[i][j] = init_value;
+                }
             }
         }
     }
@@ -69,42 +84,50 @@ public class Tables {
 
     public void printM_Matrix(){
         System.out.println("\nMatrice delle righe (M_Matrix) ");
-        for (int i = 0; i < M; i ++){
-            for (int j = 0; j < value2; j ++){
-                System.out.print(M_Matrix[i][j] + " ");
+        if (M_Matrix != null){
+            for (int i = 0; i < M; i ++){
+                for (int j = 0; j < value2; j ++){
+                    System.out.print(M_Matrix[i][j] + " ");
+                }
+                System.out.println();
             }
-            System.out.println();
-        }
+        }else System.out.println("La matrice M per questa configurazione M N K non è disponibile");
     }
 
     public void printN_Matrix(){
         System.out.println("\nMatrice delle colonne (N_Matrix) ");
-        for (int i = 0; i < value1; i ++){
-            for (int j = 0; j < N; j ++){
-                System.out.print(N_Matrix[i][j] + " ");
+        if (N_Matrix != null){
+            for (int i = 0; i < value1; i ++){
+                for (int j = 0; j < N; j ++){
+                    System.out.print(N_Matrix[i][j] + " ");
+                }
+                System.out.println();
             }
-            System.out.println();
-        }
+        }else System.out.println("La matrice N per questa configurazione M N K non è disponibile");
     }
 
     public void printK1_Matrix(){
         System.out.println("\nMatrice delle diagonali dal basso verso l'alto ( K1 )  ");
-        for (int i = 0; i < value1; i ++){
-            System.out.println();
-            for (int j = 0; j < value2; j ++){
-                System.out.print(K1_Matrix[i][j] + " ");
+        if(K1_Matrix != null){
+            for (int i = 0; i < value1; i ++){
+                System.out.println();
+                for (int j = 0; j < value2; j ++){
+                    System.out.print(K1_Matrix[i][j] + " ");
+                }
             }
-        }
+        }else System.out.println("La matrice delle diagonali K1 per questi M N K non esiste.");
     }
 
     public void printK2_Matrix(){
         System.out.println("\nMatrice delle diagonali dall'alto verso il basso ( K2 ) ");
-        for (int i = 0; i < value1; i ++){
-            System.out.println();
-            for (int j = 0; j < value2; j ++){
-                System.out.print(K1_Matrix[i][j] + " ");
+        if (K2_Matrix != null){
+            for (int i = 0; i < value1; i ++){
+                System.out.println();
+                for (int j = 0; j < value2; j ++){
+                    System.out.print(K2_Matrix[i][j] + " ");
+                }
             }
-        }
+        }else System.out.println("La matrice delle diagonali K2 per questi M N K non esiste.");
     }
 
 }

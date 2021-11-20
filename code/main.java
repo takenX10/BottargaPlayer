@@ -1,9 +1,10 @@
 public class main {
     public static void main(String[] args) {
-        Tables test = new Tables(7, 6, 5);
-        test.initMatrix();
-        test.printN_Matrix();
-        test.printM_Matrix();
-        test.printK2_Matrix();
+        int M = 10;
+        int N = 2;
+        int K = 2;
+        Tables test = new Tables(M, N, K);
+        EvalMatrix prova = new EvalMatrix(M, N, K, test.M_Matrix, test.N_Matrix, test.K1_Matrix, test.K2_Matrix );
+        prova.update_Matrix(0, 0);
     }
 }
