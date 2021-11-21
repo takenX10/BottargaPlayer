@@ -1,142 +1,144 @@
-//La classe serve ad aggiornare le 4 matrici dell'eval
-//La classe riceve in input: le 4 matrici, le coordinate X,Y del punto in cui, nella matrice di partenza,
-//è stata aggiunta una X ( che da ora in poi chiamerò genericamente 'simbolo' )
-
 /*
-* Per aggiornare la matrice delle righe ( modifica fatta in x, y )
-* Aggiorno il valore M_Matrix[x][y]
-* Mi muovo prima a sinistra ( di max k - 1 ) e poi a destra ( di max k - 1 )
-* Aggiorno i valori finchè non sforo il range della matrice.
-* Quando lo sforo, se sono a sinsitra mi sposto a fare la stessa cosa a destra, se sono
-* già a destra ho finito.
+* Questa classe permette la creazione e l'inizializzazione delle 4 matrici dell'eval.
+* Questa classe è dotata di metodi per la stampa di ognuna delle 4 matrici dell'eval #fordebugpurpose.
 */
 
 
+
 public class EvalMatrix {
-    private int x; // Coordinata x del punto in cui viene aggiunto il nuovo simbolo
-    private int y; // Coordinata y del punto in cui viene aggiunto il nuovo simbolo
-    private final int k; // tris ( M, N, K )
-    private final int m;
-    //private final int n;
-    //4 matrici dell'eval.
-    public int[][] M_Matrix;
-    public int[][] N_Matrix;
-    public int[][] K1_Matrix; // Matrice diagonali che vanno dal basso verso l'alto. (Lettura da sinistra a destra)
-    public int[][] K2_Matrix; // Matrice diagonali che vanno dall'alto verso il basso. (Lettura da sinistra a destra)
+    protected int init_value = 0; //Valore con il quale inizializzo le matrici.
+    protected int M; //Righe
+    protected int N; //Colonne
+    protected int K; //Simboli da mettere in fila per vincere.
+    protected int[][] M_Matrix; //Matrice delle righe
+    protected int[][] N_Matrix; //Matrice delle colonne
+    protected int[][] K1_Matrix; // Matrice diagonali che vanno dal basso verso l'alto. (Lettura da sinistra a destra)
+    protected int[][] K2_Matrix; // Matrice diagonali che vanno dall'alto verso il basso. (Lettura da sinistra a destra)
+    int value1; //(M - K + 1)
+    int value2; //(N - K + 1)
 
-    //NB: Le coordinate X ed Y sottostanti partono da 0 (come prima cella) ed arrivano ad M-1 e N-1.
-    public EvalMatrix(int M, int N, int K, int[][] M_Matrix, int[][] N_Matrix, int[][] K1_Matrix, int[][] K2_Matrix){
-        if (x > M-1 || y > N-1 ) {
-            System.out.println("\n !!! ERRORE\n Le coordinate del nuovo simbolo non rientrano nella matrice di gioco! ");
-            //TODO Impostare return qui ed un booleano che ferma l'esecuzione di tutti gli eventuali metodi, sarebbe lavoro inutile.
+    public EvalMatrix(int m, int n, int k){ //Le dimensioni devono essere reali. Ex: 3 3 3 creerà il classico tris 3righe/colonne/simboli
+        if (m < 1 || n < 1 || k < 2){ //input di gioco non accettabili.
+            this.value1 = this.value2 = 0; //Così facendo tutte le matrici verranno settate a null grazie a dei controlli sottostanti.
+        }else{
+            this.M = m;
+            this.N = n;
+            this.K = k;
+            this.value1 = (M - K + 1);
+            this.value2 = (N - K + 1);
         }
-        this.m = M - 1;
-        //this.n = N - 1;
-        this.k = K;
-        this.M_Matrix = M_Matrix;
-        this.N_Matrix = N_Matrix;
-        this.K1_Matrix = K1_Matrix;
-        this.K2_Matrix = K2_Matrix;
-    }
 
-    /*
-    * Scelta implementativa: per modularità e chiarezza del codice farò un metodo per ogni matrice da aggironare.
-    * Dopodichè creerò il metodo che richiama tutti i suddetti permettendo l'aggiornamento generale.
-    */
 
-    //Aggiornamento valori della matrice M_Matrix ( Matrice delle righe )
-    private void update_M_Matrix(){
-        if (M_Matrix != null){
-            int limit_x = M_Matrix.length - 1; //Dimensione righe matrice M_Matrix
-            int limit_y = M_Matrix[0].length - 1; //Dimensione colonne matrice M_Matrix
-            boolean is_in; //Mi dice se il nuovo simbolo rientra direttamente nella matrice M_Matrix
+        //Creazione matrici
 
-            if ( x <= limit_x && y <= limit_y ) is_in = true;
-            else is_in = false;
+        if (value2 > 0) M_Matrix = new int[M][value2];
+        else M_Matrix = null;
 
-            //Aggiorno il valore presente nelle stesse coordinate, se non sono fuori matrice
-            //Lo aggiorno solo se non è negativo; se lo fosse quella righa non potrebbe mai essere vincente dunque non avrebbe senso
-            if ( is_in && M_Matrix[x][y] >= 0 ) M_Matrix[x][y] ++;
+        if (value1 > 0) N_Matrix = new int[value1][N];
+        else N_Matrix = null;
 
-            //Aggiorno tutti i valori alla sinistra
-            for ( int i = 1; i < k && (y-i >= 0); i++ ){ //y-i non deve portarmi fuori dal range matrice.
-                if( (y-i <= limit_y) && M_Matrix[x][y-i] >= 0 ) M_Matrix[x][y-i]++;
+        if (value1 > 0 && value2 > 0){
+            K1_Matrix = new int[value1][value2];
+            K2_Matrix = new int[value1][value2]; //Si, le due matrici hanno lo stesso numero di righe e colonne.
+        }else K1_Matrix = K2_Matrix = null;
+   }
+
+    public void initMatrix(){ //Inizializza tutte le matrici con un valore di default 'init_value'
+        //Inizializzo matrice righe
+        if(M_Matrix != null){
+            for (int i = 0; i < M; i ++){
+                for (int j = 0; j < value2; j ++){
+                    M_Matrix[i][j] = init_value;
+                }
             }
         }
-    }
 
-    //Aggiornamento valori matrice N_Matrix ( Matrice delle colonne )
-    private void update_N_Matrix(){
+        //Inizializzo matrice colonne
         if (N_Matrix != null){
-            int limit_x = N_Matrix.length - 1; //Dimensione righe matrice N_Matrix
-            int limit_y = N_Matrix[0].length - 1; //Dimensione colonne matrice N_Matrix
-            boolean is_in; //Mi dice se il nuovo simbolo rientra direttamete nella matrice N_Matrix o se si trova 'al di fuori'
-
-            if ( x <= limit_x && y <= limit_y ) is_in = true;
-            else is_in = false;
-
-            //Aggiorno il valore presente nelle stesse coordinate, se non sono fuori matrice
-            //Lo aggiorno solo se non è negativo; se lo fosse quella righa non potrebbe mai essere vincente dunque non avrebbe senso
-            if ( is_in && N_Matrix[x][y] >= 0 ) N_Matrix[x][y] ++;
-
-            //Aggiorno tutti i valori in alto
-            for ( int i = 1; i < k && ( x-i >= 0 ); i++ ){
-                if ( (x-i <= limit_x ) && N_Matrix[x-i][y] >= 0 ) N_Matrix[x-i][y]++;
+            for (int i = 0; i < value1; i ++){
+                for (int j = 0; j < N; j ++){
+                    N_Matrix[i][j] = init_value;
+                }
             }
         }
-    }
 
-    //Aggiornamento valori matrice K1_Matrix ( Matrice delle diagonali dal basso verso l'alto )
-    private void update_K1_Matrix(){
+        //Inizializzo le due matrici delle diagonali
         if (K1_Matrix != null){
-            int K1_Matrix_X = K1_Matrix.length - 1; // Numero righe matrice K1_Matrix contate da zero
-            int K1_Matrix_Y = K1_Matrix[0].length - 1; // Numero colonne matrice K2_Matrix contate da zero
-            boolean is_in; //Mi dice se il nuovo simbolo rientra direttamente nella matrice K1_Matrix
-            int K1_Location_X = m - K1_Matrix.length + 1; //Riga della matrice in cui comincia la nostra matrice K1 (Parte arancio in foglio UNO )
-
-            if ( x >= K1_Location_X && y <= K1_Matrix_Y ) is_in = true;
-            else is_in = false;
-
-            if ( is_in && K1_Matrix[x - K1_Location_X][y] >= 0 ) K1_Matrix[x - K1_Location_X][y] ++;
-
-            //aggiorno tutti i valori nella diagonale muovendomi in direzione ' in basso a sinstra '
-            //int x_K1_Matrix = k - 1 + K1_Matrix.length - 1; //Numero di righe totali (partendo da 0) della matrice di gioco ottenuto per formula inversa di ( M - K + 1 )
-
-            for (int i = 1; i < k && x+i <= m && y-i >= 0; i++){
-                if ( (x+i) >= K1_Location_X && y-i <= K1_Matrix_Y){
-                    if (K1_Matrix[x+i - K1_Location_X][y-i] >= 0) K1_Matrix[x+i - K1_Location_X][y-i] ++;
+            for (int i = 0; i < value1; i ++){
+                for (int j = 0; j < value2; j ++){
+                    K1_Matrix[i][j] = init_value;
+                    K2_Matrix[i][j] = init_value;
                 }
             }
         }
     }
 
-    private void update_K2_Matrix(){
+    public int[][] M_Matrix(){
+        return M_Matrix;
+    }
+
+    public int[][] N_Matrix(){
+        return N_Matrix;
+    }
+
+    public int[][] K1_Matrix(){
+        return K1_Matrix;
+    }
+
+    public int[][] K2_Matrix(){
+        return K2_Matrix;
+    }
+
+
+    // Metodi per la stampa delle matrici
+    // #fordebugpurpose
+
+    public void printM_Matrix(){
+        System.out.println("\nMatrice delle righe (M_Matrix) ");
+        if (M_Matrix != null){
+            for (int i = 0; i < M; i ++){
+                for (int j = 0; j < value2; j ++){
+                    System.out.print(M_Matrix[i][j] + " ");
+                }
+                System.out.println();
+            }
+        }else System.out.println("La matrice M per questa configurazione M N K non è disponibile");
+    }
+
+    public void printN_Matrix(){
+        System.out.println("\nMatrice delle colonne (N_Matrix) ");
+        if (N_Matrix != null){
+            for (int i = 0; i < value1; i ++){
+                for (int j = 0; j < N; j ++){
+                    System.out.print(N_Matrix[i][j] + " ");
+                }
+                System.out.println();
+            }
+        }else System.out.println("La matrice N per questa configurazione M N K non è disponibile");
+    }
+
+    public void printK1_Matrix(){
+        System.out.println("\nMatrice delle diagonali dal basso verso l'alto ( K1 )  ");
+        if(K1_Matrix != null){
+            for (int i = 0; i < value1; i ++){
+                System.out.println();
+                for (int j = 0; j < value2; j ++){
+                    System.out.print(K1_Matrix[i][j] + " ");
+                }
+            }
+        }else System.out.println("La matrice delle diagonali K1 per questi M N K non esiste.");
+    }
+
+    public void printK2_Matrix(){
+        System.out.println("\nMatrice delle diagonali dall'alto verso il basso ( K2 ) ");
         if (K2_Matrix != null){
-            int K2_Matrix_X = K2_Matrix.length - 1; //Numero righe matrice K2_Matrix contate partendo da zero
-            int K2_Matrix_Y = K2_Matrix[0].length - 1; //Numero colonne matrice K2_Matrix contato partendo da zero
-
-            boolean is_in; //Mi dice se il nuovo simbolo rientra direttamente nella matrice K1_Matrix
-            if (x <= K2_Matrix_X && y <= K2_Matrix_Y) is_in = true;
-            else is_in = false;
-
-            if (is_in && K2_Matrix[x][y] >= 0) K2_Matrix[x][y]++;
-
-            //Aggiorno tutti i valori nella diagonale muovendomi in direzione ' in alto a sinistra '
-            for (int i = 1; i < k && (x-i) >= 0 && (y-i) >= 0; i++){
-                if (x-i <= K2_Matrix_X && y-1 <= K2_Matrix_Y){
-                    if (K2_Matrix[x-i][y-1] >= 0) K2_Matrix[x-i][y-i]++;
+            for (int i = 0; i < value1; i ++){
+                System.out.println();
+                for (int j = 0; j < value2; j ++){
+                    System.out.print(K2_Matrix[i][j] + " ");
                 }
             }
-        }
-    }
-
-    public void update_Matrix(int x, int y){ //Metodo per aggiornare tutte le 4 matrici dell'eval
-        this.x = x;
-        this.y = y;
-        update_M_Matrix();
-        update_N_Matrix();
-        update_K1_Matrix();
-        update_K2_Matrix();
+        }else System.out.println("La matrice delle diagonali K2 per questi M N K non esiste.");
     }
 
 }
