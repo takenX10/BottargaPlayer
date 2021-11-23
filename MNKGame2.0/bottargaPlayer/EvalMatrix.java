@@ -1,8 +1,8 @@
 package bottargaPlayer;
 /*
- * Questa classe permette la creazione e l'inizializzazione delle 4 matrici dell'eval.
- * Questa classe è dotata di metodi per la stampa di ognuna delle 4 matrici dell'eval #fordebugpurpose.
- */
+* Questa classe permette la creazione e l'inizializzazione delle 4 matrici dell'eval.
+* Questa classe è dotata di metodi per la stampa di ognuna delle 4 matrici dell'eval #fordebugpurpose.
+*/
 
 
 
@@ -42,7 +42,7 @@ public class EvalMatrix {
             K1_Matrix = new int[value1][value2];
             K2_Matrix = new int[value1][value2]; //Si, le due matrici hanno lo stesso numero di righe e colonne.
         }else K1_Matrix = K2_Matrix = null;
-    }
+   }
 
     public void initMatrix(){ //Inizializza tutte le matrici con un valore di default 'init_value'
         //Inizializzo matrice righe
@@ -142,4 +142,37 @@ public class EvalMatrix {
         }else System.out.println("La matrice delle diagonali K2 per questi M N K non esiste.");
     }
 
+    //Setter e Getter per le 4 matrici dell'eval.
+
+    public void setM_Matrix(int[][] M_Matrix){
+        this.M_Matrix = M_Matrix;
+    }
+
+    public void setN_Matrix (int[][] N_Matrix){
+        this.N_Matrix = N_Matrix;
+    }
+
+    public void setK1_Matrix (int [][] K1_Matrix){
+        this.K1_Matrix = K1_Matrix;
+    }
+
+    public void setK2_Matrix (int [][] K2_Matrix){
+        this.K2_Matrix = K2_Matrix;
+    }
+
+    public int[][] getM_Matrix(){
+        return this.M_Matrix;
+    }
+
+    public int[][] getN_Matrix(){
+        return this.N_Matrix;
+    }
+
+    public int [][] getK1_Matrix(){
+        return this.K1_Matrix;
+    }
+
+    public int [][] getK2_Matrix(){
+        return  this.K2_Matrix;
+    }
 }

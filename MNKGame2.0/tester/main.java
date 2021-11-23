@@ -8,12 +8,11 @@ public class main {
         int M = 7;
         int N = 6;
         int K = 5;
-
         EvalMatrix my_eval_matrix = new EvalMatrix(M, N, K); //Creo e inizializzo le 4 matrici dell'eval in base alla configurazione della partita ( M N K )
 
         //Invio le 4 matrici dell'eval e i dettagli di gioco alla classe che mi permetterà di modificarle in base a nuove mosse
         //N.B. Il quarto parametro 'first_player' mi chiede se in questa partita siamo noi a iniziare; se si impostare a true.
-        UpdateEvalMatrix my_eval_matrix_updated = new UpdateEvalMatrix(M, N, K, true, my_eval_matrix.M_Matrix, my_eval_matrix.N_Matrix, my_eval_matrix.K1_Matrix, my_eval_matrix.K2_Matrix );
+        UpdateEvalMatrix my_eval_matrix_updated = new UpdateEvalMatrix(M, N, K, true, my_eval_matrix.getM_Matrix(), my_eval_matrix.getN_Matrix(), my_eval_matrix.getK1_Matrix(), my_eval_matrix.getK2_Matrix() );
 
         //Esempio di aggiornamento matrici dell'eval con una singola mossa
         MNKCell move1 = new MNKCell(0, 0, MNKCellState.P1); //Inserisco le coordiante della mossa e chi la fa ( P1 è il primo player che gioca )
@@ -21,10 +20,10 @@ public class main {
         my_eval_matrix_updated.single_update_matrix(move1); //Metodo che mi aggiorna le matrici dell'eval in base alla singola mossa
 
         //aggiorno tutte e 4 le matrici con i nuovi valori. //Devo farlo uno ad uno dato che è possibile ritornare più valori in un metodo. //Eventualmente si può risolvere con una struttura
-        my_eval_matrix.M_Matrix = my_eval_matrix_updated.M_Matrix;
-        my_eval_matrix.N_Matrix = my_eval_matrix_updated.N_Matrix;
-        my_eval_matrix.K1_Matrix = my_eval_matrix_updated.K1_Matrix;
-        my_eval_matrix.K2_Matrix = my_eval_matrix_updated.K2_Matrix;
+        my_eval_matrix.setM_Matrix(my_eval_matrix_updated.M_Matrix);
+        my_eval_matrix.setN_Matrix(my_eval_matrix_updated.N_Matrix);
+        my_eval_matrix.setK1_Matrix(my_eval_matrix_updated.K1_Matrix);
+        my_eval_matrix.setK2_Matrix(my_eval_matrix_updated.K2_Matrix);
 
         //metodi per la stampa delle matrici risulanti
         my_eval_matrix.printM_Matrix();
@@ -47,10 +46,10 @@ public class main {
         my_eval_matrix_updated.multiple_update_matrix(lista_mosse);
 
         //aggiorno tutte e 4 le matrici con i nuovi valori.
-        my_eval_matrix.M_Matrix = my_eval_matrix_updated.M_Matrix;
-        my_eval_matrix.N_Matrix = my_eval_matrix_updated.N_Matrix;
-        my_eval_matrix.K1_Matrix = my_eval_matrix_updated.K1_Matrix;
-        my_eval_matrix.K2_Matrix = my_eval_matrix_updated.K2_Matrix;
+        my_eval_matrix.setM_Matrix(my_eval_matrix_updated.M_Matrix);
+        my_eval_matrix.setN_Matrix(my_eval_matrix_updated.N_Matrix);
+        my_eval_matrix.setK1_Matrix(my_eval_matrix_updated.K1_Matrix);
+        my_eval_matrix.setK2_Matrix(my_eval_matrix_updated.K2_Matrix);
 
         //metodi per la stampa delle matrici risulanti
         my_eval_matrix.printM_Matrix();
