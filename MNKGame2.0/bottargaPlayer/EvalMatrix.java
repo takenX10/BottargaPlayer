@@ -15,8 +15,8 @@ public class EvalMatrix {
     protected int[][] N_Matrix; //Matrice delle colonne
     protected int[][] K1_Matrix; // Matrice diagonali che vanno dal basso verso l'alto. (Lettura da sinistra a destra)
     protected int[][] K2_Matrix; // Matrice diagonali che vanno dall'alto verso il basso. (Lettura da sinistra a destra)
-    int value1; //(M - K + 1)
-    int value2; //(N - K + 1)
+    private int value1; //(M - K + 1)
+    private int value2; //(N - K + 1)
 
     public EvalMatrix(int m, int n, int k){ //Le dimensioni devono essere reali. Ex: 3 3 3 creerà il classico tris 3righe/colonne/simboli
         if (m < 1 || n < 1 || k < 2){ //input di gioco non accettabili.
@@ -44,7 +44,8 @@ public class EvalMatrix {
         }else K1_Matrix = K2_Matrix = null;
    }
 
-    public void initMatrix(){ //Inizializza tutte le matrici con un valore di default 'init_value'
+    //Inizializza tutte le matrici con un valore di default 'init_value'
+    public void initMatrix(){
         //Inizializzo matrice righe
         if(M_Matrix != null){
             for (int i = 0; i < M; i ++){
@@ -93,7 +94,6 @@ public class EvalMatrix {
 
     // Metodi per la stampa delle matrici
     // #fordebugpurpose
-
     public void printM_Matrix(){
         System.out.println("\nMatrice delle righe (M_Matrix) ");
         if (M_Matrix != null){
@@ -143,7 +143,6 @@ public class EvalMatrix {
     }
 
     //Setter e Getter per le 4 matrici dell'eval.
-
     public void setM_Matrix(int[][] M_Matrix){
         this.M_Matrix = M_Matrix;
     }

@@ -1,65 +1,31 @@
 package bottargaPlayer;
+
+import mnkgame.MNKCell;
+import mnkgame.MNKPlayer;
+
 //Questo main contiene degli esempi utili a capire praticamente come usare le classi EvalMatrix ed UpdateEvalMatrix.
-public class main {
-    public static void main(String[] args) {
-        int M = 7;
-        int N = 6;
-        int K = 3;
+public class main implements MNKPlayer {
+    private int M;
+    private int N;
+    private int K;
+    private boolean first;
+    private int timeout;
+    @Override
+    public void initPlayer(int M, int N, int K, boolean first, int timeout_in_secs) {
+        this.M = M;
+        this.N = N;
+        this.K = K;
+        this.timeout = timeout_in_secs;
+        this.first = first;
+    }
 
-        EvalMatrix my_eval_matrix = new EvalMatrix(M, N, K); //Creo e inizializzo le 4 matrici dell'eval in base alla configurazione della partita ( M N K )
+    @Override
+    public MNKCell selectCell(MNKCell[] FC, MNKCell[] MC) {
+        return null;
+    }
 
-        //Invio le 4 matrici dell'eval e i dettagli di gioco alla classe che mi permetterà di modificarle in base a nuove mosse
-        //N.B. Il quarto parametro 'first_player' mi chiede se in questa partita siamo noi a iniziare; se si impostare a true.
-        UpdateEvalMatrix my_eval_matrix_updated = new UpdateEvalMatrix(M, N, K, true, my_eval_matrix.getM_Matrix(), my_eval_matrix.getN_Matrix(), my_eval_matrix.getK1_Matrix(), my_eval_matrix.getK2_Matrix() );
-
-        //Esempio di aggiornamento matrici dell'eval con una singola mossa
-        MNKCell move1 = new MNKCell(0, 0, MNKCellState.P1); //Inserisco le coordiante della mossa e chi la fa ( P1 è il primo player che gioca )
-
-        my_eval_matrix_updated.single_update_matrix(move1); //Metodo che mi aggiorna le matrici dell'eval in base alla singola mossa
-
-        //aggiorno tutte e 4 le matrici con i nuovi valori. //Devo farlo uno ad uno dato che non è possibile ritornare più valori in un metodo. //Eventualmente si può risolvere con una struttura
-        my_eval_matrix.setM_Matrix(my_eval_matrix_updated.M_Matrix);
-        my_eval_matrix.setN_Matrix(my_eval_matrix_updated.N_Matrix);
-        my_eval_matrix.setK1_Matrix(my_eval_matrix_updated.K1_Matrix);
-        my_eval_matrix.setK2_Matrix(my_eval_matrix_updated.K2_Matrix);
-
-        //metodi per la stampa delle matrici risulanti
-        my_eval_matrix.printM_Matrix();
-        my_eval_matrix.printN_Matrix();
-        my_eval_matrix.printK1_Matrix();
-        my_eval_matrix.printK2_Matrix();
-
-
-        //esempio di aggiornamento matrici dell'eval con un vettore di più mosse
-
-        //creo le diverse mosse da mettere nel vettore
-
-
-        MNKCell move2 = new MNKCell(2, 2, MNKCellState.P2);
-        MNKCell move3 = new MNKCell(2, 0, MNKCellState.P1);
-        MNKCell move4 = new MNKCell(2, 1, MNKCellState.P2);
-
-        //le inserisco nel vettore
-        MNKCell[] lista_mosse = {move1, move2, move3, move4};
-        my_eval_matrix_updated.multiple_update_matrix(lista_mosse);
-
-        //A questo punto posso accedere al valore eval
-        float my_eval = my_eval_matrix_updated.eval;
-
-        //aggiorno tutte e 4 le matrici con i nuovi valori.
-        my_eval_matrix.setM_Matrix(my_eval_matrix_updated.M_Matrix);
-        my_eval_matrix.setN_Matrix(my_eval_matrix_updated.N_Matrix);
-        my_eval_matrix.setK1_Matrix(my_eval_matrix_updated.K1_Matrix);
-        my_eval_matrix.setK2_Matrix(my_eval_matrix_updated.K2_Matrix);
-
-
-        //metodi per la stampa delle matrici risulanti
-        my_eval_matrix.printM_Matrix();
-        my_eval_matrix.printN_Matrix();
-        my_eval_matrix.printK1_Matrix();
-        my_eval_matrix.printK2_Matrix();
-
-
-
+    @Override
+    public String playerName() {
+        return "bottargaPlayer";
     }
 }

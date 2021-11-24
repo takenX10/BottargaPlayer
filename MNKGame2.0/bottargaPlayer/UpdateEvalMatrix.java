@@ -1,5 +1,7 @@
 package bottargaPlayer;
 
+import mnkgame.MNKCell;
+import mnkgame.MNKCellState;
 //La classe serve ad aggiornare le 4 matrici dell'eval
 //La classe riceve in input: le 4 matrici, le coordinate X,Y del punto in cui, nella matrice di partenza,
 //è stata aggiunta una X ( che da ora in poi chiamerò genericamente 'simbolo' )
