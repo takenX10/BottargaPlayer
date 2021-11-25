@@ -4,58 +4,26 @@ import mnkgame.*;
 
 //Questo main contiene degli esempi utili a capire praticamente come usare le classi EvalMatrix ed UpdateEvalMatrix.
 public class main {
+    public static UpdateEvalMatrix mossa(int m, int n, MNKCellState stato, UpdateEvalMatrix my_eval_matrix_updated, EvalMatrix my_eval_matrix){
+        MNKCell move1 = new MNKCell(m, n, stato);
+        my_eval_matrix_updated.single_update_matrix(move1);
+        System.out.println("\n\nEval:\t"+my_eval_matrix_updated.eval);
+        return my_eval_matrix_updated;
+    }
     public static void main(String[] args) {
-        int M = 7;
-        int N = 6;
-        int K = 5;
-        EvalMatrix my_eval_matrix = new EvalMatrix(M, N, K); //Creo e inizializzo le 4 matrici dell'eval in base alla configurazione della partita ( M N K )
-
-        //Invio le 4 matrici dell'eval e i dettagli di gioco alla classe che mi permetterà di modificarle in base a nuove mosse
-        //N.B. Il quarto parametro 'first_player' mi chiede se in questa partita siamo noi a iniziare; se si impostare a true.
-        UpdateEvalMatrix my_eval_matrix_updated = new UpdateEvalMatrix(M, N, K, true, my_eval_matrix.getM_Matrix(), my_eval_matrix.getN_Matrix(), my_eval_matrix.getK1_Matrix(), my_eval_matrix.getK2_Matrix() );
-
-        //Esempio di aggiornamento matrici dell'eval con una singola mossa
-        MNKCell move1 = new MNKCell(0, 0, MNKCellState.P1); //Inserisco le coordiante della mossa e chi la fa ( P1 è il primo player che gioca )
-
-        my_eval_matrix_updated.single_update_matrix(move1); //Metodo che mi aggiorna le matrici dell'eval in base alla singola mossa
-
-        //aggiorno tutte e 4 le matrici con i nuovi valori. //Devo farlo uno ad uno dato che è possibile ritornare più valori in un metodo. //Eventualmente si può risolvere con una struttura
-        my_eval_matrix.setM_Matrix(my_eval_matrix_updated.M_Matrix);
-        my_eval_matrix.setN_Matrix(my_eval_matrix_updated.N_Matrix);
-        my_eval_matrix.setK1_Matrix(my_eval_matrix_updated.K1_Matrix);
-        my_eval_matrix.setK2_Matrix(my_eval_matrix_updated.K2_Matrix);
-
-        //metodi per la stampa delle matrici risulanti
-        my_eval_matrix.printM_Matrix();
-        my_eval_matrix.printN_Matrix();
-        my_eval_matrix.printK1_Matrix();
-        my_eval_matrix.printK2_Matrix();
-
-
-        //esempio di aggiornamento matrici dell'eval con un vettore di più mosse
-
-        //creo le diverse mosse da mettere nel vettore
-
-
-        MNKCell move2 = new MNKCell(1, 0, MNKCellState.P2);
-        MNKCell move3 = new MNKCell(2, 0, MNKCellState.P1);
-        MNKCell move4 = new MNKCell(2, 1, MNKCellState.P2);
-
-        //le inserisco nel vettore
-        MNKCell[] lista_mosse = {move1, move2, move3, move4};
-        my_eval_matrix_updated.multiple_update_matrix(lista_mosse);
-
-        //aggiorno tutte e 4 le matrici con i nuovi valori.
-        my_eval_matrix.setM_Matrix(my_eval_matrix_updated.M_Matrix);
-        my_eval_matrix.setN_Matrix(my_eval_matrix_updated.N_Matrix);
-        my_eval_matrix.setK1_Matrix(my_eval_matrix_updated.K1_Matrix);
-        my_eval_matrix.setK2_Matrix(my_eval_matrix_updated.K2_Matrix);
-
-        //metodi per la stampa delle matrici risulanti
-        my_eval_matrix.printM_Matrix();
-        my_eval_matrix.printN_Matrix();
-        my_eval_matrix.printK1_Matrix();
-        my_eval_matrix.printK2_Matrix();
-
+        int M = 3;
+        int N = 3;
+        int K = 3;
+        EvalMatrix my_eval_matrix = new EvalMatrix(M, N, K);
+        UpdateEvalMatrix my_eval_matrix_updated = new UpdateEvalMatrix(M, N, K, true, my_eval_matrix.getM_Matrix(), my_eval_matrix.getN_Matrix(), my_eval_matrix.getK1_Matrix(), my_eval_matrix.getK2_Matrix());
+        MNKCell[] FC = new MNKCell[9];
+        for(int i = 0; i < M; i++){
+            for(int j = 0; j < N; j++){
+                FC[i*N + j] = new MNKCell(i,j,MNKCellState.FREE);
+            }
+        }
+        alphabeta test = new alphabeta(M,N,K,true,3,null,FC);
+        MNKCell move = test.start();
+        System.out.println(move);
     }
 }

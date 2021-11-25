@@ -11,10 +11,10 @@ public class EvalMatrix {
     protected int M; //Righe
     protected int N; //Colonne
     protected int K; //Simboli da mettere in fila per vincere.
-    protected int[][] M_Matrix; //Matrice delle righe
-    protected int[][] N_Matrix; //Matrice delle colonne
-    protected int[][] K1_Matrix; // Matrice diagonali che vanno dal basso verso l'alto. (Lettura da sinistra a destra)
-    protected int[][] K2_Matrix; // Matrice diagonali che vanno dall'alto verso il basso. (Lettura da sinistra a destra)
+    protected int[][][] M_Matrix; //Matrice delle righe
+    protected int[][][] N_Matrix; //Matrice delle colonne
+    protected int[][][] K1_Matrix; // Matrice diagonali che vanno dal basso verso l'alto. (Lettura da sinistra a destra)
+    protected int[][][] K2_Matrix; // Matrice diagonali che vanno dall'alto verso il basso. (Lettura da sinistra a destra)
     private int value1; //(M - K + 1)
     private int value2; //(N - K + 1)
 
@@ -32,15 +32,15 @@ public class EvalMatrix {
 
         //Creazione matrici
 
-        if (value2 > 0) M_Matrix = new int[M][value2];
+        if (value2 > 0) M_Matrix = new int[M][value2][2];
         else M_Matrix = null;
 
-        if (value1 > 0) N_Matrix = new int[value1][N];
+        if (value1 > 0) N_Matrix = new int[value1][N][2];
         else N_Matrix = null;
 
         if (value1 > 0 && value2 > 0){
-            K1_Matrix = new int[value1][value2];
-            K2_Matrix = new int[value1][value2]; //Si, le due matrici hanno lo stesso numero di righe e colonne.
+            K1_Matrix = new int[value1][value2][2];
+            K2_Matrix = new int[value1][value2][2]; //Si, le due matrici hanno lo stesso numero di righe e colonne.
         }else K1_Matrix = K2_Matrix = null;
    }
 
@@ -50,7 +50,9 @@ public class EvalMatrix {
         if(M_Matrix != null){
             for (int i = 0; i < M; i ++){
                 for (int j = 0; j < value2; j ++){
-                    M_Matrix[i][j] = init_value;
+                    M_Matrix[i][j][0] = init_value;
+                    M_Matrix[i][j][1] = init_value;
+
                 }
             }
         }
@@ -59,7 +61,9 @@ public class EvalMatrix {
         if (N_Matrix != null){
             for (int i = 0; i < value1; i ++){
                 for (int j = 0; j < N; j ++){
-                    N_Matrix[i][j] = init_value;
+                    N_Matrix[i][j][0] = init_value;
+                    N_Matrix[i][j][1] = init_value;
+
                 }
             }
         }
@@ -68,26 +72,29 @@ public class EvalMatrix {
         if (K1_Matrix != null){
             for (int i = 0; i < value1; i ++){
                 for (int j = 0; j < value2; j ++){
-                    K1_Matrix[i][j] = init_value;
-                    K2_Matrix[i][j] = init_value;
+                    K1_Matrix[i][j][0] = init_value;
+                    K1_Matrix[i][j][1] = init_value;
+                    K2_Matrix[i][j][0] = init_value;
+                    K2_Matrix[i][j][1] = init_value;
+
                 }
             }
         }
     }
 
-    public int[][] M_Matrix(){
+    public int[][][] M_Matrix(){
         return M_Matrix;
     }
 
-    public int[][] N_Matrix(){
+    public int[][][] N_Matrix(){
         return N_Matrix;
     }
 
-    public int[][] K1_Matrix(){
+    public int[][][] K1_Matrix(){
         return K1_Matrix;
     }
 
-    public int[][] K2_Matrix(){
+    public int[][][] K2_Matrix(){
         return K2_Matrix;
     }
 
@@ -143,35 +150,35 @@ public class EvalMatrix {
     }
 
     //Setter e Getter per le 4 matrici dell'eval.
-    public void setM_Matrix(int[][] M_Matrix){
+    public void setM_Matrix(int[][][] M_Matrix){
         this.M_Matrix = M_Matrix;
     }
 
-    public void setN_Matrix (int[][] N_Matrix){
+    public void setN_Matrix (int[][][] N_Matrix){
         this.N_Matrix = N_Matrix;
     }
 
-    public void setK1_Matrix (int [][] K1_Matrix){
+    public void setK1_Matrix (int[][][] K1_Matrix){
         this.K1_Matrix = K1_Matrix;
     }
 
-    public void setK2_Matrix (int [][] K2_Matrix){
+    public void setK2_Matrix (int[][][] K2_Matrix){
         this.K2_Matrix = K2_Matrix;
     }
 
-    public int[][] getM_Matrix(){
+    public int[][][] getM_Matrix(){
         return this.M_Matrix;
     }
 
-    public int[][] getN_Matrix(){
+    public int[][][] getN_Matrix(){
         return this.N_Matrix;
     }
 
-    public int [][] getK1_Matrix(){
+    public int[][][] getK1_Matrix(){
         return this.K1_Matrix;
     }
 
-    public int [][] getK2_Matrix(){
+    public int[][][] getK2_Matrix(){
         return  this.K2_Matrix;
     }
 }

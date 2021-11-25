@@ -4,7 +4,7 @@ import mnkgame.MNKCell;
 import mnkgame.MNKPlayer;
 
 //Questo main contiene degli esempi utili a capire praticamente come usare le classi EvalMatrix ed UpdateEvalMatrix.
-public class main implements MNKPlayer {
+public class player implements MNKPlayer {
     private int M;
     private int N;
     private int K;
@@ -21,6 +21,8 @@ public class main implements MNKPlayer {
 
     @Override
     public MNKCell selectCell(MNKCell[] FC, MNKCell[] MC) {
+        alphabeta runner = new alphabeta(this.M, this.N, this.K, this.first, 1, MC, FC);
+
         return null;
     }
 
