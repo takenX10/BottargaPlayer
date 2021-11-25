@@ -37,8 +37,8 @@ public class UpdateEvalMatrix {
 
     //todo se so che in una serie di mosse una mi ha portato alla vittoria smetto di aggiornare tutte le matrici analizzando le altre mosse? Si
     float eval; //Valore finale che assume l'eval (-2 hai perso, -3 hai vinto, otherwise punteggio che indica quanto siamo messi bene)
-    float win_value = -3;
-    float lose_value = -2;
+    float win_value = 1000;
+    float lose_value = -1000;
     //NB: Le coordinate X ed Y sottostanti partono da 0 (come prima cella) ed arrivano ad M-1 e N-1.
     public UpdateEvalMatrix(int M, int N, int K, boolean first_player, int[][] M_Matrix, int[][] N_Matrix, int[][] K1_Matrix, int[][] K2_Matrix){
         if (x > M-1 || y > N-1 ) {
@@ -81,15 +81,29 @@ public class UpdateEvalMatrix {
             //Aggiorno il valore presente nelle stesse coordinate, se non sono fuori matrice
             if ( is_in && M_Matrix[x][y] >= 0 ){
                 if (my_move) {
+                    ///// EDITATO DA ALE
                     M_Matrix[x][y]++;
+                    if(M_Matrix[x][y] == k+1) {
+                        // non fare niente, il simbolo non cambia la situazione
+                    }else if(M_Matrix[x][y] >=0){
+                        partial_sum_M_Matrix++;
+                        M_Matrix[x][y]++; // solo simboli tuoi
+                    }else{ // entrambi i simboli -> pari
+                        partial_sum_M_Matrix -= M_Matrix[x][y];
+                        M_Matrix[x][y] = k+1; // K + 1 perchè è un valore virtualmente irraggiungibile
+                    }
                     if (M_Matrix[x][y] == k){ //Hai vinto
                         eval = win_value;
                     }
-                    else partial_sum_M_Matrix ++;
-                }
-                else {
-                    partial_sum_M_Matrix -= M_Matrix[x][y];
-                    M_Matrix[x][y] = -1;
+                } else {
+                    if(M_Matrix[x][y] <=0){
+                        partial_sum_M_Matrix--;
+                        M_Matrix[x][y]--; // solo simboli dell'avversario
+                    }else{ // entrambi i simboli -> pari
+                        partial_sum_M_Matrix -= M_Matrix[x][y];
+                        M_Matrix[x][y] = k+1; // K + 1 perchè è un valore virtualmente irraggiungibile
+                    }
+                    //////////
                 }
             }
 
@@ -97,14 +111,29 @@ public class UpdateEvalMatrix {
             for ( int i = 1; i < k && (y-i >= 0); i++ ){ //y-i non deve portarmi fuori dal range matrice.
                 if( (y-i <= limit_y) && M_Matrix[x][y-i] >= 0 ){
                     if (my_move) {
+                        ///// EDITATO DA ALE
                         M_Matrix[x][y - i]++;
-                        if (M_Matrix[x][y - i] == k) eval = win_value;
-                        else partial_sum_M_Matrix ++;
-
-                    }
-                    else {
-                        partial_sum_M_Matrix -=  M_Matrix[x][y - i];
-                        M_Matrix[x][y - i] = -1;
+                        if(M_Matrix[x][y - i] == k+1) {
+                            // non fare niente, il simbolo non cambia la situazione
+                        }else if(M_Matrix[x][y - i] >=0){
+                            partial_sum_M_Matrix++;
+                            M_Matrix[x][y - i]++; // solo simboli tuoi
+                        }else{ // entrambi i simboli -> pari
+                            partial_sum_M_Matrix -= M_Matrix[x][y - i];
+                            M_Matrix[x][y - i] = k+1; // K + 1 perchè è un valore virtualmente irraggiungibile
+                        }
+                        if (M_Matrix[x][y - i] == k){ //Hai vinto
+                            eval = win_value;
+                        }
+                    } else {
+                        if(M_Matrix[x][y - i] <=0){
+                            partial_sum_M_Matrix--;
+                            M_Matrix[x][y - i]--; // solo simboli dell'avversario
+                        }else{ // entrambi i simboli -> pari
+                            partial_sum_M_Matrix -= M_Matrix[x][y - i];
+                            M_Matrix[x][y - i] = k+1; // K + 1 perchè è un valore virtualmente irraggiungibile
+                        }
+                        //////////
                     }
                 }
             }
@@ -126,13 +155,29 @@ public class UpdateEvalMatrix {
             //Aggiorno il valore presente nelle stesse coordinate, se non sono fuori matrice
             if ( is_in && N_Matrix[x][y] >= 0 ) {
                 if (my_move) {
-                    N_Matrix[x][y] ++;
-                    if (N_Matrix[x][y] == k) eval = win_value;
-                    else partial_sum_N_Matrix ++;
-                }
-                else {
-                    partial_sum_N_Matrix -= N_Matrix[x][y];
-                    N_Matrix[x][y] = -1;
+                    ///// EDITATO DA ALE
+                    N_Matrix[x][y]++;
+                    if(N_Matrix[x][y] == k+1) {
+                        // non fare niente, il simbolo non cambia la situazione
+                    }else if(N_Matrix[x][y] >=0){
+                        partial_sum_N_Matrix++;
+                        N_Matrix[x][y]++; // solo simboli tuoi
+                    }else{ // entrambi i simboli -> pari
+                        partial_sum_N_Matrix -= N_Matrix[x][y];
+                        N_Matrix[x][y] = k+1; // K + 1 perchè è un valore virtualmente irraggiungibile
+                    }
+                    if (N_Matrix[x][y] == k){ //Hai vinto
+                        eval = win_value;
+                    }
+                } else {
+                    if(N_Matrix[x][y] <=0){
+                        partial_sum_N_Matrix--;
+                        N_Matrix[x][y]--; // solo simboli dell'avversario
+                    }else{ // entrambi i simboli -> pari
+                        partial_sum_N_Matrix -= N_Matrix[x][y];
+                        N_Matrix[x][y] = k+1; // K + 1 perchè è un valore virtualmente irraggiungibile
+                    }
+                    //////////
                 }
             }
 
@@ -140,13 +185,29 @@ public class UpdateEvalMatrix {
             for ( int i = 1; i < k && ( x-i >= 0 ); i++ ){
                 if ( (x-i <= limit_x ) && N_Matrix[x-i][y] >= 0 ) {
                     if (my_move) {
-                        N_Matrix[x - i][y] ++;
-                        if (N_Matrix[x - i][y] == k) eval = win_value;
-                        else partial_sum_N_Matrix ++;
-                    }
-                    else {
-                        partial_sum_N_Matrix -= N_Matrix[x - i][y];
-                        N_Matrix[x - i][y] = -1;
+                        ///// EDITATO DA ALE
+                        N_Matrix[x - i][y]++;
+                        if(N_Matrix[x - i][y] == k+1) {
+                            // non fare niente, il simbolo non cambia la situazione
+                        }else if(N_Matrix[x - i][y] >=0){
+                            partial_sum_N_Matrix++;
+                            N_Matrix[x - i][y]++; // solo simboli tuoi
+                        }else{ // entrambi i simboli -> pari
+                            partial_sum_N_Matrix -= N_Matrix[x - i][y];
+                            N_Matrix[x - i][y] = k+1; // K + 1 perchè è un valore virtualmente irraggiungibile
+                        }
+                        if (N_Matrix[x - i][y] == k){ //Hai vinto
+                            eval = win_value;
+                        }
+                    } else {
+                        if(N_Matrix[x - i][y] <=0){
+                            partial_sum_N_Matrix--;
+                            N_Matrix[x - i][y]--; // solo simboli dell'avversario
+                        }else{ // entrambi i simboli -> pari
+                            partial_sum_N_Matrix -= N_Matrix[x - i][y];
+                            N_Matrix[x - i][y] = k+1; // K + 1 perchè è un valore virtualmente irraggiungibile
+                        }
+                        //////////
                     }
                 }
             }
@@ -167,13 +228,29 @@ public class UpdateEvalMatrix {
 
             if ( is_in && K1_Matrix[x - K1_Location_X][y] >= 0 ) {
                 if (my_move) {
-                    K1_Matrix[x - K1_Location_X][y]++;
-                    if (K1_Matrix[x - K1_Location_X][y] == k) eval = win_value;
-                    else partial_sum_K1_Matrix ++;
-                }
-                else {
-                    partial_sum_K1_Matrix -= K1_Matrix[x - K1_Location_X][y];
-                    K1_Matrix[x - K1_Location_X][y] = -1;
+                    ///// EDITATO DA ALE
+                    K1_Matrix[x][y]++;
+                    if(K1_Matrix[x][y] == k+1) {
+                        // non fare niente, il simbolo non cambia la situazione
+                    }else if(K1_Matrix[x][y] >=0){
+                        partial_sum_K1_Matrix++;
+                        K1_Matrix[x][y]++; // solo simboli tuoi
+                    }else{ // entrambi i simboli -> pari
+                        partial_sum_K1_Matrix -= K1_Matrix[x][y];
+                        K1_Matrix[x][y] = k+1; // K + 1 perchè è un valore virtualmente irraggiungibile
+                    }
+                    if (K1_Matrix[x][y] == k){ //Hai vinto
+                        eval = win_value;
+                    }
+                } else {
+                    if(K1_Matrix[x][y] <=0){
+                        partial_sum_K1_Matrix--;
+                        K1_Matrix[x][y]--; // solo simboli dell'avversario
+                    }else{ // entrambi i simboli -> pari
+                        partial_sum_K1_Matrix -= K1_Matrix[x][y];
+                        K1_Matrix[x][y] = k+1; // K + 1 perchè è un valore virtualmente irraggiungibile
+                    }
+                    //////////
                 }
             }
 
@@ -182,13 +259,29 @@ public class UpdateEvalMatrix {
                 if ( (x+i) >= K1_Location_X && y-i <= K1_Matrix_Y){
                     if (K1_Matrix[x+i - K1_Location_X][y-i] >= 0) {
                         if (my_move) {
-                            K1_Matrix[x + i - K1_Location_X][y - i]++;
-                            if (K1_Matrix[x + i - K1_Location_X][y - i] == k) eval = win_value;
-                            partial_sum_K1_Matrix ++;
-                        }
-                        else {
-                            partial_sum_K1_Matrix -= K1_Matrix[x + i - K1_Location_X][y - i];
-                            K1_Matrix[x + i - K1_Location_X][y - i] = -1;
+                            ///// EDITATO DA ALE
+                            K1_Matrix[x + i - K1_Location_X][y-1]++;
+                            if(K1_Matrix[x + i - K1_Location_X][y-1] == k+1) {
+                                // non fare niente, il simbolo non cambia la situazione
+                            }else if(K1_Matrix[x + i - K1_Location_X][y-1] >=0){
+                                partial_sum_K1_Matrix++;
+                                K1_Matrix[x + i - K1_Location_X][y-1]++; // solo simboli tuoi
+                            }else{ // entrambi i simboli -> pari
+                                partial_sum_K1_Matrix -= K1_Matrix[x + i - K1_Location_X][y-1];
+                                K1_Matrix[x + i - K1_Location_X][y-1] = k+1; // K + 1 perchè è un valore virtualmente irraggiungibile
+                            }
+                            if (K1_Matrix[x + i - K1_Location_X][y-1] == k){ //Hai vinto
+                                eval = win_value;
+                            }
+                        } else {
+                            if(K1_Matrix[x + i - K1_Location_X][y-1] <=0){
+                                partial_sum_K1_Matrix--;
+                                K1_Matrix[x + i - K1_Location_X][y-1]--; // solo simboli dell'avversario
+                            }else{ // entrambi i simboli -> pari
+                                partial_sum_K1_Matrix -= K1_Matrix[x + i - K1_Location_X][y-1];
+                                K1_Matrix[x + i - K1_Location_X][y-1] = k+1; // K + 1 perchè è un valore virtualmente irraggiungibile
+                            }
+                            //////////
                         }
                     }
                 }
@@ -208,13 +301,29 @@ public class UpdateEvalMatrix {
 
             if (is_in && K2_Matrix[x][y] >= 0) {
                 if (my_move) {
+                    ///// EDITATO DA ALE
                     K2_Matrix[x][y]++;
-                    if ( K2_Matrix[x][y] == k) eval = win_value;
-                    else partial_sum_K2_Matrix ++;
-                }
-                else {
-                    partial_sum_K2_Matrix -=  K2_Matrix[x][y];
-                    K2_Matrix[x][y] = -1;
+                    if(K2_Matrix[x][y] == k+1) {
+                        // non fare niente, il simbolo non cambia la situazione
+                    }else if(K2_Matrix[x][y] >=0){
+                        partial_sum_K2_Matrix++;
+                        K2_Matrix[x][y]++; // solo simboli tuoi
+                    }else{ // entrambi i simboli -> pari
+                        partial_sum_K2_Matrix -= K2_Matrix[x][y];
+                        K2_Matrix[x][y] = k+1; // K + 1 perchè è un valore virtualmente irraggiungibile
+                    }
+                    if (K2_Matrix[x][y] == k){ //Hai vinto
+                        eval = win_value;
+                    }
+                } else {
+                    if(K2_Matrix[x][y] <=0){
+                        partial_sum_K2_Matrix--;
+                        K2_Matrix[x][y]--; // solo simboli dell'avversario
+                    }else{ // entrambi i simboli -> pari
+                        partial_sum_K2_Matrix -= K2_Matrix[x][y];
+                        K2_Matrix[x][y] = k+1; // K + 1 perchè è un valore virtualmente irraggiungibile
+                    }
+                    //////////
                 }
             }
 
@@ -223,13 +332,29 @@ public class UpdateEvalMatrix {
                 if (x-i <= K2_Matrix_X && y-1 <= K2_Matrix_Y){
                     if (K2_Matrix[x-i][y-1] >= 0) {
                         if (my_move) {
-                            K2_Matrix[x - i][y - 1]++;
-                            if (K2_Matrix[x - i][y - 1] == k) eval = win_value;
-                            else partial_sum_K2_Matrix ++;
-                        }
-                        else {
-                            partial_sum_K2_Matrix -= K2_Matrix[x - i][y - 1];
-                            K2_Matrix[x - i][y - 1] = -1;
+                            ///// EDITATO DA ALE
+                            K2_Matrix[x-i][y-i]++;
+                            if(K2_Matrix[x-i][y-i] == k+1) {
+                                // non fare niente, il simbolo non cambia la situazione
+                            }else if(K2_Matrix[x-i][y-i] >=0){
+                                partial_sum_K2_Matrix++;
+                                K2_Matrix[x-i][y-i]++; // solo simboli tuoi
+                            }else{ // entrambi i simboli -> pari
+                                partial_sum_K2_Matrix -= K2_Matrix[x-i][y-i];
+                                K2_Matrix[x-i][y-i] = k+1; // K + 1 perchè è un valore virtualmente irraggiungibile
+                            }
+                            if (K2_Matrix[x-i][y-i] == k){ //Hai vinto
+                                eval = win_value;
+                            }
+                        } else {
+                            if(K2_Matrix[x-i][y-i] <=0){
+                                partial_sum_K2_Matrix--;
+                                K2_Matrix[x-i][y-i]--; // solo simboli dell'avversario
+                            }else{ // entrambi i simboli -> pari
+                                partial_sum_K2_Matrix -= K2_Matrix[x-i][y-i];
+                                K2_Matrix[x-i][y-i] = k+1; // K + 1 perchè è un valore virtualmente irraggiungibile
+                            }
+                            //////////
                         }
                     }
                 }
