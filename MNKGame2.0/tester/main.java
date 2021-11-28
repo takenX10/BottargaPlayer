@@ -4,12 +4,6 @@ import mnkgame.*;
 
 //Questo main contiene degli esempi utili a capire praticamente come usare le classi EvalMatrix ed UpdateEvalMatrix.
 public class main {
-    public static UpdateEvalMatrix mossa(int m, int n, MNKCellState stato, UpdateEvalMatrix my_eval_matrix_updated, EvalMatrix my_eval_matrix){
-        MNKCell move1 = new MNKCell(m, n, stato);
-        my_eval_matrix_updated.single_update_matrix(move1);
-        System.out.println("\n\nEval:\t"+my_eval_matrix_updated.eval);
-        return my_eval_matrix_updated;
-    }
     public static void main(String[] args) {
         int M = 3;
         int N = 3;

@@ -81,12 +81,12 @@ public class alphabeta {
 
     // initialize with recursive(0,null,this.current_matrix)
     private float recursive(int depth, MNKCell node, UpdateEvalMatrix matrix, MNKCellState stato, float alpha, float beta) {
-        matrix.single_update_matrix_state(node, stato);
+        matrix.single_update_matrix(node, stato);
         //System.out.println(node.toString() + "\ndepth: "+depth+"\nstato: "+stato.toString()+"\neval: "+matrix.eval+"\nalpha: "+alpha+"\tbeta: "+beta);
 
         if(matrix.eval == 1000 || matrix.eval == -1000 || matrix.eval == this.k+1 || depth == this.maxdepth){ // TODO: fixa questo per vittoria o sconfitta
             float eval = matrix.eval;
-            matrix.single_invert_matrix_state(node, stato);
+            matrix.single_invert_matrix(node, stato);
             //if(depth == 3)
             //System.out.println(node.toString() + "\ndepth: "+depth+"\nstato: "+stato.toString()+"\neval: "+eval+"\nalpha: "+alpha+"\tbeta: "+beta);
             return eval;
@@ -107,7 +107,7 @@ public class alphabeta {
                     }
                 }
             }
-            matrix.single_invert_matrix_state(node, stato);
+            matrix.single_invert_matrix(node, stato);
             //if(depth == 2){
             //    System.out.println(node.toString() + "\ndepth: "+depth+"\nstato: "+stato.toString()+"\neval: "+val+"\nalpha: "+alpha+"\tbeta: "+beta);
             return val;
@@ -126,7 +126,7 @@ public class alphabeta {
                     }
                 }
             }
-            matrix.single_invert_matrix_state(node, stato);
+            matrix.single_invert_matrix(node, stato);
             //if(depth == 3){
                 //System.out.println(node.toString() + "\ndepth: "+depth+"\nstato: "+stato.toString()+"\neval: "+val+"\nalpha: "+alpha+"\tbeta: "+beta);
             //}
