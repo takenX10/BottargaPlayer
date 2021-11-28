@@ -27,12 +27,12 @@ public class UpdateEvalMatrix {
 
     //4 matrici dell'eval.
     public int[][][] M_Matrix;  //Matrice delle righe
-    private int partial_sum_M_Matrix;
     public int[][][] N_Matrix;  //Matrice delle colonne
-    private int partial_sum_N_Matrix;
     public int[][][] K1_Matrix; // Matrice diagonali che vanno dal basso verso l'alto. (Lettura da sinistra a destra)
-    private int partial_sum_K1_Matrix;
     public int[][][] K2_Matrix; // Matrice diagonali che vanno dall'alto verso il basso. (Lettura da sinistra a destra)
+    private int partial_sum_M_Matrix;
+    private int partial_sum_N_Matrix;
+    private int partial_sum_K1_Matrix;
     private int partial_sum_K2_Matrix;
     private int conta_patta;
     private int ncelle;
@@ -69,7 +69,7 @@ public class UpdateEvalMatrix {
     * Dopodichè creerò il metodo che richiama tutti i suddetti permettendo l'aggiornamento generale.
     */
 
-    public void update_matrix(int x, int y, int[][][] matrix, int partial_sum){
+    public int update_matrix(int x, int y, int[][][] matrix, int partial_sum){
         if(this.my_move){
             matrix[x][y][0]++;
             partial_sum++;
@@ -88,48 +88,51 @@ public class UpdateEvalMatrix {
             partial_sum--;
             if(matrix[x][y][1] == k){
                 this.eval = lose_value;
-            }else if(matrix[x][y][1] > 0){
-                if(matrix[x][y][0] == 1) {
+            }else if(matrix[x][y][0] > 0){
+                if(matrix[x][y][1] == 1) {
                     conta_patta++;
-                    partial_sum -= matrix[x][y][0] + 1;
+                    partial_sum -= matrix[x][y][0] - 1;
                 }else {
                     partial_sum++;
                 }
             }
         }
+        return partial_sum;
     }
 
-    public void invert_matrix(int x, int y, boolean mymove, int[][][] matrix, int partial_sum){
+    public int invert_matrix(int x, int y, boolean mymove, int[][][] matrix, int partial_sum){
         if(mymove){
-
             if(matrix[x][y][0] == k){
                 this.eval = 0; // per dirgli di aggiornarlo
             }else if(matrix[x][y][1] > 0){
                 if(matrix[x][y][0] == 1) {
                     conta_patta--;
-                    partial_sum -= matrix[x][y][1];
+                    partial_sum -= matrix[x][y][1] - 1;
                 }else {
-                    partial_sum++;
+                    partial_sum++; // per annullare partial_sum--; dopo
                 }
             }
             matrix[x][y][0]--;
             partial_sum--;
         }else{
-            matrix[x][y][1]++;
-            partial_sum--;
             if(matrix[x][y][1] == k){
-                this.eval = lose_value;
-            }else if(matrix[x][y][1] > 0){
-                if(matrix[x][y][0] == 1) {
+                this.eval = 0; // per dirgli di aggiornarlo
+            }else if(matrix[x][y][0] > 0){
+                if(matrix[x][y][1] == 1) {
                     conta_patta--;
-                    partial_sum -= matrix[x][y][0] + 1;
+                    partial_sum += matrix[x][y][0] - 1;
                 }else {
-                    partial_sum++;
+                    partial_sum--;
                 }
             }
+            matrix[x][y][1]--;
+            partial_sum++;
         }
+        if(matrix[x][y][0] < 0 || matrix[x][y][1] < 0){
+            System.out.println("ERRORE");
+        }
+        return partial_sum;
     }
-
 
     //Aggiornamento valori della matrice M_Matrix ( Matrice delle righe )
     private void update_M_Matrix(){
@@ -141,7 +144,7 @@ public class UpdateEvalMatrix {
             //Aggiorno tutti i valori alla sinistra
             for ( int i = 0; i < k && (y-i >= 0); i++ ){ //y-i non deve portarmi fuori dal range matrice.
                 if( (y-i <= limit_y)){
-                    update_matrix(x, y-i, M_Matrix, partial_sum_M_Matrix);
+                    partial_sum_M_Matrix = update_matrix(x, y-i, M_Matrix, partial_sum_M_Matrix);
                 }
             }
         }
@@ -156,7 +159,7 @@ public class UpdateEvalMatrix {
             //Aggiorno tutti i valori in alto
             for ( int i = 0; i < k && ( x-i >= 0 ); i++ ) {
                 if ((x - i <= limit_x)) {
-                    update_matrix(x - i, y, N_Matrix, partial_sum_N_Matrix);
+                    partial_sum_N_Matrix = update_matrix(x - i, y, N_Matrix, partial_sum_N_Matrix);
                 }
             }
         }
@@ -172,7 +175,7 @@ public class UpdateEvalMatrix {
             //Aggiorno tutti i valori nella diagonale muovendomi in direzione ' in basso a sinstra '
             for (int i = 0; i < k && x+i <= m && y-i >= 0; i++){
                 if ( (x+i) >= K1_Location_X && y-i <= K1_Matrix_Y){
-                    update_matrix(x + i - K1_Location_X, y-i, K1_Matrix, partial_sum_K1_Matrix);
+                    partial_sum_K1_Matrix = update_matrix(x + i - K1_Location_X, y-i, K1_Matrix, partial_sum_K1_Matrix);
                 }
             }
         }
@@ -186,8 +189,8 @@ public class UpdateEvalMatrix {
 
             //Aggiorno tutti i valori nella diagonale muovendomi in direzione ' in alto a sinistra '
             for (int i = 0; i < k && (x-i) >= 0 && (y-i) >= 0; i++){
-                if (x-i <= K2_Matrix_X && y-1 <= K2_Matrix_Y){
-                    update_matrix(x-i, y-i, K2_Matrix, partial_sum_K2_Matrix);
+                if (x-i <= K2_Matrix_X && y-i <= K2_Matrix_Y){
+                    partial_sum_K2_Matrix = update_matrix(x-i, y-i, K2_Matrix, partial_sum_K2_Matrix);
                 }
             }
         }
@@ -216,6 +219,106 @@ public class UpdateEvalMatrix {
         if (eval != win_value) calcolate_eval_value(M_Matrix, N_Matrix, K1_Matrix, K2_Matrix);
     }
 
+    private void invert_M_Matrix(){
+        if (M_Matrix != null){
+            //todo Le successive due righe sono qui per leggibilità, per una maggiore efficienza spostarle nel metodo di init
+            int limit_x = M_Matrix.length - 1; //Dimensione righe matrice M_Matrix
+            int limit_y = M_Matrix[0].length - 1; //Dimensione colonne matrice M_Matrix
+
+            //Aggiorno tutti i valori alla sinistra
+            for ( int i = 0; i < k && (y-i >= 0); i++ ){ //y-i non deve portarmi fuori dal range matrice.
+                if( (y-i <= limit_y)){
+                    partial_sum_M_Matrix = invert_matrix(x, y-i, my_move, M_Matrix, partial_sum_M_Matrix);
+                }
+            }
+        }
+    }
+
+    //Aggiornamento valori matrice N_Matrix ( Matrice delle colonne )
+    private void invert_N_Matrix(){
+        if (N_Matrix != null){
+            //todo Le successive due righe sono qui per leggibilità, per una maggiore efficienza spostarle nel metodo di init
+            int limit_x = N_Matrix.length - 1; //Dimensione righe matrice N_Matrix
+            int limit_y = N_Matrix[0].length - 1; //Dimensione colonne matrice N_Matrix
+            //Aggiorno tutti i valori in alto
+            for ( int i = 0; i < k && ( x-i >= 0 ); i++ ) {
+                if ((x - i <= limit_x)) {
+                    partial_sum_N_Matrix = invert_matrix(x - i, y, my_move, N_Matrix, partial_sum_N_Matrix);
+                }
+            }
+        }
+    }
+
+    //Aggiornamento valori matrice K1_Matrix ( Matrice delle diagonali dal basso verso l'alto )
+    private void invert_K1_Matrix(){
+        if (K1_Matrix != null){
+            //todo Le successive due righe sono qui per leggibilità, per una maggiore efficienza verranno spostate nel metodo di init
+            int K1_Matrix_Y = K1_Matrix[0].length - 1; // Numero colonne matrice K2_Matrix contate da zero
+            int K1_Location_X = m - K1_Matrix.length + 1; //Riga della matrice in cui comincia la nostra matrice K1 (Parte arancio in foglio UNO )
+
+            //Aggiorno tutti i valori nella diagonale muovendomi in direzione ' in basso a sinstra '
+            for (int i = 0; i < k && x+i <= m && y-i >= 0; i++){
+                if ( (x+i) >= K1_Location_X && y-i <= K1_Matrix_Y){
+                    partial_sum_K1_Matrix = invert_matrix(x + i - K1_Location_X, y-i, my_move, K1_Matrix, partial_sum_K1_Matrix);
+                }
+            }
+        }
+    }
+
+    private void invert_K2_Matrix(){
+        if (K2_Matrix != null){
+            //todo Le successive due righe sono qui per leggibilità, per una maggiore efficienza verranno spostate nel metodo di init
+            int K2_Matrix_X = K2_Matrix.length - 1; //Numero righe matrice K2_Matrix contate partendo da zero
+            int K2_Matrix_Y = K2_Matrix[0].length - 1; //Numero colonne matrice K2_Matrix contato partendo da zero
+
+            //Aggiorno tutti i valori nella diagonale muovendomi in direzione ' in alto a sinistra '
+            for (int i = 0; i < k && (x-i) >= 0 && (y-i) >= 0; i++){
+                if (x-i <= K2_Matrix_X && y-i <= K2_Matrix_Y){
+                    partial_sum_K2_Matrix = invert_matrix(x-i, y-i, my_move, K2_Matrix, partial_sum_K2_Matrix);
+                }
+            }
+        }
+    }
+
+    public void print_partials(){
+        //System.out.println("\n"+partial_sum_M_Matrix +" "+ partial_sum_N_Matrix+" "+ partial_sum_K1_Matrix +" "+ partial_sum_K2_Matrix+"\n");
+    }
+
+    public void single_invert_matrix_state(MNKCell cell, MNKCellState state){
+        this.x = cell.i;
+        this.y = cell.j;
+        if (( state == MNKCellState.P1 && first_player) || (state == MNKCellState.P2 && !first_player) ) this.my_move = true;
+        else this.my_move = false;
+        invert_M_Matrix();
+        invert_N_Matrix();
+        invert_K1_Matrix();
+        invert_K2_Matrix();
+        if (partial_sum_M_Matrix != wrong_sum(M_Matrix)) {
+            System.out.println("ERRORE current: "+partial_sum_M_Matrix+" correct: "+wrong_sum(M_Matrix)+"\n");
+        }
+        if (partial_sum_N_Matrix != wrong_sum(N_Matrix)) {
+            System.out.println("ERRORE current: "+partial_sum_N_Matrix+" correct: "+wrong_sum(N_Matrix)+"\n");
+        }
+        calcolate_eval_value(M_Matrix, N_Matrix, K1_Matrix, K2_Matrix);
+        print_partials();
+    }
+
+    public int wrong_sum(int[][][] matrix){
+        int tot = 0;
+        for(int i = 0; i <matrix.length; i++){
+            for(int j = 0; j<matrix[0].length; j++){
+                if(matrix[i][j][0] > 0){
+                    if(matrix[i][j][1] == 0){
+                        tot += matrix[i][j][0];
+                    }
+                } else if(matrix[i][j][1] > 0){
+                    tot -= matrix[i][j][1];
+                }
+            }
+        }
+        return tot;
+    }
+
     public void single_update_matrix_state(MNKCell cell, MNKCellState state){ //Metodo per aggiornare tutte le 4 matrici dell'eval considerando una singola mossa
         this.x = cell.i;
         this.y = cell.j;
@@ -225,7 +328,15 @@ public class UpdateEvalMatrix {
         update_N_Matrix();
         update_K1_Matrix();
         update_K2_Matrix();
+        if (partial_sum_M_Matrix != wrong_sum(M_Matrix)) {
+            System.out.println("ERRORE current: "+partial_sum_M_Matrix+" correct: "+wrong_sum(M_Matrix)+"\n");
+        }
+        if (partial_sum_N_Matrix != wrong_sum(N_Matrix)) {
+            System.out.println("ERRORE current: "+partial_sum_N_Matrix+" correct: "+wrong_sum(N_Matrix)+"\n");
+        }
         if (eval != win_value) calcolate_eval_value(M_Matrix, N_Matrix, K1_Matrix, K2_Matrix);
+        print_partials();
+
     }
 
     //Metodo per aggiornare le 4 matrici dell'eval considerando una serie di mosse

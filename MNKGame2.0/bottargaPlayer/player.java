@@ -21,9 +21,9 @@ public class player implements MNKPlayer {
 
     @Override
     public MNKCell selectCell(MNKCell[] FC, MNKCell[] MC) {
-        alphabeta runner = new alphabeta(this.M, this.N, this.K, this.first, 1, MC, FC);
+        alphabeta runner = new alphabeta(this.M, this.N, this.K, this.first, 10, MC, FC);
 
-        return null;
+        return runner.start();
     }
 
     @Override

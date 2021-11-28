@@ -25,6 +25,7 @@ public class alphabeta {
     private Long[][] zobrist;
     private int M;
     private int N;
+    private int k;
     private customMNKCell[] FC;
 
     public alphabeta(int M, int N, int K, boolean first, int maxdepth, MNKCell[] MC, MNKCell[] FC){
@@ -33,6 +34,7 @@ public class alphabeta {
         this.current_matrix = new UpdateEvalMatrix(M,N,K,first, m.M_Matrix(), m.N_Matrix(), m.K1_Matrix(), m.K2_Matrix());
         this.current_matrix.multiple_update_matrix(MC);
         this.FC = new customMNKCell[FC.length];
+        this.k = K;
         if(first){
             this.me = MNKCellState.P1;
             this.enemy = MNKCellState.P2;
@@ -56,60 +58,78 @@ public class alphabeta {
     }
 
     public MNKCell start(){
-        this.alpha = -1500;
+        alpha = -1500;
         this.beta = 1500;
-        float max = -1;
+        float max = this.current_matrix.lose_value;
         float tot;
         for(int i = 0; i < FC.length; i++){
             this.FC[i].used = true;
-            tot = recursive(1, this.FC[i].cell, this.current_matrix, this.me);
+            tot = recursive(1, this.FC[i].cell, this.current_matrix, this.me, this.current_matrix.lose_value, this.current_matrix.win_value);
+            System.out.println("cell: "+this.FC[i].cell.toString()+"\ntot: "+tot+"\n");
             this.FC[i].used = false;
+
             if(tot > max){
                 max = tot;
                 this.best = this.FC[i].cell;
+            }else if(this.best == null){
+                this.best = this.FC[i].cell;
             }
         }
-        System.out.println(max);
+        //System.out.println(max);
         return best;
     }
 
     // initialize with recursive(0,null,this.current_matrix)
-    private float recursive(int depth, MNKCell node, UpdateEvalMatrix sussymatrix, MNKCellState stato) {
-        UpdateEvalMatrix matrix = sussymatrix;
+    private float recursive(int depth, MNKCell node, UpdateEvalMatrix matrix, MNKCellState stato, float alpha, float beta) {
         matrix.single_update_matrix_state(node, stato);
-        System.out.println(node.toString() + "\ndepth:"+depth+"\neval:"+matrix.eval);
-        if(matrix.eval == 1000 || matrix.eval == -1000 || depth == this.maxdepth){ // TODO: fixa questo per vittoria o sconfitta
-            return (matrix.eval);
+        //System.out.println(node.toString() + "\ndepth: "+depth+"\nstato: "+stato.toString()+"\neval: "+matrix.eval+"\nalpha: "+alpha+"\tbeta: "+beta);
+
+        if(matrix.eval == 1000 || matrix.eval == -1000 || matrix.eval == this.k+1 || depth == this.maxdepth){ // TODO: fixa questo per vittoria o sconfitta
+            float eval = matrix.eval;
+            matrix.single_invert_matrix_state(node, stato);
+            //if(depth == 3)
+            //System.out.println(node.toString() + "\ndepth: "+depth+"\nstato: "+stato.toString()+"\neval: "+eval+"\nalpha: "+alpha+"\tbeta: "+beta);
+            return eval;
         }
+
         // massimizzante
-        if((depth % 2 == 0 && this.me == MNKCellState.P1) || (depth%2 != 0 && this.me == MNKCellState.P2)){
-            float val = -100;   // TODO: migliora questo
+        if(this.me != stato){
+            float val = matrix.lose_value;   // TODO: migliora questo
             for(int i = 0; i < FC.length; i++){
                 if(this.FC[i].used == false){ // se la cella è effettivamente libera
                     this.FC[i].used = true;
-                    val = Math.max(val, recursive(depth+1, this.FC[i].cell, matrix, this.me));
+                    float eval = recursive(depth+1, this.FC[i].cell, matrix, this.me, alpha, beta);
+                    val = Math.max(val, eval);
                     this.FC[i].used = false;
-                    this.alpha = Math.max(this.alpha, val);
-                    if(this.beta <= this.alpha){
+                    alpha = Math.max(alpha, eval);
+                    if(beta <= alpha){
                         break; // beta cut
                     }
                 }
             }
+            matrix.single_invert_matrix_state(node, stato);
+            //if(depth == 2){
+            //    System.out.println(node.toString() + "\ndepth: "+depth+"\nstato: "+stato.toString()+"\neval: "+val+"\nalpha: "+alpha+"\tbeta: "+beta);
             return val;
         }else{ // minimizzante
-            float val = 100;     // TODO: migliora questo
+            float val = matrix.win_value;     // TODO: migliora questo
             for(int i = 0; i < FC.length; i++){
                 if(this.FC[i].used == false){ // se la cella è effettivamente libera
                      // TODO: migliora questo
                     this.FC[i].used = true;
-                    val = Math.min(val, recursive(depth+1, this.FC[i].cell, matrix, this.enemy));
+                    float eval =  recursive(depth+1, this.FC[i].cell, matrix, this.enemy, alpha, beta);
+                    val = Math.min(val, eval);
                     this.FC[i].used = false;
-                    this.beta = Math.min(this.beta, val);
-                    if(this.beta <= this.alpha){
-                        break; // alpha cut
+                    beta = Math.min(beta, eval);
+                    if(beta <= alpha){
+                        break; // alpha cut TODO EDIT
                     }
                 }
             }
+            matrix.single_invert_matrix_state(node, stato);
+            //if(depth == 3){
+                //System.out.println(node.toString() + "\ndepth: "+depth+"\nstato: "+stato.toString()+"\neval: "+val+"\nalpha: "+alpha+"\tbeta: "+beta);
+            //}
             return val;
         }
     }
