@@ -30,7 +30,7 @@ public class main {
 
         MNKCell[] MC = {};
         alphabeta test = new alphabeta(M,N,K,true,10,MC,FC);
-        MNKCell move = test.start();
+        MNKCell move = test.start_iterative();
         System.out.println(move);
     }
 }

@@ -29,3 +29,17 @@ Costruiamo 4 matrici (una per ogni direzione in cui è possibile vincere), in mo
 ### Precalcolo dati
 
 - Il salvataggio del precalocolo dei dati deve avvenire in modo che vengano salvate le mosse sbagliate e non quelle corrette, in modo da risparmiare spazio.
+
+
+
+
+
+## Note alphabeta di ale
+- Descrivere bene il tipo di alphabeta
+- Descrivere move ordering
+- Descrivere iterative deepening
+- Descrivere problema della resa anticipata
+- Descrivere transposition table
+- - aspiration window
+
+- FARE BENCHMARK VARI

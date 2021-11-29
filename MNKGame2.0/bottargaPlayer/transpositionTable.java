@@ -4,7 +4,8 @@ import mnkgame.MNKCell;
 import mnkgame.MNKCellState;
 
 import java.util.Random;
-
+// TODO: implementa scambio di elementi all'interno della tabella
+// table size = 64mb circa, 2^23b
 public class transpositionTable {
     private int M;
     private int N;
