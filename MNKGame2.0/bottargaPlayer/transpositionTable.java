@@ -30,30 +30,35 @@ public class transpositionTable {
 
     // aggiunge un valore all'interno della tabella
     // non aggiorna current_hash e current_value
-    public void updatepos(MNKCell pos, MNKCellState stato, float eval, int depth, MNKCell next, BitSet type){
+    public void updatepos(MNKCell pos, MNKCellState stato, float eval, int depth, int maxdepth, MNKCell next, BitSet type){
         TableValues newvalue = new TableValues();
         newvalue.hash = this.current_hash;
         newvalue.eval = eval;
         newvalue.depth = depth;
         newvalue.next = next;
         newvalue.type = type;
+        newvalue.maxDepth = maxdepth;
         this.table[calculateIndex(this.current_hash)] = newvalue;
     }
 
     // aggiorna l'hash riportandolo indietro
     public void invertpos(MNKCell pos, MNKCellState stato){
-        this.current_hash = this.current_hash ^ (stato == MNKCellState.P1 ? zobrist[0][(this.N*pos.i) + pos.j] : zobrist[1][(this.N*pos.i) + pos.j]);
-        this.current_value = this.table[calculateIndex(this.current_hash)];
+        if(pos != null){
+            this.current_hash = this.current_hash ^ (stato == MNKCellState.P1 ? zobrist[0][(this.N*pos.i) + pos.j] : zobrist[1][(this.N*pos.i) + pos.j]);
+            this.current_value = this.table[calculateIndex(this.current_hash)];
+        }
     }
 
     // controlla se nella tabella è salvato il valore cercato
     // e aggiorna current_hash e current_value
     public boolean exist(MNKCell cell, MNKCellState stato){
-        this.current_hash = this.current_hash ^ calculatepos(cell, stato);
-        this.current_value = this.table[calculateIndex(this.current_hash)];
-        if(this.current_value != null){
-            if(this.current_value.hash == this.current_hash){
-                return true;
+        if(cell != null){
+            this.current_hash = this.current_hash ^ calculatepos(cell, stato);
+            this.current_value = this.table[calculateIndex(this.current_hash)];
+            if(this.current_value != null){
+                if(this.current_value.hash == this.current_hash){
+                    return true;
+                }
             }
         }
         return false;
