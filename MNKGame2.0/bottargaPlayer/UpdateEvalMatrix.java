@@ -38,8 +38,8 @@ public class UpdateEvalMatrix {
     private int ncelle;     // numero delle celle totali nelle varie matrici
     //todo se so che in una serie di mosse una mi ha portato alla vittoria smetto di aggiornare tutte le matrici analizzando le altre mosse? Si
     public float eval; //Valore finale che assume l'eval (-2 hai perso, -3 hai vinto, otherwise punteggio che indica quanto siamo messi bene)
-    float win_value = 1000; // valore statico di vittoria
-    float lose_value = -1000; // valore statico di sconfitta
+    public final float win_value = 1000; // valore statico di vittoria
+    public final float lose_value = -1000; // valore statico di sconfitta
     // patta -> k+1
 
     //NB: Le coordinate X ed Y sottostanti partono da 0 (come prima cella) ed arrivano ad M-1 e N-1.
@@ -69,28 +69,32 @@ public class UpdateEvalMatrix {
     }
 
     public void single_update_matrix(MNKCell cell, MNKCellState state){ //Metodo per aggiornare tutte le 4 matrici dell'eval considerando una singola mossa
-        this.x = cell.i;
-        this.y = cell.j;
-        if (( state == MNKCellState.P1 && first_player) || (state == MNKCellState.P2 && !first_player) ) this.my_move = true;
-        else this.my_move = false;
-        update_M_Matrix();
-        update_N_Matrix();
-        update_K1_Matrix();
-        update_K2_Matrix();
-        calcolate_eval_value(M_Matrix, N_Matrix, K1_Matrix, K2_Matrix);
+            if(cell != null){
+                this.x = cell.i;
+                this.y = cell.j;
+                if (( state == MNKCellState.P1 && first_player) || (state == MNKCellState.P2 && !first_player) ) this.my_move = true;
+                else this.my_move = false;
+                update_M_Matrix();
+                update_N_Matrix();
+                update_K1_Matrix();
+                update_K2_Matrix();
+                calcolate_eval_value(M_Matrix, N_Matrix, K1_Matrix, K2_Matrix);
+            }
     }
 
 
     public void single_invert_matrix(MNKCell cell, MNKCellState state){
-        this.x = cell.i;
-        this.y = cell.j;
-        if (( state == MNKCellState.P1 && first_player) || (state == MNKCellState.P2 && !first_player) ) this.my_move = true;
-        else this.my_move = false;
-        invert_M_Matrix();
-        invert_N_Matrix();
-        invert_K1_Matrix();
-        invert_K2_Matrix();
-        calcolate_eval_value(M_Matrix, N_Matrix, K1_Matrix, K2_Matrix);
+        if(cell != null){
+            this.x = cell.i;
+            this.y = cell.j;
+            if (( state == MNKCellState.P1 && first_player) || (state == MNKCellState.P2 && !first_player) ) this.my_move = true;
+            else this.my_move = false;
+            invert_M_Matrix();
+            invert_N_Matrix();
+            invert_K1_Matrix();
+            invert_K2_Matrix();
+            calcolate_eval_value(M_Matrix, N_Matrix, K1_Matrix, K2_Matrix);
+        }
     }
 
     private void calcolate_eval_value(int[][][] M, int[][][] N, int[][][] K1, int[][][] K2){
@@ -98,10 +102,9 @@ public class UpdateEvalMatrix {
             if(conta_patta == ncelle){
                 eval = k+1;
             }else{
-                eval = (float) (partial_sum_M_Matrix + partial_sum_N_Matrix + partial_sum_K1_Matrix + partial_sum_K2_Matrix) / 4;
+                eval = (float)(partial_sum_M_Matrix + partial_sum_N_Matrix + partial_sum_K1_Matrix + partial_sum_K2_Matrix) / 4;
             }
         }
-
     }
 
     private int update_matrix(int x, int y, int[][][] matrix, int partial_sum){
