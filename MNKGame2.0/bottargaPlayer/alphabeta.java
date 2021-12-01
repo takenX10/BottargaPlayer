@@ -152,15 +152,18 @@ public class alphabeta{
     private customMNKCell[] FC;
     private MNKCellState me;
     private MNKCellState enemy;
+    private boolean theoreticalLoss;
 
     public alphabeta(int M, int N, int K, boolean first, MNKCell[] MC, MNKCell[] FC){
         // imposto valori di default
         this.currentDepth = MC.length;
+        this.theoreticalLoss = false;
         this.k = K;
+
         EvalMatrix defaultMatrix = new EvalMatrix(M,N,K);
         this.current_matrix = new UpdateEvalMatrix(M,N,K,first, defaultMatrix.M_Matrix(), defaultMatrix.N_Matrix(), defaultMatrix.K1_Matrix(), defaultMatrix.K2_Matrix());
         this.current_matrix.multiple_update_matrix(MC);
-        this.FC = new customMNKCell[FC.length];
+
         if(first){
             this.me = MNKCellState.P1;
             this.enemy = MNKCellState.P2;
@@ -168,8 +171,10 @@ public class alphabeta{
             this.me = MNKCellState.P2;
             this.enemy = MNKCellState.P1;
         }
+
+        this.FC = new customMNKCell[FC.length];
         for(int i = 0; i < FC.length; i++){
-            this.FC[i] = new customMNKCell(FC[i],false);
+            this.FC[i] = new customMNKCell(FC[i],false, this.current_matrix.lose_value);
         }
     }
 
@@ -182,27 +187,43 @@ public class alphabeta{
             //System.out.println("livello "+i);
             float useless = negamax(i,1, null,this.enemy);
             maxValue();
-            if(this.bestValue == this.current_matrix.win_value || this.bestValue == this.current_matrix.lose_value|| k+1 == this.bestValue || System.currentTimeMillis() > finish){
+            // DEBUG PRINT TODO
+            //System.out.println("Maxvalue: "+this.bestValue+" "+this.bestCell);
+            if(this.bestValue == this.current_matrix.win_value || this.bestValue == this.current_matrix.lose_value || k+1 == this.bestValue || System.currentTimeMillis() > finish){
+                break;
+            }
+            if(theoreticalLoss){
                 break;
             }
         }
+
         // DEBUG PRINT TODO
         long time = System.currentTimeMillis();
         System.out.println("\nVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV");
         System.out.println("Mossa "+this.currentDepth);
+        if(theoreticalLoss || this.bestValue == this.current_matrix.lose_value){
+            System.out.println("TECNICAMENTE GIA PERSO!!!");
+        }
         System.out.println("Nodi totali raggiunti: "+this.totalNodesReached);
         System.out.println("Eval: "+this.bestValue);
-        System.out.println("Time elapsed: "+(time - finish + finishms) + (time > finish ? " (timed out)":""));
+        System.out.println("Time elapsed: "+(time - finish + finishms) + (time > finish ? "ms (timed out)":"ms"));
         System.out.println("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n");
+
+
         return this.bestCell;
     }
 
     private float negamax(int depth, int sign, MNKCell node, MNKCellState stato) {
         if(node == null){ // prima iterazione, siamo sicuramente nel caso massimizzante
+            this.theoreticalLoss = true;
             for(int i = 0; i < this.FC.length; i++){
                 if(!this.FC[i].used){
                     this.FC[i].used = true;
-                    this.FC[i].eval = - negamax(depth - 1, -sign, this.FC[i].cell, this.me);
+                    float tmpeval = - negamax(depth - 1, -sign, this.FC[i].cell, this.me);
+                    if(tmpeval != this.current_matrix.lose_value){
+                        this.theoreticalLoss = false;
+                        this.FC[i].setEval(tmpeval);
+                    }
                     this.FC[i].used = false;
                 }
             }
@@ -247,6 +268,7 @@ public class alphabeta{
         }
         this.bestCell = max.cell;
         this.bestValue = max.eval;
+
         // TODO DEBUG PRINT
         //System.out.println("Max eval value: "+max.eval);
     }

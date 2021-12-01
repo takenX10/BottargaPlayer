@@ -7,9 +7,10 @@ public class customMNKCell {
     public boolean used;
     public float eval;
 
-    customMNKCell(MNKCell cell, boolean used){
+    customMNKCell(MNKCell cell, boolean used, float eval){
         this.cell = cell;
         this.used = used;
+        this.eval = eval;
     }
 
     public void setEval(float eval){
