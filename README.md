@@ -40,6 +40,7 @@ Costruiamo 4 matrici (una per ogni direzione in cui è possibile vincere), in mo
 - Descrivere iterative deepening
 - Descrivere problema della resa anticipata
 - Descrivere transposition table
-- - aspiration window
+- aspiration window
+- tornare indietro con le mosse è più efficiente
 
 - FARE BENCHMARK VARI

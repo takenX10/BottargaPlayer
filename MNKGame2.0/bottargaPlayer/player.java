@@ -21,9 +21,11 @@ public class player implements MNKPlayer {
 
     @Override
     public MNKCell selectCell(MNKCell[] FC, MNKCell[] MC) {
-        // TODO: elimina parametro maxdepth
-        alphabeta runner = new alphabeta(this.M, this.N, this.K, this.first, 10, MC, FC);
-        return runner.start_iterative();
+        //alphabeta runner = new alphabeta(this.M, this.N, this.K, this.first, MC.length, MC, FC);
+        alphabeta runner = new alphabeta(this.M, this.N, this.K, this.first, MC, FC);
+
+        //return runner.start_iterative();
+        return runner.iterative_negamax();
     }
 
     @Override

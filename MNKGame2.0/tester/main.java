@@ -5,7 +5,7 @@ import mnkgame.*;
 //Questo main contiene degli esempi utili a capire praticamente come usare le classi EvalMatrix ed UpdateEvalMatrix.
 public class main {
     public static void main(String[] args) {
-        int M = 3;
+        int M = 4;
         int N = 3;
         int K = 3;
         EvalMatrix my_eval_matrix = new EvalMatrix(M, N, K);
@@ -25,12 +25,16 @@ public class main {
         MNKCell g = new MNKCell(2,0, MNKCellState.FREE);
         MNKCell h = new MNKCell(2,1, MNKCellState.FREE);
         MNKCell i = new MNKCell(2,2, MNKCellState.FREE);
+        MNKCell j = new MNKCell(3,0, MNKCellState.FREE);
+        MNKCell k = new MNKCell(3,1, MNKCellState.FREE);
+        MNKCell l = new MNKCell(3,2, MNKCellState.FREE);
 
-        MNKCell[] FC = {a,b,c,d,e,f,g,h,i};
+        MNKCell[] FC = {a,b,c,d,e,f,g,h,i,j,k,l};
 
         MNKCell[] MC = {};
-        alphabeta test = new alphabeta(M,N,K,true,10,MC,FC);
-        MNKCell move = test.start_iterative();
+        player pg = new player();
+        pg.initPlayer(M,N,K,true,10);
+        MNKCell move = pg.selectCell(FC,MC);
         System.out.println(move);
     }
 }
