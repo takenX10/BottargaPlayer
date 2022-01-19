@@ -21,10 +21,8 @@ public class player implements MNKPlayer {
 
     @Override
     public MNKCell selectCell(MNKCell[] FC, MNKCell[] MC) {
-        //alphabeta runner = new alphabeta(this.M, this.N, this.K, this.first, MC.length, MC, FC);
-        alphabeta runner = new alphabeta(this.M, this.N, this.K, this.first, MC, FC);
+        alphabeta runner = new alphabeta(this.M, this.N, this.K, this.first, MC, FC, timeout);
 
-        //return runner.start_iterative();
         return runner.iterative_negamax();
     }
 

@@ -17,7 +17,7 @@ public class alphabeta{
     // alphabeta, negamax e transposition table.
 
     // costanti
-    private final long finishms = 9800;
+    private long finishms;
     private final int ttableSize = (int)Math.pow(2,20);
     private final BitSet EXACT = new BitSet(2);
     private final BitSet UPPER = new BitSet(2);
@@ -29,6 +29,8 @@ public class alphabeta{
     private int totalNodesReached;
     private int TranspositionTableMatches;
     private int totalCuts;
+    private int transpositionAlphaBetacut;
+    private int exactMatch;
 
     // valori per condizioni finali
     private MNKCell bestCell;
@@ -45,16 +47,24 @@ public class alphabeta{
     private final customMNKCell[] FC;
     private final transpositionTable ttable;
 
-    public alphabeta(int M, int N, int K, boolean first, MNKCell[] MC, MNKCell[] FC){
+    // DEBUG TODO REMOVE
+    private final Boolean debugPrint = false;
+    private final Boolean debugLivello = false;
+    private final Boolean debugLevels = false;
+
+    public alphabeta(int M, int N, int K, boolean first, MNKCell[] MC, MNKCell[] FC, Integer timeout){
         // azzera valori benchmark
         this.totalNodesReached = 0;
         this.totalCuts = 0;
         this.TranspositionTableMatches = 0;
+        this.transpositionAlphaBetacut = 0;
+        this.exactMatch = 0;
 
         // imposto condizioni finali
         this.currentDepth = MC.length;
         this.theoreticalLoss = false;
         this.k = K;
+        this.finishms = timeout * 1000 - 200;
 
         // imposta costanti
         this.EXACT.set(1);
@@ -87,16 +97,20 @@ public class alphabeta{
         this.finish = System.currentTimeMillis() + finishms;
         for(currentMaxDepth = 1;;currentMaxDepth++){
             // DEBUG TODO REMOVE
-            //System.out.println("livello "+currentMaxDepth);
+            if(debugLivello){
+                System.out.println("livello "+currentMaxDepth);
+            }
 
             this.last_depth = true; // viene cambiato in false se avviene un taglio per profondità massima
 
+
             // return value di negamax inutile
             negamax(currentMaxDepth,1, null,this.enemy, this.current_matrix.lose_value, this.current_matrix.win_value);
-            // DEBUG TODO REMOVE IMPORTANT
-            //System.out.println("Maxvalue: "+this.bestValue+" "+this.bestCell);
-
             maxValue();
+            // DEBUG TODO REMOVE IMPORTANT
+            if(debugLivello){
+                System.out.println("Maxvalue: "+this.bestValue+" "+this.bestCell);
+            }
 
             // pareggio no perchè se ad esempio alcuni nodi pareggiano e altri
             // non sono stati ancora esplorati non ha senso finire senza esplorarli
@@ -110,25 +124,30 @@ public class alphabeta{
 
         // DEBUG TODO REMOVE
         long time = System.currentTimeMillis();
-        System.out.println("\nVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV");
-        System.out.println("Mossa "+this.currentDepth);
-        if(theoreticalLoss || this.bestValue == this.current_matrix.lose_value){
-            System.out.println("TECNICAMENTE GIA PERSO O PAREGGIATO!!!");
+        if(debugPrint){
+            System.out.println("\nVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV");
+            System.out.println("Profondita raggiunta: "+currentMaxDepth);
+            System.out.println("Mossa "+this.currentDepth);
+            if(theoreticalLoss || this.bestValue == this.current_matrix.lose_value){
+                System.out.println("TECNICAMENTE GIA PERSO O PAREGGIATO!!!");
+            }
+            System.out.println("Total alphabeta cuts: "+this.totalCuts);
+            System.out.println("Transposition Table match: "+this.TranspositionTableMatches);
+            System.out.println("Transposition Table exact match: "+this.exactMatch);
+            System.out.println("Transposition Table alphabeta cut: "+this.transpositionAlphaBetacut);
+            System.out.println("Nodi totali raggiunti: "+this.totalNodesReached);
+            System.out.println("Eval: "+this.bestValue);
+            System.out.println("Time elapsed: "+(time - finish + finishms) + (time > finish ? "ms (timed out)":"ms"));
+            System.out.println("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n");
         }
-        System.out.println("Total alphabeta cuts: "+this.totalCuts);
-        System.out.println("Transposition Table match: "+this.TranspositionTableMatches);
-        System.out.println("Nodi totali raggiunti: "+this.totalNodesReached);
-        System.out.println("Eval: "+this.bestValue);
-        System.out.println("Time elapsed: "+(time - finish + finishms) + (time > finish ? "ms (timed out)":"ms"));
-        System.out.println("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n");
-
+        
         maxValue();
         return this.bestCell;
     }
 
     private float negamax(int depth, int sign, MNKCell node, MNKCellState stato, float alpha, float beta) {
         // DEBUG TODO REMOVE
-        //System.out.println("Cella corrente: "+node+"\nstato: "+stato+"\ndepth: "+depth+"\n");
+        //System.out.println("-->>>Cella corrente: "+node+" stato: "+stato+" depth: "+depth + "eval: da calcolare");    
 
         float alphaOrig = alpha;
 
@@ -145,12 +164,13 @@ public class alphabeta{
         // l'elemento sia presente o no, quindi è necessario ritornare indietro con la funzione
         // ttable.invertpos(node, stato) prima di fare la return (stessa cosa dell'update della matrice)
         if(this.ttable.exist(node,stato)){
-            if(this.ttable.current_value.depth <= depth){
+            if(this.ttable.current_value.depth == depth){
                 this.TranspositionTableMatches++;
                 if(this.ttable.current_value.type == this.EXACT){
                     // quando entra nell'if sottostante il valore è stato trovato nell'
                     // iterazione attuale, altrimenti in precedenti
                     if(this.ttable.current_value.maxDepth == this.currentMaxDepth){
+                        this.exactMatch++;
                         float eval = this.ttable.current_value.eval;
                         this.ttable.invertpos(node,stato);
                         return eval;
@@ -160,11 +180,11 @@ public class alphabeta{
 
                 }else if(this.ttable.current_value.type == UPPER){
                     beta = Math.min(beta, this.ttable.current_value.eval);
-                }else{
+                }else if(this.ttable.current_value.type == LOWER){
                     alpha = Math.max(alpha, this.ttable.current_value.eval);
                 }
                 if(alpha >= beta){
-                    this.totalCuts++;
+                    this.transpositionAlphaBetacut++;
                     float eval = this.ttable.current_value.eval;
                     this.ttable.invertpos(node,stato);
                     return eval;
@@ -174,8 +194,9 @@ public class alphabeta{
 
         // aggiorno la matrice allo stato corrente (va poi invertita prima di fare return)
         this.current_matrix.single_update_matrix(node, stato);
+
         // nodo foglia
-        if(this.current_matrix.eval == this.current_matrix.win_value || this.current_matrix.lose_value == this.current_matrix.eval || this.k + 1 == this.current_matrix.eval || - this.k - 1 == this.current_matrix.eval){
+        if(node != null && this.current_matrix.eval == this.current_matrix.win_value || this.current_matrix.lose_value == this.current_matrix.eval || this.k + 1 == this.current_matrix.eval || - this.k - 1 == this.current_matrix.eval){
             float tmpeval = this.current_matrix.eval;
             this.ttable.invertpos(node,stato);
             this.current_matrix.single_invert_matrix(node,stato);
@@ -215,9 +236,9 @@ public class alphabeta{
         // inserimento valore finale nella transposition table
         BitSet currentType;
         if(maxscore <= alphaOrig){
-            currentType = this.UPPER;
-        }else if(maxscore >= beta){
             currentType = this.LOWER;
+        }else if(maxscore >= beta){
+            currentType = this.UPPER;
         }else{
             currentType = this.EXACT;
         }
@@ -242,7 +263,9 @@ public class alphabeta{
             islost = true;
         }
         // DEBUG TODO REMOVE
-        //System.out.println(this.FC[0].cell.toString()+ " "+this.FC[0].getEval()+ " "+ this.FC[0].lost + " " +this.FC[0].lostVal);
+        if(debugLevels){
+            System.out.println(this.FC[0].cell.toString()+ " "+this.FC[0].getEval()+ " "+ this.FC[0].lost + " " +this.FC[0].lostVal);
+        }
 
         for(int i = 1; i < this.FC.length; i++){
             if(this.FC[i].getEval() == - this.k - 1){
@@ -257,7 +280,9 @@ public class alphabeta{
             }
 
             // DEBUG TODO REMOVE
-            //System.out.println(this.FC[i].cell.toString()+ " "+this.FC[i].getEval()+ " "+ this.FC[i].lost+ " " +this.FC[i].lostVal);
+            if(debugLevels){
+                System.out.println(this.FC[i].cell.toString()+ " "+this.FC[i].getEval()+ " "+ this.FC[i].lost+ " " +this.FC[i].lostVal);
+            }
 
         }
 
@@ -271,8 +296,6 @@ public class alphabeta{
                 }
             }
         }
-
-        //System.out.println("");
         this.bestCell = max.cell;
         this.bestValue = max.eval;
     }

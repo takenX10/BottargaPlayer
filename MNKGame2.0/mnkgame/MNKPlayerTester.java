@@ -306,19 +306,18 @@ public class MNKPlayerTester {
 			System.out.println("Rounds    : " + ROUNDS);
 			System.out.println("Timeout   : " + TIMEOUT + " secs\n\n");
 		}
-
+		Integer winp1=0, winp2=0, draw=0;
 		for(int i = 1; i <= ROUNDS; i++) {
 			if(VERBOSE) System.out.println("\n**** ROUND " + i + " ****");
 			initGame();
 			GameState state = runGame();
-
 			switch(state) {
-				case WINP1: P1SCORE += WINP1SCORE; break;
-				case WINP2: P2SCORE += WINP2SCORE; break;
-				case ERRP1: P2SCORE += ERRSCORE;   break;
-				case ERRP2: P1SCORE += ERRSCORE;   break;
+				case WINP1: P1SCORE += WINP1SCORE; winp1++; break;
+				case WINP2: P2SCORE += WINP2SCORE; winp2++; break;
+				case ERRP1: P2SCORE += ERRSCORE;   winp2++;break;
+				case ERRP2: P1SCORE += ERRSCORE;   winp1++;break;
 				case DRAW : P1SCORE += DRAWSCORE;
-				            P2SCORE += DRAWSCORE;
+				            P2SCORE += DRAWSCORE;draw++;
 				            break;
 			}
 			if(VERBOSE) {
@@ -329,5 +328,8 @@ public class MNKPlayerTester {
 		if(VERBOSE) System.out.println("\n**** FINAL SCORE ****");
 		System.out.println(Player[0].playerName() + " " + P1SCORE);
 		System.out.println(Player[1].playerName() + " " + P2SCORE);	
+		System.out.println("\nWin "+Player[0].playerName()+": "+winp1.toString());
+		System.out.println("Win "+Player[1].playerName()+": "+winp2.toString());
+		System.out.println("Draws: "+draw.toString());
 	}
 }
