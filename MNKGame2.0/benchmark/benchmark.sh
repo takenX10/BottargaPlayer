@@ -21,7 +21,7 @@ start_round(){
     echo "# End of first round, round duration: $duration seconds"
     echo "# End of first round, round duration: $duration seconds" >> $var3
     cat $tempfile >> $var3
-    python3 ../round_recap.py $tempfile
+    python3 ../benchmark/round_recap.py $tempfile
 
     start_round=$SECONDS
     java mnkgame.MNKPlayerTester $1 $var2 $var1 -v -t $time -r $round_per_type > $tempfile 2> >(grep -v "^Picked up _JAVA_OPTIONS:" >&2)
@@ -29,7 +29,7 @@ start_round(){
     echo "# End of second round, round duration: $duration seconds"
     echo "# End of second round, round duration: $duration seconds" >> $var3
     cat $tempfile >> $var3
-    python3 ../round_recap.py $tempfile
+    python3 ../benchmark/round_recap.py $tempfile
     echo " ----------------------------------------------"
     local duration=$(( SECONDS - $BENCHMARK_START ))
     echo ""
@@ -38,7 +38,7 @@ start_round(){
 }
 
 quit_script(){
-    cd ..
+    cd ../benchmark
     python3 benchmark_parser.py $var3
     exit 1   
 }
@@ -89,7 +89,7 @@ full_benchmark(){
     start_round "10 10 5"
     start_round "50 50 10"
     start_round "70 70 10"
-}}
+}
 
 cd ..
 
@@ -109,6 +109,6 @@ BENCHMARK_START=$SECONDS
 
 # start_round "3 3 3"
 
-full_benchmark
+validator_benchmark
 
 quit_script
