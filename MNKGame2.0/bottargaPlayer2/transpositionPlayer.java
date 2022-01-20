@@ -1,10 +1,10 @@
-package bottargaPlayer;
+package bottargaPlayer2;
 
-import mnkgame.MNKCell;
 import mnkgame.MNKPlayer;
+import mnkgame.MNKCell;
 
-//Questo main contiene degli esempi utili a capire praticamente come usare le classi EvalMatrix ed UpdateEvalMatrix.
-public class player implements MNKPlayer {
+// Classe negamax 
+public class transpositionPlayer implements MNKPlayer{
     private int M;
     private int N;
     private int K;
@@ -21,13 +21,14 @@ public class player implements MNKPlayer {
 
     @Override
     public MNKCell selectCell(MNKCell[] FC, MNKCell[] MC) {
-        alphabeta runner = new alphabeta(this.M, this.N, this.K, this.first, MC, FC, timeout);
+        negamaxAlphabetaTransposition runner = new negamaxAlphabetaTransposition(this.M, this.N, this.K, this.first, MC, FC, timeout);
 
-        return runner.iterative_negamax();
+        return runner.iterative_minimax();
     }
 
     @Override
     public String playerName() {
-        return "bottargaPlayer";
+        return "bottargaPlayer-transposition";
     }
+    
 }

@@ -1,0 +1,3325 @@
+
+# End of first round, round duration: 0 seconds
+Game type : 3,3,3
+Player1   : bottargaPlayer-NegaMax
+Player2   : bottargaPlayer
+Rounds    : 2
+Timeout   : 10 secs
+
+
+
+**** ROUND 1 ****
+Initializing 3,3,3 board
+Initializing bottargaPlayer-NegaMax as Player 1
+Initializing bottargaPlayer as Player 2
+
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 9
+Mossa 0
+Nodi esplorati: 29631
+Total alphabeta cuts: 11523
+Eval: Status: DRAW		Value: 9.0
+Time elapsed: 19ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [0,2]
+Player 2 (bottargaPlayer) -> [1,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 7
+Mossa 2
+Nodi esplorati: 4019
+Total alphabeta cuts: 1394
+Eval: Status: DRAW		Value: 9.0
+Time elapsed: 2ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [0,0]
+Player 2 (bottargaPlayer) -> [0,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 5
+Mossa 4
+Nodi esplorati: 123
+Total alphabeta cuts: 36
+Eval: Status: DRAW		Value: 9.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [2,1]
+Player 2 (bottargaPlayer) -> [1,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 3
+Mossa 6
+Nodi esplorati: 25
+Total alphabeta cuts: 4
+Eval: Status: DRAW		Value: 9.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [2,2]
+Player 2 (bottargaPlayer) -> [1,0]
+
+Game state    : WINP2
+Current score : bottargaPlayer-NegaMax (0) - bottargaPlayer (3)
+
+**** ROUND 2 ****
+Initializing 3,3,3 board
+Initializing bottargaPlayer-NegaMax as Player 1
+Initializing bottargaPlayer as Player 2
+
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 9
+Mossa 0
+Nodi esplorati: 29631
+Total alphabeta cuts: 11523
+Eval: Status: DRAW		Value: 9.0
+Time elapsed: 14ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [0,2]
+Player 2 (bottargaPlayer) -> [1,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 7
+Mossa 2
+Nodi esplorati: 4019
+Total alphabeta cuts: 1394
+Eval: Status: DRAW		Value: 9.0
+Time elapsed: 2ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [0,0]
+Player 2 (bottargaPlayer) -> [0,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 5
+Mossa 4
+Nodi esplorati: 123
+Total alphabeta cuts: 36
+Eval: Status: DRAW		Value: 9.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [2,1]
+Player 2 (bottargaPlayer) -> [1,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 3
+Mossa 6
+Nodi esplorati: 25
+Total alphabeta cuts: 4
+Eval: Status: DRAW		Value: 9.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [2,2]
+Player 2 (bottargaPlayer) -> [1,0]
+
+Game state    : WINP2
+Current score : bottargaPlayer-NegaMax (0) - bottargaPlayer (6)
+
+**** FINAL SCORE ****
+bottargaPlayer-NegaMax 0
+bottargaPlayer 6
+
+Win bottargaPlayer-NegaMax: 0
+Win bottargaPlayer: 2
+Draws: 0
+# End of second round, round duration: 0 seconds
+Game type : 3,3,3
+Player1   : bottargaPlayer
+Player2   : bottargaPlayer-NegaMax
+Rounds    : 2
+Timeout   : 10 secs
+
+
+
+**** ROUND 1 ****
+Initializing 3,3,3 board
+Initializing bottargaPlayer as Player 1
+Initializing bottargaPlayer-NegaMax as Player 2
+
+Player 1 (bottargaPlayer) -> [1,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 8
+Mossa 1
+Nodi esplorati: 9623
+Total alphabeta cuts: 3241
+Eval: Status: DRAW		Value: 9.0
+Time elapsed: 8ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [0,0]
+Player 1 (bottargaPlayer) -> [2,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 6
+Mossa 3
+Nodi esplorati: 360
+Total alphabeta cuts: 107
+Eval: Status: DRAW		Value: 9.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [0,1]
+Player 1 (bottargaPlayer) -> [0,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 4
+Mossa 5
+Nodi esplorati: 72
+Total alphabeta cuts: 19
+Eval: Status: DRAW		Value: 9.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [2,0]
+Player 1 (bottargaPlayer) -> [1,0]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 7
+Nodi esplorati: 7
+Total alphabeta cuts: 1
+Eval: Status: DRAW		Value: 8.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [1,2]
+Player 1 (bottargaPlayer) -> [2,2]
+
+Game state    : DRAW
+Current score : bottargaPlayer (1) - bottargaPlayer-NegaMax (1)
+
+**** ROUND 2 ****
+Initializing 3,3,3 board
+Initializing bottargaPlayer as Player 1
+Initializing bottargaPlayer-NegaMax as Player 2
+
+Player 1 (bottargaPlayer) -> [1,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 8
+Mossa 1
+Nodi esplorati: 9623
+Total alphabeta cuts: 3241
+Eval: Status: DRAW		Value: 9.0
+Time elapsed: 4ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [0,0]
+Player 1 (bottargaPlayer) -> [2,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 6
+Mossa 3
+Nodi esplorati: 360
+Total alphabeta cuts: 107
+Eval: Status: DRAW		Value: 9.0
+Time elapsed: 1ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [0,1]
+Player 1 (bottargaPlayer) -> [0,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 4
+Mossa 5
+Nodi esplorati: 72
+Total alphabeta cuts: 19
+Eval: Status: DRAW		Value: 9.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [2,0]
+Player 1 (bottargaPlayer) -> [1,0]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 7
+Nodi esplorati: 7
+Total alphabeta cuts: 1
+Eval: Status: DRAW		Value: 8.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [1,2]
+Player 1 (bottargaPlayer) -> [2,2]
+
+Game state    : DRAW
+Current score : bottargaPlayer (2) - bottargaPlayer-NegaMax (2)
+
+**** FINAL SCORE ****
+bottargaPlayer 2
+bottargaPlayer-NegaMax 2
+
+Win bottargaPlayer: 0
+Win bottargaPlayer-NegaMax: 0
+Draws: 2
+# End of first round, round duration: 1 seconds
+Game type : 4,3,3
+Player1   : bottargaPlayer-NegaMax
+Player2   : bottargaPlayer
+Rounds    : 2
+Timeout   : 10 secs
+
+
+
+**** ROUND 1 ****
+Initializing 4,3,3 board
+Initializing bottargaPlayer-NegaMax as Player 1
+Initializing bottargaPlayer as Player 2
+
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 7
+Mossa 0
+Nodi esplorati: 29914
+Total alphabeta cuts: 8494
+Eval: Status: WIN		Value: 7.0
+Time elapsed: 19ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [1,1]
+Player 2 (bottargaPlayer) -> [2,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 5
+Mossa 2
+Nodi esplorati: 4466
+Total alphabeta cuts: 885
+Eval: Status: WIN		Value: 7.0
+Time elapsed: 2ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [2,0]
+Player 2 (bottargaPlayer) -> [0,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 3
+Mossa 4
+Nodi esplorati: 191
+Total alphabeta cuts: 32
+Eval: Status: WIN		Value: 7.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [1,0]
+Player 2 (bottargaPlayer) -> [3,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 1
+Mossa 6
+Nodi esplorati: 4
+Total alphabeta cuts: 1
+Eval: Status: WIN		Value: 7.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [1,2]
+
+Game state    : WINP1
+Current score : bottargaPlayer-NegaMax (2) - bottargaPlayer (0)
+
+**** ROUND 2 ****
+Initializing 4,3,3 board
+Initializing bottargaPlayer-NegaMax as Player 1
+Initializing bottargaPlayer as Player 2
+
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 7
+Mossa 0
+Nodi esplorati: 29914
+Total alphabeta cuts: 8494
+Eval: Status: WIN		Value: 7.0
+Time elapsed: 26ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [1,1]
+Player 2 (bottargaPlayer) -> [2,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 5
+Mossa 2
+Nodi esplorati: 4466
+Total alphabeta cuts: 885
+Eval: Status: WIN		Value: 7.0
+Time elapsed: 2ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [2,0]
+Player 2 (bottargaPlayer) -> [0,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 3
+Mossa 4
+Nodi esplorati: 191
+Total alphabeta cuts: 32
+Eval: Status: WIN		Value: 7.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [1,0]
+Player 2 (bottargaPlayer) -> [3,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 1
+Mossa 6
+Nodi esplorati: 4
+Total alphabeta cuts: 1
+Eval: Status: WIN		Value: 7.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [1,2]
+
+Game state    : WINP1
+Current score : bottargaPlayer-NegaMax (4) - bottargaPlayer (0)
+
+**** FINAL SCORE ****
+bottargaPlayer-NegaMax 4
+bottargaPlayer 0
+
+Win bottargaPlayer-NegaMax: 2
+Win bottargaPlayer: 0
+Draws: 0
+# End of second round, round duration: 0 seconds
+Game type : 4,3,3
+Player1   : bottargaPlayer
+Player2   : bottargaPlayer-NegaMax
+Rounds    : 2
+Timeout   : 10 secs
+
+
+
+**** ROUND 1 ****
+Initializing 4,3,3 board
+Initializing bottargaPlayer as Player 1
+Initializing bottargaPlayer-NegaMax as Player 2
+
+Player 1 (bottargaPlayer) -> [1,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 6
+Mossa 1
+Nodi esplorati: 8419
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 1839
+Eval: Status: LOSE		Value: 7.0
+Time elapsed: 8ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [0,2]
+Player 1 (bottargaPlayer) -> [2,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 3
+Nodi esplorati: 44
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 8
+Eval: Status: LOSE		Value: 5.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [0,0]
+Player 1 (bottargaPlayer) -> [0,1]
+
+Game state    : WINP1
+Current score : bottargaPlayer (2) - bottargaPlayer-NegaMax (0)
+
+**** ROUND 2 ****
+Initializing 4,3,3 board
+Initializing bottargaPlayer as Player 1
+Initializing bottargaPlayer-NegaMax as Player 2
+
+Player 1 (bottargaPlayer) -> [1,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 6
+Mossa 1
+Nodi esplorati: 8419
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 1839
+Eval: Status: LOSE		Value: 7.0
+Time elapsed: 4ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [0,2]
+Player 1 (bottargaPlayer) -> [2,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 3
+Nodi esplorati: 44
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 8
+Eval: Status: LOSE		Value: 5.0
+Time elapsed: 1ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [0,0]
+Player 1 (bottargaPlayer) -> [0,1]
+
+Game state    : WINP1
+Current score : bottargaPlayer (4) - bottargaPlayer-NegaMax (0)
+
+**** FINAL SCORE ****
+bottargaPlayer 4
+bottargaPlayer-NegaMax 0
+
+Win bottargaPlayer: 2
+Win bottargaPlayer-NegaMax: 0
+Draws: 0
+# End of first round, round duration: 20 seconds
+Game type : 4,4,3
+Player1   : bottargaPlayer-NegaMax
+Player2   : bottargaPlayer
+Rounds    : 2
+Timeout   : 10 secs
+
+
+
+**** ROUND 1 ****
+Initializing 4,4,3 board
+Initializing bottargaPlayer-NegaMax as Player 1
+Initializing bottargaPlayer as Player 2
+
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 5
+Mossa 0
+Nodi esplorati: 10889
+Total alphabeta cuts: 1662
+Eval: Status: WIN		Value: 5.0
+Time elapsed: 11ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [1,1]
+Player 2 (bottargaPlayer) -> [0,3]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 3
+Mossa 2
+Nodi esplorati: 388
+Total alphabeta cuts: 55
+Eval: Status: WIN		Value: 5.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [2,2]
+Player 2 (bottargaPlayer) -> [3,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 1
+Mossa 4
+Nodi esplorati: 3
+Total alphabeta cuts: 1
+Eval: Status: WIN		Value: 5.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [3,3]
+
+Game state    : WINP1
+Current score : bottargaPlayer-NegaMax (2) - bottargaPlayer (0)
+
+**** ROUND 2 ****
+Initializing 4,4,3 board
+Initializing bottargaPlayer-NegaMax as Player 1
+Initializing bottargaPlayer as Player 2
+
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 5
+Mossa 0
+Nodi esplorati: 10889
+Total alphabeta cuts: 1662
+Eval: Status: WIN		Value: 5.0
+Time elapsed: 4ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [1,1]
+Player 2 (bottargaPlayer) -> [0,3]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 3
+Mossa 2
+Nodi esplorati: 388
+Total alphabeta cuts: 55
+Eval: Status: WIN		Value: 5.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [2,2]
+Player 2 (bottargaPlayer) -> [3,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 1
+Mossa 4
+Nodi esplorati: 3
+Total alphabeta cuts: 1
+Eval: Status: WIN		Value: 5.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [3,3]
+
+Game state    : WINP1
+Current score : bottargaPlayer-NegaMax (4) - bottargaPlayer (0)
+
+**** FINAL SCORE ****
+bottargaPlayer-NegaMax 4
+bottargaPlayer 0
+
+Win bottargaPlayer-NegaMax: 2
+Win bottargaPlayer: 0
+Draws: 0
+# End of second round, round duration: 0 seconds
+Game type : 4,4,3
+Player1   : bottargaPlayer
+Player2   : bottargaPlayer-NegaMax
+Rounds    : 2
+Timeout   : 10 secs
+
+
+
+**** ROUND 1 ****
+Initializing 4,4,3 board
+Initializing bottargaPlayer as Player 1
+Initializing bottargaPlayer-NegaMax as Player 2
+
+Player 1 (bottargaPlayer) -> [1,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 4
+Mossa 1
+Nodi esplorati: 7435
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 907
+Eval: Status: LOSE		Value: 5.0
+Time elapsed: 8ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [0,0]
+Player 1 (bottargaPlayer) -> [2,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 3
+Nodi esplorati: 70
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 12
+Eval: Status: LOSE		Value: 5.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [2,3]
+Player 1 (bottargaPlayer) -> [3,1]
+
+Game state    : WINP1
+Current score : bottargaPlayer (2) - bottargaPlayer-NegaMax (0)
+
+**** ROUND 2 ****
+Initializing 4,4,3 board
+Initializing bottargaPlayer as Player 1
+Initializing bottargaPlayer-NegaMax as Player 2
+
+Player 1 (bottargaPlayer) -> [1,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 4
+Mossa 1
+Nodi esplorati: 7435
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 907
+Eval: Status: LOSE		Value: 5.0
+Time elapsed: 4ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [0,0]
+Player 1 (bottargaPlayer) -> [2,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 3
+Nodi esplorati: 70
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 12
+Eval: Status: LOSE		Value: 5.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [2,3]
+Player 1 (bottargaPlayer) -> [3,1]
+
+Game state    : WINP1
+Current score : bottargaPlayer (4) - bottargaPlayer-NegaMax (0)
+
+**** FINAL SCORE ****
+bottargaPlayer 4
+bottargaPlayer-NegaMax 0
+
+Win bottargaPlayer: 2
+Win bottargaPlayer-NegaMax: 0
+Draws: 0
+# End of first round, round duration: 58 seconds
+Game type : 4,4,4
+Player1   : bottargaPlayer-NegaMax
+Player2   : bottargaPlayer
+Rounds    : 2
+Timeout   : 10 secs
+
+
+
+**** ROUND 1 ****
+Initializing 4,4,4 board
+Initializing bottargaPlayer-NegaMax as Player 1
+Initializing bottargaPlayer as Player 2
+
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 13
+Mossa 0
+Nodi esplorati: 66690000
+Total alphabeta cuts: 16109853
+Eval: Status: DRAW		Value: 12.0
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [0,0]
+Player 2 (bottargaPlayer) -> [0,3]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 14
+Mossa 2
+Nodi esplorati: 51992773
+Total alphabeta cuts: 17797851
+Eval: Status: DRAW		Value: 16.0
+Time elapsed: 7020ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [2,3]
+Player 2 (bottargaPlayer) -> [1,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 12
+Mossa 4
+Nodi esplorati: 3169182
+Total alphabeta cuts: 1046210
+Eval: Status: DRAW		Value: 16.0
+Time elapsed: 406ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [2,0]
+Player 2 (bottargaPlayer) -> [3,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 10
+Mossa 6
+Nodi esplorati: 56149
+Total alphabeta cuts: 20112
+Eval: Status: DRAW		Value: 16.0
+Time elapsed: 8ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [1,2]
+Player 2 (bottargaPlayer) -> [3,0]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 8
+Mossa 8
+Nodi esplorati: 6868
+Total alphabeta cuts: 2358
+Eval: Status: DRAW		Value: 16.0
+Time elapsed: 1ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [1,3]
+Player 2 (bottargaPlayer) -> [3,3]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 6
+Mossa 10
+Nodi esplorati: 1116
+Total alphabeta cuts: 275
+Eval: Status: DRAW		Value: 16.0
+Time elapsed: 1ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [0,1]
+Player 2 (bottargaPlayer) -> [3,2]
+
+Game state    : WINP2
+Current score : bottargaPlayer-NegaMax (0) - bottargaPlayer (3)
+
+**** ROUND 2 ****
+Initializing 4,4,4 board
+Initializing bottargaPlayer-NegaMax as Player 1
+Initializing bottargaPlayer as Player 2
+
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 13
+Mossa 0
+Nodi esplorati: 69950000
+Total alphabeta cuts: 17269605
+Eval: Status: DRAW		Value: 12.0
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [0,0]
+Player 2 (bottargaPlayer) -> [0,3]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 14
+Mossa 2
+Nodi esplorati: 51992773
+Total alphabeta cuts: 17797851
+Eval: Status: DRAW		Value: 16.0
+Time elapsed: 7012ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [2,3]
+Player 2 (bottargaPlayer) -> [1,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 12
+Mossa 4
+Nodi esplorati: 3169182
+Total alphabeta cuts: 1046210
+Eval: Status: DRAW		Value: 16.0
+Time elapsed: 439ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [2,0]
+Player 2 (bottargaPlayer) -> [3,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 10
+Mossa 6
+Nodi esplorati: 56149
+Total alphabeta cuts: 20112
+Eval: Status: DRAW		Value: 16.0
+Time elapsed: 9ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [1,2]
+Player 2 (bottargaPlayer) -> [3,0]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 8
+Mossa 8
+Nodi esplorati: 6868
+Total alphabeta cuts: 2358
+Eval: Status: DRAW		Value: 16.0
+Time elapsed: 1ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [1,3]
+Player 2 (bottargaPlayer) -> [3,3]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 6
+Mossa 10
+Nodi esplorati: 1116
+Total alphabeta cuts: 275
+Eval: Status: DRAW		Value: 16.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [0,1]
+Player 2 (bottargaPlayer) -> [3,2]
+
+Game state    : WINP2
+Current score : bottargaPlayer-NegaMax (0) - bottargaPlayer (6)
+
+**** FINAL SCORE ****
+bottargaPlayer-NegaMax 0
+bottargaPlayer 6
+
+Win bottargaPlayer-NegaMax: 0
+Win bottargaPlayer: 2
+Draws: 0
+# End of second round, round duration: 62 seconds
+Game type : 4,4,4
+Player1   : bottargaPlayer
+Player2   : bottargaPlayer-NegaMax
+Rounds    : 2
+Timeout   : 10 secs
+
+
+
+**** ROUND 1 ****
+Initializing 4,4,4 board
+Initializing bottargaPlayer as Player 1
+Initializing bottargaPlayer-NegaMax as Player 2
+
+Player 1 (bottargaPlayer) -> [0,3]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 14
+Mossa 1
+Nodi esplorati: 63780000
+Total alphabeta cuts: 17586331
+Eval: Status: DRAW		Value: 14.0
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [0,0]
+Player 1 (bottargaPlayer) -> [1,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 13
+Mossa 3
+Nodi esplorati: 6342605
+Total alphabeta cuts: 2134434
+Eval: Status: DRAW		Value: 16.0
+Time elapsed: 912ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [2,3]
+Player 1 (bottargaPlayer) -> [3,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 11
+Mossa 5
+Nodi esplorati: 449012
+Total alphabeta cuts: 144615
+Eval: Status: DRAW		Value: 16.0
+Time elapsed: 72ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [2,0]
+Player 1 (bottargaPlayer) -> [3,0]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 9
+Mossa 7
+Nodi esplorati: 31147
+Total alphabeta cuts: 9714
+Eval: Status: DRAW		Value: 16.0
+Time elapsed: 9ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [1,2]
+Player 1 (bottargaPlayer) -> [3,3]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 7
+Mossa 9
+Nodi esplorati: 2797
+Total alphabeta cuts: 848
+Eval: Status: DRAW		Value: 16.0
+Time elapsed: 1ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [1,3]
+Player 1 (bottargaPlayer) -> [3,2]
+
+Game state    : WINP1
+Current score : bottargaPlayer (2) - bottargaPlayer-NegaMax (0)
+
+**** ROUND 2 ****
+Initializing 4,4,4 board
+Initializing bottargaPlayer as Player 1
+Initializing bottargaPlayer-NegaMax as Player 2
+
+Player 1 (bottargaPlayer) -> [0,3]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 13
+Mossa 1
+Nodi esplorati: 63160000
+Total alphabeta cuts: 17423642
+Eval: Status: DRAW		Value: 14.0
+Time elapsed: 9802ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [2,3]
+Player 1 (bottargaPlayer) -> [1,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 13
+Mossa 3
+Nodi esplorati: 9049923
+Total alphabeta cuts: 2914566
+Eval: Status: DRAW		Value: 16.0
+Time elapsed: 1299ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [0,0]
+Player 1 (bottargaPlayer) -> [3,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 11
+Mossa 5
+Nodi esplorati: 449012
+Total alphabeta cuts: 144615
+Eval: Status: DRAW		Value: 16.0
+Time elapsed: 70ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [2,0]
+Player 1 (bottargaPlayer) -> [3,0]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 9
+Mossa 7
+Nodi esplorati: 31147
+Total alphabeta cuts: 9714
+Eval: Status: DRAW		Value: 16.0
+Time elapsed: 5ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [1,2]
+Player 1 (bottargaPlayer) -> [3,3]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 7
+Mossa 9
+Nodi esplorati: 2797
+Total alphabeta cuts: 848
+Eval: Status: DRAW		Value: 16.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [1,3]
+Player 1 (bottargaPlayer) -> [3,2]
+
+Game state    : WINP1
+Current score : bottargaPlayer (4) - bottargaPlayer-NegaMax (0)
+
+**** FINAL SCORE ****
+bottargaPlayer 4
+bottargaPlayer-NegaMax 0
+
+Win bottargaPlayer: 2
+Win bottargaPlayer-NegaMax: 0
+Draws: 0
+# End of first round, round duration: 153 seconds
+Game type : 5,4,4
+Player1   : bottargaPlayer-NegaMax
+Player2   : bottargaPlayer
+Rounds    : 2
+Timeout   : 10 secs
+
+
+
+**** ROUND 1 ****
+Initializing 5,4,4 board
+Initializing bottargaPlayer-NegaMax as Player 1
+Initializing bottargaPlayer as Player 2
+
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 10
+Mossa 0
+Nodi esplorati: 62640000
+Total alphabeta cuts: 12104569
+Eval: Status: NOT_DEFINED	Value: 1.0
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [0,0]
+Player 2 (bottargaPlayer) -> [1,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 10
+Mossa 2
+Nodi esplorati: 64360000
+Total alphabeta cuts: 12547033
+Eval: Status: NOT_DEFINED	Value: 1.25
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [4,0]
+Player 2 (bottargaPlayer) -> [4,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 12
+Mossa 4
+Nodi esplorati: 63470000
+Total alphabeta cuts: 13816349
+Eval: Status: DRAW		Value: 15.0
+Time elapsed: 9802ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [4,3]
+Player 2 (bottargaPlayer) -> [0,3]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 14
+Mossa 6
+Nodi esplorati: 61330000
+Total alphabeta cuts: 19704949
+Eval: Status: DRAW		Value: 20.0
+Time elapsed: 9802ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [3,0]
+Player 2 (bottargaPlayer) -> [3,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 12
+Mossa 8
+Nodi esplorati: 3734568
+Total alphabeta cuts: 1347353
+Eval: Status: DRAW		Value: 20.0
+Time elapsed: 687ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [2,3]
+Player 2 (bottargaPlayer) -> [2,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 10
+Nodi esplorati: 53
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 9
+Eval: Status: LOSE		Value: 12.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [2,0]
+Player 2 (bottargaPlayer) -> [4,1]
+
+Game state    : WINP2
+Current score : bottargaPlayer-NegaMax (0) - bottargaPlayer (3)
+
+**** ROUND 2 ****
+Initializing 5,4,4 board
+Initializing bottargaPlayer-NegaMax as Player 1
+Initializing bottargaPlayer as Player 2
+
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 10
+Mossa 0
+Nodi esplorati: 61420000
+Total alphabeta cuts: 11831505
+Eval: Status: NOT_DEFINED	Value: 1.0
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [0,0]
+Player 2 (bottargaPlayer) -> [1,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 10
+Mossa 2
+Nodi esplorati: 66970000
+Total alphabeta cuts: 13134277
+Eval: Status: NOT_DEFINED	Value: 1.25
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [4,0]
+Player 2 (bottargaPlayer) -> [4,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 11
+Mossa 4
+Nodi esplorati: 58310000
+Total alphabeta cuts: 12596043
+Eval: Status: DRAW		Value: 15.0
+Time elapsed: 9802ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [2,3]
+Player 2 (bottargaPlayer) -> [0,3]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 13
+Mossa 6
+Nodi esplorati: 64950000
+Total alphabeta cuts: 19701976
+Eval: Status: DRAW		Value: 19.0
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [1,3]
+Player 2 (bottargaPlayer) -> [3,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 12
+Mossa 8
+Nodi esplorati: 19190241
+Total alphabeta cuts: 6647747
+Eval: Status: DRAW		Value: 20.0
+Time elapsed: 3051ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [4,3]
+Player 2 (bottargaPlayer) -> [3,3]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 10
+Mossa 10
+Nodi esplorati: 103136
+Total alphabeta cuts: 34207
+Eval: Status: DRAW		Value: 20.0
+Time elapsed: 22ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [1,2]
+Player 2 (bottargaPlayer) -> [2,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 12
+Nodi esplorati: 43
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 7
+Eval: Status: LOSE		Value: 14.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [2,0]
+Player 2 (bottargaPlayer) -> [4,1]
+
+Game state    : WINP2
+Current score : bottargaPlayer-NegaMax (0) - bottargaPlayer (6)
+
+**** FINAL SCORE ****
+bottargaPlayer-NegaMax 0
+bottargaPlayer 6
+
+Win bottargaPlayer-NegaMax: 0
+Win bottargaPlayer: 2
+Draws: 0
+# End of second round, round duration: 118 seconds
+Game type : 5,4,4
+Player1   : bottargaPlayer
+Player2   : bottargaPlayer-NegaMax
+Rounds    : 2
+Timeout   : 10 secs
+
+
+
+**** ROUND 1 ****
+Initializing 5,4,4 board
+Initializing bottargaPlayer as Player 1
+Initializing bottargaPlayer-NegaMax as Player 2
+
+Player 1 (bottargaPlayer) -> [2,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 10
+Mossa 1
+Nodi esplorati: 63260000
+Total alphabeta cuts: 8927359
+Eval: Status: DRAW		Value: 10.0
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [0,0]
+Player 1 (bottargaPlayer) -> [2,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 10
+Mossa 3
+Nodi esplorati: 65240000
+Total alphabeta cuts: 10499348
+Eval: Status: NOT_DEFINED	Value: -0.25
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [4,0]
+Player 1 (bottargaPlayer) -> [3,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 12
+Mossa 5
+Nodi esplorati: 67050000
+Total alphabeta cuts: 15973453
+Eval: Status: DRAW		Value: 16.0
+Time elapsed: 9802ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [4,3]
+Player 1 (bottargaPlayer) -> [1,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 7
+Nodi esplorati: 100
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 12
+Eval: Status: LOSE		Value: 9.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [2,3]
+Player 1 (bottargaPlayer) -> [4,1]
+
+Game state    : WINP1
+Current score : bottargaPlayer (2) - bottargaPlayer-NegaMax (0)
+
+**** ROUND 2 ****
+Initializing 5,4,4 board
+Initializing bottargaPlayer as Player 1
+Initializing bottargaPlayer-NegaMax as Player 2
+
+Player 1 (bottargaPlayer) -> [2,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 10
+Mossa 1
+Nodi esplorati: 69140000
+Total alphabeta cuts: 9804191
+Eval: Status: DRAW		Value: 10.0
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [0,0]
+Player 1 (bottargaPlayer) -> [2,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 10
+Mossa 3
+Nodi esplorati: 72050000
+Total alphabeta cuts: 11635408
+Eval: Status: NOT_DEFINED	Value: -0.25
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [4,0]
+Player 1 (bottargaPlayer) -> [3,0]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 11
+Mossa 5
+Nodi esplorati: 68380000
+Total alphabeta cuts: 15892806
+Eval: Status: CANT_WIN	Value: -0.5
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [4,3]
+Player 1 (bottargaPlayer) -> [1,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 4
+Mossa 7
+Nodi esplorati: 536
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 94
+Eval: Status: LOSE		Value: 11.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [0,3]
+Player 1 (bottargaPlayer) -> [3,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 9
+Nodi esplorati: 58
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 10
+Eval: Status: LOSE		Value: 11.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [2,3]
+Player 1 (bottargaPlayer) -> [4,2]
+
+Game state    : WINP1
+Current score : bottargaPlayer (4) - bottargaPlayer-NegaMax (0)
+
+**** FINAL SCORE ****
+bottargaPlayer 4
+bottargaPlayer-NegaMax 0
+
+Win bottargaPlayer: 2
+Win bottargaPlayer-NegaMax: 0
+Draws: 0
+# End of first round, round duration: 141 seconds
+Game type : 5,5,4
+Player1   : bottargaPlayer-NegaMax
+Player2   : bottargaPlayer
+Rounds    : 2
+Timeout   : 10 secs
+
+
+
+**** ROUND 1 ****
+Initializing 5,5,4 board
+Initializing bottargaPlayer-NegaMax as Player 1
+Initializing bottargaPlayer as Player 2
+
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 9
+Mossa 0
+Nodi esplorati: 50340000
+Total alphabeta cuts: 6426984
+Eval: Status: NOT_DEFINED	Value: 1.0
+Time elapsed: 9802ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [3,0]
+Player 2 (bottargaPlayer) -> [1,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 9
+Mossa 2
+Nodi esplorati: 56270000
+Total alphabeta cuts: 9764797
+Eval: Status: NOT_DEFINED	Value: 0.75
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [3,3]
+Player 2 (bottargaPlayer) -> [0,3]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 9
+Mossa 4
+Nodi esplorati: 55150000
+Total alphabeta cuts: 8982286
+Eval: Status: NOT_DEFINED	Value: 0.5
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [4,1]
+Player 2 (bottargaPlayer) -> [2,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 9
+Mossa 6
+Nodi esplorati: 57130000
+Total alphabeta cuts: 9662108
+Eval: Status: NOT_DEFINED	Value: 0.25
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [2,0]
+Player 2 (bottargaPlayer) -> [0,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 3
+Mossa 8
+Nodi esplorati: 948
+Total alphabeta cuts: 93
+Eval: Status: WIN		Value: 11.0
+Time elapsed: 1ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [1,0]
+Player 2 (bottargaPlayer) -> [1,4]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 1
+Mossa 10
+Nodi esplorati: 15
+Total alphabeta cuts: 1
+Eval: Status: WIN		Value: 11.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [4,0]
+
+Game state    : WINP1
+Current score : bottargaPlayer-NegaMax (2) - bottargaPlayer (0)
+
+**** ROUND 2 ****
+Initializing 5,5,4 board
+Initializing bottargaPlayer-NegaMax as Player 1
+Initializing bottargaPlayer as Player 2
+
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 9
+Mossa 0
+Nodi esplorati: 54400000
+Total alphabeta cuts: 6844083
+Eval: Status: NOT_DEFINED	Value: 1.0
+Time elapsed: 9802ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [3,0]
+Player 2 (bottargaPlayer) -> [1,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 9
+Mossa 2
+Nodi esplorati: 51960000
+Total alphabeta cuts: 9104222
+Eval: Status: NOT_DEFINED	Value: 0.75
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [1,4]
+Player 2 (bottargaPlayer) -> [0,3]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 9
+Mossa 4
+Nodi esplorati: 55810000
+Total alphabeta cuts: 8602972
+Eval: Status: NOT_DEFINED	Value: 1.0
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [1,2]
+Player 2 (bottargaPlayer) -> [2,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 8
+Mossa 6
+Nodi esplorati: 3905091
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 498281
+Eval: Status: LOSE		Value: 14.0
+Time elapsed: 612ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [0,0]
+Player 2 (bottargaPlayer) -> [3,3]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 6
+Mossa 8
+Nodi esplorati: 94911
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 15776
+Eval: Status: LOSE		Value: 14.0
+Time elapsed: 17ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [4,0]
+Player 2 (bottargaPlayer) -> [4,4]
+
+Game state    : WINP2
+Current score : bottargaPlayer-NegaMax (2) - bottargaPlayer (3)
+
+**** FINAL SCORE ****
+bottargaPlayer-NegaMax 2
+bottargaPlayer 3
+
+Win bottargaPlayer-NegaMax: 1
+Win bottargaPlayer: 1
+Draws: 0
+# End of second round, round duration: 99 seconds
+Game type : 5,5,4
+Player1   : bottargaPlayer
+Player2   : bottargaPlayer-NegaMax
+Rounds    : 2
+Timeout   : 10 secs
+
+
+
+**** ROUND 1 ****
+Initializing 5,5,4 board
+Initializing bottargaPlayer as Player 1
+Initializing bottargaPlayer-NegaMax as Player 2
+
+Player 1 (bottargaPlayer) -> [0,3]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 9
+Mossa 1
+Nodi esplorati: 58690000
+Total alphabeta cuts: 9163061
+Eval: Status: NOT_DEFINED	Value: 0.5
+Time elapsed: 9802ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [1,2]
+Player 1 (bottargaPlayer) -> [1,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 9
+Mossa 3
+Nodi esplorati: 59230000
+Total alphabeta cuts: 9370723
+Eval: Status: NOT_DEFINED	Value: 0.0
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [4,1]
+Player 1 (bottargaPlayer) -> [2,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 8
+Mossa 5
+Nodi esplorati: 7955354
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 1079354
+Eval: Status: LOSE		Value: 13.0
+Time elapsed: 1274ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [0,0]
+Player 1 (bottargaPlayer) -> [2,3]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 4
+Mossa 7
+Nodi esplorati: 7486
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 983
+Eval: Status: LOSE		Value: 11.0
+Time elapsed: 1ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [4,0]
+Player 1 (bottargaPlayer) -> [2,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 9
+Nodi esplorati: 129
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 15
+Eval: Status: LOSE		Value: 11.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [4,3]
+Player 1 (bottargaPlayer) -> [2,0]
+
+Game state    : WINP1
+Current score : bottargaPlayer (2) - bottargaPlayer-NegaMax (0)
+
+**** ROUND 2 ****
+Initializing 5,5,4 board
+Initializing bottargaPlayer as Player 1
+Initializing bottargaPlayer-NegaMax as Player 2
+
+Player 1 (bottargaPlayer) -> [0,3]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 9
+Mossa 1
+Nodi esplorati: 56820000
+Total alphabeta cuts: 8995524
+Eval: Status: NOT_DEFINED	Value: 0.5
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [0,1]
+Player 1 (bottargaPlayer) -> [1,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 10
+Mossa 3
+Nodi esplorati: 56120000
+Total alphabeta cuts: 8449313
+Eval: Status: NOT_DEFINED	Value: 0.25
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [0,0]
+Player 1 (bottargaPlayer) -> [3,3]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 8
+Mossa 5
+Nodi esplorati: 15927991
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 2136805
+Eval: Status: LOSE		Value: 13.0
+Time elapsed: 2639ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [4,0]
+Player 1 (bottargaPlayer) -> [1,3]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 4
+Mossa 7
+Nodi esplorati: 3687
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 506
+Eval: Status: LOSE		Value: 11.0
+Time elapsed: 1ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [4,3]
+Player 1 (bottargaPlayer) -> [2,3]
+
+Game state    : WINP1
+Current score : bottargaPlayer (4) - bottargaPlayer-NegaMax (0)
+
+**** FINAL SCORE ****
+bottargaPlayer 4
+bottargaPlayer-NegaMax 0
+
+Win bottargaPlayer: 2
+Win bottargaPlayer-NegaMax: 0
+Draws: 0
+# End of first round, round duration: 229 seconds
+Game type : 5,5,5
+Player1   : bottargaPlayer-NegaMax
+Player2   : bottargaPlayer
+Rounds    : 2
+Timeout   : 10 secs
+
+
+
+**** ROUND 1 ****
+Initializing 5,5,5 board
+Initializing bottargaPlayer-NegaMax as Player 1
+Initializing bottargaPlayer as Player 2
+
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 10
+Mossa 0
+Nodi esplorati: 69860000
+Total alphabeta cuts: 10101555
+Eval: Status: NOT_DEFINED	Value: 0.75
+Time elapsed: 9802ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [0,0]
+Player 2 (bottargaPlayer) -> [0,3]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 10
+Mossa 2
+Nodi esplorati: 73130000
+Total alphabeta cuts: 9756174
+Eval: Status: CANT_LOSE	Value: 0.5
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [4,0]
+Player 2 (bottargaPlayer) -> [1,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 10
+Mossa 4
+Nodi esplorati: 75330000
+Total alphabeta cuts: 9767001
+Eval: Status: DRAW		Value: 14.0
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [4,1]
+Player 2 (bottargaPlayer) -> [1,4]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 10
+Mossa 6
+Nodi esplorati: 76740000
+Total alphabeta cuts: 12675551
+Eval: Status: DRAW		Value: 16.0
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [3,4]
+Player 2 (bottargaPlayer) -> [3,0]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 11
+Mossa 8
+Nodi esplorati: 80110000
+Total alphabeta cuts: 13233957
+Eval: Status: DRAW		Value: 19.0
+Time elapsed: 9802ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [2,3]
+Player 2 (bottargaPlayer) -> [2,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 12
+Mossa 10
+Nodi esplorati: 82780000
+Total alphabeta cuts: 17258327
+Eval: Status: DRAW		Value: 22.0
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [2,0]
+Player 2 (bottargaPlayer) -> [3,3]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 13
+Mossa 12
+Nodi esplorati: 13085815
+Total alphabeta cuts: 3971517
+Eval: Status: DRAW		Value: 25.0
+Time elapsed: 1584ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [4,3]
+Player 2 (bottargaPlayer) -> [0,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 11
+Mossa 14
+Nodi esplorati: 52884
+Total alphabeta cuts: 17761
+Eval: Status: DRAW		Value: 25.0
+Time elapsed: 6ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [1,3]
+Player 2 (bottargaPlayer) -> [1,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 9
+Mossa 16
+Nodi esplorati: 5488
+Total alphabeta cuts: 1940
+Eval: Status: DRAW		Value: 25.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [2,4]
+Player 2 (bottargaPlayer) -> [4,4]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 7
+Mossa 18
+Nodi esplorati: 508
+Total alphabeta cuts: 155
+Eval: Status: DRAW		Value: 25.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [2,1]
+Player 2 (bottargaPlayer) -> [0,4]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 5
+Mossa 20
+Nodi esplorati: 62
+Total alphabeta cuts: 12
+Eval: Status: DRAW		Value: 25.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [1,0]
+Player 2 (bottargaPlayer) -> [4,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 3
+Mossa 22
+Nodi esplorati: 18
+Total alphabeta cuts: 1
+Eval: Status: DRAW		Value: 25.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [3,1]
+Player 2 (bottargaPlayer) -> [0,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 1
+Mossa 24
+Nodi esplorati: 2
+Total alphabeta cuts: 0
+Eval: Status: DRAW		Value: 25.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [3,2]
+
+Game state    : DRAW
+Current score : bottargaPlayer-NegaMax (1) - bottargaPlayer (1)
+
+**** ROUND 2 ****
+Initializing 5,5,5 board
+Initializing bottargaPlayer-NegaMax as Player 1
+Initializing bottargaPlayer as Player 2
+
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 10
+Mossa 0
+Nodi esplorati: 76250000
+Total alphabeta cuts: 11189888
+Eval: Status: NOT_DEFINED	Value: 0.75
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [0,0]
+Player 2 (bottargaPlayer) -> [1,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 9
+Mossa 2
+Nodi esplorati: 81260000
+Total alphabeta cuts: 8738365
+Eval: Status: NOT_DEFINED	Value: 0.75
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [1,3]
+Player 2 (bottargaPlayer) -> [0,3]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 10
+Mossa 4
+Nodi esplorati: 78470000
+Total alphabeta cuts: 11738551
+Eval: Status: DRAW		Value: 14.0
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [2,3]
+Player 2 (bottargaPlayer) -> [1,4]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 11
+Mossa 6
+Nodi esplorati: 77620000
+Total alphabeta cuts: 13694018
+Eval: Status: DRAW		Value: 17.0
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [3,4]
+Player 2 (bottargaPlayer) -> [3,0]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 13
+Mossa 8
+Nodi esplorati: 78040000
+Total alphabeta cuts: 17448884
+Eval: Status: DRAW		Value: 21.0
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [4,1]
+Player 2 (bottargaPlayer) -> [3,3]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 14
+Mossa 10
+Nodi esplorati: 79650000
+Total alphabeta cuts: 24390526
+Eval: Status: DRAW		Value: 24.0
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [4,3]
+Player 2 (bottargaPlayer) -> [2,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 13
+Mossa 12
+Nodi esplorati: 14882399
+Total alphabeta cuts: 4436054
+Eval: Status: DRAW		Value: 25.0
+Time elapsed: 1883ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [4,0]
+Player 2 (bottargaPlayer) -> [0,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 11
+Mossa 14
+Nodi esplorati: 89319
+Total alphabeta cuts: 35046
+Eval: Status: DRAW		Value: 25.0
+Time elapsed: 13ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [2,4]
+Player 2 (bottargaPlayer) -> [1,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 9
+Mossa 16
+Nodi esplorati: 10413
+Total alphabeta cuts: 3783
+Eval: Status: DRAW		Value: 25.0
+Time elapsed: 1ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [2,1]
+Player 2 (bottargaPlayer) -> [2,0]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 7
+Mossa 18
+Nodi esplorati: 933
+Total alphabeta cuts: 306
+Eval: Status: DRAW		Value: 25.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [1,0]
+Player 2 (bottargaPlayer) -> [4,4]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 5
+Mossa 20
+Nodi esplorati: 95
+Total alphabeta cuts: 20
+Eval: Status: DRAW		Value: 25.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [3,1]
+Player 2 (bottargaPlayer) -> [0,4]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 1
+Mossa 22
+Nodi esplorati: 4
+Total alphabeta cuts: 0
+Eval: Status: DRAW		Value: 23.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [3,2]
+Player 2 (bottargaPlayer) -> [4,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 1
+Mossa 24
+Nodi esplorati: 2
+Total alphabeta cuts: 0
+Eval: Status: DRAW		Value: 23.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [0,2]
+
+Game state    : DRAW
+Current score : bottargaPlayer-NegaMax (2) - bottargaPlayer (2)
+
+**** FINAL SCORE ****
+bottargaPlayer-NegaMax 2
+bottargaPlayer 2
+
+Win bottargaPlayer-NegaMax: 0
+Win bottargaPlayer: 0
+Draws: 2
+# End of second round, round duration: 221 seconds
+Game type : 5,5,5
+Player1   : bottargaPlayer
+Player2   : bottargaPlayer-NegaMax
+Rounds    : 2
+Timeout   : 10 secs
+
+
+
+**** ROUND 1 ****
+Initializing 5,5,5 board
+Initializing bottargaPlayer as Player 1
+Initializing bottargaPlayer-NegaMax as Player 2
+
+Player 1 (bottargaPlayer) -> [0,3]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 10
+Mossa 1
+Nodi esplorati: 59320000
+Total alphabeta cuts: 8214076
+Eval: Status: NOT_DEFINED	Value: 0.5
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [0,0]
+Player 1 (bottargaPlayer) -> [1,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 10
+Mossa 3
+Nodi esplorati: 72980000
+Total alphabeta cuts: 9686538
+Eval: Status: DRAW		Value: 12.0
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [4,0]
+Player 1 (bottargaPlayer) -> [1,4]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 10
+Mossa 5
+Nodi esplorati: 77130000
+Total alphabeta cuts: 11391123
+Eval: Status: DRAW		Value: 14.0
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [4,3]
+Player 1 (bottargaPlayer) -> [3,0]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 12
+Mossa 7
+Nodi esplorati: 77050000
+Total alphabeta cuts: 12207769
+Eval: Status: DRAW		Value: 18.0
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [1,3]
+Player 1 (bottargaPlayer) -> [3,3]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 14
+Mossa 9
+Nodi esplorati: 72640000
+Total alphabeta cuts: 18630508
+Eval: Status: DRAW		Value: 22.0
+Time elapsed: 9802ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [2,4]
+Player 1 (bottargaPlayer) -> [4,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 14
+Mossa 11
+Nodi esplorati: 20784549
+Total alphabeta cuts: 5289275
+Eval: Status: DRAW		Value: 25.0
+Time elapsed: 2530ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [3,1]
+Player 1 (bottargaPlayer) -> [2,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 12
+Mossa 13
+Nodi esplorati: 53384
+Total alphabeta cuts: 14320
+Eval: Status: DRAW		Value: 24.0
+Time elapsed: 5ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [2,1]
+Player 1 (bottargaPlayer) -> [0,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 9
+Mossa 15
+Nodi esplorati: 3363
+Total alphabeta cuts: 768
+Eval: Status: DRAW		Value: 24.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [1,0]
+Player 1 (bottargaPlayer) -> [1,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 8
+Mossa 17
+Nodi esplorati: 2317
+Total alphabeta cuts: 616
+Eval: Status: DRAW		Value: 24.0
+Time elapsed: 1ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [3,4]
+Player 1 (bottargaPlayer) -> [2,0]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 6
+Mossa 19
+Nodi esplorati: 274
+Total alphabeta cuts: 63
+Eval: Status: DRAW		Value: 24.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [0,4]
+Player 1 (bottargaPlayer) -> [2,3]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 3
+Mossa 21
+Nodi esplorati: 25
+Total alphabeta cuts: 2
+Eval: Status: DRAW		Value: 24.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [4,4]
+Player 1 (bottargaPlayer) -> [4,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 1
+Mossa 23
+Nodi esplorati: 3
+Total alphabeta cuts: 0
+Eval: Status: DRAW		Value: 24.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [3,2]
+Player 1 (bottargaPlayer) -> [0,2]
+
+Game state    : DRAW
+Current score : bottargaPlayer (1) - bottargaPlayer-NegaMax (1)
+
+**** ROUND 2 ****
+Initializing 5,5,5 board
+Initializing bottargaPlayer as Player 1
+Initializing bottargaPlayer-NegaMax as Player 2
+
+Player 1 (bottargaPlayer) -> [0,3]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 10
+Mossa 1
+Nodi esplorati: 76740000
+Total alphabeta cuts: 10043675
+Eval: Status: NOT_DEFINED	Value: 0.5
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [0,0]
+Player 1 (bottargaPlayer) -> [1,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 10
+Mossa 3
+Nodi esplorati: 75340000
+Total alphabeta cuts: 9954317
+Eval: Status: DRAW		Value: 12.0
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [4,0]
+Player 1 (bottargaPlayer) -> [1,4]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 10
+Mossa 5
+Nodi esplorati: 78830000
+Total alphabeta cuts: 11620958
+Eval: Status: DRAW		Value: 14.0
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [4,3]
+Player 1 (bottargaPlayer) -> [3,0]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 12
+Mossa 7
+Nodi esplorati: 81950000
+Total alphabeta cuts: 12743589
+Eval: Status: DRAW		Value: 18.0
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [1,3]
+Player 1 (bottargaPlayer) -> [3,3]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 14
+Mossa 9
+Nodi esplorati: 76920000
+Total alphabeta cuts: 19461464
+Eval: Status: DRAW		Value: 22.0
+Time elapsed: 9802ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [2,4]
+Player 1 (bottargaPlayer) -> [4,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 14
+Mossa 11
+Nodi esplorati: 20784549
+Total alphabeta cuts: 5289275
+Eval: Status: DRAW		Value: 25.0
+Time elapsed: 2487ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [3,1]
+Player 1 (bottargaPlayer) -> [2,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 12
+Mossa 13
+Nodi esplorati: 53384
+Total alphabeta cuts: 14320
+Eval: Status: DRAW		Value: 24.0
+Time elapsed: 6ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [2,1]
+Player 1 (bottargaPlayer) -> [0,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 9
+Mossa 15
+Nodi esplorati: 3363
+Total alphabeta cuts: 768
+Eval: Status: DRAW		Value: 24.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [1,0]
+Player 1 (bottargaPlayer) -> [1,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 8
+Mossa 17
+Nodi esplorati: 2317
+Total alphabeta cuts: 616
+Eval: Status: DRAW		Value: 24.0
+Time elapsed: 1ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [3,4]
+Player 1 (bottargaPlayer) -> [2,0]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 6
+Mossa 19
+Nodi esplorati: 274
+Total alphabeta cuts: 63
+Eval: Status: DRAW		Value: 24.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [0,4]
+Player 1 (bottargaPlayer) -> [2,3]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 3
+Mossa 21
+Nodi esplorati: 25
+Total alphabeta cuts: 2
+Eval: Status: DRAW		Value: 24.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [4,4]
+Player 1 (bottargaPlayer) -> [4,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 1
+Mossa 23
+Nodi esplorati: 3
+Total alphabeta cuts: 0
+Eval: Status: DRAW		Value: 24.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [3,2]
+Player 1 (bottargaPlayer) -> [0,2]
+
+Game state    : DRAW
+Current score : bottargaPlayer (2) - bottargaPlayer-NegaMax (2)
+
+**** FINAL SCORE ****
+bottargaPlayer 2
+bottargaPlayer-NegaMax 2
+
+Win bottargaPlayer: 0
+Win bottargaPlayer-NegaMax: 0
+Draws: 2
+# End of first round, round duration: 169 seconds
+Game type : 6,4,4
+Player1   : bottargaPlayer-NegaMax
+Player2   : bottargaPlayer
+Rounds    : 2
+Timeout   : 10 secs
+
+
+
+**** ROUND 1 ****
+Initializing 6,4,4 board
+Initializing bottargaPlayer-NegaMax as Player 1
+Initializing bottargaPlayer as Player 2
+
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 9
+Mossa 0
+Nodi esplorati: 54710000
+Total alphabeta cuts: 8701362
+Eval: Status: NOT_DEFINED	Value: 0.5
+Time elapsed: 9802ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [5,3]
+Player 2 (bottargaPlayer) -> [0,3]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 9
+Mossa 2
+Nodi esplorati: 60510000
+Total alphabeta cuts: 8825999
+Eval: Status: NOT_DEFINED	Value: 1.25
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [0,2]
+Player 2 (bottargaPlayer) -> [3,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 10
+Mossa 4
+Nodi esplorati: 57570000
+Total alphabeta cuts: 10220148
+Eval: Status: NOT_DEFINED	Value: 0.5
+Time elapsed: 9802ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [0,0]
+Player 2 (bottargaPlayer) -> [2,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 10
+Mossa 6
+Nodi esplorati: 31133154
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 5435782
+Eval: Status: LOSE		Value: 16.0
+Time elapsed: 4885ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [4,0]
+Player 2 (bottargaPlayer) -> [1,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 8
+Nodi esplorati: 124
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 15
+Eval: Status: LOSE		Value: 10.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [5,1]
+Player 2 (bottargaPlayer) -> [4,1]
+
+Game state    : WINP2
+Current score : bottargaPlayer-NegaMax (0) - bottargaPlayer (3)
+
+**** ROUND 2 ****
+Initializing 6,4,4 board
+Initializing bottargaPlayer-NegaMax as Player 1
+Initializing bottargaPlayer as Player 2
+
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 9
+Mossa 0
+Nodi esplorati: 54020000
+Total alphabeta cuts: 8643770
+Eval: Status: NOT_DEFINED	Value: 0.5
+Time elapsed: 9802ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [5,3]
+Player 2 (bottargaPlayer) -> [0,3]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 9
+Mossa 2
+Nodi esplorati: 58100000
+Total alphabeta cuts: 8528346
+Eval: Status: NOT_DEFINED	Value: 1.25
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [1,0]
+Player 2 (bottargaPlayer) -> [1,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 9
+Mossa 4
+Nodi esplorati: 61500000
+Total alphabeta cuts: 9226321
+Eval: Status: NOT_DEFINED	Value: 1.25
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [0,1]
+Player 2 (bottargaPlayer) -> [5,0]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 10
+Mossa 6
+Nodi esplorati: 58390000
+Total alphabeta cuts: 14215593
+Eval: Status: CANT_LOSE	Value: 0.5
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [0,0]
+Player 2 (bottargaPlayer) -> [4,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 11
+Mossa 8
+Nodi esplorati: 55850000
+Total alphabeta cuts: 12809761
+Eval: Status: DRAW		Value: 19.0
+Time elapsed: 9802ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [2,1]
+Player 2 (bottargaPlayer) -> [3,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 5
+Mossa 10
+Nodi esplorati: 20550
+Total alphabeta cuts: 2844
+Eval: Status: WIN		Value: 15.0
+Time elapsed: 4ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [2,3]
+Player 2 (bottargaPlayer) -> [3,0]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 3
+Mossa 12
+Nodi esplorati: 490
+Total alphabeta cuts: 65
+Eval: Status: WIN		Value: 15.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [4,3]
+Player 2 (bottargaPlayer) -> [3,3]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 1
+Mossa 14
+Nodi esplorati: 5
+Total alphabeta cuts: 1
+Eval: Status: WIN		Value: 15.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [3,2]
+
+Game state    : WINP1
+Current score : bottargaPlayer-NegaMax (2) - bottargaPlayer (3)
+
+**** FINAL SCORE ****
+bottargaPlayer-NegaMax 2
+bottargaPlayer 3
+
+Win bottargaPlayer-NegaMax: 1
+Win bottargaPlayer: 1
+Draws: 0
+# End of second round, round duration: 157 seconds
+Game type : 6,4,4
+Player1   : bottargaPlayer
+Player2   : bottargaPlayer-NegaMax
+Rounds    : 2
+Timeout   : 10 secs
+
+
+
+**** ROUND 1 ****
+Initializing 6,4,4 board
+Initializing bottargaPlayer as Player 1
+Initializing bottargaPlayer-NegaMax as Player 2
+
+Player 1 (bottargaPlayer) -> [0,3]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 9
+Mossa 1
+Nodi esplorati: 55320000
+Total alphabeta cuts: 9105328
+Eval: Status: NOT_DEFINED	Value: 0.5
+Time elapsed: 9802ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [4,1]
+Player 1 (bottargaPlayer) -> [1,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 9
+Mossa 3
+Nodi esplorati: 60670000
+Total alphabeta cuts: 9706986
+Eval: Status: NOT_DEFINED	Value: 0.25
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [0,2]
+Player 1 (bottargaPlayer) -> [5,3]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 10
+Mossa 5
+Nodi esplorati: 65440000
+Total alphabeta cuts: 11839061
+Eval: Status: NOT_DEFINED	Value: 0.0
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [0,0]
+Player 1 (bottargaPlayer) -> [4,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 11
+Mossa 7
+Nodi esplorati: 67220000
+Total alphabeta cuts: 14817985
+Eval: Status: CANT_WIN	Value: -0.75
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [4,0]
+Player 1 (bottargaPlayer) -> [3,3]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 6
+Mossa 9
+Nodi esplorati: 220388
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 30400
+Eval: Status: LOSE		Value: 15.0
+Time elapsed: 35ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [5,1]
+Player 1 (bottargaPlayer) -> [2,3]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 11
+Nodi esplorati: 144
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 12
+Eval: Status: LOSE		Value: 13.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [4,3]
+Player 1 (bottargaPlayer) -> [1,3]
+
+Game state    : WINP1
+Current score : bottargaPlayer (2) - bottargaPlayer-NegaMax (0)
+
+**** ROUND 2 ****
+Initializing 6,4,4 board
+Initializing bottargaPlayer as Player 1
+Initializing bottargaPlayer-NegaMax as Player 2
+
+Player 1 (bottargaPlayer) -> [0,3]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 9
+Mossa 1
+Nodi esplorati: 57580000
+Total alphabeta cuts: 9345843
+Eval: Status: NOT_DEFINED	Value: 0.5
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [1,0]
+Player 1 (bottargaPlayer) -> [1,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 9
+Mossa 3
+Nodi esplorati: 61770000
+Total alphabeta cuts: 8372039
+Eval: Status: NOT_DEFINED	Value: 0.0
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [3,1]
+Player 1 (bottargaPlayer) -> [3,0]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 10
+Mossa 5
+Nodi esplorati: 68690000
+Total alphabeta cuts: 10933706
+Eval: Status: NOT_DEFINED	Value: 0.25
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [0,0]
+Player 1 (bottargaPlayer) -> [2,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 10
+Mossa 7
+Nodi esplorati: 71680000
+Total alphabeta cuts: 13961015
+Eval: Status: DRAW		Value: 16.0
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [4,0]
+Player 1 (bottargaPlayer) -> [1,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 4
+Mossa 9
+Nodi esplorati: 3852
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 522
+Eval: Status: LOSE		Value: 13.0
+Time elapsed: 1ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [5,1]
+Player 1 (bottargaPlayer) -> [2,1]
+
+Game state    : WINP1
+Current score : bottargaPlayer (4) - bottargaPlayer-NegaMax (0)
+
+**** FINAL SCORE ****
+bottargaPlayer 4
+bottargaPlayer-NegaMax 0
+
+Win bottargaPlayer: 2
+Win bottargaPlayer-NegaMax: 0
+Draws: 0
+# End of first round, round duration: 123 seconds
+Game type : 6,5,4
+Player1   : bottargaPlayer-NegaMax
+Player2   : bottargaPlayer
+Rounds    : 2
+Timeout   : 10 secs
+
+
+
+**** ROUND 1 ****
+Initializing 6,5,4 board
+Initializing bottargaPlayer-NegaMax as Player 1
+Initializing bottargaPlayer as Player 2
+
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 8
+Mossa 0
+Nodi esplorati: 47710000
+Total alphabeta cuts: 5754989
+Eval: Status: NOT_DEFINED	Value: 1.75
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [0,0]
+Player 2 (bottargaPlayer) -> [1,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 8
+Mossa 2
+Nodi esplorati: 49890000
+Total alphabeta cuts: 6084407
+Eval: Status: NOT_DEFINED	Value: 1.25
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [4,0]
+Player 2 (bottargaPlayer) -> [3,0]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 8
+Mossa 4
+Nodi esplorati: 52820000
+Total alphabeta cuts: 6363748
+Eval: Status: NOT_DEFINED	Value: 1.0
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [5,1]
+Player 2 (bottargaPlayer) -> [1,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 6
+Mossa 6
+Nodi esplorati: 3251771
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 254326
+Eval: Status: LOSE		Value: 12.0
+Time elapsed: 607ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [4,3]
+Player 2 (bottargaPlayer) -> [1,3]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 8
+Nodi esplorati: 124
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 21
+Eval: Status: LOSE		Value: 10.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [2,4]
+Player 2 (bottargaPlayer) -> [1,4]
+
+Game state    : WINP2
+Current score : bottargaPlayer-NegaMax (0) - bottargaPlayer (3)
+
+**** ROUND 2 ****
+Initializing 6,5,4 board
+Initializing bottargaPlayer-NegaMax as Player 1
+Initializing bottargaPlayer as Player 2
+
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 8
+Mossa 0
+Nodi esplorati: 53240000
+Total alphabeta cuts: 6326601
+Eval: Status: NOT_DEFINED	Value: 1.75
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [0,0]
+Player 2 (bottargaPlayer) -> [1,4]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 8
+Mossa 2
+Nodi esplorati: 50760000
+Total alphabeta cuts: 6393375
+Eval: Status: NOT_DEFINED	Value: 1.75
+Time elapsed: 9802ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [4,0]
+Player 2 (bottargaPlayer) -> [1,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 8
+Mossa 4
+Nodi esplorati: 55560000
+Total alphabeta cuts: 5479887
+Eval: Status: NOT_DEFINED	Value: 1.25
+Time elapsed: 9802ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [5,1]
+Player 2 (bottargaPlayer) -> [3,0]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 8
+Mossa 6
+Nodi esplorati: 57440000
+Total alphabeta cuts: 6378963
+Eval: Status: NOT_DEFINED	Value: 1.0
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [4,3]
+Player 2 (bottargaPlayer) -> [1,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 6
+Mossa 8
+Nodi esplorati: 2218978
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 151242
+Eval: Status: LOSE		Value: 14.0
+Time elapsed: 382ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [1,3]
+Player 2 (bottargaPlayer) -> [2,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 4
+Mossa 10
+Nodi esplorati: 1665
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 183
+Eval: Status: LOSE		Value: 14.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [0,3]
+Player 2 (bottargaPlayer) -> [3,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 12
+Nodi esplorati: 106
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 17
+Eval: Status: LOSE		Value: 14.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [2,4]
+Player 2 (bottargaPlayer) -> [4,1]
+
+Game state    : WINP2
+Current score : bottargaPlayer-NegaMax (0) - bottargaPlayer (6)
+
+**** FINAL SCORE ****
+bottargaPlayer-NegaMax 0
+bottargaPlayer 6
+
+Win bottargaPlayer-NegaMax: 0
+Win bottargaPlayer: 2
+Draws: 0
+# End of second round, round duration: 118 seconds
+Game type : 6,5,4
+Player1   : bottargaPlayer
+Player2   : bottargaPlayer-NegaMax
+Rounds    : 2
+Timeout   : 10 secs
+
+
+
+**** ROUND 1 ****
+Initializing 6,5,4 board
+Initializing bottargaPlayer as Player 1
+Initializing bottargaPlayer-NegaMax as Player 2
+
+Player 1 (bottargaPlayer) -> [1,4]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 8
+Mossa 1
+Nodi esplorati: 51230000
+Total alphabeta cuts: 5517016
+Eval: Status: NOT_DEFINED	Value: 0.75
+Time elapsed: 9802ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [0,0]
+Player 1 (bottargaPlayer) -> [1,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 8
+Mossa 3
+Nodi esplorati: 55600000
+Total alphabeta cuts: 5326908
+Eval: Status: NOT_DEFINED	Value: 0.5
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [4,0]
+Player 1 (bottargaPlayer) -> [3,0]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 8
+Mossa 5
+Nodi esplorati: 56450000
+Total alphabeta cuts: 6386465
+Eval: Status: NOT_DEFINED	Value: 0.0
+Time elapsed: 9802ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [5,1]
+Player 1 (bottargaPlayer) -> [2,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 4
+Mossa 7
+Nodi esplorati: 26059
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 2546
+Eval: Status: LOSE		Value: 11.0
+Time elapsed: 5ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [4,3]
+Player 1 (bottargaPlayer) -> [1,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 9
+Nodi esplorati: 84
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 20
+Eval: Status: LOSE		Value: 11.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [1,3]
+Player 1 (bottargaPlayer) -> [0,3]
+
+Game state    : WINP1
+Current score : bottargaPlayer (2) - bottargaPlayer-NegaMax (0)
+
+**** ROUND 2 ****
+Initializing 6,5,4 board
+Initializing bottargaPlayer as Player 1
+Initializing bottargaPlayer-NegaMax as Player 2
+
+Player 1 (bottargaPlayer) -> [1,4]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 8
+Mossa 1
+Nodi esplorati: 54020000
+Total alphabeta cuts: 5800841
+Eval: Status: NOT_DEFINED	Value: 0.75
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [0,0]
+Player 1 (bottargaPlayer) -> [1,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 8
+Mossa 3
+Nodi esplorati: 55960000
+Total alphabeta cuts: 5355800
+Eval: Status: NOT_DEFINED	Value: 0.5
+Time elapsed: 9802ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [4,0]
+Player 1 (bottargaPlayer) -> [0,3]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 8
+Mossa 5
+Nodi esplorati: 56360000
+Total alphabeta cuts: 6514382
+Eval: Status: NOT_DEFINED	Value: 0.25
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [5,1]
+Player 1 (bottargaPlayer) -> [2,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 4
+Mossa 7
+Nodi esplorati: 24238
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 2416
+Eval: Status: LOSE		Value: 11.0
+Time elapsed: 4ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [4,3]
+Player 1 (bottargaPlayer) -> [1,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 9
+Nodi esplorati: 84
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 20
+Eval: Status: LOSE		Value: 11.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [1,3]
+Player 1 (bottargaPlayer) -> [3,0]
+
+Game state    : WINP1
+Current score : bottargaPlayer (4) - bottargaPlayer-NegaMax (0)
+
+**** FINAL SCORE ****
+bottargaPlayer 4
+bottargaPlayer-NegaMax 0
+
+Win bottargaPlayer: 2
+Win bottargaPlayer-NegaMax: 0
+Draws: 0
+# End of first round, round duration: 98 seconds
+Game type : 6,6,4
+Player1   : bottargaPlayer-NegaMax
+Player2   : bottargaPlayer
+Rounds    : 2
+Timeout   : 10 secs
+
+
+
+**** ROUND 1 ****
+Initializing 6,6,4 board
+Initializing bottargaPlayer-NegaMax as Player 1
+Initializing bottargaPlayer as Player 2
+
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 8
+Mossa 0
+Nodi esplorati: 49020000
+Total alphabeta cuts: 4688842
+Eval: Status: NOT_DEFINED	Value: 3.0
+Time elapsed: 9802ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [0,0]
+Player 2 (bottargaPlayer) -> [1,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 8
+Mossa 2
+Nodi esplorati: 50440000
+Total alphabeta cuts: 5420510
+Eval: Status: NOT_DEFINED	Value: 1.75
+Time elapsed: 9802ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [4,0]
+Player 2 (bottargaPlayer) -> [3,3]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 8
+Mossa 4
+Nodi esplorati: 52220000
+Total alphabeta cuts: 5039719
+Eval: Status: NOT_DEFINED	Value: 0.0
+Time elapsed: 9802ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [5,1]
+Player 2 (bottargaPlayer) -> [3,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 4
+Mossa 6
+Nodi esplorati: 140647
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 8288
+Eval: Status: LOSE		Value: 10.0
+Time elapsed: 26ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [4,3]
+Player 2 (bottargaPlayer) -> [2,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 8
+Nodi esplorati: 244
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 27
+Eval: Status: LOSE		Value: 10.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [1,3]
+Player 2 (bottargaPlayer) -> [4,1]
+
+Game state    : WINP2
+Current score : bottargaPlayer-NegaMax (0) - bottargaPlayer (3)
+
+**** ROUND 2 ****
+Initializing 6,6,4 board
+Initializing bottargaPlayer-NegaMax as Player 1
+Initializing bottargaPlayer as Player 2
+
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 8
+Mossa 0
+Nodi esplorati: 50790000
+Total alphabeta cuts: 4870296
+Eval: Status: NOT_DEFINED	Value: 3.0
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [0,0]
+Player 2 (bottargaPlayer) -> [1,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 8
+Mossa 2
+Nodi esplorati: 50680000
+Total alphabeta cuts: 5441686
+Eval: Status: NOT_DEFINED	Value: 1.75
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [4,0]
+Player 2 (bottargaPlayer) -> [3,3]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 8
+Mossa 4
+Nodi esplorati: 52290000
+Total alphabeta cuts: 5046204
+Eval: Status: NOT_DEFINED	Value: 0.0
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [5,1]
+Player 2 (bottargaPlayer) -> [3,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 4
+Mossa 6
+Nodi esplorati: 140647
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 8288
+Eval: Status: LOSE		Value: 10.0
+Time elapsed: 27ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [4,3]
+Player 2 (bottargaPlayer) -> [2,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 8
+Nodi esplorati: 244
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 27
+Eval: Status: LOSE		Value: 10.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [1,3]
+Player 2 (bottargaPlayer) -> [4,1]
+
+Game state    : WINP2
+Current score : bottargaPlayer-NegaMax (0) - bottargaPlayer (6)
+
+**** FINAL SCORE ****
+bottargaPlayer-NegaMax 0
+bottargaPlayer 6
+
+Win bottargaPlayer-NegaMax: 0
+Win bottargaPlayer: 2
+Draws: 0
+# End of second round, round duration: 118 seconds
+Game type : 6,6,4
+Player1   : bottargaPlayer
+Player2   : bottargaPlayer-NegaMax
+Rounds    : 2
+Timeout   : 10 secs
+
+
+
+**** ROUND 1 ****
+Initializing 6,6,4 board
+Initializing bottargaPlayer as Player 1
+Initializing bottargaPlayer-NegaMax as Player 2
+
+Player 1 (bottargaPlayer) -> [0,3]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 8
+Mossa 1
+Nodi esplorati: 46140000
+Total alphabeta cuts: 4091012
+Eval: Status: NOT_DEFINED	Value: 1.75
+Time elapsed: 9802ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [0,0]
+Player 1 (bottargaPlayer) -> [1,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 8
+Mossa 3
+Nodi esplorati: 46430000
+Total alphabeta cuts: 4485292
+Eval: Status: NOT_DEFINED	Value: 0.5
+Time elapsed: 9802ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [4,0]
+Player 1 (bottargaPlayer) -> [3,3]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 7
+Mossa 5
+Nodi esplorati: 53950000
+Total alphabeta cuts: 6646105
+Eval: Status: NOT_DEFINED	Value: -6.0
+Time elapsed: 9802ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [5,1]
+Player 1 (bottargaPlayer) -> [1,3]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 4
+Mossa 7
+Nodi esplorati: 17050
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 1424
+Eval: Status: LOSE		Value: 11.0
+Time elapsed: 3ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [4,3]
+Player 1 (bottargaPlayer) -> [2,3]
+
+Game state    : WINP1
+Current score : bottargaPlayer (2) - bottargaPlayer-NegaMax (0)
+
+**** ROUND 2 ****
+Initializing 6,6,4 board
+Initializing bottargaPlayer as Player 1
+Initializing bottargaPlayer-NegaMax as Player 2
+
+Player 1 (bottargaPlayer) -> [0,3]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 8
+Mossa 1
+Nodi esplorati: 50140000
+Total alphabeta cuts: 4302130
+Eval: Status: NOT_DEFINED	Value: 1.75
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [0,0]
+Player 1 (bottargaPlayer) -> [1,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 8
+Mossa 3
+Nodi esplorati: 49600000
+Total alphabeta cuts: 4707070
+Eval: Status: NOT_DEFINED	Value: 0.5
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [4,0]
+Player 1 (bottargaPlayer) -> [3,3]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 7
+Mossa 5
+Nodi esplorati: 49550000
+Total alphabeta cuts: 6110167
+Eval: Status: NOT_DEFINED	Value: -6.0
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [5,1]
+Player 1 (bottargaPlayer) -> [1,3]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 4
+Mossa 7
+Nodi esplorati: 17050
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 1424
+Eval: Status: LOSE		Value: 11.0
+Time elapsed: 4ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [4,3]
+Player 1 (bottargaPlayer) -> [2,3]
+
+Game state    : WINP1
+Current score : bottargaPlayer (4) - bottargaPlayer-NegaMax (0)
+
+**** FINAL SCORE ****
+bottargaPlayer 4
+bottargaPlayer-NegaMax 0
+
+Win bottargaPlayer: 2
+Win bottargaPlayer-NegaMax: 0
+Draws: 0

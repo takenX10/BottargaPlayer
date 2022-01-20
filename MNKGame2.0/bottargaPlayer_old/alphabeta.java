@@ -1,4 +1,4 @@
-package bottargaPlayer;
+package bottargaPlayer_old;
 
 import java.util.BitSet;
 import mnkgame.MNKCell;
@@ -48,9 +48,9 @@ public class alphabeta{
     private final transpositionTable ttable;
 
     // DEBUG TODO REMOVE
-    private final Boolean debugPrint = false;
-    private final Boolean debugLivello = false;
-    private final Boolean debugLevels = false;
+    private final Boolean debugPrint = true;
+    private final Boolean debugLivello = true;
+    private final Boolean debugLevels = true;
 
     public alphabeta(int M, int N, int K, boolean first, MNKCell[] MC, MNKCell[] FC, Integer timeout){
         // azzera valori benchmark

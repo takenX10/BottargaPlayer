@@ -1,0 +1,3217 @@
+
+# End of first round, round duration: 1 seconds
+Game type : 3,3,3
+Player1   : bottargaPlayer-NegaMax
+Player2   : Fabio
+Rounds    : 2
+Timeout   : 10 secs
+
+
+
+**** ROUND 1 ****
+Initializing 3,3,3 board
+Initializing bottargaPlayer-NegaMax as Player 1
+Initializing Fabio as Player 2
+
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 9
+Mossa 0
+Total alphabeta cuts: 11523
+Eval: Status: DRAW		Value: 9.0
+Time elapsed: 33ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [0,2]
+Player 2 (Fabio) -> [1,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 7
+Mossa 2
+Total alphabeta cuts: 1394
+Eval: Status: DRAW		Value: 9.0
+Time elapsed: 3ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [0,0]
+Player 2 (Fabio) -> [0,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 5
+Mossa 4
+Total alphabeta cuts: 36
+Eval: Status: DRAW		Value: 9.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [2,1]
+Player 2 (Fabio) -> [1,0]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 3
+Mossa 6
+Total alphabeta cuts: 5
+Eval: Status: DRAW		Value: 8.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [1,2]
+Player 2 (Fabio) -> [2,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 1
+Mossa 8
+Total alphabeta cuts: 0
+Eval: Status: DRAW		Value: 8.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [2,0]
+
+Game state    : DRAW
+Current score : bottargaPlayer-NegaMax (1) - Fabio (1)
+
+**** ROUND 2 ****
+Initializing 3,3,3 board
+Initializing bottargaPlayer-NegaMax as Player 1
+Initializing Fabio as Player 2
+
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 9
+Mossa 0
+Total alphabeta cuts: 11523
+Eval: Status: DRAW		Value: 9.0
+Time elapsed: 26ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [0,2]
+Player 2 (Fabio) -> [1,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 7
+Mossa 2
+Total alphabeta cuts: 1394
+Eval: Status: DRAW		Value: 9.0
+Time elapsed: 1ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [0,0]
+Player 2 (Fabio) -> [0,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 5
+Mossa 4
+Total alphabeta cuts: 36
+Eval: Status: DRAW		Value: 9.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [2,1]
+Player 2 (Fabio) -> [1,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 3
+Mossa 6
+Total alphabeta cuts: 4
+Eval: Status: DRAW		Value: 9.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [2,2]
+Player 2 (Fabio) -> [1,0]
+
+Game state    : WINP2
+Current score : bottargaPlayer-NegaMax (1) - Fabio (4)
+
+**** FINAL SCORE ****
+bottargaPlayer-NegaMax 1
+Fabio 4
+
+Win bottargaPlayer-NegaMax: 0
+Win Fabio: 1
+Draws: 1
+# End of second round, round duration: 0 seconds
+Game type : 3,3,3
+Player1   : Fabio
+Player2   : bottargaPlayer-NegaMax
+Rounds    : 2
+Timeout   : 10 secs
+
+
+
+**** ROUND 1 ****
+Initializing 3,3,3 board
+Initializing Fabio as Player 1
+Initializing bottargaPlayer-NegaMax as Player 2
+
+Player 1 (Fabio) -> [1,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 8
+Mossa 1
+Total alphabeta cuts: 3241
+Eval: Status: DRAW		Value: 9.0
+Time elapsed: 11ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [0,0]
+Player 1 (Fabio) -> [0,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 6
+Mossa 3
+Total alphabeta cuts: 97
+Eval: Status: DRAW		Value: 9.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [2,1]
+Player 1 (Fabio) -> [1,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 4
+Mossa 5
+Total alphabeta cuts: 17
+Eval: Status: DRAW		Value: 8.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [0,2]
+Player 1 (Fabio) -> [1,0]
+
+Game state    : WINP1
+Current score : Fabio (2) - bottargaPlayer-NegaMax (0)
+
+**** ROUND 2 ****
+Initializing 3,3,3 board
+Initializing Fabio as Player 1
+Initializing bottargaPlayer-NegaMax as Player 2
+
+Player 1 (Fabio) -> [1,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 8
+Mossa 1
+Total alphabeta cuts: 3241
+Eval: Status: DRAW		Value: 9.0
+Time elapsed: 4ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [0,0]
+Player 1 (Fabio) -> [2,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 6
+Mossa 3
+Total alphabeta cuts: 107
+Eval: Status: DRAW		Value: 9.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [0,1]
+Player 1 (Fabio) -> [0,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 4
+Mossa 5
+Total alphabeta cuts: 19
+Eval: Status: DRAW		Value: 9.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [2,0]
+Player 1 (Fabio) -> [1,0]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 7
+Total alphabeta cuts: 1
+Eval: Status: DRAW		Value: 8.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [1,2]
+Player 1 (Fabio) -> [2,2]
+
+Game state    : DRAW
+Current score : Fabio (3) - bottargaPlayer-NegaMax (1)
+
+**** FINAL SCORE ****
+Fabio 3
+bottargaPlayer-NegaMax 1
+
+Win Fabio: 1
+Win bottargaPlayer-NegaMax: 0
+Draws: 1
+# End of first round, round duration: 0 seconds
+Game type : 4,3,3
+Player1   : bottargaPlayer-NegaMax
+Player2   : Fabio
+Rounds    : 2
+Timeout   : 10 secs
+
+
+
+**** ROUND 1 ****
+Initializing 4,3,3 board
+Initializing bottargaPlayer-NegaMax as Player 1
+Initializing Fabio as Player 2
+
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 7
+Mossa 0
+Total alphabeta cuts: 8494
+Eval: Status: WIN		Value: 7.0
+Time elapsed: 17ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [1,1]
+Player 2 (Fabio) -> [2,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 5
+Mossa 2
+Total alphabeta cuts: 885
+Eval: Status: WIN		Value: 7.0
+Time elapsed: 2ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [2,0]
+Player 2 (Fabio) -> [3,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 1
+Mossa 4
+Total alphabeta cuts: 1
+Eval: Status: WIN		Value: 5.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [0,2]
+
+Game state    : WINP1
+Current score : bottargaPlayer-NegaMax (2) - Fabio (0)
+
+**** ROUND 2 ****
+Initializing 4,3,3 board
+Initializing bottargaPlayer-NegaMax as Player 1
+Initializing Fabio as Player 2
+
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 7
+Mossa 0
+Total alphabeta cuts: 8494
+Eval: Status: WIN		Value: 7.0
+Time elapsed: 9ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [1,1]
+Player 2 (Fabio) -> [2,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 5
+Mossa 2
+Total alphabeta cuts: 885
+Eval: Status: WIN		Value: 7.0
+Time elapsed: 1ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [2,0]
+Player 2 (Fabio) -> [2,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 1
+Mossa 4
+Total alphabeta cuts: 1
+Eval: Status: WIN		Value: 5.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [0,2]
+
+Game state    : WINP1
+Current score : bottargaPlayer-NegaMax (4) - Fabio (0)
+
+**** FINAL SCORE ****
+bottargaPlayer-NegaMax 4
+Fabio 0
+
+Win bottargaPlayer-NegaMax: 2
+Win Fabio: 0
+Draws: 0
+# End of second round, round duration: 1 seconds
+Game type : 4,3,3
+Player1   : Fabio
+Player2   : bottargaPlayer-NegaMax
+Rounds    : 2
+Timeout   : 10 secs
+
+
+
+**** ROUND 1 ****
+Initializing 4,3,3 board
+Initializing Fabio as Player 1
+Initializing bottargaPlayer-NegaMax as Player 2
+
+Player 1 (Fabio) -> [1,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 6
+Mossa 1
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 1839
+Eval: Status: LOSE		Value: 7.0
+Time elapsed: 9ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [0,2]
+Player 1 (Fabio) -> [0,0]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 6
+Mossa 3
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 2308
+Eval: Status: LOSE		Value: 9.0
+Time elapsed: 20ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [2,2]
+Player 1 (Fabio) -> [1,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 4
+Mossa 5
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 105
+Eval: Status: LOSE		Value: 9.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [1,0]
+Player 1 (Fabio) -> [2,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 7
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 4
+Eval: Status: LOSE		Value: 9.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [3,0]
+Player 1 (Fabio) -> [2,0]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 9
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 2
+Eval: Status: LOSE		Value: 11.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [3,1]
+Player 1 (Fabio) -> [0,1]
+
+Game state    : WINP1
+Current score : Fabio (2) - bottargaPlayer-NegaMax (0)
+
+**** ROUND 2 ****
+Initializing 4,3,3 board
+Initializing Fabio as Player 1
+Initializing bottargaPlayer-NegaMax as Player 2
+
+Player 1 (Fabio) -> [1,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 6
+Mossa 1
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 1839
+Eval: Status: LOSE		Value: 7.0
+Time elapsed: 3ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [0,2]
+Player 1 (Fabio) -> [2,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 6
+Mossa 3
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 1642
+Eval: Status: LOSE		Value: 9.0
+Time elapsed: 3ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [0,0]
+Player 1 (Fabio) -> [0,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 4
+Mossa 5
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 33
+Eval: Status: LOSE		Value: 9.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [2,1]
+Player 1 (Fabio) -> [1,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 7
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 4
+Eval: Status: LOSE		Value: 9.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [1,0]
+Player 1 (Fabio) -> [3,2]
+
+Game state    : WINP1
+Current score : Fabio (4) - bottargaPlayer-NegaMax (0)
+
+**** FINAL SCORE ****
+Fabio 4
+bottargaPlayer-NegaMax 0
+
+Win Fabio: 2
+Win bottargaPlayer-NegaMax: 0
+Draws: 0
+# End of first round, round duration: 0 seconds
+Game type : 4,4,3
+Player1   : bottargaPlayer-NegaMax
+Player2   : Fabio
+Rounds    : 2
+Timeout   : 10 secs
+
+
+
+**** ROUND 1 ****
+Initializing 4,4,3 board
+Initializing bottargaPlayer-NegaMax as Player 1
+Initializing Fabio as Player 2
+
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 5
+Mossa 0
+Total alphabeta cuts: 1662
+Eval: Status: WIN		Value: 5.0
+Time elapsed: 18ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [1,1]
+Player 2 (Fabio) -> [3,3]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 3
+Mossa 2
+Total alphabeta cuts: 83
+Eval: Status: WIN		Value: 5.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [2,1]
+Player 2 (Fabio) -> [1,3]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 1
+Mossa 4
+Total alphabeta cuts: 1
+Eval: Status: WIN		Value: 5.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [3,1]
+
+Game state    : WINP1
+Current score : bottargaPlayer-NegaMax (2) - Fabio (0)
+
+**** ROUND 2 ****
+Initializing 4,4,3 board
+Initializing bottargaPlayer-NegaMax as Player 1
+Initializing Fabio as Player 2
+
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 5
+Mossa 0
+Total alphabeta cuts: 1662
+Eval: Status: WIN		Value: 5.0
+Time elapsed: 6ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [1,1]
+Player 2 (Fabio) -> [3,3]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 3
+Mossa 2
+Total alphabeta cuts: 83
+Eval: Status: WIN		Value: 5.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [2,1]
+Player 2 (Fabio) -> [1,0]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 1
+Mossa 4
+Total alphabeta cuts: 1
+Eval: Status: WIN		Value: 5.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [3,1]
+
+Game state    : WINP1
+Current score : bottargaPlayer-NegaMax (4) - Fabio (0)
+
+**** FINAL SCORE ****
+bottargaPlayer-NegaMax 4
+Fabio 0
+
+Win bottargaPlayer-NegaMax: 2
+Win Fabio: 0
+Draws: 0
+# End of second round, round duration: 1 seconds
+Game type : 4,4,3
+Player1   : Fabio
+Player2   : bottargaPlayer-NegaMax
+Rounds    : 2
+Timeout   : 10 secs
+
+
+
+**** ROUND 1 ****
+Initializing 4,4,3 board
+Initializing Fabio as Player 1
+Initializing bottargaPlayer-NegaMax as Player 2
+
+Player 1 (Fabio) -> [1,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 4
+Mossa 1
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 907
+Eval: Status: LOSE		Value: 5.0
+Time elapsed: 11ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [0,0]
+Player 1 (Fabio) -> [2,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 3
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 12
+Eval: Status: LOSE		Value: 5.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [2,3]
+Player 1 (Fabio) -> [2,0]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 5
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 10
+Eval: Status: LOSE		Value: 7.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [1,2]
+Player 1 (Fabio) -> [0,1]
+
+Game state    : WINP1
+Current score : Fabio (2) - bottargaPlayer-NegaMax (0)
+
+**** ROUND 2 ****
+Initializing 4,4,3 board
+Initializing Fabio as Player 1
+Initializing bottargaPlayer-NegaMax as Player 2
+
+Player 1 (Fabio) -> [1,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 4
+Mossa 1
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 907
+Eval: Status: LOSE		Value: 5.0
+Time elapsed: 3ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [0,0]
+Player 1 (Fabio) -> [2,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 3
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 12
+Eval: Status: LOSE		Value: 5.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [2,3]
+Player 1 (Fabio) -> [1,0]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 5
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 10
+Eval: Status: LOSE		Value: 7.0
+Time elapsed: 1ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [2,0]
+Player 1 (Fabio) -> [3,0]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 7
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 8
+Eval: Status: LOSE		Value: 9.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [1,2]
+Player 1 (Fabio) -> [3,2]
+
+Game state    : WINP1
+Current score : Fabio (4) - bottargaPlayer-NegaMax (0)
+
+**** FINAL SCORE ****
+Fabio 4
+bottargaPlayer-NegaMax 0
+
+Win Fabio: 2
+Win bottargaPlayer-NegaMax: 0
+Draws: 0
+# End of first round, round duration: 52 seconds
+Game type : 4,4,4
+Player1   : bottargaPlayer-NegaMax
+Player2   : Fabio
+Rounds    : 2
+Timeout   : 10 secs
+
+
+
+**** ROUND 1 ****
+Initializing 4,4,4 board
+Initializing bottargaPlayer-NegaMax as Player 1
+Initializing Fabio as Player 2
+
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 13
+Mossa 0
+Total alphabeta cuts: 15065190
+Eval: Status: DRAW		Value: 12.0
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [0,0]
+Player 2 (Fabio) -> [1,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 14
+Mossa 2
+Total alphabeta cuts: 16449806
+Eval: Status: DRAW		Value: 16.0
+Time elapsed: 5843ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [2,3]
+Player 2 (Fabio) -> [0,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 12
+Mossa 4
+Total alphabeta cuts: 1307977
+Eval: Status: DRAW		Value: 16.0
+Time elapsed: 495ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [2,0]
+Player 2 (Fabio) -> [2,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 10
+Mossa 6
+Total alphabeta cuts: 25592
+Eval: Status: DRAW		Value: 16.0
+Time elapsed: 11ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [1,2]
+Player 2 (Fabio) -> [3,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 8
+Mossa 8
+Total alphabeta cuts: 6365
+Eval: Status: DRAW		Value: 16.0
+Time elapsed: 3ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [1,3]
+Player 2 (Fabio) -> [0,1]
+
+Game state    : WINP2
+Current score : bottargaPlayer-NegaMax (0) - Fabio (3)
+
+**** ROUND 2 ****
+Initializing 4,4,4 board
+Initializing bottargaPlayer-NegaMax as Player 1
+Initializing Fabio as Player 2
+
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 13
+Mossa 0
+Total alphabeta cuts: 17969713
+Eval: Status: DRAW		Value: 12.0
+Time elapsed: 9802ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [0,0]
+Player 2 (Fabio) -> [0,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 14
+Mossa 2
+Total alphabeta cuts: 14697856
+Eval: Status: DRAW		Value: 16.0
+Time elapsed: 5841ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [2,3]
+Player 2 (Fabio) -> [1,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 12
+Mossa 4
+Total alphabeta cuts: 1089693
+Eval: Status: DRAW		Value: 16.0
+Time elapsed: 415ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [2,0]
+Player 2 (Fabio) -> [3,3]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 10
+Mossa 6
+Total alphabeta cuts: 50421
+Eval: Status: DRAW		Value: 16.0
+Time elapsed: 19ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [1,3]
+Player 2 (Fabio) -> [0,3]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 8
+Mossa 8
+Total alphabeta cuts: 4266
+Eval: Status: DRAW		Value: 16.0
+Time elapsed: 2ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [3,2]
+Player 2 (Fabio) -> [3,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 6
+Mossa 10
+Total alphabeta cuts: 382
+Eval: Status: DRAW		Value: 16.0
+Time elapsed: 1ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [2,1]
+Player 2 (Fabio) -> [2,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 4
+Mossa 12
+Total alphabeta cuts: 21
+Eval: Status: DRAW		Value: 16.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [0,2]
+Player 2 (Fabio) -> [1,0]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 1
+Mossa 14
+Total alphabeta cuts: 0
+Eval: Status: DRAW		Value: 14.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [3,0]
+Player 2 (Fabio) -> [1,1]
+
+Game state    : DRAW
+Current score : bottargaPlayer-NegaMax (1) - Fabio (4)
+
+**** FINAL SCORE ****
+bottargaPlayer-NegaMax 1
+Fabio 4
+
+Win bottargaPlayer-NegaMax: 0
+Win Fabio: 1
+Draws: 1
+# End of second round, round duration: 22 seconds
+Game type : 4,4,4
+Player1   : Fabio
+Player2   : bottargaPlayer-NegaMax
+Rounds    : 2
+Timeout   : 10 secs
+
+
+
+**** ROUND 1 ****
+Initializing 4,4,4 board
+Initializing Fabio as Player 1
+Initializing bottargaPlayer-NegaMax as Player 2
+
+Player 1 (Fabio) -> [1,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 14
+Mossa 1
+Total alphabeta cuts: 18223700
+Eval: Status: DRAW		Value: 14.0
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [0,0]
+Player 1 (Fabio) -> [2,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 13
+Mossa 3
+Total alphabeta cuts: 2207323
+Eval: Status: DRAW		Value: 16.0
+Time elapsed: 926ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [2,3]
+Player 1 (Fabio) -> [0,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 11
+Mossa 5
+Total alphabeta cuts: 43722
+Eval: Status: DRAW		Value: 16.0
+Time elapsed: 20ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [2,0]
+Player 1 (Fabio) -> [3,1]
+
+Game state    : WINP1
+Current score : Fabio (2) - bottargaPlayer-NegaMax (0)
+
+**** ROUND 2 ****
+Initializing 4,4,4 board
+Initializing Fabio as Player 1
+Initializing bottargaPlayer-NegaMax as Player 2
+
+Player 1 (Fabio) -> [1,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 14
+Mossa 1
+Total alphabeta cuts: 19478267
+Eval: Status: DRAW		Value: 14.0
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [0,0]
+Player 1 (Fabio) -> [2,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 13
+Mossa 3
+Total alphabeta cuts: 2207323
+Eval: Status: DRAW		Value: 16.0
+Time elapsed: 878ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [2,3]
+Player 1 (Fabio) -> [1,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 11
+Mossa 5
+Total alphabeta cuts: 118222
+Eval: Status: DRAW		Value: 16.0
+Time elapsed: 48ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [2,0]
+Player 1 (Fabio) -> [0,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 9
+Mossa 7
+Total alphabeta cuts: 4843
+Eval: Status: DRAW		Value: 16.0
+Time elapsed: 2ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [3,1]
+Player 1 (Fabio) -> [3,3]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 7
+Mossa 9
+Total alphabeta cuts: 491
+Eval: Status: DRAW		Value: 16.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [1,3]
+Player 1 (Fabio) -> [0,3]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 3
+Mossa 11
+Total alphabeta cuts: 11
+Eval: Status: DRAW		Value: 14.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [3,0]
+Player 1 (Fabio) -> [1,0]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 1
+Mossa 13
+Total alphabeta cuts: 0
+Eval: Status: DRAW		Value: 14.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [3,2]
+Player 1 (Fabio) -> [2,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 1
+Mossa 15
+Total alphabeta cuts: 0
+Eval: Status: DRAW		Value: 14.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [0,2]
+
+Game state    : DRAW
+Current score : Fabio (3) - bottargaPlayer-NegaMax (1)
+
+**** FINAL SCORE ****
+Fabio 3
+bottargaPlayer-NegaMax 1
+
+Win Fabio: 1
+Win bottargaPlayer-NegaMax: 0
+Draws: 1
+# End of first round, round duration: 79 seconds
+Game type : 5,4,4
+Player1   : bottargaPlayer-NegaMax
+Player2   : Fabio
+Rounds    : 2
+Timeout   : 10 secs
+
+
+
+**** ROUND 1 ****
+Initializing 5,4,4 board
+Initializing bottargaPlayer-NegaMax as Player 1
+Initializing Fabio as Player 2
+
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 10
+Mossa 0
+Total alphabeta cuts: 12301770
+Eval: Status: NOT_DEFINED	Value: 1.0
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [0,0]
+Player 2 (Fabio) -> [1,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 10
+Mossa 2
+Total alphabeta cuts: 13877491
+Eval: Status: NOT_DEFINED	Value: 1.25
+Time elapsed: 9802ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [4,0]
+Player 2 (Fabio) -> [2,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 12
+Mossa 4
+Total alphabeta cuts: 15359757
+Eval: Status: DRAW		Value: 15.0
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [4,3]
+Player 2 (Fabio) -> [3,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 6
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 13
+Eval: Status: LOSE		Value: 8.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [2,3]
+Player 2 (Fabio) -> [3,3]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 8
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 11
+Eval: Status: LOSE		Value: 10.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [2,0]
+Player 2 (Fabio) -> [2,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 10
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 9
+Eval: Status: LOSE		Value: 12.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [1,2]
+Player 2 (Fabio) -> [3,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 12
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 7
+Eval: Status: LOSE		Value: 14.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [1,3]
+Player 2 (Fabio) -> [1,0]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 14
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 5
+Eval: Status: LOSE		Value: 16.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [0,1]
+Player 2 (Fabio) -> [0,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 16
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 3
+Eval: Status: LOSE		Value: 18.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [4,1]
+Player 2 (Fabio) -> [3,0]
+
+Game state    : WINP2
+Current score : bottargaPlayer-NegaMax (0) - Fabio (3)
+
+**** ROUND 2 ****
+Initializing 5,4,4 board
+Initializing bottargaPlayer-NegaMax as Player 1
+Initializing Fabio as Player 2
+
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 10
+Mossa 0
+Total alphabeta cuts: 13052916
+Eval: Status: NOT_DEFINED	Value: 1.0
+Time elapsed: 9802ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [0,0]
+Player 2 (Fabio) -> [1,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 10
+Mossa 2
+Total alphabeta cuts: 13048808
+Eval: Status: NOT_DEFINED	Value: 1.25
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [4,0]
+Player 2 (Fabio) -> [2,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 12
+Mossa 4
+Total alphabeta cuts: 13371714
+Eval: Status: DRAW		Value: 15.0
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [4,3]
+Player 2 (Fabio) -> [3,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 6
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 13
+Eval: Status: LOSE		Value: 8.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [2,3]
+Player 2 (Fabio) -> [4,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 8
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 11
+Eval: Status: LOSE		Value: 10.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [2,0]
+Player 2 (Fabio) -> [3,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 10
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 9
+Eval: Status: LOSE		Value: 12.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [1,2]
+Player 2 (Fabio) -> [2,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 12
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 7
+Eval: Status: LOSE		Value: 14.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [1,3]
+Player 2 (Fabio) -> [3,3]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 14
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 5
+Eval: Status: LOSE		Value: 16.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [0,1]
+Player 2 (Fabio) -> [0,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 16
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 3
+Eval: Status: LOSE		Value: 18.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [1,0]
+Player 2 (Fabio) -> [3,0]
+
+Game state    : WINP2
+Current score : bottargaPlayer-NegaMax (0) - Fabio (6)
+
+**** FINAL SCORE ****
+bottargaPlayer-NegaMax 0
+Fabio 6
+
+Win bottargaPlayer-NegaMax: 0
+Win Fabio: 2
+Draws: 0
+# End of second round, round duration: 70 seconds
+Game type : 5,4,4
+Player1   : Fabio
+Player2   : bottargaPlayer-NegaMax
+Rounds    : 2
+Timeout   : 10 secs
+
+
+
+**** ROUND 1 ****
+Initializing 5,4,4 board
+Initializing Fabio as Player 1
+Initializing bottargaPlayer-NegaMax as Player 2
+
+Player 1 (Fabio) -> [1,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 10
+Mossa 1
+Total alphabeta cuts: 12393403
+Eval: Status: NOT_DEFINED	Value: 0.25
+Time elapsed: 9802ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [0,0]
+Player 1 (Fabio) -> [2,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 12
+Mossa 3
+Total alphabeta cuts: 14246169
+Eval: Status: DRAW		Value: 14.0
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [4,0]
+Player 1 (Fabio) -> [3,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 5
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 14
+Eval: Status: LOSE		Value: 7.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [4,3]
+Player 1 (Fabio) -> [0,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 7
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 12
+Eval: Status: LOSE		Value: 9.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [2,3]
+Player 1 (Fabio) -> [0,1]
+
+Game state    : WINP1
+Current score : Fabio (2) - bottargaPlayer-NegaMax (0)
+
+**** ROUND 2 ****
+Initializing 5,4,4 board
+Initializing Fabio as Player 1
+Initializing bottargaPlayer-NegaMax as Player 2
+
+Player 1 (Fabio) -> [1,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 10
+Mossa 1
+Total alphabeta cuts: 12109835
+Eval: Status: NOT_DEFINED	Value: 0.25
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [0,0]
+Player 1 (Fabio) -> [1,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 10
+Mossa 3
+Total alphabeta cuts: 13005122
+Eval: Status: NOT_DEFINED	Value: 0.25
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [4,0]
+Player 1 (Fabio) -> [3,0]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 13
+Mossa 5
+Total alphabeta cuts: 17523996
+Eval: Status: DRAW		Value: 17.0
+Time elapsed: 9802ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [4,3]
+Player 1 (Fabio) -> [4,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 13
+Mossa 7
+Total alphabeta cuts: 2810029
+Eval: Status: DRAW		Value: 20.0
+Time elapsed: 1221ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [2,3]
+Player 1 (Fabio) -> [2,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 4
+Mossa 9
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 55
+Eval: Status: LOSE		Value: 13.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [0,3]
+Player 1 (Fabio) -> [3,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 11
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 8
+Eval: Status: LOSE		Value: 13.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [2,0]
+Player 1 (Fabio) -> [1,0]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 13
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 6
+Eval: Status: LOSE		Value: 15.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [1,3]
+Player 1 (Fabio) -> [0,1]
+
+Game state    : WINP1
+Current score : Fabio (4) - bottargaPlayer-NegaMax (0)
+
+**** FINAL SCORE ****
+Fabio 4
+bottargaPlayer-NegaMax 0
+
+Win Fabio: 2
+Win bottargaPlayer-NegaMax: 0
+Draws: 0
+# End of first round, round duration: 69 seconds
+Game type : 5,5,4
+Player1   : bottargaPlayer-NegaMax
+Player2   : Fabio
+Rounds    : 2
+Timeout   : 10 secs
+
+
+
+**** ROUND 1 ****
+Initializing 5,5,4 board
+Initializing bottargaPlayer-NegaMax as Player 1
+Initializing Fabio as Player 2
+
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 9
+Mossa 0
+Total alphabeta cuts: 7026068
+Eval: Status: NOT_DEFINED	Value: 1.0
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [3,0]
+Player 2 (Fabio) -> [2,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 9
+Mossa 2
+Total alphabeta cuts: 9565544
+Eval: Status: NOT_DEFINED	Value: 0.5
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [4,1]
+Player 2 (Fabio) -> [2,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 9
+Mossa 4
+Total alphabeta cuts: 10161726
+Eval: Status: NOT_DEFINED	Value: -1.25
+Time elapsed: 9802ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [0,0]
+Player 2 (Fabio) -> [2,3]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 6
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 18
+Eval: Status: LOSE		Value: 8.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [4,0]
+Player 2 (Fabio) -> [0,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 8
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 16
+Eval: Status: LOSE		Value: 10.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [4,3]
+Player 2 (Fabio) -> [2,0]
+
+Game state    : WINP2
+Current score : bottargaPlayer-NegaMax (0) - Fabio (3)
+
+**** ROUND 2 ****
+Initializing 5,5,4 board
+Initializing bottargaPlayer-NegaMax as Player 1
+Initializing Fabio as Player 2
+
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 9
+Mossa 0
+Total alphabeta cuts: 7140389
+Eval: Status: NOT_DEFINED	Value: 1.0
+Time elapsed: 9802ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [3,0]
+Player 2 (Fabio) -> [2,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 9
+Mossa 2
+Total alphabeta cuts: 9292803
+Eval: Status: NOT_DEFINED	Value: 0.5
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [3,3]
+Player 2 (Fabio) -> [3,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 6
+Mossa 4
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 25918
+Eval: Status: LOSE		Value: 10.0
+Time elapsed: 24ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [0,0]
+Player 2 (Fabio) -> [1,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 6
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 18
+Eval: Status: LOSE		Value: 8.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [4,0]
+Player 2 (Fabio) -> [3,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 8
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 16
+Eval: Status: LOSE		Value: 10.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [4,3]
+Player 2 (Fabio) -> [2,3]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 10
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 14
+Eval: Status: LOSE		Value: 12.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [1,3]
+Player 2 (Fabio) -> [0,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 12
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 12
+Eval: Status: LOSE		Value: 14.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [2,4]
+Player 2 (Fabio) -> [0,3]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 14
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 10
+Eval: Status: LOSE		Value: 16.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [1,0]
+Player 2 (Fabio) -> [0,1]
+
+Game state    : WINP2
+Current score : bottargaPlayer-NegaMax (0) - Fabio (6)
+
+**** FINAL SCORE ****
+bottargaPlayer-NegaMax 0
+Fabio 6
+
+Win bottargaPlayer-NegaMax: 0
+Win Fabio: 2
+Draws: 0
+# End of second round, round duration: 59 seconds
+Game type : 5,5,4
+Player1   : Fabio
+Player2   : bottargaPlayer-NegaMax
+Rounds    : 2
+Timeout   : 10 secs
+
+
+
+**** ROUND 1 ****
+Initializing 5,5,4 board
+Initializing Fabio as Player 1
+Initializing bottargaPlayer-NegaMax as Player 2
+
+Player 1 (Fabio) -> [1,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 9
+Mossa 1
+Total alphabeta cuts: 10094926
+Eval: Status: NOT_DEFINED	Value: -1.0
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [0,0]
+Player 1 (Fabio) -> [2,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 9
+Mossa 3
+Total alphabeta cuts: 11761192
+Eval: Status: NOT_DEFINED	Value: -2.75
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [4,0]
+Player 1 (Fabio) -> [3,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 5
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 19
+Eval: Status: LOSE		Value: 7.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [4,3]
+Player 1 (Fabio) -> [1,0]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 7
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 17
+Eval: Status: LOSE		Value: 9.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [1,3]
+Player 1 (Fabio) -> [0,3]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 9
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 15
+Eval: Status: LOSE		Value: 11.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [2,4]
+Player 1 (Fabio) -> [3,0]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 11
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 13
+Eval: Status: LOSE		Value: 13.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [3,2]
+Player 1 (Fabio) -> [2,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 13
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 11
+Eval: Status: LOSE		Value: 15.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [0,2]
+Player 1 (Fabio) -> [3,3]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 15
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 9
+Eval: Status: LOSE		Value: 17.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [4,2]
+Player 1 (Fabio) -> [0,1]
+
+Game state    : WINP1
+Current score : Fabio (2) - bottargaPlayer-NegaMax (0)
+
+**** ROUND 2 ****
+Initializing 5,5,4 board
+Initializing Fabio as Player 1
+Initializing bottargaPlayer-NegaMax as Player 2
+
+Player 1 (Fabio) -> [1,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 9
+Mossa 1
+Total alphabeta cuts: 10037795
+Eval: Status: NOT_DEFINED	Value: -1.0
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [0,0]
+Player 1 (Fabio) -> [2,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 9
+Mossa 3
+Total alphabeta cuts: 11596277
+Eval: Status: NOT_DEFINED	Value: -2.75
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [4,0]
+Player 1 (Fabio) -> [3,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 5
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 19
+Eval: Status: LOSE		Value: 7.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [4,3]
+Player 1 (Fabio) -> [1,0]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 7
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 17
+Eval: Status: LOSE		Value: 9.0
+Time elapsed: 1ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [1,3]
+Player 1 (Fabio) -> [4,1]
+
+Game state    : WINP1
+Current score : Fabio (4) - bottargaPlayer-NegaMax (0)
+
+**** FINAL SCORE ****
+Fabio 4
+bottargaPlayer-NegaMax 0
+
+Win Fabio: 2
+Win bottargaPlayer-NegaMax: 0
+Draws: 0
+# End of first round, round duration: 131 seconds
+Game type : 5,5,5
+Player1   : bottargaPlayer-NegaMax
+Player2   : Fabio
+Rounds    : 2
+Timeout   : 10 secs
+
+
+
+**** ROUND 1 ****
+Initializing 5,5,5 board
+Initializing bottargaPlayer-NegaMax as Player 1
+Initializing Fabio as Player 2
+
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 10
+Mossa 0
+Total alphabeta cuts: 10273819
+Eval: Status: NOT_DEFINED	Value: 0.75
+Time elapsed: 9802ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [0,0]
+Player 2 (Fabio) -> [1,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 10
+Mossa 2
+Total alphabeta cuts: 9190795
+Eval: Status: NOT_DEFINED	Value: 0.75
+Time elapsed: 9802ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [4,0]
+Player 2 (Fabio) -> [2,0]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 10
+Mossa 4
+Total alphabeta cuts: 11265396
+Eval: Status: DRAW		Value: 14.0
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [3,4]
+Player 2 (Fabio) -> [3,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 11
+Mossa 6
+Total alphabeta cuts: 13064159
+Eval: Status: DRAW		Value: 17.0
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [1,3]
+Player 2 (Fabio) -> [0,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 13
+Mossa 8
+Total alphabeta cuts: 17252342
+Eval: Status: DRAW		Value: 20.0
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [4,3]
+Player 2 (Fabio) -> [4,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 15
+Mossa 10
+Total alphabeta cuts: 24674072
+Eval: Status: DRAW		Value: 25.0
+Time elapsed: 9802ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [4,4]
+Player 2 (Fabio) -> [0,3]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 13
+Mossa 12
+Total alphabeta cuts: 2499049
+Eval: Status: DRAW		Value: 25.0
+Time elapsed: 929ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [2,4]
+Player 2 (Fabio) -> [0,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 11
+Mossa 14
+Total alphabeta cuts: 84988
+Eval: Status: DRAW		Value: 25.0
+Time elapsed: 30ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [3,2]
+Player 2 (Fabio) -> [0,4]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 9
+Mossa 16
+Total alphabeta cuts: 4911
+Eval: Status: DRAW		Value: 25.0
+Time elapsed: 2ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [1,0]
+Player 2 (Fabio) -> [3,0]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 7
+Mossa 18
+Total alphabeta cuts: 319
+Eval: Status: DRAW		Value: 25.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [2,3]
+Player 2 (Fabio) -> [1,4]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 5
+Mossa 20
+Total alphabeta cuts: 23
+Eval: Status: DRAW		Value: 25.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [1,2]
+Player 2 (Fabio) -> [2,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 3
+Mossa 22
+Total alphabeta cuts: 1
+Eval: Status: DRAW		Value: 25.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [3,3]
+Player 2 (Fabio) -> [4,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 1
+Mossa 24
+Total alphabeta cuts: 0
+Eval: Status: DRAW		Value: 25.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [2,1]
+
+Game state    : DRAW
+Current score : bottargaPlayer-NegaMax (1) - Fabio (1)
+
+**** ROUND 2 ****
+Initializing 5,5,5 board
+Initializing bottargaPlayer-NegaMax as Player 1
+Initializing Fabio as Player 2
+
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 10
+Mossa 0
+Total alphabeta cuts: 12063526
+Eval: Status: NOT_DEFINED	Value: 0.75
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [0,0]
+Player 2 (Fabio) -> [1,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 10
+Mossa 2
+Total alphabeta cuts: 9075204
+Eval: Status: NOT_DEFINED	Value: 0.75
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [4,0]
+Player 2 (Fabio) -> [2,0]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 10
+Mossa 4
+Total alphabeta cuts: 11358119
+Eval: Status: DRAW		Value: 14.0
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [4,2]
+Player 2 (Fabio) -> [4,3]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 12
+Mossa 6
+Total alphabeta cuts: 11354475
+Eval: Status: DRAW		Value: 17.0
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [1,3]
+Player 2 (Fabio) -> [2,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 12
+Mossa 8
+Total alphabeta cuts: 12985333
+Eval: Status: DRAW		Value: 19.0
+Time elapsed: 9802ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [2,4]
+Player 2 (Fabio) -> [3,4]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 15
+Mossa 10
+Total alphabeta cuts: 5240338
+Eval: Status: DRAW		Value: 25.0
+Time elapsed: 1697ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [3,2]
+Player 2 (Fabio) -> [4,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 13
+Mossa 12
+Total alphabeta cuts: 730400
+Eval: Status: DRAW		Value: 25.0
+Time elapsed: 289ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [0,2]
+Player 2 (Fabio) -> [1,0]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 11
+Mossa 14
+Total alphabeta cuts: 45737
+Eval: Status: DRAW		Value: 25.0
+Time elapsed: 19ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [0,4]
+Player 2 (Fabio) -> [2,3]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 9
+Mossa 16
+Total alphabeta cuts: 2751
+Eval: Status: DRAW		Value: 25.0
+Time elapsed: 1ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [4,4]
+Player 2 (Fabio) -> [0,3]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 7
+Mossa 18
+Total alphabeta cuts: 208
+Eval: Status: DRAW		Value: 25.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [1,2]
+Player 2 (Fabio) -> [0,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 5
+Mossa 20
+Total alphabeta cuts: 30
+Eval: Status: DRAW		Value: 25.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [3,3]
+Player 2 (Fabio) -> [2,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 3
+Mossa 22
+Total alphabeta cuts: 2
+Eval: Status: DRAW		Value: 23.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [3,1]
+Player 2 (Fabio) -> [3,0]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 1
+Mossa 24
+Total alphabeta cuts: 0
+Eval: Status: DRAW		Value: 23.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [1,4]
+
+Game state    : DRAW
+Current score : bottargaPlayer-NegaMax (2) - Fabio (2)
+
+**** FINAL SCORE ****
+bottargaPlayer-NegaMax 2
+Fabio 2
+
+Win bottargaPlayer-NegaMax: 0
+Win Fabio: 0
+Draws: 2
+# End of second round, round duration: 133 seconds
+Game type : 5,5,5
+Player1   : Fabio
+Player2   : bottargaPlayer-NegaMax
+Rounds    : 2
+Timeout   : 10 secs
+
+
+
+**** ROUND 1 ****
+Initializing 5,5,5 board
+Initializing Fabio as Player 1
+Initializing bottargaPlayer-NegaMax as Player 2
+
+Player 1 (Fabio) -> [1,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 10
+Mossa 1
+Total alphabeta cuts: 10062548
+Eval: Status: DRAW		Value: 10.0
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [0,0]
+Player 1 (Fabio) -> [0,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 9
+Mossa 3
+Total alphabeta cuts: 11389302
+Eval: Status: NOT_DEFINED	Value: 0.25
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [1,0]
+Player 1 (Fabio) -> [2,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 9
+Mossa 5
+Total alphabeta cuts: 14110262
+Eval: Status: DRAW		Value: 14.0
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [1,2]
+Player 1 (Fabio) -> [0,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 10
+Mossa 7
+Total alphabeta cuts: 10796571
+Eval: Status: DRAW		Value: 17.0
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [1,4]
+Player 1 (Fabio) -> [3,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 14
+Mossa 9
+Total alphabeta cuts: 17411542
+Eval: Status: DRAW		Value: 22.0
+Time elapsed: 9802ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [4,0]
+Player 1 (Fabio) -> [4,1]
+
+Game state    : WINP1
+Current score : Fabio (2) - bottargaPlayer-NegaMax (0)
+
+**** ROUND 2 ****
+Initializing 5,5,5 board
+Initializing Fabio as Player 1
+Initializing bottargaPlayer-NegaMax as Player 2
+
+Player 1 (Fabio) -> [1,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 10
+Mossa 1
+Total alphabeta cuts: 10230178
+Eval: Status: DRAW		Value: 10.0
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [0,0]
+Player 1 (Fabio) -> [2,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 9
+Mossa 3
+Total alphabeta cuts: 13992468
+Eval: Status: DRAW		Value: 12.0
+Time elapsed: 9802ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [3,1]
+Player 1 (Fabio) -> [1,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 11
+Mossa 5
+Total alphabeta cuts: 12878422
+Eval: Status: DRAW		Value: 15.0
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [4,0]
+Player 1 (Fabio) -> [2,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 12
+Mossa 7
+Total alphabeta cuts: 13855350
+Eval: Status: DRAW		Value: 18.0
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [4,3]
+Player 1 (Fabio) -> [1,0]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 11
+Mossa 9
+Total alphabeta cuts: 11238542
+Eval: Status: DRAW		Value: 19.0
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [1,3]
+Player 1 (Fabio) -> [0,3]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 14
+Mossa 11
+Total alphabeta cuts: 10520522
+Eval: Status: DRAW		Value: 25.0
+Time elapsed: 4848ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [2,4]
+Player 1 (Fabio) -> [3,4]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 12
+Mossa 13
+Total alphabeta cuts: 398783
+Eval: Status: DRAW		Value: 25.0
+Time elapsed: 168ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [3,2]
+Player 1 (Fabio) -> [1,4]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 10
+Mossa 15
+Total alphabeta cuts: 13439
+Eval: Status: DRAW		Value: 25.0
+Time elapsed: 4ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [0,2]
+Player 1 (Fabio) -> [0,4]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 8
+Mossa 17
+Total alphabeta cuts: 1580
+Eval: Status: DRAW		Value: 25.0
+Time elapsed: 1ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [4,2]
+Player 1 (Fabio) -> [4,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 1
+Mossa 19
+Total alphabeta cuts: 0
+Eval: Status: DRAW		Value: 19.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [4,4]
+Player 1 (Fabio) -> [2,3]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 1
+Mossa 21
+Total alphabeta cuts: 0
+Eval: Status: DRAW		Value: 19.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [2,0]
+Player 1 (Fabio) -> [0,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 1
+Mossa 23
+Total alphabeta cuts: 0
+Eval: Status: DRAW		Value: 19.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [3,3]
+Player 1 (Fabio) -> [3,0]
+
+Game state    : DRAW
+Current score : Fabio (3) - bottargaPlayer-NegaMax (1)
+
+**** FINAL SCORE ****
+Fabio 3
+bottargaPlayer-NegaMax 1
+
+Win Fabio: 1
+Win bottargaPlayer-NegaMax: 0
+Draws: 1
+# End of first round, round duration: 79 seconds
+Game type : 6,4,4
+Player1   : bottargaPlayer-NegaMax
+Player2   : Fabio
+Rounds    : 2
+Timeout   : 10 secs
+
+
+
+**** ROUND 1 ****
+Initializing 6,4,4 board
+Initializing bottargaPlayer-NegaMax as Player 1
+Initializing Fabio as Player 2
+
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 9
+Mossa 0
+Total alphabeta cuts: 8705806
+Eval: Status: NOT_DEFINED	Value: 0.5
+Time elapsed: 9802ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [5,3]
+Player 2 (Fabio) -> [4,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 9
+Mossa 2
+Total alphabeta cuts: 9060059
+Eval: Status: NOT_DEFINED	Value: 0.75
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [3,0]
+Player 2 (Fabio) -> [3,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 9
+Mossa 4
+Total alphabeta cuts: 9854361
+Eval: Status: NOT_DEFINED	Value: 0.25
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [0,0]
+Player 2 (Fabio) -> [2,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 6
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 17
+Eval: Status: LOSE		Value: 8.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [4,0]
+Player 2 (Fabio) -> [2,3]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 8
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 15
+Eval: Status: LOSE		Value: 10.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [5,1]
+Player 2 (Fabio) -> [2,0]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 10
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 13
+Eval: Status: LOSE		Value: 12.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [4,3]
+Player 2 (Fabio) -> [1,0]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 12
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 11
+Eval: Status: LOSE		Value: 14.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [1,2]
+Player 2 (Fabio) -> [0,3]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 14
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 9
+Eval: Status: LOSE		Value: 16.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [5,2]
+Player 2 (Fabio) -> [2,1]
+
+Game state    : WINP2
+Current score : bottargaPlayer-NegaMax (0) - Fabio (3)
+
+**** ROUND 2 ****
+Initializing 6,4,4 board
+Initializing bottargaPlayer-NegaMax as Player 1
+Initializing Fabio as Player 2
+
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 9
+Mossa 0
+Total alphabeta cuts: 8809008
+Eval: Status: NOT_DEFINED	Value: 0.5
+Time elapsed: 9802ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [5,3]
+Player 2 (Fabio) -> [4,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 9
+Mossa 2
+Total alphabeta cuts: 8989760
+Eval: Status: NOT_DEFINED	Value: 0.75
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [3,0]
+Player 2 (Fabio) -> [3,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 9
+Mossa 4
+Total alphabeta cuts: 10298442
+Eval: Status: NOT_DEFINED	Value: 0.25
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [0,0]
+Player 2 (Fabio) -> [2,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 6
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 17
+Eval: Status: LOSE		Value: 8.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [4,0]
+Player 2 (Fabio) -> [5,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 8
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 15
+Eval: Status: LOSE		Value: 10.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [4,3]
+Player 2 (Fabio) -> [5,2]
+
+Game state    : WINP2
+Current score : bottargaPlayer-NegaMax (0) - Fabio (6)
+
+**** FINAL SCORE ****
+bottargaPlayer-NegaMax 0
+Fabio 6
+
+Win bottargaPlayer-NegaMax: 0
+Win Fabio: 2
+Draws: 0
+# End of second round, round duration: 80 seconds
+Game type : 6,4,4
+Player1   : Fabio
+Player2   : bottargaPlayer-NegaMax
+Rounds    : 2
+Timeout   : 10 secs
+
+
+
+**** ROUND 1 ****
+Initializing 6,4,4 board
+Initializing Fabio as Player 1
+Initializing bottargaPlayer-NegaMax as Player 2
+
+Player 1 (Fabio) -> [1,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 9
+Mossa 1
+Total alphabeta cuts: 9729248
+Eval: Status: NOT_DEFINED	Value: 0.25
+Time elapsed: 9802ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [3,1]
+Player 1 (Fabio) -> [3,0]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 9
+Mossa 3
+Total alphabeta cuts: 10496739
+Eval: Status: NOT_DEFINED	Value: 0.25
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [1,0]
+Player 1 (Fabio) -> [2,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 11
+Mossa 5
+Total alphabeta cuts: 13290061
+Eval: Status: NOT_DEFINED	Value: -0.25
+Time elapsed: 9802ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [0,0]
+Player 1 (Fabio) -> [4,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 11
+Mossa 7
+Total alphabeta cuts: 14239486
+Eval: Status: DRAW		Value: 18.0
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [4,1]
+Player 1 (Fabio) -> [5,0]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 12
+Mossa 9
+Total alphabeta cuts: 15508509
+Eval: Status: DRAW		Value: 20.0
+Time elapsed: 9802ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [4,0]
+Player 1 (Fabio) -> [5,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 13
+Mossa 11
+Total alphabeta cuts: 2145236
+Eval: Status: DRAW		Value: 24.0
+Time elapsed: 1035ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [5,1]
+Player 1 (Fabio) -> [2,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 11
+Mossa 13
+Total alphabeta cuts: 171820
+Eval: Status: DRAW		Value: 24.0
+Time elapsed: 90ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [4,3]
+Player 1 (Fabio) -> [3,2]
+
+Game state    : WINP1
+Current score : Fabio (2) - bottargaPlayer-NegaMax (0)
+
+**** ROUND 2 ****
+Initializing 6,4,4 board
+Initializing Fabio as Player 1
+Initializing bottargaPlayer-NegaMax as Player 2
+
+Player 1 (Fabio) -> [1,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 9
+Mossa 1
+Total alphabeta cuts: 9810092
+Eval: Status: NOT_DEFINED	Value: 0.25
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [3,1]
+Player 1 (Fabio) -> [0,0]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 9
+Mossa 3
+Total alphabeta cuts: 10096396
+Eval: Status: NOT_DEFINED	Value: 0.5
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [1,0]
+Player 1 (Fabio) -> [2,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 11
+Mossa 5
+Total alphabeta cuts: 14183568
+Eval: Status: NOT_DEFINED	Value: -0.5
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [4,0]
+Player 1 (Fabio) -> [3,3]
+
+Game state    : WINP1
+Current score : Fabio (4) - bottargaPlayer-NegaMax (0)
+
+**** FINAL SCORE ****
+Fabio 4
+bottargaPlayer-NegaMax 0
+
+Win Fabio: 2
+Win bottargaPlayer-NegaMax: 0
+Draws: 0
+# End of first round, round duration: 79 seconds
+Game type : 6,5,4
+Player1   : bottargaPlayer-NegaMax
+Player2   : Fabio
+Rounds    : 2
+Timeout   : 10 secs
+
+
+
+**** ROUND 1 ****
+Initializing 6,5,4 board
+Initializing bottargaPlayer-NegaMax as Player 1
+Initializing Fabio as Player 2
+
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 8
+Mossa 0
+Total alphabeta cuts: 6058964
+Eval: Status: NOT_DEFINED	Value: 1.75
+Time elapsed: 9802ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [0,0]
+Player 2 (Fabio) -> [1,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 8
+Mossa 2
+Total alphabeta cuts: 6636699
+Eval: Status: NOT_DEFINED	Value: 1.25
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [4,0]
+Player 2 (Fabio) -> [2,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 8
+Mossa 4
+Total alphabeta cuts: 5750576
+Eval: Status: NOT_DEFINED	Value: 0.75
+Time elapsed: 9802ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [5,1]
+Player 2 (Fabio) -> [3,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 6
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 23
+Eval: Status: LOSE		Value: 8.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [4,3]
+Player 2 (Fabio) -> [3,0]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 8
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 21
+Eval: Status: LOSE		Value: 10.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [1,3]
+Player 2 (Fabio) -> [4,1]
+
+Game state    : WINP2
+Current score : bottargaPlayer-NegaMax (0) - Fabio (3)
+
+**** ROUND 2 ****
+Initializing 6,5,4 board
+Initializing bottargaPlayer-NegaMax as Player 1
+Initializing Fabio as Player 2
+
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 8
+Mossa 0
+Total alphabeta cuts: 6196603
+Eval: Status: NOT_DEFINED	Value: 1.75
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [0,0]
+Player 2 (Fabio) -> [1,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 8
+Mossa 2
+Total alphabeta cuts: 6408544
+Eval: Status: NOT_DEFINED	Value: 1.25
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [4,0]
+Player 2 (Fabio) -> [2,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 8
+Mossa 4
+Total alphabeta cuts: 5581691
+Eval: Status: NOT_DEFINED	Value: 0.75
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [5,1]
+Player 2 (Fabio) -> [3,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 6
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 23
+Eval: Status: LOSE		Value: 8.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [4,3]
+Player 2 (Fabio) -> [5,4]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 8
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 21
+Eval: Status: LOSE		Value: 10.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [1,3]
+Player 2 (Fabio) -> [4,1]
+
+Game state    : WINP2
+Current score : bottargaPlayer-NegaMax (0) - Fabio (6)
+
+**** FINAL SCORE ****
+bottargaPlayer-NegaMax 0
+Fabio 6
+
+Win bottargaPlayer-NegaMax: 0
+Win Fabio: 2
+Draws: 0
+# End of second round, round duration: 59 seconds
+Game type : 6,5,4
+Player1   : Fabio
+Player2   : bottargaPlayer-NegaMax
+Rounds    : 2
+Timeout   : 10 secs
+
+
+
+**** ROUND 1 ****
+Initializing 6,5,4 board
+Initializing Fabio as Player 1
+Initializing bottargaPlayer-NegaMax as Player 2
+
+Player 1 (Fabio) -> [1,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 8
+Mossa 1
+Total alphabeta cuts: 5023693
+Eval: Status: NOT_DEFINED	Value: 0.75
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [0,0]
+Player 1 (Fabio) -> [2,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 8
+Mossa 3
+Total alphabeta cuts: 5967451
+Eval: Status: NOT_DEFINED	Value: -0.25
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [4,0]
+Player 1 (Fabio) -> [3,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 5
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 24
+Eval: Status: LOSE		Value: 7.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [5,1]
+Player 1 (Fabio) -> [0,1]
+
+Game state    : WINP1
+Current score : Fabio (2) - bottargaPlayer-NegaMax (0)
+
+**** ROUND 2 ****
+Initializing 6,5,4 board
+Initializing Fabio as Player 1
+Initializing bottargaPlayer-NegaMax as Player 2
+
+Player 1 (Fabio) -> [1,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 8
+Mossa 1
+Total alphabeta cuts: 5241056
+Eval: Status: NOT_DEFINED	Value: 0.75
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [0,0]
+Player 1 (Fabio) -> [2,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 8
+Mossa 3
+Total alphabeta cuts: 5869812
+Eval: Status: NOT_DEFINED	Value: -0.25
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [4,0]
+Player 1 (Fabio) -> [3,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 5
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 24
+Eval: Status: LOSE		Value: 7.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [5,1]
+Player 1 (Fabio) -> [5,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 7
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 22
+Eval: Status: LOSE		Value: 9.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [4,3]
+Player 1 (Fabio) -> [4,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 9
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 20
+Eval: Status: LOSE		Value: 11.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [1,3]
+Player 1 (Fabio) -> [4,1]
+
+Game state    : WINP1
+Current score : Fabio (4) - bottargaPlayer-NegaMax (0)
+
+**** FINAL SCORE ****
+Fabio 4
+bottargaPlayer-NegaMax 0
+
+Win Fabio: 2
+Win bottargaPlayer-NegaMax: 0
+Draws: 0
+# End of first round, round duration: 78 seconds
+Game type : 6,6,4
+Player1   : bottargaPlayer-NegaMax
+Player2   : Fabio
+Rounds    : 2
+Timeout   : 10 secs
+
+
+
+**** ROUND 1 ****
+Initializing 6,6,4 board
+Initializing bottargaPlayer-NegaMax as Player 1
+Initializing Fabio as Player 2
+
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 8
+Mossa 0
+Total alphabeta cuts: 4583933
+Eval: Status: NOT_DEFINED	Value: 3.0
+Time elapsed: 9802ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [0,0]
+Player 2 (Fabio) -> [1,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 8
+Mossa 2
+Total alphabeta cuts: 5341244
+Eval: Status: NOT_DEFINED	Value: 1.75
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [4,0]
+Player 2 (Fabio) -> [2,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 7
+Mossa 4
+Total alphabeta cuts: 6819043
+Eval: Status: NOT_DEFINED	Value: -0.25
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [3,4]
+Player 2 (Fabio) -> [3,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 6
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 29
+Eval: Status: LOSE		Value: 8.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [5,1]
+Player 2 (Fabio) -> [4,1]
+
+Game state    : WINP2
+Current score : bottargaPlayer-NegaMax (0) - Fabio (3)
+
+**** ROUND 2 ****
+Initializing 6,6,4 board
+Initializing bottargaPlayer-NegaMax as Player 1
+Initializing Fabio as Player 2
+
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 8
+Mossa 0
+Total alphabeta cuts: 4707953
+Eval: Status: NOT_DEFINED	Value: 3.0
+Time elapsed: 9802ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [0,0]
+Player 2 (Fabio) -> [1,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 8
+Mossa 2
+Total alphabeta cuts: 5324672
+Eval: Status: NOT_DEFINED	Value: 1.75
+Time elapsed: 9802ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [4,0]
+Player 2 (Fabio) -> [2,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 7
+Mossa 4
+Total alphabeta cuts: 6801846
+Eval: Status: NOT_DEFINED	Value: -0.25
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [3,4]
+Player 2 (Fabio) -> [3,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 6
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 29
+Eval: Status: LOSE		Value: 8.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-NegaMax) -> [5,1]
+Player 2 (Fabio) -> [4,1]
+
+Game state    : WINP2
+Current score : bottargaPlayer-NegaMax (0) - Fabio (6)
+
+**** FINAL SCORE ****
+bottargaPlayer-NegaMax 0
+Fabio 6
+
+Win bottargaPlayer-NegaMax: 0
+Win Fabio: 2
+Draws: 0
+# End of second round, round duration: 59 seconds
+Game type : 6,6,4
+Player1   : Fabio
+Player2   : bottargaPlayer-NegaMax
+Rounds    : 2
+Timeout   : 10 secs
+
+
+
+**** ROUND 1 ****
+Initializing 6,6,4 board
+Initializing Fabio as Player 1
+Initializing bottargaPlayer-NegaMax as Player 2
+
+Player 1 (Fabio) -> [1,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 8
+Mossa 1
+Total alphabeta cuts: 4317675
+Eval: Status: NOT_DEFINED	Value: 1.25
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [0,0]
+Player 1 (Fabio) -> [2,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 7
+Mossa 3
+Total alphabeta cuts: 7096760
+Eval: Status: NOT_DEFINED	Value: -1.25
+Time elapsed: 9803ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [4,2]
+Player 1 (Fabio) -> [3,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 5
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 30
+Eval: Status: LOSE		Value: 7.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [4,0]
+Player 1 (Fabio) -> [5,3]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 7
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 28
+Eval: Status: LOSE		Value: 9.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [5,1]
+Player 1 (Fabio) -> [0,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 9
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 26
+Eval: Status: LOSE		Value: 11.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [4,3]
+Player 1 (Fabio) -> [4,1]
+
+Game state    : WINP1
+Current score : Fabio (2) - bottargaPlayer-NegaMax (0)
+
+**** ROUND 2 ****
+Initializing 6,6,4 board
+Initializing Fabio as Player 1
+Initializing bottargaPlayer-NegaMax as Player 2
+
+Player 1 (Fabio) -> [1,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 8
+Mossa 1
+Total alphabeta cuts: 4499874
+Eval: Status: NOT_DEFINED	Value: 1.25
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [0,0]
+Player 1 (Fabio) -> [2,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 7
+Mossa 3
+Total alphabeta cuts: 7154959
+Eval: Status: NOT_DEFINED	Value: -1.25
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [4,2]
+Player 1 (Fabio) -> [3,1]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 5
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 30
+Eval: Status: LOSE		Value: 7.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [4,0]
+Player 1 (Fabio) -> [1,2]
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 7
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 28
+Eval: Status: LOSE		Value: 9.0
+Time elapsed: 1ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-NegaMax) -> [5,1]
+Player 1 (Fabio) -> [4,1]
+
+Game state    : WINP1
+Current score : Fabio (4) - bottargaPlayer-NegaMax (0)
+
+**** FINAL SCORE ****
+Fabio 4
+bottargaPlayer-NegaMax 0
+
+Win Fabio: 2
+Win bottargaPlayer-NegaMax: 0
+Draws: 0

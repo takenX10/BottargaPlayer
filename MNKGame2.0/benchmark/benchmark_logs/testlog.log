@@ -1,0 +1,437 @@
+
+# End of first round, round duration: 0 seconds
+Game type : 3,3,3
+Player1   : bottargaPlayer
+Player2   : Fabio
+Rounds    : 2
+Timeout   : 10 secs
+
+
+
+**** ROUND 1 ****
+Initializing 3,3,3 board
+Initializing bottargaPlayer as Player 1
+Initializing Fabio as Player 2
+
+Player 1 (bottargaPlayer) -> [1,1]
+Player 2 (Fabio) -> [2,0]
+Player 1 (bottargaPlayer) -> [2,1]
+Player 2 (Fabio) -> [0,1]
+Player 1 (bottargaPlayer) -> [1,2]
+Player 2 (Fabio) -> [1,0]
+Player 1 (bottargaPlayer) -> [0,0]
+Player 2 (Fabio) -> [2,2]
+Player 1 (bottargaPlayer) -> [0,2]
+
+Game state    : DRAW
+Current score : bottargaPlayer (1) - Fabio (1)
+
+**** ROUND 2 ****
+Initializing 3,3,3 board
+Initializing bottargaPlayer as Player 1
+Initializing Fabio as Player 2
+
+Player 1 (bottargaPlayer) -> [1,1]
+Player 2 (Fabio) -> [2,0]
+Player 1 (bottargaPlayer) -> [2,1]
+Player 2 (Fabio) -> [0,1]
+Player 1 (bottargaPlayer) -> [1,2]
+Player 2 (Fabio) -> [1,0]
+Player 1 (bottargaPlayer) -> [0,0]
+Player 2 (Fabio) -> [2,2]
+Player 1 (bottargaPlayer) -> [0,2]
+
+Game state    : DRAW
+Current score : bottargaPlayer (2) - Fabio (2)
+
+**** FINAL SCORE ****
+bottargaPlayer 2
+Fabio 2
+
+Win bottargaPlayer: 0
+Win Fabio: 0
+Draws: 2
+# End of second round, round duration: 0 seconds
+Game type : 3,3,3
+Player1   : Fabio
+Player2   : bottargaPlayer
+Rounds    : 2
+Timeout   : 10 secs
+
+
+
+**** ROUND 1 ****
+Initializing 3,3,3 board
+Initializing Fabio as Player 1
+Initializing bottargaPlayer as Player 2
+
+Player 1 (Fabio) -> [1,1]
+Player 2 (bottargaPlayer) -> [2,0]
+Player 1 (Fabio) -> [2,1]
+Player 2 (bottargaPlayer) -> [0,1]
+Player 1 (Fabio) -> [0,2]
+Player 2 (bottargaPlayer) -> [1,2]
+Player 1 (Fabio) -> [1,0]
+Player 2 (bottargaPlayer) -> [2,2]
+Player 1 (Fabio) -> [0,0]
+
+Game state    : DRAW
+Current score : Fabio (1) - bottargaPlayer (1)
+
+**** ROUND 2 ****
+Initializing 3,3,3 board
+Initializing Fabio as Player 1
+Initializing bottargaPlayer as Player 2
+
+Player 1 (Fabio) -> [1,1]
+Player 2 (bottargaPlayer) -> [2,0]
+Player 1 (Fabio) -> [1,2]
+Player 2 (bottargaPlayer) -> [1,0]
+Player 1 (Fabio) -> [0,0]
+Player 2 (bottargaPlayer) -> [2,2]
+Player 1 (Fabio) -> [2,1]
+Player 2 (bottargaPlayer) -> [0,1]
+Player 1 (Fabio) -> [0,2]
+
+Game state    : DRAW
+Current score : Fabio (2) - bottargaPlayer (2)
+
+**** FINAL SCORE ****
+Fabio 2
+bottargaPlayer 2
+
+Win Fabio: 0
+Win bottargaPlayer: 0
+Draws: 2
+# End of first round, round duration: 1 seconds
+Game type : 4,3,3
+Player1   : bottargaPlayer
+Player2   : Fabio
+Rounds    : 2
+Timeout   : 10 secs
+
+
+
+**** ROUND 1 ****
+Initializing 4,3,3 board
+Initializing bottargaPlayer as Player 1
+Initializing Fabio as Player 2
+
+Player 1 (bottargaPlayer) -> [1,1]
+Player 2 (Fabio) -> [2,1]
+Player 1 (bottargaPlayer) -> [2,0]
+Player 2 (Fabio) -> [3,2]
+Player 1 (bottargaPlayer) -> [0,2]
+
+Game state    : WINP1
+Current score : bottargaPlayer (2) - Fabio (0)
+
+**** ROUND 2 ****
+Initializing 4,3,3 board
+Initializing bottargaPlayer as Player 1
+Initializing Fabio as Player 2
+
+Player 1 (bottargaPlayer) -> [1,1]
+Player 2 (Fabio) -> [2,1]
+Player 1 (bottargaPlayer) -> [2,0]
+Player 2 (Fabio) -> [1,2]
+Player 1 (bottargaPlayer) -> [0,2]
+
+Game state    : WINP1
+Current score : bottargaPlayer (4) - Fabio (0)
+
+**** FINAL SCORE ****
+bottargaPlayer 4
+Fabio 0
+
+Win bottargaPlayer: 2
+Win Fabio: 0
+Draws: 0
+# End of second round, round duration: 0 seconds
+Game type : 4,3,3
+Player1   : Fabio
+Player2   : bottargaPlayer
+Rounds    : 2
+Timeout   : 10 secs
+
+
+
+**** ROUND 1 ****
+Initializing 4,3,3 board
+Initializing Fabio as Player 1
+Initializing bottargaPlayer as Player 2
+
+Player 1 (Fabio) -> [1,1]
+Player 2 (bottargaPlayer) -> [2,1]
+Player 1 (Fabio) -> [2,2]
+Player 2 (bottargaPlayer) -> [0,0]
+Player 1 (Fabio) -> [3,2]
+Player 2 (bottargaPlayer) -> [1,2]
+Player 1 (Fabio) -> [3,0]
+Player 2 (bottargaPlayer) -> [3,1]
+Player 1 (Fabio) -> [2,0]
+Player 2 (bottargaPlayer) -> [0,1]
+Player 1 (Fabio) -> [0,2]
+
+Game state    : WINP1
+Current score : Fabio (2) - bottargaPlayer (0)
+
+**** ROUND 2 ****
+Initializing 4,3,3 board
+Initializing Fabio as Player 1
+Initializing bottargaPlayer as Player 2
+
+Player 1 (Fabio) -> [1,1]
+Player 2 (bottargaPlayer) -> [2,1]
+Player 1 (Fabio) -> [2,0]
+Player 2 (bottargaPlayer) -> [0,2]
+Player 1 (Fabio) -> [3,0]
+Player 2 (bottargaPlayer) -> [1,0]
+Player 1 (Fabio) -> [3,2]
+Player 2 (bottargaPlayer) -> [3,1]
+Player 1 (Fabio) -> [2,2]
+Player 2 (bottargaPlayer) -> [0,1]
+Player 1 (Fabio) -> [1,2]
+
+Game state    : WINP1
+Current score : Fabio (4) - bottargaPlayer (0)
+
+**** FINAL SCORE ****
+Fabio 4
+bottargaPlayer 0
+
+Win Fabio: 2
+Win bottargaPlayer: 0
+Draws: 0
+# End of first round, round duration: 1 seconds
+Game type : 4,4,3
+Player1   : bottargaPlayer
+Player2   : Fabio
+Rounds    : 2
+Timeout   : 10 secs
+
+
+
+**** ROUND 1 ****
+Initializing 4,4,3 board
+Initializing bottargaPlayer as Player 1
+Initializing Fabio as Player 2
+
+Player 1 (bottargaPlayer) -> [1,1]
+Player 2 (Fabio) -> [0,0]
+Player 1 (bottargaPlayer) -> [2,1]
+Player 2 (Fabio) -> [1,2]
+Player 1 (bottargaPlayer) -> [3,1]
+
+Game state    : WINP1
+Current score : bottargaPlayer (2) - Fabio (0)
+
+**** ROUND 2 ****
+Initializing 4,4,3 board
+Initializing bottargaPlayer as Player 1
+Initializing Fabio as Player 2
+
+Player 1 (bottargaPlayer) -> [1,1]
+Player 2 (Fabio) -> [3,1]
+Player 1 (bottargaPlayer) -> [2,2]
+Player 2 (Fabio) -> [2,1]
+Player 1 (bottargaPlayer) -> [3,3]
+
+Game state    : WINP1
+Current score : bottargaPlayer (4) - Fabio (0)
+
+**** FINAL SCORE ****
+bottargaPlayer 4
+Fabio 0
+
+Win bottargaPlayer: 2
+Win Fabio: 0
+Draws: 0
+# End of second round, round duration: 20 seconds
+Game type : 4,4,3
+Player1   : Fabio
+Player2   : bottargaPlayer
+Rounds    : 2
+Timeout   : 10 secs
+
+
+
+**** ROUND 1 ****
+Initializing 4,4,3 board
+Initializing Fabio as Player 1
+Initializing bottargaPlayer as Player 2
+
+Player 1 (Fabio) -> [1,1]
+Player 2 (bottargaPlayer) -> [0,3]
+Player 1 (Fabio) -> [2,1]
+Player 2 (bottargaPlayer) -> [3,1]
+Player 1 (Fabio) -> [2,3]
+Player 2 (bottargaPlayer) -> [3,0]
+Player 1 (Fabio) -> [3,2]
+Player 2 (bottargaPlayer) -> [3,3]
+Player 1 (Fabio) -> [2,0]
+Player 2 (bottargaPlayer) -> [1,0]
+Player 1 (Fabio) -> [0,2]
+
+Game state    : WINP1
+Current score : Fabio (2) - bottargaPlayer (0)
+
+**** ROUND 2 ****
+Initializing 4,4,3 board
+Initializing Fabio as Player 1
+Initializing bottargaPlayer as Player 2
+
+Player 1 (Fabio) -> [1,1]
+Player 2 (bottargaPlayer) -> [0,3]
+Player 1 (Fabio) -> [2,1]
+Player 2 (bottargaPlayer) -> [3,1]
+Player 1 (Fabio) -> [0,0]
+Player 2 (bottargaPlayer) -> [3,0]
+Player 1 (Fabio) -> [3,2]
+Player 2 (bottargaPlayer) -> [3,3]
+Player 1 (Fabio) -> [1,2]
+Player 2 (bottargaPlayer) -> [1,0]
+Player 1 (Fabio) -> [0,1]
+
+Game state    : WINP1
+Current score : Fabio (4) - bottargaPlayer (0)
+
+**** FINAL SCORE ****
+Fabio 4
+bottargaPlayer 0
+
+Win Fabio: 2
+Win bottargaPlayer: 0
+Draws: 0
+# End of first round, round duration: 59 seconds
+Game type : 4,4,4
+Player1   : bottargaPlayer
+Player2   : Fabio
+Rounds    : 2
+Timeout   : 10 secs
+
+
+
+**** ROUND 1 ****
+Initializing 4,4,4 board
+Initializing bottargaPlayer as Player 1
+Initializing Fabio as Player 2
+
+Player 1 (bottargaPlayer) -> [0,3]
+Player 2 (Fabio) -> [2,1]
+Player 1 (bottargaPlayer) -> [1,1]
+Player 2 (Fabio) -> [3,3]
+Player 1 (bottargaPlayer) -> [3,1]
+Player 2 (Fabio) -> [2,2]
+Player 1 (bottargaPlayer) -> [3,0]
+Player 2 (Fabio) -> [1,0]
+Player 1 (bottargaPlayer) -> [0,2]
+Player 2 (Fabio) -> [2,3]
+Player 1 (bottargaPlayer) -> [2,0]
+Player 2 (Fabio) -> [1,2]
+Player 1 (bottargaPlayer) -> [3,2]
+Player 2 (Fabio) -> [0,1]
+Player 1 (bottargaPlayer) -> [1,3]
+Player 2 (Fabio) -> [0,0]
+
+Game state    : DRAW
+Current score : bottargaPlayer (1) - Fabio (1)
+
+**** ROUND 2 ****
+Initializing 4,4,4 board
+Initializing bottargaPlayer as Player 1
+Initializing Fabio as Player 2
+
+Player 1 (bottargaPlayer) -> [0,3]
+Player 2 (Fabio) -> [2,1]
+Player 1 (bottargaPlayer) -> [1,1]
+Player 2 (Fabio) -> [3,3]
+Player 1 (bottargaPlayer) -> [3,1]
+Player 2 (Fabio) -> [1,0]
+Player 1 (bottargaPlayer) -> [3,0]
+Player 2 (Fabio) -> [1,2]
+Player 1 (bottargaPlayer) -> [2,2]
+Player 2 (Fabio) -> [2,3]
+Player 1 (bottargaPlayer) -> [0,2]
+Player 2 (Fabio) -> [0,0]
+Player 1 (bottargaPlayer) -> [3,2]
+Player 2 (Fabio) -> [2,0]
+Player 1 (bottargaPlayer) -> [0,1]
+Player 2 (Fabio) -> [1,3]
+
+Game state    : DRAW
+Current score : bottargaPlayer (2) - Fabio (2)
+
+**** FINAL SCORE ****
+bottargaPlayer 2
+Fabio 2
+
+Win bottargaPlayer: 0
+Win Fabio: 0
+Draws: 2
+# End of second round, round duration: 26 seconds
+Game type : 4,4,4
+Player1   : Fabio
+Player2   : bottargaPlayer
+Rounds    : 2
+Timeout   : 10 secs
+
+
+
+**** ROUND 1 ****
+Initializing 4,4,4 board
+Initializing Fabio as Player 1
+Initializing bottargaPlayer as Player 2
+
+Player 1 (Fabio) -> [1,1]
+Player 2 (bottargaPlayer) -> [0,3]
+Player 1 (Fabio) -> [3,1]
+Player 2 (bottargaPlayer) -> [3,0]
+Player 1 (Fabio) -> [1,2]
+Player 2 (bottargaPlayer) -> [3,3]
+Player 1 (Fabio) -> [3,2]
+Player 2 (bottargaPlayer) -> [1,0]
+Player 1 (Fabio) -> [1,3]
+Player 2 (bottargaPlayer) -> [2,2]
+Player 1 (Fabio) -> [2,1]
+Player 2 (bottargaPlayer) -> [0,1]
+Player 1 (Fabio) -> [2,0]
+Player 2 (bottargaPlayer) -> [0,2]
+Player 1 (Fabio) -> [0,0]
+Player 2 (bottargaPlayer) -> [2,3]
+
+Game state    : DRAW
+Current score : Fabio (1) - bottargaPlayer (1)
+
+**** ROUND 2 ****
+Initializing 4,4,4 board
+Initializing Fabio as Player 1
+Initializing bottargaPlayer as Player 2
+
+Player 1 (Fabio) -> [1,1]
+Player 2 (bottargaPlayer) -> [0,3]
+Player 1 (Fabio) -> [0,0]
+Player 2 (bottargaPlayer) -> [3,1]
+Player 1 (Fabio) -> [3,3]
+Player 2 (bottargaPlayer) -> [2,2]
+Player 1 (Fabio) -> [2,1]
+Player 2 (bottargaPlayer) -> [3,0]
+Player 1 (Fabio) -> [0,2]
+Player 2 (bottargaPlayer) -> [1,0]
+Player 1 (Fabio) -> [3,2]
+Player 2 (bottargaPlayer) -> [0,1]
+Player 1 (Fabio) -> [1,3]
+Player 2 (bottargaPlayer) -> [1,2]
+Player 1 (Fabio) -> [2,3]
+Player 2 (bottargaPlayer) -> [2,0]
+
+Game state    : DRAW
+Current score : Fabio (2) - bottargaPlayer (2)
+
+**** FINAL SCORE ****
+Fabio 2
+bottargaPlayer 2
+
+Win Fabio: 0
+Win bottargaPlayer: 0
+Draws: 2

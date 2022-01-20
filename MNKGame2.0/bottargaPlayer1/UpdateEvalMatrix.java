@@ -1,4 +1,4 @@
-package bottargaPlayer;
+package bottargaPlayer1;
 
 import mnkgame.MNKCell;
 import mnkgame.MNKCellState;
@@ -34,17 +34,18 @@ public class UpdateEvalMatrix {
     private int partial_sum_N_Matrix;
     private int partial_sum_K1_Matrix;
     private int partial_sum_K2_Matrix;
-    private int conta_patta;
-    private int ncelle;     // numero delle celle totali nelle varie matrici
+    private int conta_patta_p1;
+    private int conta_patta_p2;
+    private final int ncelle;     // numero delle celle totali nelle varie matrici
     //todo se so che in una serie di mosse una mi ha portato alla vittoria smetto di aggiornare tutte le matrici analizzando le altre mosse? Si
-    public float eval; //Valore finale che assume l'eval (-2 hai perso, -3 hai vinto, otherwise punteggio che indica quanto siamo messi bene)
-    public final float win_value = 1000; // valore statico di vittoria
-    public final float lose_value = -1000; // valore statico di sconfitta
-    // patta -> k+1
+    public CustomScore eval;
+    public int symbolsInside;
 
     //NB: Le coordinate X ed Y sottostanti partono da 0 (come prima cella) ed arrivano ad M-1 e N-1.
     public UpdateEvalMatrix(int M, int N, int K, boolean first_player, int[][][] M_Matrix, int[][][] N_Matrix, int[][][] K1_Matrix, int[][][] K2_Matrix){
-        this.conta_patta = 0;
+        this.symbolsInside = 0;
+        this.conta_patta_p1 = 0;
+        this.conta_patta_p1 = 0;
         this.ncelle = M_Matrix.length * M_Matrix[0].length + N_Matrix.length * N_Matrix[0].length + K1_Matrix.length * K1_Matrix[0].length +K2_Matrix.length * K2_Matrix[0].length;
         this.m = M - 1;
         this.k = K;
@@ -57,19 +58,22 @@ public class UpdateEvalMatrix {
         this.partial_sum_N_Matrix = 0;
         this.partial_sum_K1_Matrix = 0;
         this.partial_sum_K2_Matrix = 0;
+        this.eval = new CustomScore(0,EvalStatus.NOT_DEFINED);
     }
+    
     //Metodo per aggiornare le 4 matrici dell'eval considerando una serie di mosse
     public void multiple_update_matrix(MNKCell[] move_list){
         if(move_list != null){
             for (int i = 0; i < move_list.length; i++){
                 single_update_matrix(move_list[i], move_list[i].state);
             }
-            calcolate_eval_value(M_Matrix, N_Matrix, K1_Matrix, K2_Matrix);
         }
     }
 
     public void single_update_matrix(MNKCell cell, MNKCellState state){ //Metodo per aggiornare tutte le 4 matrici dell'eval considerando una singola mossa
             if(cell != null){
+                this.symbolsInside++;
+                CustomScore startingScore = new CustomScore(this.eval.score, this.eval.status);
                 this.x = cell.i;
                 this.y = cell.j;
                 if (( state == MNKCellState.P1 && first_player) || (state == MNKCellState.P2 && !first_player) ) this.my_move = true;
@@ -78,13 +82,15 @@ public class UpdateEvalMatrix {
                 update_N_Matrix();
                 update_K1_Matrix();
                 update_K2_Matrix();
-                calcolate_eval_value(M_Matrix, N_Matrix, K1_Matrix, K2_Matrix);
+                calcolate_eval_value(M_Matrix, N_Matrix, K1_Matrix, K2_Matrix, startingScore);
             }
     }
 
 
     public void single_invert_matrix(MNKCell cell, MNKCellState state){
         if(cell != null){
+            this.symbolsInside--;
+            CustomScore startingScore = new CustomScore(this.eval.score, this.eval.status);
             this.x = cell.i;
             this.y = cell.j;
             if (( state == MNKCellState.P1 && first_player) || (state == MNKCellState.P2 && !first_player) ) this.my_move = true;
@@ -93,16 +99,31 @@ public class UpdateEvalMatrix {
             invert_N_Matrix();
             invert_K1_Matrix();
             invert_K2_Matrix();
-            calcolate_eval_value(M_Matrix, N_Matrix, K1_Matrix, K2_Matrix);
+            calcolate_eval_value(M_Matrix, N_Matrix, K1_Matrix, K2_Matrix, startingScore);
         }
     }
 
-    private void calcolate_eval_value(int[][][] M, int[][][] N, int[][][] K1, int[][][] K2){
-        if(eval != win_value && eval != lose_value) {
-            if(conta_patta == ncelle){
-                eval = k+1;
-            }else{
-                eval = (float)(partial_sum_M_Matrix + partial_sum_N_Matrix + partial_sum_K1_Matrix + partial_sum_K2_Matrix) / 4;
+    private void calcolate_eval_value(int[][][] M, int[][][] N, int[][][] K1, int[][][] K2, CustomScore startingScore){
+        if(eval.status != EvalStatus.WIN && eval.status != EvalStatus.LOSE) {
+            if(conta_patta_p1 == ncelle && conta_patta_p2 == ncelle){
+                this.eval.status = EvalStatus.DRAW;
+                if(startingScore.status != EvalStatus.DRAW){
+                    this.eval.score = (double)this.symbolsInside;
+                }
+                return;
+            }else if(conta_patta_p1 == ncelle){
+                this.eval.status = EvalStatus.CANT_WIN;
+            }else if(conta_patta_p2 == ncelle){
+                this.eval.status = EvalStatus.CANT_LOSE;
+            }else{  
+                this.eval.status = EvalStatus.NOT_DEFINED;
+            }
+            this.eval.score = (double)(partial_sum_M_Matrix + partial_sum_N_Matrix + partial_sum_K1_Matrix + partial_sum_K2_Matrix) / 4;
+            int a = 0;
+            a = a + 1;
+        }else{
+            if(startingScore.status != EvalStatus.WIN && startingScore.status != EvalStatus.LOSE){
+                this.eval.score = (double)this.symbolsInside;
             }
         }
     }
@@ -111,11 +132,13 @@ public class UpdateEvalMatrix {
         if(this.my_move){
             matrix[x][y][0]++;
             partial_sum++;
+            if(matrix[x][y][0] == 1){
+                conta_patta_p2++;
+            }
             if(matrix[x][y][0] == k){
-                this.eval = win_value;
+                this.eval.status = EvalStatus.WIN;
             }else if(matrix[x][y][1] > 0){
                 if(matrix[x][y][0] == 1) {
-                    conta_patta++;
                     partial_sum += matrix[x][y][1] - 1;
                 }else {
                     partial_sum--;
@@ -124,11 +147,13 @@ public class UpdateEvalMatrix {
         }else{
             matrix[x][y][1]++;
             partial_sum--;
+            if(matrix[x][y][1] == 1){
+                conta_patta_p1++;
+            }
             if(matrix[x][y][1] == k){
-                this.eval = lose_value;
+                this.eval.status = EvalStatus.LOSE;
             }else if(matrix[x][y][0] > 0){
                 if(matrix[x][y][1] == 1) {
-                    conta_patta++;
                     partial_sum -= matrix[x][y][0] - 1;
                 }else {
                     partial_sum++;
@@ -141,27 +166,31 @@ public class UpdateEvalMatrix {
     private int invert_matrix(int x, int y, boolean mymove, int[][][] matrix, int partial_sum){
         if(mymove){
             if(matrix[x][y][0] == k){
-                this.eval = 0; // per dirgli di aggiornarlo
+                this.eval.status = EvalStatus.NOT_DEFINED; // per dirgli di aggiornarlo
             }else if(matrix[x][y][1] > 0){
                 if(matrix[x][y][0] == 1) {
-                    conta_patta--;
                     partial_sum -= matrix[x][y][1] - 1;
                 }else {
                     partial_sum++; // per annullare partial_sum--; dopo
                 }
             }
+            if(matrix[x][y][0] == 1){
+                conta_patta_p2--;
+            }
             matrix[x][y][0]--;
             partial_sum--;
         }else{
             if(matrix[x][y][1] == k){
-                this.eval = 0; // per dirgli di aggiornarlo
+                this.eval.status = EvalStatus.NOT_DEFINED; // per dirgli di aggiornarlo
             }else if(matrix[x][y][0] > 0){
                 if(matrix[x][y][1] == 1) {
-                    conta_patta--;
                     partial_sum += matrix[x][y][0] - 1;
                 }else {
                     partial_sum--;
                 }
+            }
+            if(matrix[x][y][1] == 1){
+                conta_patta_p1--;
             }
             matrix[x][y][1]--;
             partial_sum++;
@@ -176,7 +205,6 @@ public class UpdateEvalMatrix {
     private void update_M_Matrix(){
         if (M_Matrix != null){
             //todo Le successive due righe sono qui per leggibilità, per una maggiore efficienza spostarle nel metodo di init
-            int limit_x = M_Matrix.length - 1; //Dimensione righe matrice M_Matrix
             int limit_y = M_Matrix[0].length - 1; //Dimensione colonne matrice M_Matrix
 
             //Aggiorno tutti i valori alla sinistra
@@ -193,7 +221,6 @@ public class UpdateEvalMatrix {
         if (N_Matrix != null){
             //todo Le successive due righe sono qui per leggibilità, per una maggiore efficienza spostarle nel metodo di init
             int limit_x = N_Matrix.length - 1; //Dimensione righe matrice N_Matrix
-            int limit_y = N_Matrix[0].length - 1; //Dimensione colonne matrice N_Matrix
             //Aggiorno tutti i valori in alto
             for ( int i = 0; i < k && ( x-i >= 0 ); i++ ) {
                 if ((x - i <= limit_x)) {
@@ -237,7 +264,6 @@ public class UpdateEvalMatrix {
     private void invert_M_Matrix(){
         if (M_Matrix != null){
             //todo Le successive due righe sono qui per leggibilità, per una maggiore efficienza spostarle nel metodo di init
-            int limit_x = M_Matrix.length - 1; //Dimensione righe matrice M_Matrix
             int limit_y = M_Matrix[0].length - 1; //Dimensione colonne matrice M_Matrix
 
             //Aggiorno tutti i valori alla sinistra
@@ -253,7 +279,6 @@ public class UpdateEvalMatrix {
         if (N_Matrix != null){
             //todo Le successive due righe sono qui per leggibilità, per una maggiore efficienza spostarle nel metodo di init
             int limit_x = N_Matrix.length - 1; //Dimensione righe matrice N_Matrix
-            int limit_y = N_Matrix[0].length - 1; //Dimensione colonne matrice N_Matrix
             //Aggiorno tutti i valori in alto
             for ( int i = 0; i < k && ( x-i >= 0 ); i++ ) {
                 if ((x - i <= limit_x)) {

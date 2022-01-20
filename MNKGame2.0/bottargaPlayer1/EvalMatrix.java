@@ -1,4 +1,4 @@
-package bottargaPlayer;
+package bottargaPlayer1;
 /*
 * Questa classe permette la creazione e l'inizializzazione delle 4 matrici dell'eval.
 * Questa classe è dotata di metodi per la stampa di ognuna delle 4 matrici dell'eval #fordebugpurpose.

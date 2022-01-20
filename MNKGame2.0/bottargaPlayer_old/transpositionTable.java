@@ -1,4 +1,4 @@
-package bottargaPlayer;
+package bottargaPlayer_old;
 
 import mnkgame.MNKCell;
 import mnkgame.MNKCellState;

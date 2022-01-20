@@ -18,6 +18,56 @@ Costruiamo 4 matrici (una per ogni direzione in cui è possibile vincere), in mo
 - Se la somma di tutte le somme delle matrici è un valore negativo particolare ( - n dove n è il numero di celle di tutte le matrici) allora **non puoi vincere**, se entrambi i giocatori non possono vincere è patta
 > sarà da definire come strutturare la matrice delle diagonali
 
+
+Note sull'eval:
+
+Ci sono 6 stati:
+WIN ->          La board ha una vittoria assicurata
+CANT_LOSE ->    Il player avversario non puo vincere
+DRAW ->         Esiste un pareggio assicurato da questa posizione
+NOT_DEFINED     Lo score finale non e' ancora stato trovato
+CANT_WIN        Il player non puo vincere in nessun modo
+LOSE            Esiste un modo per cui il player puo' perdere per forza
+
+
+Quindi ogni eval ritornato avra' due valori: lo stato e lo score numerico
+
+
+Per fare un confronto tra valori si confrontano gli stati come prima cosa
+seguendo questi criteri:
+
+WIN > CANT_LOSE > DRAW|NOT_DEFINED > CANT_WIN > LOSE
+
+DRAW e NOT_DEFINED stanno sullo stesso livello.
+
+Per confronti sullo stesso stato:
+
+WIN ->  Mantiene come valore un numero che corrisponde alla profondita della vittoria
+        Per trovare il migliore tra due win scelgo quello che mi fa vincere prima, ovvero
+        quello con lo score minore
+
+CANT_LOSE -> prende lo score normale, quindi si confrontano normalmente
+
+CANT_WIN -> prende lo score normale, quindi si confrontano normalmente
+
+DRAW -> stessa cosa di win, ma vince quello che fa pareggiare piu in fondo, quindi 
+        quello con lo score maggiore
+
+LOSE -> stessa cosa di draw
+
+NOT_DEFINED -> prende lo score normale.
+
+NOT_DEFINED e DRAW ->   Per confrontare questi due valori si controlla il valore di NOT_DEFINED
+                        NOT_DEFINED > 0 (board che favorisce il player) -> NOT_DEFINED e' meglio di un pareggio
+                        NOT_DEFINED <= 0 (board incerta o che favorisce l'avversario) -> NOT_DEFINED e' peggio di DRAW
+
+Per invertire lo score basta chiamare il metodo  CustomScore.invert
+
+
+
+
+
+
 ### Alpha-Beta intelligente
 
 - L'alpha beta elimina in range, non con strettamente inferiore e superiore.

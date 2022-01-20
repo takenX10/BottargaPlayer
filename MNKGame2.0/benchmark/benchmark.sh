@@ -94,7 +94,7 @@ full_benchmark(){
 cd ..
 
 # Compile the sources
-javac -d source mnkgame/*.java bottargaPlayer/*.java 2> >(grep -v "^Picked up _JAVA_OPTIONS:" >&2)
+javac -d source bottargaPlayer1/*.java bottargaPlayer_old/*.java mnkgame/*.java 2> >(grep -v "^Picked up _JAVA_OPTIONS:" >&2)
 
 cd source
 # Create the temp file

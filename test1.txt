@@ -1,0 +1,93 @@
+Livello 8
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: -1.25
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: -1.25
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: -0.5
+Max: Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Livello 9
+Cell: [0,1] -> FREE Status: CANT_WIN	Value: -0.75
+Cell: [0,2] -> FREE Status: CANT_WIN	Value: -1.25
+Cell: [1,0] -> FREE Status: CANT_WIN	Value: -1.75
+Cell: [1,3] -> FREE Status: CANT_WIN	Value: -1.75
+Cell: [2,2] -> FREE Status: CANT_WIN	Value: -1.25
+Cell: [3,0] -> FREE Status: CANT_WIN	Value: -1.5
+Cell: [3,1] -> FREE Status: CANT_WIN	Value: -1.0
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: -1.5
+Cell: [3,3] -> FREE Status: CANT_WIN	Value: -1.0
+Max: Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: -1.5
+Livello 10
+Cell: [0,1] -> FREE Status: DRAW		Value: 10.0
+Cell: [0,2] -> FREE Status: CANT_WIN	Value: -0.5
+Cell: [1,0] -> FREE Status: CANT_WIN	Value: -0.75
+Cell: [1,3] -> FREE Status: CANT_WIN	Value: -0.75
+Cell: [2,2] -> FREE Status: CANT_WIN	Value: -0.25
+Cell: [3,0] -> FREE Status: CANT_WIN	Value: -0.5
+Cell: [3,1] -> FREE Status: CANT_WIN	Value: -0.5
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [3,3] -> FREE Status: DRAW		Value: 10.0
+Max: Cell: [3,3] -> FREE Status: DRAW		Value: 10.0
+Livello 11
+ERRORE!
+ERRORE!
+Cell: [0,1] -> FREE Status: CANT_WIN	Value: -0.5
+Cell: [0,2] -> FREE Status: CANT_WIN	Value: -1.0
+Cell: [1,0] -> FREE Status: LOSE		Value: 11.0
+Cell: [1,3] -> FREE Status: LOSE		Value: 11.0
+Cell: [2,2] -> FREE Status: LOSE		Value: 11.0
+Cell: [3,0] -> FREE Status: LOSE		Value: 11.0
+Cell: [3,1] -> FREE Status: CANT_WIN	Value: -0.75
+Cell: [3,2] -> FREE Status: LOSE		Value: 11.0
+Cell: [3,3] -> FREE Status: LOSE		Value: 11.0
+Max: Cell: [0,1] -> FREE Status: CANT_WIN	Value: -0.5
+Livello 12
+Cell: [0,1] -> FREE Status: DRAW		Value: 12.0
+Cell: [0,2] -> FREE Status: DRAW		Value: 12.0
+Cell: [1,0] -> FREE Status: LOSE		Value: 11.0
+Cell: [1,3] -> FREE Status: LOSE		Value: 11.0
+Cell: [2,2] -> FREE Status: LOSE		Value: 11.0
+Cell: [3,0] -> FREE Status: LOSE		Value: 11.0
+Cell: [3,1] -> FREE Status: DRAW		Value: 12.0
+Cell: [3,2] -> FREE Status: LOSE		Value: 11.0
+Cell: [3,3] -> FREE Status: LOSE		Value: 11.0
+Max: Cell: [3,1] -> FREE Status: DRAW		Value: 12.0
+Livello 13
+ERRORE!
+Cell: [0,1] -> FREE Status: DRAW		Value: 13.0
+Cell: [0,2] -> FREE Status: CANT_WIN	Value: -0.75
+Cell: [1,0] -> FREE Status: LOSE		Value: 11.0
+Cell: [1,3] -> FREE Status: LOSE		Value: 11.0
+Cell: [2,2] -> FREE Status: LOSE		Value: 11.0
+Cell: [3,0] -> FREE Status: LOSE		Value: 11.0
+Cell: [3,1] -> FREE Status: DRAW		Value: 13.0
+Cell: [3,2] -> FREE Status: LOSE		Value: 11.0
+Cell: [3,3] -> FREE Status: LOSE		Value: 11.0
+Max: Cell: [3,1] -> FREE Status: DRAW		Value: 13.0
+Livello 14
+Cell: [0,1] -> FREE Status: DRAW		Value: 14.0
+Cell: [0,2] -> FREE Status: DRAW		Value: 14.0
+Cell: [1,0] -> FREE Status: LOSE		Value: 11.0
+Cell: [1,3] -> FREE Status: LOSE		Value: 11.0
+Cell: [2,2] -> FREE Status: LOSE		Value: 11.0
+Cell: [3,0] -> FREE Status: LOSE		Value: 11.0
+Cell: [3,1] -> FREE Status: DRAW		Value: 14.0
+Cell: [3,2] -> FREE Status: LOSE		Value: 11.0
+Cell: [3,3] -> FREE Status: LOSE		Value: 11.0
+Max: Cell: [3,1] -> FREE Status: DRAW		Value: 14.0
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita esplorata: da 7 a 15
+Mossa 7
+Nodi esplorati: 276250
+Total alphabeta cuts: 175208
+Total cuts form TTable: 0
+Total match form TTable: 0
+Eval: Status: DRAW		Value: 14.0
+Time elapsed: 86ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+[3,1] -> FREE
