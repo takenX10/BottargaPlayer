@@ -21,9 +21,9 @@ public class transpositionPlayer implements MNKPlayer{
 
     @Override
     public MNKCell selectCell(MNKCell[] FC, MNKCell[] MC) {
-        negamaxAlphabetaTransposition runner = new negamaxAlphabetaTransposition(this.M, this.N, this.K, this.first, MC, FC, timeout);
+        transpositionAlphabeta runner = new transpositionAlphabeta(this.M, this.N, this.K, this.first, MC, FC, timeout);
 
-        return runner.iterative_minimax();
+        return runner.iterative_negamax();
     }
 
     @Override

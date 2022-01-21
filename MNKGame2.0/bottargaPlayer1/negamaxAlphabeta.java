@@ -167,7 +167,7 @@ public class negamaxAlphabeta {
                 if(alpha.compare(beta)){
                     draw = -1;
                     totalCuts++;
-                    break;
+                    //break;
                 }
             }
         }

@@ -1,9 +1,11 @@
 package bottargaPlayer2;
-
 /*
 * Questa classe permette la creazione e l'inizializzazione delle 4 matrici dell'eval.
 * Questa classe è dotata di metodi per la stampa di ognuna delle 4 matrici dell'eval #fordebugpurpose.
 */
+
+
+
 public class EvalMatrix {
     protected int init_value = 0; //Valore con il quale inizializzo le matrici.
     protected int M; //Righe

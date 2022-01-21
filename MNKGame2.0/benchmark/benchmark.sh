@@ -63,6 +63,16 @@ partial_benchmark(){
     start_round "6 6 4"
 }
 
+big_benchmark(){  
+    start_round "8 8 4"  
+    start_round "10 10 5"
+    start_round "50 50 10"
+    start_round "70 70 10"
+    start_round "7 7 5"  
+    start_round "7 7 6"  
+    start_round "7 7 7"
+}
+
 full_benchmark(){
     start_round "3 3 3" 
     start_round "4 3 3" 
@@ -109,6 +119,6 @@ BENCHMARK_START=$SECONDS
 
 # start_round "3 3 3"
 
-partial_benchmark
+full_benchmark
 
 quit_script
