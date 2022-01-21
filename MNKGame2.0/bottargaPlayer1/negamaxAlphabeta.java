@@ -6,6 +6,7 @@ import mnkgame.MNKCellState;
 public class negamaxAlphabeta {
     // Debug print
     private Boolean debugPrint = true;
+    private Boolean debugLevels = false;
 
     // costanti
     private long finishms;
@@ -15,6 +16,7 @@ public class negamaxAlphabeta {
     private final int n;
     private final CustomScore minusInf;
     private final CustomScore inf;
+    private final CustomScore notDefinedDraw = new CustomScore(0, EvalStatus.NOT_DEFINED);
 
 
     // valori per benchmark
@@ -78,9 +80,12 @@ public class negamaxAlphabeta {
         for(currentMaxDepth = 1;;currentMaxDepth++){
             this.last_depth = true; // viene cambiato in false se avviene un taglio per profondità massima
             // return value di negamax inutile
+            if(debugLevels){
+                System.out.println("Livello "+currentMaxDepth);
+            }
             negamax(currentMaxDepth, 1, null,this.enemy, this.minusInf, this.inf);
             maxValue();
-
+            
             // pareggio no perchè se ad esempio alcuni nodi pareggiano e altri
             // non sono stati ancora esplorati non ha senso finire senza esplorarli
             if(this.last_depth || this.endNegamax || this.bestValue.status == EvalStatus.WIN || this.bestValue.status == EvalStatus.LOSE){
@@ -136,6 +141,7 @@ public class negamaxAlphabeta {
         CustomScore maxscore = minusInf;
         CustomScore tmpscore;
         int i;
+        int draw = 0;
         for(i = 0; i < this.FC.length; i++){
             if(!this.FC[i].used){
                 this.FC[i].used = true;
@@ -143,37 +149,55 @@ public class negamaxAlphabeta {
                 this.FC[i].used = false;
                 if( node == null ){ // per il primo giro
                     if(!this.endNegamax){
+                        // DEBUG TODO REMOVE
+                        if(this.FC[i].eval.isFinal() && this.FC[i].eval != minusInf && this.FC[i].eval != inf && this.FC[i].eval.status != tmpscore.status){
+                            System.out.println("ERRORE!");
+                        }
                         this.FC[i].eval = new CustomScore(tmpscore.score, tmpscore.status);
                     }
                 }
-                if(!maxscore.compare(tmpscore)){
-                    maxscore = new CustomScore(tmpscore.score, tmpscore.status);
+                if(tmpscore.status == EvalStatus.NOT_DEFINED){
+                    draw = -1;
                 }
-                if(!alpha.compare(maxscore)){
-                    alpha = new CustomScore(maxscore.score, maxscore.status);
+                maxscore = CustomScore.maximize(maxscore, tmpscore);
+                if(maxscore.status != EvalStatus.DRAW){
+                    alpha = CustomScore.maximize(alpha, maxscore);
                 }
                 // alpha >= beta
                 if(alpha.compare(beta)){
+                    draw = -1;
                     totalCuts++;
                     break;
                 }
             }
         }
+        if(draw == -1 && maxscore.status == EvalStatus.DRAW){// E' un pareggio sicuro
+            maxscore = new CustomScore(0, EvalStatus.NOT_DEFINED);// notDefinedDraw;
+        }
 
         this.current_matrix.single_invert_matrix(node, stato);
+        
         return maxscore;
     }
 
     // restituisce la cella massima tra quelle libere
     private void maxValue(){
         customMNKCell max = this.FC[0];
+        if(debugLevels){
+            System.out.println(this.FC[0]);
+        }
 
         for(int i = 1; i < this.FC.length; i++){
+            if(debugLevels){
+                System.out.println(this.FC[i]);
+            }
             if(this.FC[i].eval.compare(max.eval)){
                 max = this.FC[i];
             }
         }
-
+        if(debugLevels){
+            System.out.println("Max: "+max);
+        }
         this.bestCell = max.cell;
         this.bestValue = new CustomScore(max.eval.score, max.eval.status);
     }

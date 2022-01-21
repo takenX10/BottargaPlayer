@@ -33,75 +33,105 @@ public class CustomScore{
 
     */
     public Boolean compare(CustomScore b){
-        if(b.status.value > this.status.value){
-            return false;
-        }else if(b.status.value < this.status.value){
+        if(this.status.value > b.status.value){
             return true;
+        }else if(b.status.value > this.status.value){
+            return false;
         }else{
-            if(b.status == this.status){ // caso normale 
-                switch(b.status){
-                    case DRAW:
-                        if(this.score >= b.score){
-                            return true;
-                        }else{
-                            return false;
-                        }
-                    case LOSE:
-                        if(this.score >= b.score){
-                            return true;
-                        }else{
-                            return false;
-                        }
-                    case NOT_DEFINED:
-                        if(this.score >= b.score){
-                            return true;
-                        }else{
-                            return false;
-                        }
-                    case CANT_LOSE:    
-                        if(this.score >= b.score){
-                            return true;
-                        }else{
-                            return false;
-                        }
-                    case CANT_WIN:
-                        if(this.score >= b.score){
-                            return true;
-                        }else{
-                            return false;
-                        }
-                    case WIN:
-                        if(this.score <= b.score){
-                            return true;
-                        }else{
-                            return false;
-                        }
-                    
-                }
-            }else{ // Siamo in un caso di Draw/ not_defined o viceversa    
-                /*
-                    L'idea generale e' questa
-                    not_defined<0 -> Draw > not_defined (Il punteggio tende verso l'avversario, quindi e' meglio pareggiare)
-                    not_defined==0 -> Draw > not_defined (Il punteggio e' bilanciato, quindi meglio pareggiare per sicurezza)
-                    not_defined>0 -> Draw < not_defined (Il punteggio tende verso il player quindi meglio provare a giocare che pareggiare)
-                */
-                if(this.status == EvalStatus.DRAW){
-                    if(b.score > 0){
-                        return false;
-                    }else{
+            if(b.status == this.status){
+                if(this.status != EvalStatus.WIN){
+                    if(this.score >= b.score){
                         return true;
+                    }else{
+                        return false;
                     }
                 }else{
-                    if(this.score > 0){
+                    if(this.score <= b.score){
                         return true;
                     }else{
                         return false;
                     }
                 }
-
+            }else{ // NOT DEFINED DRAW
+                if(this.status == EvalStatus.DRAW){
+                    return true;
+                }else{
+                    return false;
+                }
             }
         }
-        return true;
+    }
+
+    public static CustomScore maximize(CustomScore a, CustomScore b){
+        CustomScore retval = null;
+        if(a.status.value > b.status.value){
+            retval = a;
+        }else if(a.status.value < b.status.value){
+            retval = b;
+        }else{
+            if(a.status == b.status){
+                switch(a.status){
+                    case LOSE:
+                        if(a.score >= b.score){
+                            retval = a;
+                        }else{
+                            retval = b;
+                        }
+                        break;
+                    case NOT_DEFINED:
+                        if(a.score >= b.score){
+                            retval = a;
+                        }else{
+                            retval = b;
+                        }
+                        break;
+                    case CANT_LOSE:    
+                        if(a.score >= b.score){
+                            retval = a;
+                        }else{
+                            retval = b;
+                        }
+                        break;
+                    case CANT_WIN:
+                        if(a.score >= b.score){
+                            retval = a;
+                        }else{
+                            retval = b;
+                        }
+                        break;
+                    case WIN:
+                        if(a.score <= b.score){
+                            retval = a;
+                        }else{
+                            retval = b;
+                        }
+                        break;
+                    case DRAW:
+                        if(a.score >= b.score){
+                            retval = a;
+                        }else{
+                            retval = b;
+                        }
+                        break;
+                }
+            }else{ // DRAW NOT_DEFINED
+                if(a.status == EvalStatus.NOT_DEFINED){
+                    if(a.score > 0){
+                        retval = a;
+                    }else{
+                        retval = b;
+                    }
+                }else{
+                    if(b.score > 0){
+                        retval = b;
+                    }else{
+                        retval = a;
+                    }
+                }
+            }
+        }
+        
+        return new CustomScore(retval.score, retval.status);
     }
 
     public CustomScore invert(){

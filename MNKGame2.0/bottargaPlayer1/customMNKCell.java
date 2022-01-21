@@ -12,4 +12,9 @@ public class customMNKCell {
         this.used = used;
         this.eval = eval;
     }
+
+    @Override
+    public String toString() {
+        return "Cell: "+this.cell+" "+this.eval;
+    }
 }

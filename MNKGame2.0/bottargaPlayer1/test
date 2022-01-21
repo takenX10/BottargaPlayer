@@ -1,0 +1,56 @@
+
+
+stato score
+
+LOSE < CANT_WIN < (NOT_DEFINED|DRAW) < CANT_LOSE < WIN
+
+
+lose < tutto
+draw > cantwin lose NOT_DEFINED
+
+cantlose > draw
+
+win > tutto
+
+
+
+alpha = al valore massimo ritornato al momento.
+
+
+
+        a
+ a b c d e f g h
+
+
+// nodi finali LOSE WIN DRAW
+
+    -          -
+
+
+
+
+
+
+minusInf <-> DRAW -----> NOT_DEFINED  0
+
+LOSE <-> DRAW --------------> NOT_DEFINED 0
+
+WIN <-> DRAW --------------> WIN
+
+CANT_WIN <-> DRAW ----------->  NOT_DEFINED 0
+
+CANT_LOSE <-> DRAW --------------> CANT_LOSE
+
+a               b
+NOT_DEFINED <-> DRAW -----------> if NOT_DEFINED > 0 -> a.   else       NOT_DEFINED 0
+
+
+LOST <-> ...
+
+WIN <-> ...
+
+
+
+
+
+

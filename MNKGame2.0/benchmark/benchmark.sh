@@ -109,6 +109,6 @@ BENCHMARK_START=$SECONDS
 
 # start_round "3 3 3"
 
-validator_benchmark
+partial_benchmark
 
 quit_script
