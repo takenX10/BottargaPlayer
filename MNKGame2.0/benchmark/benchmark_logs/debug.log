@@ -1,0 +1,3149 @@
+
+# End of first round, round duration: 137 seconds
+Game type : 5,4,4
+Player1   : bottargaPlayer-Alphabeta
+Player2   : bottargaPlayer-Minimax
+Rounds    : 2
+Timeout   : 10 secs
+
+
+
+**** ROUND 1 ****
+Initializing 5,4,4 board
+Initializing bottargaPlayer-Alphabeta as Player 1
+Initializing bottargaPlayer-Minimax as Player 2
+
+Livello 1
+Cell: [0,3] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [1,1] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: 1.25
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 1.25
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [0,0] -> FREE Status: NOT_DEFINED	Value: 0.75
+Max: Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 1.25
+Livello 2
+Cell: [0,3] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [1,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Max: Cell: [0,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Livello 3
+Cell: [0,3] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [1,1] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [0,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Max: Cell: [0,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Livello 4
+Cell: [0,3] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [1,1] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Max: Cell: [0,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Livello 5
+Cell: [0,3] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [1,1] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [0,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Max: Cell: [0,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Livello 6
+Cell: [0,3] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [1,1] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Max: Cell: [0,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Livello 7
+Cell: [0,3] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [1,1] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [0,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Max: Cell: [0,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Livello 8
+Cell: [0,3] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [1,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Max: Cell: [0,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Livello 9
+Cell: [0,3] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [1,1] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [0,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Max: Cell: [0,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Livello 10
+Cell: [0,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [1,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [0,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Max: Cell: [0,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 10
+Mossa 0
+Nodi esplorati: 55480000
+Total alphabeta cuts: 10383028
+Eval: Status: NOT_DEFINED	Value: 1.0
+Time elapsed: 9802ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-Alphabeta) -> [0,0]
+Player 2 (bottargaPlayer-Minimax) -> [1,1]
+Livello 1
+Cell: [0,3] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 0.5
+Max: Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 1.0
+Livello 2
+Cell: [0,3] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: -0.25
+Max: Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Livello 3
+Cell: [0,3] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Max: Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Livello 4
+Cell: [0,3] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Max: Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Livello 5
+Cell: [0,3] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Max: Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Livello 6
+Cell: [0,3] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: -0.25
+Max: Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: -0.25
+Livello 7
+Cell: [0,3] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Max: Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Livello 8
+Cell: [0,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Max: Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Livello 9
+Cell: [0,3] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 1.25
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 1.25
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 1.25
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 1.25
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 1.25
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 1.25
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 1.25
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 1.25
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 1.25
+Max: Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 1.25
+Livello 10
+Cell: [0,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 1.25
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 1.25
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 1.25
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 1.25
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 1.25
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 1.25
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 1.25
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 1.25
+Max: Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 1.25
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 10
+Mossa 2
+Nodi esplorati: 62380000
+Total alphabeta cuts: 12428071
+Eval: Status: NOT_DEFINED	Value: 1.25
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-Alphabeta) -> [4,0]
+Player 2 (bottargaPlayer-Minimax) -> [2,2]
+Livello 1
+Cell: [0,3] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.25
+Max: Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.75
+Livello 2
+Cell: [0,3] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: -0.5
+Max: Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: -0.25
+Livello 3
+Cell: [0,3] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.75
+Max: Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.75
+Livello 4
+Cell: [0,3] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Max: Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Livello 5
+Cell: [0,3] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 1.0
+Max: Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 1.0
+Livello 6
+Cell: [0,3] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: -0.0
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Max: Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Livello 7
+Cell: [0,3] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.5
+Max: Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.5
+Livello 8
+Cell: [0,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: -0.0
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Max: Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Livello 9
+Cell: [0,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.5
+Max: Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.5
+Livello 10
+Cell: [0,3] -> FREE Status: NOT_DEFINED	Value: -0.0
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: -0.0
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: -0.0
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Max: Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Livello 11
+Cell: [0,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: -0.0
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: -0.0
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Max: Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 11
+Mossa 4
+Nodi esplorati: 61510000
+Total alphabeta cuts: 13778871
+Eval: Status: NOT_DEFINED	Value: 0.0
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-Alphabeta) -> [4,3]
+Player 2 (bottargaPlayer-Minimax) -> [1,2]
+Livello 1
+Cell: [0,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Max: Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 0.75
+Livello 2
+Cell: [0,3] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: -1.25
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: -1.25
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: -0.75
+Max: Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: -0.75
+Livello 3
+Cell: [0,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.5
+Max: Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.5
+Livello 4
+Cell: [0,3] -> FREE Status: LOSE		Value: 10.0
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: -0.5
+Max: Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: -0.5
+Livello 5
+Cell: [0,3] -> FREE Status: LOSE		Value: 10.0
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.5
+Max: Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.5
+Livello 6
+Cell: [0,3] -> FREE Status: LOSE		Value: 10.0
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: -0.5
+Max: Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: -0.5
+Livello 7
+Cell: [0,3] -> FREE Status: LOSE		Value: 10.0
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.75
+Max: Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.75
+Livello 8
+Cell: [0,3] -> FREE Status: LOSE		Value: 10.0
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Max: Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Livello 9
+Cell: [0,3] -> FREE Status: LOSE		Value: 10.0
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Max: Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Livello 10
+Cell: [0,3] -> FREE Status: LOSE		Value: 10.0
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -0.0
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: -0.0
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: -0.0
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Max: Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Livello 11
+Cell: [0,3] -> FREE Status: LOSE		Value: 10.0
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Max: Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Livello 12
+Cell: [0,3] -> FREE Status: LOSE		Value: 10.0
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -0.0
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: -0.0
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: -0.0
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: -0.0
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: -0.0
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: -0.0
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Max: Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Livello 13
+Cell: [0,3] -> FREE Status: LOSE		Value: 10.0
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -0.0
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: -0.0
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: -0.0
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Max: Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Livello 14
+Cell: [0,3] -> FREE Status: LOSE		Value: 10.0
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -0.0
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: -0.0
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: -0.0
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Max: Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 14
+Mossa 6
+Nodi esplorati: 57720000
+Total alphabeta cuts: 13445278
+Eval: Status: NOT_DEFINED	Value: 0.0
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-Alphabeta) -> [2,3]
+Player 2 (bottargaPlayer-Minimax) -> [3,2]
+Livello 1
+Cell: [0,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: -0.5
+Max: Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Livello 2
+Cell: [0,3] -> FREE Status: LOSE		Value: 10.0
+Cell: [4,2] -> FREE Status: LOSE		Value: 10.0
+Cell: [3,1] -> FREE Status: LOSE		Value: 10.0
+Cell: [3,0] -> FREE Status: LOSE		Value: 10.0
+Cell: [3,3] -> FREE Status: LOSE		Value: 10.0
+Cell: [4,1] -> FREE Status: LOSE		Value: 10.0
+Cell: [1,0] -> FREE Status: LOSE		Value: 10.0
+Cell: [0,2] -> FREE Status: LOSE		Value: 10.0
+Cell: [2,1] -> FREE Status: LOSE		Value: 10.0
+Cell: [0,1] -> FREE Status: LOSE		Value: 10.0
+Cell: [1,3] -> FREE Status: LOSE		Value: 10.0
+Cell: [2,0] -> FREE Status: LOSE		Value: 10.0
+Max: Cell: [2,0] -> FREE Status: LOSE		Value: 10.0
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 8
+Nodi esplorati: 64
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 11
+Eval: Status: LOSE		Value: 10.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-Alphabeta) -> [2,0]
+Player 2 (bottargaPlayer-Minimax) -> [0,2]
+
+Game state    : WINP2
+Current score : bottargaPlayer-Alphabeta (0) - bottargaPlayer-Minimax (3)
+
+**** ROUND 2 ****
+Initializing 5,4,4 board
+Initializing bottargaPlayer-Alphabeta as Player 1
+Initializing bottargaPlayer-Minimax as Player 2
+
+Livello 1
+Cell: [0,3] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [1,1] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: 1.25
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 1.25
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [0,0] -> FREE Status: NOT_DEFINED	Value: 0.75
+Max: Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 1.25
+Livello 2
+Cell: [0,3] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [1,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Max: Cell: [0,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Livello 3
+Cell: [0,3] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [1,1] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [0,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Max: Cell: [0,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Livello 4
+Cell: [0,3] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [1,1] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Max: Cell: [0,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Livello 5
+Cell: [0,3] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [1,1] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [0,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Max: Cell: [0,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Livello 6
+Cell: [0,3] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [1,1] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Max: Cell: [0,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Livello 7
+Cell: [0,3] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [1,1] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [0,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Max: Cell: [0,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Livello 8
+Cell: [0,3] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [1,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Max: Cell: [0,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Livello 9
+Cell: [0,3] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [1,1] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [0,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Max: Cell: [0,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Livello 10
+Cell: [0,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [1,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [0,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Max: Cell: [0,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 10
+Mossa 0
+Nodi esplorati: 59460000
+Total alphabeta cuts: 11351900
+Eval: Status: NOT_DEFINED	Value: 1.0
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-Alphabeta) -> [0,0]
+Player 2 (bottargaPlayer-Minimax) -> [1,1]
+Livello 1
+Cell: [0,3] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 0.5
+Max: Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 1.0
+Livello 2
+Cell: [0,3] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: -0.25
+Max: Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Livello 3
+Cell: [0,3] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Max: Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Livello 4
+Cell: [0,3] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Max: Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Livello 5
+Cell: [0,3] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Max: Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Livello 6
+Cell: [0,3] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: -0.25
+Max: Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: -0.25
+Livello 7
+Cell: [0,3] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Max: Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Livello 8
+Cell: [0,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Max: Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Livello 9
+Cell: [0,3] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 1.25
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 1.25
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 1.25
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 1.25
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 1.25
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 1.25
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 1.25
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 1.25
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 1.25
+Max: Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 1.25
+Livello 10
+Cell: [0,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 1.25
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 1.25
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 1.25
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 1.25
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 1.25
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 1.25
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 1.25
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 1.25
+Max: Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 1.25
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 10
+Mossa 2
+Nodi esplorati: 61180000
+Total alphabeta cuts: 12130757
+Eval: Status: NOT_DEFINED	Value: 1.25
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-Alphabeta) -> [4,0]
+Player 2 (bottargaPlayer-Minimax) -> [2,2]
+Livello 1
+Cell: [0,3] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.25
+Max: Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.75
+Livello 2
+Cell: [0,3] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: -0.5
+Max: Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: -0.25
+Livello 3
+Cell: [0,3] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.75
+Max: Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.75
+Livello 4
+Cell: [0,3] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Max: Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Livello 5
+Cell: [0,3] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 1.0
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 1.0
+Max: Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 1.0
+Livello 6
+Cell: [0,3] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: -0.0
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Max: Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Livello 7
+Cell: [0,3] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.5
+Max: Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.5
+Livello 8
+Cell: [0,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: -0.0
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Max: Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Livello 9
+[4,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.5
+Max: Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.5
+Livello 10
+Cell: [0,3] -> FREE Status: NOT_DEFINED	Value: -0.0
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: -0.0
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: -0.0
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Max: Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Livello 11
+Cell: [0,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: -0.0
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: -0.0
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Max: Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 11
+Mossa 4
+Nodi esplorati: 64660000
+Total alphabeta cuts: 14254620
+Eval: Status: NOT_DEFINED	Value: 0.0
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-Alphabeta) -> [4,3]
+Player 2 (bottargaPlayer-Minimax) -> [1,2]
+Livello 1
+Cell: [0,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Max: Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 0.75
+Livello 2
+Cell: [0,3] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: -1.25
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: -1.25
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: -0.75
+Max: Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: -0.75
+Livello 3
+Cell: [0,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.5
+Max: Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.5
+Livello 4
+Cell: [0,3] -> FREE Status: LOSE		Value: 10.0
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: -0.5
+Max: Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: -0.5
+Livello 5
+Cell: [0,3] -> FREE Status: LOSE		Value: 10.0
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.5
+Max: Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.5
+Livello 6
+Cell: [0,3] -> FREE Status: LOSE		Value: 10.0
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: -0.5
+Max: Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: -0.5
+Livello 7
+Cell: [0,3] -> FREE Status: LOSE		Value: 10.0
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.75
+Max: Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.75
+Livello 8
+Cell: [0,3] -> FREE Status: LOSE		Value: 10.0
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Max: Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Livello 9
+Cell: [0,3] -> FREE Status: LOSE		Value: 10.0
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Max: Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Livello 10
+Cell: [0,3] -> FREE Status: LOSE		Value: 10.0
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -0.0
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: -0.0
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: -0.0
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Max: Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Livello 11
+Cell: [0,3] -> FREE Status: LOSE		Value: 10.0
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Max: Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Livello 12
+Cell: [0,3] -> FREE Status: LOSE		Value: 10.0
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -0.0
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: -0.0
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: -0.0
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: -0.0
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: -0.0
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: -0.0
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Max: Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Livello 13
+Cell: [0,3] -> FREE Status: LOSE		Value: 10.0
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -0.0
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: -0.0
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: -0.0
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Max: Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Livello 14
+Cell: [0,3] -> FREE Status: LOSE		Value: 10.0
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -0.0
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: -0.0
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: -0.0
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Max: Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 14
+Mossa 6
+Nodi esplorati: 59450000
+Total alphabeta cuts: 13710399
+Eval: Status: NOT_DEFINED	Value: 0.0
+Time elapsed: 9802ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-Alphabeta) -> [2,3]
+Player 2 (bottargaPlayer-Minimax) -> [3,2]
+Livello 1
+Cell: [0,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: -0.5
+Max: Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Livello 2
+Cell: [0,3] -> FREE Status: LOSE		Value: 10.0
+Cell: [4,2] -> FREE Status: LOSE		Value: 10.0
+Cell: [3,1] -> FREE Status: LOSE		Value: 10.0
+Cell: [3,0] -> FREE Status: LOSE		Value: 10.0
+Cell: [3,3] -> FREE Status: LOSE		Value: 10.0
+Cell: [4,1] -> FREE Status: LOSE		Value: 10.0
+Cell: [1,0] -> FREE Status: LOSE		Value: 10.0
+Cell: [0,2] -> FREE Status: LOSE		Value: 10.0
+Cell: [2,1] -> FREE Status: LOSE		Value: 10.0
+Cell: [0,1] -> FREE Status: LOSE		Value: 10.0
+Cell: [1,3] -> FREE Status: LOSE		Value: 10.0
+Cell: [2,0] -> FREE Status: LOSE		Value: 10.0
+Max: Cell: [2,0] -> FREE Status: LOSE		Value: 10.0
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 2
+Mossa 8
+Nodi esplorati: 64
+TECNICAMENTE GIA PERSO!!!
+Total alphabeta cuts: 11
+Eval: Status: LOSE		Value: 10.0
+Time elapsed: 0ms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 1 (bottargaPlayer-Alphabeta) -> [2,0]
+Player 2 (bottargaPlayer-Minimax) -> [0,2]
+
+Game state    : WINP2
+Current score : bottargaPlayer-Alphabeta (0) - bottargaPlayer-Minimax (6)
+
+**** FINAL SCORE ****
+bottargaPlayer-Alphabeta 0
+bottargaPlayer-Minimax 6
+
+Win bottargaPlayer-Alphabeta: 0
+Win bottargaPlayer-Minimax: 2
+Draws: 0
+# End of second round, round duration: 118 seconds
+Game type : 5,4,4
+Player1   : bottargaPlayer-Minimax
+Player2   : bottargaPlayer-Alphabeta
+Rounds    : 2
+Timeout   : 10 secs
+
+
+
+**** ROUND 1 ****
+Initializing 5,4,4 board
+Initializing bottargaPlayer-Minimax as Player 1
+Initializing bottargaPlayer-Alphabeta as Player 2
+
+Player 1 (bottargaPlayer-Minimax) -> [0,3]
+Livello 1
+Cell: [1,1] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Max: Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.5
+Livello 2
+Cell: [1,1] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -1.25
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: -1.25
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: -1.25
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: -1.25
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [0,0] -> FREE Status: NOT_DEFINED	Value: -1.0
+Max: Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: -0.75
+Livello 3
+Cell: [1,1] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [0,0] -> FREE Status: NOT_DEFINED	Value: 0.25
+Max: Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 0.5
+Livello 4
+Cell: [1,1] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [0,0] -> FREE Status: NOT_DEFINED	Value: -0.5
+Max: Cell: [0,0] -> FREE Status: NOT_DEFINED	Value: -0.5
+Livello 5
+Cell: [1,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [0,0] -> FREE Status: NOT_DEFINED	Value: 0.75
+Max: Cell: [0,0] -> FREE Status: NOT_DEFINED	Value: 0.75
+Livello 6
+Cell: [1,1] -> FREE Status: NOT_DEFINED	Value: -1.25
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -1.25
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [0,0] -> FREE Status: NOT_DEFINED	Value: -0.5
+Max: Cell: [0,0] -> FREE Status: NOT_DEFINED	Value: -0.5
+Livello 7
+Cell: [1,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [0,0] -> FREE Status: NOT_DEFINED	Value: 0.5
+Max: Cell: [0,0] -> FREE Status: NOT_DEFINED	Value: 0.5
+Livello 8
+Cell: [1,1] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [0,0] -> FREE Status: NOT_DEFINED	Value: -0.5
+Max: Cell: [0,0] -> FREE Status: NOT_DEFINED	Value: -0.5
+Livello 9
+Cell: [1,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [0,0] -> FREE Status: NOT_DEFINED	Value: 0.25
+Max: Cell: [0,0] -> FREE Status: NOT_DEFINED	Value: 0.25
+Livello 10
+Cell: [1,1] -> FREE Status: NOT_DEFINED	Value: -1.75
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -1.75
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: -1.25
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [0,0] -> FREE Status: NOT_DEFINED	Value: 0.25
+Max: Cell: [0,0] -> FREE Status: NOT_DEFINED	Value: 0.25
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 10
+Mossa 1
+Nodi esplorati: 58930000
+Total alphabeta cuts: 9626345
+Eval: Status: NOT_DEFINED	Value: 0.25
+Time elapsed: 9802ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-Alphabeta) -> [0,0]
+Player 1 (bottargaPlayer-Minimax) -> [3,0]
+Livello 1
+Cell: [1,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: -0.25
+Max: Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.5
+Livello 2
+Cell: [1,1] -> FREE Status: NOT_DEFINED	Value: -1.5
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -1.5
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: -1.25
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: -1.25
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: -1.5
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: -1.25
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: -1.75
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: -1.75
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: -1.5
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: -1.25
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: -1.25
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: -1.25
+Max: Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: -0.75
+Livello 3
+Cell: [1,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 0.25
+Max: Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.5
+Livello 4
+Cell: [1,1] -> FREE Status: NOT_DEFINED	Value: -1.5
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -1.5
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: -0.75
+Max: Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: -0.75
+Livello 5
+Cell: [1,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 0.25
+Max: Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 0.25
+Livello 6
+Cell: [1,1] -> FREE Status: NOT_DEFINED	Value: -1.25
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -1.25
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: -1.0
+Max: Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: -1.0
+Livello 7
+Cell: [1,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 0.25
+Max: Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 0.25
+Livello 8
+Cell: [1,1] -> FREE Status: NOT_DEFINED	Value: -1.75
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -1.75
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: -1.75
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: -1.75
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: -1.75
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: -1.75
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: -0.75
+Max: Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: -0.75
+Livello 9
+Cell: [1,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Max: Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Livello 10
+Cell: [1,1] -> FREE Status: CANT_WIN	Value: -0.5
+Cell: [4,2] -> FREE Status: CANT_WIN	Value: -0.5
+Cell: [3,1] -> FREE Status: CANT_WIN	Value: -0.5
+Cell: [3,3] -> FREE Status: CANT_WIN	Value: -0.5
+Cell: [4,1] -> FREE Status: CANT_WIN	Value: -0.5
+Cell: [1,0] -> FREE Status: CANT_WIN	Value: -0.5
+Cell: [2,2] -> FREE Status: CANT_WIN	Value: -0.5
+Cell: [0,2] -> FREE Status: CANT_WIN	Value: -0.5
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Max: Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 10
+Mossa 3
+Nodi esplorati: 58950000
+Total alphabeta cuts: 10601082
+Eval: Status: NOT_DEFINED	Value: 0.0
+Time elapsed: 9803ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-Alphabeta) -> [4,0]
+Player 1 (bottargaPlayer-Minimax) -> [2,1]
+Livello 1
+Cell: [1,1] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: -1.25
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: -1.25
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: -1.25
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: -0.75
+Max: Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Livello 2
+Cell: [1,1] -> FREE Status: LOSE		Value: 7.0
+Cell: [4,2] -> FREE Status: LOSE		Value: 7.0
+Cell: [3,1] -> FREE Status: LOSE		Value: 7.0
+Cell: [3,3] -> FREE Status: LOSE		Value: 7.0
+Cell: [4,1] -> FREE Status: LOSE		Value: 7.0
+Cell: [1,0] -> FREE Status: LOSE		Value: 7.0
+Cell: [2,2] -> FREE Status: LOSE		Value: 7.0
+Cell: [0,2] -> FREE Status: LOSE		Value: 7.0
+Cell: [3,2] -> FREE Status: LOSE		Value: 7.0
+Cell: [0,1] -> FREE Status: LOSE		Value: 7.0
+Cell: [1,3] -> FREE Status: LOSE		Value: 7.0
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: -1.25
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: -2.25
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: -1.75
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: -1.75
+Max: Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: -1.25
+Livello 3
+Cell: [1,1] -> FREE Status: LOSE		Value: 7.0
+Cell: [4,2] -> FREE Status: LOSE		Value: 7.0
+Cell: [3,1] -> FREE Status: LOSE		Value: 7.0
+Cell: [3,3] -> FREE Status: LOSE		Value: 7.0
+Cell: [4,1] -> FREE Status: LOSE		Value: 7.0
+Cell: [1,0] -> FREE Status: LOSE		Value: 7.0
+Cell: [2,2] -> FREE Status: LOSE		Value: 7.0
+Cell: [0,2] -> FREE Status: LOSE		Value: 7.0
+Cell: [3,2] -> FREE Status: LOSE		Value: 7.0
+Cell: [0,1] -> FREE Status: LOSE		Value: 7.0
+Cell: [1,3] -> FREE Status: LOSE		Value: 7.0
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Max: Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Livello 4
+Cell: [1,1] -> FREE Status: LOSE		Value: 7.0
+Cell: [4,2] -> FREE Status: LOSE		Value: 7.0
+Cell: [3,1] -> FREE Status: LOSE		Value: 7.0
+Cell: [3,3] -> FREE Status: LOSE		Value: 7.0
+Cell: [4,1] -> FREE Status: LOSE		Value: 7.0
+Cell: [1,0] -> FREE Status: LOSE		Value: 7.0
+Cell: [2,2] -> FREE Status: LOSE		Value: 7.0
+Cell: [0,2] -> FREE Status: LOSE		Value: 7.0
+Cell: [3,2] -> FREE Status: LOSE		Value: 7.0
+Cell: [0,1] -> FREE Status: LOSE		Value: 7.0
+Cell: [1,3] -> FREE Status: LOSE		Value: 7.0
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: -1.25
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: -1.25
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: -1.0
+Max: Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: -1.0
+Livello 5
+Cell: [1,1] -> FREE Status: LOSE		Value: 7.0
+Cell: [4,2] -> FREE Status: LOSE		Value: 7.0
+Cell: [3,1] -> FREE Status: LOSE		Value: 7.0
+Cell: [3,3] -> FREE Status: LOSE		Value: 7.0
+Cell: [4,1] -> FREE Status: LOSE		Value: 7.0
+Cell: [1,0] -> FREE Status: LOSE		Value: 7.0
+Cell: [2,2] -> FREE Status: LOSE		Value: 7.0
+Cell: [0,2] -> FREE Status: LOSE		Value: 7.0
+Cell: [3,2] -> FREE Status: LOSE		Value: 7.0
+Cell: [0,1] -> FREE Status: LOSE		Value: 7.0
+Cell: [1,3] -> FREE Status: LOSE		Value: 7.0
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Max: Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Livello 6
+Cell: [1,1] -> FREE Status: LOSE		Value: 7.0
+Cell: [4,2] -> FREE Status: LOSE		Value: 7.0
+Cell: [3,1] -> FREE Status: LOSE		Value: 7.0
+Cell: [3,3] -> FREE Status: LOSE		Value: 7.0
+Cell: [4,1] -> FREE Status: LOSE		Value: 7.0
+Cell: [1,0] -> FREE Status: LOSE		Value: 7.0
+Cell: [2,2] -> FREE Status: LOSE		Value: 7.0
+Cell: [0,2] -> FREE Status: LOSE		Value: 7.0
+Cell: [3,2] -> FREE Status: LOSE		Value: 7.0
+Cell: [0,1] -> FREE Status: LOSE		Value: 7.0
+Cell: [1,3] -> FREE Status: LOSE		Value: 7.0
+Cell: [1,2] -> FREE Status: CANT_WIN	Value: -0.75
+Cell: [2,0] -> FREE Status: CANT_WIN	Value: -1.0
+Cell: [2,3] -> FREE Status: LOSE		Value: 11.0
+Cell: [4,3] -> FREE Status: LOSE		Value: 11.0
+Max: Cell: [1,2] -> FREE Status: CANT_WIN	Value: -0.75
+Livello 7
+ERRORE-Alphabeta!
+ERRORE-Alphabeta!
+Cell: [1,1] -> FREE Status: LOSE		Value: 7.0
+Cell: [4,2] -> FREE Status: LOSE		Value: 7.0
+Cell: [3,1] -> FREE Status: LOSE		Value: 7.0
+Cell: [3,3] -> FREE Status: LOSE		Value: 7.0
+Cell: [4,1] -> FREE Status: LOSE		Value: 7.0
+Cell: [1,0] -> FREE Status: LOSE		Value: 7.0
+Cell: [2,2] -> FREE Status: LOSE		Value: 7.0
+Cell: [0,2] -> FREE Status: LOSE		Value: 7.0
+Cell: [3,2] -> FREE Status: LOSE		Value: 7.0
+Cell: [0,1] -> FREE Status: LOSE		Value: 7.0
+Cell: [1,3] -> FREE Status: LOSE		Value: 7.0
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Max: Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Livello 8
+Cell: [1,1] -> FREE Status: LOSE		Value: 7.0
+Cell: [4,2] -> FREE Status: LOSE		Value: 7.0
+Cell: [3,1] -> FREE Status: LOSE		Value: 7.0
+Cell: [3,3] -> FREE Status: LOSE		Value: 7.0
+Cell: [4,1] -> FREE Status: LOSE		Value: 7.0
+Cell: [1,0] -> FREE Status: LOSE		Value: 7.0
+Cell: [2,2] -> FREE Status: LOSE		Value: 7.0
+Cell: [0,2] -> FREE Status: LOSE		Value: 7.0
+Cell: [3,2] -> FREE Status: LOSE		Value: 7.0
+Cell: [0,1] -> FREE Status: LOSE		Value: 7.0
+Cell: [1,3] -> FREE Status: LOSE		Value: 7.0
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Max: Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Livello 9
+Cell: [1,1] -> FREE Status: LOSE		Value: 7.0
+Cell: [4,2] -> FREE Status: LOSE		Value: 7.0
+Cell: [3,1] -> FREE Status: LOSE		Value: 7.0
+Cell: [3,3] -> FREE Status: LOSE		Value: 7.0
+Cell: [4,1] -> FREE Status: LOSE		Value: 7.0
+Cell: [1,0] -> FREE Status: LOSE		Value: 7.0
+Cell: [2,2] -> FREE Status: LOSE		Value: 7.0
+Cell: [0,2] -> FREE Status: LOSE		Value: 7.0
+Cell: [3,2] -> FREE Status: LOSE		Value: 7.0
+Cell: [0,1] -> FREE Status: LOSE		Value: 7.0
+Cell: [1,3] -> FREE Status: LOSE		Value: 7.0
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Max: Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Livello 10
+Cell: [1,1] -> FREE Status: LOSE		Value: 7.0
+Cell: [4,2] -> FREE Status: LOSE		Value: 7.0
+Cell: [3,1] -> FREE Status: LOSE		Value: 7.0
+Cell: [3,3] -> FREE Status: LOSE		Value: 7.0
+Cell: [4,1] -> FREE Status: LOSE		Value: 7.0
+Cell: [1,0] -> FREE Status: LOSE		Value: 7.0
+Cell: [2,2] -> FREE Status: LOSE		Value: 7.0
+Cell: [0,2] -> FREE Status: LOSE		Value: 7.0
+Cell: [3,2] -> FREE Status: LOSE		Value: 7.0
+Cell: [0,1] -> FREE Status: LOSE		Value: 7.0
+Cell: [1,3] -> FREE Status: LOSE		Value: 7.0
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Max: Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 10
+Mossa 5
+Nodi esplorati: 58510000
+Total alphabeta cuts: 10871722
+Eval: Status: NOT_DEFINED	Value: 0.0
+Time elapsed: 9802ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-Alphabeta) -> [4,3]
+Player 1 (bottargaPlayer-Minimax) -> [1,2]
+
+Game state    : WINP1
+Current score : bottargaPlayer-Minimax (2) - bottargaPlayer-Alphabeta (0)
+
+**** ROUND 2 ****
+Initializing 5,4,4 board
+Initializing bottargaPlayer-Minimax as Player 1
+Initializing bottargaPlayer-Alphabeta as Player 2
+
+Player 1 (bottargaPlayer-Minimax) -> [0,3]
+Livello 1
+Cell: [1,1] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Max: Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.5
+Livello 2
+Cell: [1,1] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -1.25
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: -1.25
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: -1.25
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: -1.25
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [0,0] -> FREE Status: NOT_DEFINED	Value: -1.0
+Max: Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: -0.75
+Livello 3
+Cell: [1,1] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [0,0] -> FREE Status: NOT_DEFINED	Value: 0.25
+Max: Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 0.5
+Livello 4
+Cell: [1,1] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [0,0] -> FREE Status: NOT_DEFINED	Value: -0.5
+Max: Cell: [0,0] -> FREE Status: NOT_DEFINED	Value: -0.5
+Livello 5
+Cell: [1,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 0.75
+Cell: [0,0] -> FREE Status: NOT_DEFINED	Value: 0.75
+Max: Cell: [0,0] -> FREE Status: NOT_DEFINED	Value: 0.75
+Livello 6
+Cell: [1,1] -> FREE Status: NOT_DEFINED	Value: -1.25
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -1.25
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [0,0] -> FREE Status: NOT_DEFINED	Value: -0.5
+Max: Cell: [0,0] -> FREE Status: NOT_DEFINED	Value: -0.5
+Livello 7
+Cell: [1,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [0,0] -> FREE Status: NOT_DEFINED	Value: 0.5
+Max: Cell: [0,0] -> FREE Status: NOT_DEFINED	Value: 0.5
+Livello 8
+Cell: [1,1] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [0,0] -> FREE Status: NOT_DEFINED	Value: -0.5
+Max: Cell: [0,0] -> FREE Status: NOT_DEFINED	Value: -0.5
+Livello 9
+Cell: [1,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [0,0] -> FREE Status: NOT_DEFINED	Value: 0.25
+Max: Cell: [0,0] -> FREE Status: NOT_DEFINED	Value: 0.25
+Livello 10
+Cell: [1,1] -> FREE Status: NOT_DEFINED	Value: -1.75
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -1.75
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: -1.25
+Cell: [3,0] -> FREE Status: NOT_DEFINED	Value: -1.25
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [0,0] -> FREE Status: NOT_DEFINED	Value: 0.25
+Max: Cell: [0,0] -> FREE Status: NOT_DEFINED	Value: 0.25
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 10
+Mossa 1
+Nodi esplorati: 60610000
+Total alphabeta cuts: 9942728
+Eval: Status: NOT_DEFINED	Value: 0.25
+Time elapsed: 9801ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-Alphabeta) -> [0,0]
+Player 1 (bottargaPlayer-Minimax) -> [3,0]
+Livello 1
+Cell: [1,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: -0.25
+Max: Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.5
+Livello 2
+Cell: [1,1] -> FREE Status: NOT_DEFINED	Value: -1.5
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -1.5
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: -1.25
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: -1.25
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: -1.5
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: -1.25
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: -1.75
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: -1.75
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: -1.5
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: -1.25
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: -1.25
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: -1.25
+Max: Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: -0.75
+Livello 3
+Cell: [1,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.5
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 0.25
+Max: Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.5
+Livello 4
+Cell: [1,1] -> FREE Status: NOT_DEFINED	Value: -1.5
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -1.5
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: -0.75
+Max: Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: -0.75
+Livello 5
+Cell: [1,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 0.25
+Max: Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 0.25
+Livello 6
+Cell: [1,1] -> FREE Status: NOT_DEFINED	Value: -1.25
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -1.25
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: -1.0
+Max: Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: -1.0
+Livello 7
+Cell: [1,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.25
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 0.25
+Max: Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 0.25
+Livello 8
+Cell: [1,1] -> FREE Status: NOT_DEFINED	Value: -1.75
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -1.75
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: -1.75
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: -1.75
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: -1.75
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: -1.75
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: -0.75
+Max: Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: -0.75
+Livello 9
+9
+Cell: [1,1] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Max: Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Livello 10
+Cell: [1,1] -> FREE Status: CANT_WIN	Value: -0.5
+Cell: [4,2] -> FREE Status: CANT_WIN	Value: -0.5
+Cell: [3,1] -> FREE Status: CANT_WIN	Value: -0.5
+Cell: [3,3] -> FREE Status: CANT_WIN	Value: -0.5
+Cell: [4,1] -> FREE Status: CANT_WIN	Value: -0.5
+Cell: [1,0] -> FREE Status: CANT_WIN	Value: -0.5
+Cell: [2,2] -> FREE Status: CANT_WIN	Value: -0.5
+Cell: [0,2] -> FREE Status: CANT_WIN	Value: -0.5
+Cell: [2,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Max: Cell: [4,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 10
+Mossa 3
+Nodi esplorati: 59740000
+Total alphabeta cuts: 10769482
+Eval: Status: NOT_DEFINED	Value: 0.0
+Time elapsed: 9802ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-Alphabeta) -> [4,0]
+Player 1 (bottargaPlayer-Minimax) -> [2,1]
+Livello 1
+Cell: [1,1] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [4,2] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [3,1] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [3,3] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [4,1] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [1,0] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [2,2] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [0,2] -> FREE Status: NOT_DEFINED	Value: -1.25
+Cell: [3,2] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [0,1] -> FREE Status: NOT_DEFINED	Value: -1.25
+Cell: [1,3] -> FREE Status: NOT_DEFINED	Value: -0.5
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: -1.25
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: -0.75
+Max: Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Livello 2
+Cell: [1,1] -> FREE Status: LOSE		Value: 7.0
+Cell: [4,2] -> FREE Status: LOSE		Value: 7.0
+Cell: [3,1] -> FREE Status: LOSE		Value: 7.0
+Cell: [3,3] -> FREE Status: LOSE		Value: 7.0
+Cell: [4,1] -> FREE Status: LOSE		Value: 7.0
+Cell: [1,0] -> FREE Status: LOSE		Value: 7.0
+Cell: [2,2] -> FREE Status: LOSE		Value: 7.0
+Cell: [0,2] -> FREE Status: LOSE		Value: 7.0
+Cell: [3,2] -> FREE Status: LOSE		Value: 7.0
+Cell: [0,1] -> FREE Status: LOSE		Value: 7.0
+Cell: [1,3] -> FREE Status: LOSE		Value: 7.0
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: -1.25
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: -2.25
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: -1.75
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: -1.75
+Max: Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: -1.25
+Livello 3
+Cell: [1,1] -> FREE Status: LOSE		Value: 7.0
+Cell: [4,2] -> FREE Status: LOSE		Value: 7.0
+Cell: [3,1] -> FREE Status: LOSE		Value: 7.0
+Cell: [3,3] -> FREE Status: LOSE		Value: 7.0
+Cell: [4,1] -> FREE Status: LOSE		Value: 7.0
+Cell: [1,0] -> FREE Status: LOSE		Value: 7.0
+Cell: [2,2] -> FREE Status: LOSE		Value: 7.0
+Cell: [0,2] -> FREE Status: LOSE		Value: 7.0
+Cell: [3,2] -> FREE Status: LOSE		Value: 7.0
+Cell: [0,1] -> FREE Status: LOSE		Value: 7.0
+Cell: [1,3] -> FREE Status: LOSE		Value: 7.0
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: -0.75
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Max: Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Livello 4
+Cell: [1,1] -> FREE Status: LOSE		Value: 7.0
+Cell: [4,2] -> FREE Status: LOSE		Value: 7.0
+Cell: [3,1] -> FREE Status: LOSE		Value: 7.0
+Cell: [3,3] -> FREE Status: LOSE		Value: 7.0
+Cell: [4,1] -> FREE Status: LOSE		Value: 7.0
+Cell: [1,0] -> FREE Status: LOSE		Value: 7.0
+Cell: [2,2] -> FREE Status: LOSE		Value: 7.0
+Cell: [0,2] -> FREE Status: LOSE		Value: 7.0
+Cell: [3,2] -> FREE Status: LOSE		Value: 7.0
+Cell: [0,1] -> FREE Status: LOSE		Value: 7.0
+Cell: [1,3] -> FREE Status: LOSE		Value: 7.0
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: -1.0
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: -1.25
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: -1.25
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: -1.0
+Max: Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: -1.0
+Livello 5
+Cell: [1,1] -> FREE Status: LOSE		Value: 7.0
+Cell: [4,2] -> FREE Status: LOSE		Value: 7.0
+Cell: [3,1] -> FREE Status: LOSE		Value: 7.0
+Cell: [3,3] -> FREE Status: LOSE		Value: 7.0
+Cell: [4,1] -> FREE Status: LOSE		Value: 7.0
+Cell: [1,0] -> FREE Status: LOSE		Value: 7.0
+Cell: [2,2] -> FREE Status: LOSE		Value: 7.0
+Cell: [0,2] -> FREE Status: LOSE		Value: 7.0
+Cell: [3,2] -> FREE Status: LOSE		Value: 7.0
+Cell: [0,1] -> FREE Status: LOSE		Value: 7.0
+Cell: [1,3] -> FREE Status: LOSE		Value: 7.0
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Max: Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Livello 6
+Cell: [1,1] -> FREE Status: LOSE		Value: 7.0
+Cell: [4,2] -> FREE Status: LOSE		Value: 7.0
+Cell: [3,1] -> FREE Status: LOSE		Value: 7.0
+Cell: [3,3] -> FREE Status: LOSE		Value: 7.0
+Cell: [4,1] -> FREE Status: LOSE		Value: 7.0
+Cell: [1,0] -> FREE Status: LOSE		Value: 7.0
+Cell: [2,2] -> FREE Status: LOSE		Value: 7.0
+Cell: [0,2] -> FREE Status: LOSE		Value: 7.0
+Cell: [3,2] -> FREE Status: LOSE		Value: 7.0
+Cell: [0,1] -> FREE Status: LOSE		Value: 7.0
+Cell: [1,3] -> FREE Status: LOSE		Value: 7.0
+Cell: [1,2] -> FREE Status: CANT_WIN	Value: -0.75
+Cell: [2,0] -> FREE Status: CANT_WIN	Value: -1.0
+Cell: [2,3] -> FREE Status: LOSE		Value: 11.0
+Cell: [4,3] -> FREE Status: LOSE		Value: 11.0
+Max: Cell: [1,2] -> FREE Status: CANT_WIN	Value: -0.75
+Livello 7
+ERRORE-Alphabeta!
+ERRORE-Alphabeta!
+Cell: [1,1] -> FREE Status: LOSE		Value: 7.0
+Cell: [4,2] -> FREE Status: LOSE		Value: 7.0
+Cell: [3,1] -> FREE Status: LOSE		Value: 7.0
+Cell: [3,3] -> FREE Status: LOSE		Value: 7.0
+Cell: [4,1] -> FREE Status: LOSE		Value: 7.0
+Cell: [1,0] -> FREE Status: LOSE		Value: 7.0
+Cell: [2,2] -> FREE Status: LOSE		Value: 7.0
+Cell: [0,2] -> FREE Status: LOSE		Value: 7.0
+Cell: [3,2] -> FREE Status: LOSE		Value: 7.0
+Cell: [0,1] -> FREE Status: LOSE		Value: 7.0
+Cell: [1,3] -> FREE Status: LOSE		Value: 7.0
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Max: Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Livello 8
+Cell: [1,1] -> FREE Status: LOSE		Value: 7.0
+Cell: [4,2] -> FREE Status: LOSE		Value: 7.0
+Cell: [3,1] -> FREE Status: LOSE		Value: 7.0
+Cell: [3,3] -> FREE Status: LOSE		Value: 7.0
+Cell: [4,1] -> FREE Status: LOSE		Value: 7.0
+Cell: [1,0] -> FREE Status: LOSE		Value: 7.0
+Cell: [2,2] -> FREE Status: LOSE		Value: 7.0
+Cell: [0,2] -> FREE Status: LOSE		Value: 7.0
+Cell: [3,2] -> FREE Status: LOSE		Value: 7.0
+Cell: [0,1] -> FREE Status: LOSE		Value: 7.0
+Cell: [1,3] -> FREE Status: LOSE		Value: 7.0
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Max: Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: -0.25
+Livello 9
+Cell: [1,1] -> FREE Status: LOSE		Value: 7.0
+Cell: [4,2] -> FREE Status: LOSE		Value: 7.0
+Cell: [3,1] -> FREE Status: LOSE		Value: 7.0
+Cell: [3,3] -> FREE Status: LOSE		Value: 7.0
+Cell: [4,1] -> FREE Status: LOSE		Value: 7.0
+Cell: [1,0] -> FREE Status: LOSE		Value: 7.0
+Cell: [2,2] -> FREE Status: LOSE		Value: 7.0
+Cell: [0,2] -> FREE Status: LOSE		Value: 7.0
+Cell: [3,2] -> FREE Status: LOSE		Value: 7.0
+Cell: [0,1] -> FREE Status: LOSE		Value: 7.0
+Cell: [1,3] -> FREE Status: LOSE		Value: 7.0
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Max: Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Livello 10
+Cell: [1,1] -> FREE Status: LOSE		Value: 7.0
+Cell: [4,2] -> FREE Status: LOSE		Value: 7.0
+Cell: [3,1] -> FREE Status: LOSE		Value: 7.0
+Cell: [3,3] -> FREE Status: LOSE		Value: 7.0
+Cell: [4,1] -> FREE Status: LOSE		Value: 7.0
+Cell: [1,0] -> FREE Status: LOSE		Value: 7.0
+Cell: [2,2] -> FREE Status: LOSE		Value: 7.0
+Cell: [0,2] -> FREE Status: LOSE		Value: 7.0
+Cell: [3,2] -> FREE Status: LOSE		Value: 7.0
+Cell: [0,1] -> FREE Status: LOSE		Value: 7.0
+Cell: [1,3] -> FREE Status: LOSE		Value: 7.0
+Cell: [1,2] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,0] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [2,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+Max: Cell: [4,3] -> FREE Status: NOT_DEFINED	Value: 0.0
+
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Profondita raggiunta: 10
+Mossa 5
+Nodi esplorati: 57160000
+Total alphabeta cuts: 10653311
+Eval: Status: NOT_DEFINED	Value: 0.0
+Time elapsed: 9804ms (timed out)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Player 2 (bottargaPlayer-Alphabeta) -> [4,3]
+Player 1 (bottargaPlayer-Minimax) -> [1,2]
+
+Game state    : WINP1
+Current score : bottargaPlayer-Minimax (4) - bottargaPlayer-Alphabeta (0)
+
+**** FINAL SCORE ****
+bottargaPlayer-Minimax 4
+bottargaPlayer-Alphabeta 0
+
+Win bottargaPlayer-Minimax: 2
+Win bottargaPlayer-Alphabeta: 0
+Draws: 0
