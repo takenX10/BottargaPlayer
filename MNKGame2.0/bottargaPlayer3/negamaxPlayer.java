@@ -1,4 +1,4 @@
-package bottargaPlayer1;
+package bottargaPlayer3;
 
 import mnkgame.MNKPlayer;
 import mnkgame.MNKCell;
@@ -28,7 +28,7 @@ public class negamaxPlayer implements MNKPlayer{
 
     @Override
     public String playerName() {
-        return "bottargaPlayer-Minimax";
+        return "bottargaPlayer-betterNegamax";
     }
     
 }

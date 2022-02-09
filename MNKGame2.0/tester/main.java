@@ -1,5 +1,8 @@
 package tester;
-import bottargaPlayer2.*;
+import bottargaPlayer1.*;
+import bottargaPlayer1.negamaxPlayer;
+import bottargaPlayer4.*;
+import bottargaPlayer4.negamaxAlphabeta;
 import mnkgame.*;
 
 //Questo main contiene degli esempi utili a capire praticamente come usare le classi EvalMatrix ed UpdateEvalMatrix.
@@ -11,35 +14,46 @@ public class main {
 
         System.out.println(a.compare(b));
         System.out.println(b.compare(a));*/
-        int M = 4;
+        int M = 5;
         int N = 4;
         int K = 4;
-        MNKCell[] FC = new MNKCell[9];
-        MNKCell[] MC = new MNKCell[7];
+        // MNKCell[] FC = new MNKCell[12];
+        // MNKCell[] MC = new MNKCell[8];
+        MNKCell[] FC = new MNKCell[14];
+        MNKCell[] MC = new MNKCell[6];
         MC[0] = new MNKCell(0, 0, MNKCellState.P1);
-        MC[1] = new MNKCell(2, 3, MNKCellState.P2);
-        MC[2] = new MNKCell(1, 1, MNKCellState.P1);
-        MC[3] = new MNKCell(2, 0, MNKCellState.P2);
-        MC[4] = new MNKCell(0, 3, MNKCellState.P1);
+        MC[1] = new MNKCell(1, 1, MNKCellState.P2);
+        MC[2] = new MNKCell(4, 0, MNKCellState.P1);
+        MC[3] = new MNKCell(2, 2, MNKCellState.P2);
+        MC[4] = new MNKCell(4, 3, MNKCellState.P1);
         MC[5] = new MNKCell(1, 2, MNKCellState.P2);
-        MC[6] = new MNKCell(2, 1, MNKCellState.P1);
+        // MC[6] = new MNKCell(2, 3, MNKCellState.P1);
+        // MC[7] = new MNKCell(3, 2, MNKCellState.P2);
         
 
-        FC[0] = new MNKCell(0, 1, MNKCellState.FREE);
-        FC[1] = new MNKCell(0, 2, MNKCellState.FREE);
-        FC[2] = new MNKCell(1, 0, MNKCellState.FREE);
-        FC[3] = new MNKCell(1, 3, MNKCellState.FREE);
-        FC[4] = new MNKCell(2, 2, MNKCellState.FREE);
-        FC[5] = new MNKCell(3, 0, MNKCellState.FREE);
-        FC[6] = new MNKCell(3, 1, MNKCellState.FREE);
-        FC[7] = new MNKCell(3, 2, MNKCellState.FREE);
-        FC[8] = new MNKCell(3, 3, MNKCellState.FREE);
-        
-        
+        FC[0] = new MNKCell(0, 3, MNKCellState.FREE);
+        FC[1] = new MNKCell(4, 2, MNKCellState.FREE);
+        FC[2] = new MNKCell(3, 1, MNKCellState.FREE);
+        FC[3] = new MNKCell(3, 0, MNKCellState.FREE);
+        FC[4] = new MNKCell(3, 3, MNKCellState.FREE);
+        FC[5] = new MNKCell(4, 1, MNKCellState.FREE);
+        FC[6] = new MNKCell(1, 0, MNKCellState.FREE);
+        FC[7] = new MNKCell(0, 2, MNKCellState.FREE);
+        FC[8] = new MNKCell(2, 1, MNKCellState.FREE);
 
-        transpositionPlayer p = new transpositionPlayer();
-        p.initPlayer(M,N,K,false,10000);
-        System.out.println(p.selectCell(FC, MC));
+        FC[9] = new MNKCell(3, 2, MNKCellState.FREE);
+
+        FC[10] = new MNKCell(0, 1, MNKCellState.FREE);
+        FC[11] = new MNKCell(1, 3, MNKCellState.FREE);
+        FC[12] = new MNKCell(2, 0, MNKCellState.FREE);
+
+        FC[13] = new MNKCell(2, 3, MNKCellState.FREE);
+
+        bottargaPlayer4.negamaxPlayer p1 = new bottargaPlayer4.negamaxPlayer();
+        bottargaPlayer1.negamaxPlayer p2 = new bottargaPlayer1.negamaxPlayer();
+        p1.initPlayer(M,N,K,true,100000);
+        p2.initPlayer(M,N,K,false,10000);
+        System.out.println(p1.selectCell(FC, MC));
         
         /*
         int M = 4;

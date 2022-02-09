@@ -104,7 +104,7 @@ full_benchmark(){
 cd ..
 
 # Compile the sources
-javac -d source bottargaPlayer1/*.java bottargaPlayer_old/*.java mnkgame/*.java 2> >(grep -v "^Picked up _JAVA_OPTIONS:" >&2)
+javac -d source bottargaPlayer1/*.java bottargaPlayer4/*.java bottargaPlayer3/*.java bottargaPlayer_old/*.java mnkgame/*.java 2> >(grep -v "^Picked up _JAVA_OPTIONS:" >&2)
 
 cd source
 # Create the temp file
@@ -117,7 +117,7 @@ echo ""
 echo " Benchmark by takenX10!!!"
 BENCHMARK_START=$SECONDS
 
-# start_round "3 3 3"
+#start_round "5 4 4"
 
 full_benchmark
 

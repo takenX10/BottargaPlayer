@@ -1,12 +1,12 @@
-package bottargaPlayer1;
+package bottargaPlayer3;
 
 import mnkgame.MNKCell;
 import mnkgame.MNKCellState;
 
 public class negamaxAlphabeta {
     // Debug print
-    private Boolean debugPrint = false;
-    private Boolean debugLevels = false;
+    private Boolean debugPrint = true;
+    private Boolean debugLevels = true;
 
     // costanti
     private long finishms;
@@ -151,7 +151,7 @@ public class negamaxAlphabeta {
                     if(!this.endNegamax){
                         // DEBUG TODO REMOVE
                         if(this.FC[i].eval.isFinal() && this.FC[i].eval != minusInf && this.FC[i].eval != inf && this.FC[i].eval.status != tmpscore.status){
-                            System.out.println("ERRORE-negamax!");
+                            System.out.println("ERRORE3!");
                         }
                         this.FC[i].eval = new CustomScore(tmpscore.score, tmpscore.status);
                     }
@@ -167,7 +167,7 @@ public class negamaxAlphabeta {
                 if(alpha.compare(beta)){
                     draw = -1;
                     totalCuts++;
-                    //break;
+                    break;
                 }
             }
         }

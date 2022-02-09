@@ -1,5 +1,5 @@
 
-javac -d source mnkgame/*.java bottargaPlayer2/*.java bottargaPlayer1/*.java bottargaPlayer_old/*.java
+javac -d source mnkgame/*.java bottargaPlayer2/*.java bottargaPlayer3/*.java bottargaPlayer1/*.java bottargaPlayer_old/*.java
 
 cd source
 
