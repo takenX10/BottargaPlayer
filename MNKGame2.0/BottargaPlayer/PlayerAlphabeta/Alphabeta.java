@@ -16,8 +16,6 @@ public class Alphabeta {
     private final int n;
     private final CustomScore minusInf;
     private final CustomScore inf;
-    private final CustomScore notDefinedDraw = new CustomScore(0, EvalStatus.NOT_DEFINED);
-
 
     // valori per benchmark
     private int totalNodesReached;
@@ -149,10 +147,6 @@ public class Alphabeta {
                 this.FC[i].used = false;
                 if( node == null ){ // per il primo giro
                     if(!this.endNegamax){
-                        // DEBUG TODO REMOVE
-                        if(this.FC[i].eval.isFinal() && this.FC[i].eval != minusInf && this.FC[i].eval != inf && this.FC[i].eval.status != tmpscore.status){
-                            System.out.println("ERRORE-Alphabeta!");
-                        }
                         this.FC[i].eval = new CustomScore(tmpscore.score, tmpscore.status);
                     }
                 }

@@ -11,18 +11,17 @@ public class Player implements MNKPlayer{
     private boolean first;
     private int timeout;
     @Override
-    public void initPlayer(int M, int N, int K, boolean first, int timeout_in_secs) {
+    public void initPlayer(int M, int N, int K, boolean first, int timeotInSecs) {
         this.M = M;
         this.N = N;
         this.K = K;
-        this.timeout = timeout_in_secs;
+        this.timeout = timeotInSecs;
         this.first = first;
     }
 
     @Override
     public MNKCell selectCell(MNKCell[] FC, MNKCell[] MC) {
         Alphabeta runner = new Alphabeta(this.M, this.N, this.K, this.first, MC, FC, timeout);
-
         return runner.iterative_negamax();
     }
 

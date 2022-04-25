@@ -101,6 +101,32 @@ full_benchmark(){
     start_round "70 70 10"
 }
 
+almost_full_benchmark(){
+    start_round "3 3 3" 
+    start_round "4 3 3" 
+    start_round "4 4 3" 
+    start_round "4 4 4" 
+    start_round "5 4 4" 
+    start_round "5 5 4"  
+    start_round "5 5 5"  
+    start_round "6 4 4"  
+    start_round "6 5 4"  
+    start_round "6 6 4"  
+    start_round "6 6 5"  
+    start_round "6 6 6"  
+    start_round "7 4 4"  
+    start_round "7 5 4"  
+    start_round "7 6 4"  
+    start_round "7 7 4"  
+    start_round "7 5 5"  
+    start_round "7 6 5"  
+    start_round "7 7 5"  
+    start_round "7 7 6"  
+    start_round "7 7 7"  
+    start_round "8 8 4"  
+    start_round "10 10 5"
+}
+
 cd ..
 
 # Compile the sources
@@ -119,6 +145,6 @@ BENCHMARK_START=$SECONDS
 
 #start_round "5 4 4"
 
-full_benchmark
+almost_full_benchmark
 
 quit_script

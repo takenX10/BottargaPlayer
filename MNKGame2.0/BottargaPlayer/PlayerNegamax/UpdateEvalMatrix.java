@@ -1,5 +1,7 @@
 package BottargaPlayer.PlayerNegamax;
-
+import BottargaPlayer.Utils.Cell.CustomScore;
+import BottargaPlayer.Utils.Cell.EvalStatus;
+import BottargaPlayer.Utils.Matrix.*;
 import mnkgame.MNKCell;
 import mnkgame.MNKCellState;
 //La classe serve ad aggiornare le 4 matrici dell'eval
@@ -16,7 +18,7 @@ import mnkgame.MNKCellState;
 */
 
 
-public class UpdateEvalMatrix {
+public class UpdateEvalMatrix extends BottargaPlayer.Utils.Matrix.UpdateEvalMatrix {
     private boolean first_player; //Parametro che mi dice se sono il primo a giocare. If True io sarò considerato P1, else P2
     /* Mi è utile saperlo per interpretare il valore in MNKCellState in cui ad una cella si assegna P1 o P2 in base a chi l'ha scelta. */
     private int x; // Coordinata x del punto in cui viene aggiunto il nuovo simbolo, si parte da zero
@@ -194,9 +196,6 @@ public class UpdateEvalMatrix {
             }
             matrix[x][y][1]--;
             partial_sum++;
-        }
-        if(matrix[x][y][0] < 0 || matrix[x][y][1] < 0){
-            System.out.println("ERRORE");
         }
         return partial_sum;
     }

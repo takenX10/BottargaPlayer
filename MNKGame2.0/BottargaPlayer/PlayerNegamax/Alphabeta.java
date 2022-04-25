@@ -1,23 +1,23 @@
 package BottargaPlayer.PlayerNegamax;
 
+import BottargaPlayer.Utils.Cell.*;
+import BottargaPlayer.Utils.Matrix.*;
 import mnkgame.MNKCell;
 import mnkgame.MNKCellState;
 
 public class Alphabeta {
     // Debug print
-    private Boolean debugPrint = false;
-    private Boolean debugLevels = false;
+    private final Boolean debugPrint = false;
+    private final Boolean debugLevels = false;
 
     // costanti
-    private long finishms;
+    private final long finishms;
     private final MNKCellState me;
     private final MNKCellState enemy;
     private final int m;
     private final int n;
     private final CustomScore minusInf;
     private final CustomScore inf;
-    private final CustomScore notDefinedDraw = new CustomScore(0, EvalStatus.NOT_DEFINED);
-
 
     // valori per benchmark
     private int totalNodesReached;
@@ -25,11 +25,10 @@ public class Alphabeta {
 
     // valori per condizioni finali
     private boolean endNegamax;
-    private MNKCell bestCell;
-    private CustomScore bestValue;
+    private CustomMNKCell bestCell;
     private long finish;
     private final int currentDepth;
-    private boolean last_depth;
+    private boolean lastDepth;
     private int currentMaxDepth; // per inserirla nella transposition table
 
     // strutture
@@ -68,7 +67,7 @@ public class Alphabeta {
         // inizializza array delle celle vuote
         this.FC = new CustomMNKCell[FC.length];
         for(int i = 0; i < FC.length; i++){
-            this.FC[i] = new CustomMNKCell(FC[i], false, this.minusInf, false);
+            this.FC[i] = new CustomMNKCell(FC[i], false, this.minusInf);
         }
     }
 
@@ -78,7 +77,7 @@ public class Alphabeta {
         this.finish = System.currentTimeMillis() + finishms;
         this.endNegamax = false;
         for(currentMaxDepth = 1;;currentMaxDepth++){
-            this.last_depth = true; // viene cambiato in false se avviene un taglio per profondità massima
+            this.lastDepth = true; // viene cambiato in false se avviene un taglio per profondità massima
             // return value di negamax inutile
             if(debugLevels){
                 System.out.println("Livello "+currentMaxDepth);
@@ -88,27 +87,25 @@ public class Alphabeta {
             
             // pareggio no perchè se ad esempio alcuni nodi pareggiano e altri
             // non sono stati ancora esplorati non ha senso finire senza esplorarli
-            if(this.last_depth || this.endNegamax || this.bestValue.status == EvalStatus.WIN || this.bestValue.status == EvalStatus.LOSE){
+            if(this.lastDepth || this.endNegamax || this.bestCell.eval.status == EvalStatus.WIN || this.bestCell.eval.status == EvalStatus.LOSE){
                 break;
             }
         }
-
-        // DEBUG TODO REMOVE
         long time = System.currentTimeMillis();
         if(debugPrint){
             System.out.println("\nVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV");
             System.out.println("Profondita raggiunta: "+currentMaxDepth);
             System.out.println("Mossa "+this.currentDepth);
             System.out.println("Nodi esplorati: "+this.totalNodesReached);
-            if(this.bestValue.status == EvalStatus.LOSE){
+            if(this.bestCell.eval.status == EvalStatus.LOSE){
                 System.out.println("TECNICAMENTE GIA PERSO!!!");
             }
             System.out.println("Total alphabeta cuts: "+this.totalCuts);
-            System.out.println("Eval: "+this.bestValue);
+            System.out.println("Eval: "+this.bestCell.eval);
             System.out.println("Time elapsed: "+(time - finish + finishms) + (time > finish ? "ms (timed out)":"ms"));
             System.out.println("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n");
         }
-        return this.bestCell;
+        return this.bestCell.cell;
     }
 
     private CustomScore negamax(int depth, int sign, MNKCell node, MNKCellState stato, CustomScore alpha, CustomScore beta) {   
@@ -132,7 +129,7 @@ public class Alphabeta {
             this.current_matrix.single_invert_matrix(node,stato);
             return (sign > 0 ? tmpeval : tmpeval.invert());
         }else if(depth == 0){ // foglia per profondità, possibile andare più giu all'iterazione successiva.
-            this.last_depth = false;
+            this.lastDepth = false;
             CustomScore tmpeval = new CustomScore(this.current_matrix.eval.score, this.current_matrix.eval.status);
             this.current_matrix.single_invert_matrix(node,stato);
             return (sign > 0 ? tmpeval : tmpeval.invert());
@@ -149,10 +146,6 @@ public class Alphabeta {
                 this.FC[i].used = false;
                 if( node == null ){ // per il primo giro
                     if(!this.endNegamax){
-                        // DEBUG TODO REMOVE
-                        if(this.FC[i].eval.isFinal() && this.FC[i].eval != minusInf && this.FC[i].eval != inf && this.FC[i].eval.status != tmpscore.status){
-                            System.out.println("ERRORE-negamax!");
-                        }
                         this.FC[i].eval = new CustomScore(tmpscore.score, tmpscore.status);
                     }
                 }
@@ -163,7 +156,6 @@ public class Alphabeta {
                 if(maxscore.status != EvalStatus.DRAW){
                     alpha = CustomScore.maximize(alpha, maxscore);
                 }
-                // alpha >= beta
                 if(alpha.compare(beta)){
                     draw = -1;
                     totalCuts++;
@@ -198,7 +190,6 @@ public class Alphabeta {
         if(debugLevels){
             System.out.println("Max: "+max);
         }
-        this.bestCell = max.cell;
-        this.bestValue = new CustomScore(max.eval.score, max.eval.status);
+        this.bestCell = new CustomMNKCell(max.cell, false, new CustomScore(max.eval.score, max.eval.status));
     }
 }

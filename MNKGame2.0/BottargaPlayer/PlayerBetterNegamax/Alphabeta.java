@@ -1,5 +1,6 @@
 package BottargaPlayer.PlayerBetterNegamax;
 
+import BottargaPlayer.Utils.Matrix.UpdateEvalMatrix;
 import mnkgame.MNKCell;
 import mnkgame.MNKCellState;
 
@@ -16,8 +17,6 @@ public class Alphabeta {
     private final int n;
     private final CustomScore minusInf;
     private final CustomScore inf;
-    private final CustomScore notDefinedDraw = new CustomScore(0, EvalStatus.NOT_DEFINED);
-
 
     // valori per benchmark
     private int totalNodesReached;
