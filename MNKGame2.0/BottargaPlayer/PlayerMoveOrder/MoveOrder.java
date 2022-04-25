@@ -1,5 +1,8 @@
 package BottargaPlayer.PlayerMoveOrder;
 
+import BottargaPlayer.Utils.Matrix.UpdateEvalMatrix;
+import BottargaPlayer.Utils.Cell.CustomScore;
+import BottargaPlayer.Utils.Cell.CustomMNKCell;
 import mnkgame.MNKCell;
 import mnkgame.MNKCellState;
 
@@ -8,14 +11,14 @@ public class MoveOrder {
     private int currentCell;
     private MNKCellState state;
 
-    MoveOrder(CustomMNKCell[] FC, MNKCell toRemove, UpdateEvalMatrix currentMatrix, MNKCellState state, int depth){
+    public MoveOrder(CustomMNKCell[] FC, MNKCell toRemove, UpdateEvalMatrix currentMatrix, MNKCellState state, int depth){
         this.state = state;
         this.currentCell = 0;
         if(toRemove == null){
             this.cells = new CustomMNKCell[FC.length];
             int j = 0;
             for (int i = 0; i < FC.length; i++){
-                cells[j] = new CustomMNKCell(FC[i].cell, null);
+                cells[j] = new CustomMNKCell(FC[i].cell, false, null);
                 j++;
             }    
         }else{
@@ -25,7 +28,7 @@ public class MoveOrder {
             int j = 0;
             for (int i = 0; i < FC.length; i++){
                 if(FC[i].cell != toRemove){
-                    cells[j] = new CustomMNKCell(FC[i].cell, null);
+                    cells[j] = new CustomMNKCell(FC[i].cell,false, null);
                     j++;
                 }
             }

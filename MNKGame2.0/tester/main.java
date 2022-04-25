@@ -1,6 +1,6 @@
 package tester;
 import mnkgame.*;
-import BottargaPlayer.PlayerNegamax.*;
+import BottargaPlayer.Utils.Matrix.*;
 
 //Questo main contiene degli esempi utili a capire praticamente come usare le classi EvalMatrix ed UpdateEvalMatrix.
 public class main {

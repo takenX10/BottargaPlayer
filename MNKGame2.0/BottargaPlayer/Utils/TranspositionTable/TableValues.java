@@ -1,5 +1,6 @@
-package BottargaPlayer.PlayerTransposition;
+package BottargaPlayer.Utils.TranspositionTable;
 
+import BottargaPlayer.Utils.Cell.CustomScore;
 import mnkgame.MNKCell;
 
 import java.util.BitSet;

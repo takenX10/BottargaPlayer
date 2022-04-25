@@ -1,5 +1,9 @@
 package BottargaPlayer.Utils.Cell;
 
+/**
+ * CANT_WIN e DRAW hanno lo stesso valore perche' questo aiuta nei confronti
+ * in CustomScore
+ */
 public enum EvalStatus {
     LOSE(-2),
     CANT_WIN(-1),

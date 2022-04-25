@@ -1,5 +1,6 @@
-package BottargaPlayer.PlayerTranspositionCuts;
+package BottargaPlayer.Utils.TranspositionTable;
 
+import BottargaPlayer.Utils.Cell.CustomScore;
 import mnkgame.MNKCell;
 import mnkgame.MNKCellState;
 

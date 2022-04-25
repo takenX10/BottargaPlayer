@@ -18,26 +18,26 @@ import BottargaPlayer.Utils.Cell.*;
 *
 */
 public class UpdateEvalMatrix {
-    private boolean first_player; //Parametro che mi dice se sono il primo a giocare. If True io sarò considerato P1, else P2
+    protected boolean first_player; //Parametro che mi dice se sono il primo a giocare. If True io sarò considerato P1, else P2
     /* Mi è utile saperlo per interpretare il valore in MNKCellState in cui ad una cella si assegna P1 o P2 in base a chi l'ha scelta. */
-    private int x; // Coordinata x del punto in cui viene aggiunto il nuovo simbolo, si parte da zero
-    private int y; // Coordinata y del punto in cui viene aggiunto il nuovo simbolo, si parte da zero
-    private boolean my_move; //La mossa che considero è mia o dell'avversario? True = mia, false otherwise
-    private final int k; // valori del tris ( M, N, K ), in quanto tali partono da 1, non da zero. ( M = 5, abbiamo 5 righe in quanto conto da 1 a 5 )
-    private final int m; //
+    protected int x; // Coordinata x del punto in cui viene aggiunto il nuovo simbolo, si parte da zero
+    protected int y; // Coordinata y del punto in cui viene aggiunto il nuovo simbolo, si parte da zero
+    protected boolean my_move; //La mossa che considero è mia o dell'avversario? True = mia, false otherwise
+    protected final int k; // valori del tris ( M, N, K ), in quanto tali partono da 1, non da zero. ( M = 5, abbiamo 5 righe in quanto conto da 1 a 5 )
+    protected final int m; //
 
     //4 matrici dell'eval.
     public int[][][] M_Matrix;  //Matrice delle righe
     public int[][][] N_Matrix;  //Matrice delle colonne
     public int[][][] K1_Matrix; // Matrice diagonali che vanno dal basso verso l'alto. (Lettura da sinistra a destra)
     public int[][][] K2_Matrix; // Matrice diagonali che vanno dall'alto verso il basso. (Lettura da sinistra a destra)
-    private int partial_sum_M_Matrix;
-    private int partial_sum_N_Matrix;
-    private int partial_sum_K1_Matrix;
-    private int partial_sum_K2_Matrix;
-    private int conta_patta_p1;
-    private int conta_patta_p2;
-    private final int ncelle;     // numero delle celle totali nelle varie matrici
+    protected int partial_sum_M_Matrix;
+    protected int partial_sum_N_Matrix;
+    protected int partial_sum_K1_Matrix;
+    protected int partial_sum_K2_Matrix;
+    protected int conta_patta_p1;
+    protected int conta_patta_p2;
+    protected final int ncelle;     // numero delle celle totali nelle varie matrici
     //todo se so che in una serie di mosse una mi ha portato alla vittoria smetto di aggiornare tutte le matrici analizzando le altre mosse? Si
     public CustomScore eval;
     public int symbolsInside;
@@ -104,7 +104,7 @@ public class UpdateEvalMatrix {
         }
     }
 
-    private void calcolate_eval_value(int[][][] M, int[][][] N, int[][][] K1, int[][][] K2, CustomScore startingScore){
+    protected void calcolate_eval_value(int[][][] M, int[][][] N, int[][][] K1, int[][][] K2, CustomScore startingScore){
         if(eval.status != EvalStatus.WIN && eval.status != EvalStatus.LOSE) {
             if(conta_patta_p1 == ncelle && conta_patta_p2 == ncelle){
                 this.eval.status = EvalStatus.DRAW;
@@ -120,8 +120,6 @@ public class UpdateEvalMatrix {
                 this.eval.status = EvalStatus.NOT_DEFINED;
             }
             this.eval.score = (double)(partial_sum_M_Matrix + partial_sum_N_Matrix + partial_sum_K1_Matrix + partial_sum_K2_Matrix);
-            int a = 0;
-            a = a + 1;
         }else{
             if(startingScore.status != EvalStatus.WIN && startingScore.status != EvalStatus.LOSE){
                 this.eval.score = (double)this.symbolsInside;
@@ -129,7 +127,7 @@ public class UpdateEvalMatrix {
         }
     }
 
-    private int update_matrix(int x, int y, int[][][] matrix, int partial_sum){
+    protected int update_matrix(int x, int y, int[][][] matrix, int partial_sum){
         if(this.my_move){
             double pow = Math.pow(10, matrix[x][y][0] - 1);
             matrix[x][y][0]++;
@@ -170,7 +168,7 @@ public class UpdateEvalMatrix {
         return partial_sum;
     }
 
-    private int invert_matrix(int x, int y, boolean mymove, int[][][] matrix, int partial_sum){
+    protected int invert_matrix(int x, int y, boolean mymove, int[][][] matrix, int partial_sum){
         if(mymove){
             double pow = Math.pow(10, matrix[x][y][0] - 2);
             if(matrix[x][y][0] == k){
@@ -215,7 +213,7 @@ public class UpdateEvalMatrix {
     }
 
     //Aggiornamento valori della matrice M_Matrix ( Matrice delle righe )
-    private void update_M_Matrix(){
+    public void update_M_Matrix(){
         if (M_Matrix != null){
             //todo Le successive due righe sono qui per leggibilità, per una maggiore efficienza spostarle nel metodo di init
             int limit_y = M_Matrix[0].length - 1; //Dimensione colonne matrice M_Matrix
@@ -230,7 +228,7 @@ public class UpdateEvalMatrix {
     }
 
     //Aggiornamento valori matrice N_Matrix ( Matrice delle colonne )
-    private void update_N_Matrix(){
+    protected void update_N_Matrix(){
         if (N_Matrix != null){
             //todo Le successive due righe sono qui per leggibilità, per una maggiore efficienza spostarle nel metodo di init
             int limit_x = N_Matrix.length - 1; //Dimensione righe matrice N_Matrix
@@ -244,7 +242,7 @@ public class UpdateEvalMatrix {
     }
 
     //Aggiornamento valori matrice K1_Matrix ( Matrice delle diagonali dal basso verso l'alto )
-    private void update_K1_Matrix(){
+    protected void update_K1_Matrix(){
         if (K1_Matrix != null){
             //todo Le successive due righe sono qui per leggibilità, per una maggiore efficienza verranno spostate nel metodo di init
             int K1_Matrix_Y = K1_Matrix[0].length - 1; // Numero colonne matrice K2_Matrix contate da zero
@@ -259,7 +257,7 @@ public class UpdateEvalMatrix {
         }
     }
 
-    private void update_K2_Matrix(){
+    protected void update_K2_Matrix(){
         if (K2_Matrix != null){
             //todo Le successive due righe sono qui per leggibilità, per una maggiore efficienza verranno spostate nel metodo di init
             int K2_Matrix_X = K2_Matrix.length - 1; //Numero righe matrice K2_Matrix contate partendo da zero
@@ -274,7 +272,7 @@ public class UpdateEvalMatrix {
         }
     }
 
-    private void invert_M_Matrix(){
+    protected void invert_M_Matrix(){
         if (M_Matrix != null){
             //todo Le successive due righe sono qui per leggibilità, per una maggiore efficienza spostarle nel metodo di init
             int limit_y = M_Matrix[0].length - 1; //Dimensione colonne matrice M_Matrix
@@ -288,7 +286,7 @@ public class UpdateEvalMatrix {
         }
     }
 
-    private void invert_N_Matrix(){
+    protected void invert_N_Matrix(){
         if (N_Matrix != null){
             //todo Le successive due righe sono qui per leggibilità, per una maggiore efficienza spostarle nel metodo di init
             int limit_x = N_Matrix.length - 1; //Dimensione righe matrice N_Matrix
@@ -301,7 +299,7 @@ public class UpdateEvalMatrix {
         }
     }
 
-    private void invert_K1_Matrix(){
+    protected void invert_K1_Matrix(){
         if (K1_Matrix != null){
             //todo Le successive due righe sono qui per leggibilità, per una maggiore efficienza verranno spostate nel metodo di init
             int K1_Matrix_Y = K1_Matrix[0].length - 1; // Numero colonne matrice K2_Matrix contate da zero
@@ -316,7 +314,7 @@ public class UpdateEvalMatrix {
         }
     }
 
-    private void invert_K2_Matrix(){
+    protected void invert_K2_Matrix(){
         if (K2_Matrix != null){
             //todo Le successive due righe sono qui per leggibilità, per una maggiore efficienza verranno spostate nel metodo di init
             int K2_Matrix_X = K2_Matrix.length - 1; //Numero righe matrice K2_Matrix contate partendo da zero

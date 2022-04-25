@@ -1,6 +1,35 @@
 package BottargaPlayer.Utils.Cell;
 
 
+/**
+ * Uno score customizzato, secondo EvalStatus.
+ * Permette di controllare >= con compare, e di invertire un valore con invert.
+ * Il sistema di punteggio funziona in questo modo:
+ * ci sono 6 stati, ed ognuno contiene uno score che rappresenta:
+ * - NOT DEFINED:    Score della partita standard
+ * - CANT_WIN:       Score della partita standard
+ * - CANT_LOSE:      Score della partita standard
+ * - DRAW:           Distanza del pareggio, piu' e' alto maggiore e' la distanza   
+ * - WIN:            Distanza della vittoria, piu' e' alto maggiore e' la distanza  
+ * - LOSE:           Distanza della sconfitta, piu' e' alto maggiore e' la distanza
+ * 
+ * Gli stati considerati definitivi sono DRAW, WIN e LOSE.
+ * Una volta che lo score viene dichiarato DRAW, significa non solo che e' possibile un pareggio, ma che
+ * e' anche assicurato che la partita finisca in pareggio
+ * 
+ * Per decidere quale score e' maggiore, a parita di stato ci basta massimizzare il valore, eccetto
+ * che per win, dove vogliamo vincere il prima possibile quindi minimizziamo.
+ * 
+ * Con stati diversi il confronto funziona seguendo quest'ordine:
+ * - WIN
+ * - CANT_LOSE
+ * - DRAW e NOT_DEFINED
+ * - CANT_WIN
+ * - LOSE
+ * 
+ * DRAW e NOT_DEFINED sono insieme perche' vengono considerati allo stesso livello, e draw
+ * viene considerato come un NOT_DEFINED con eval 0.
+ */
 public class CustomScore{
     public double score;
     public EvalStatus status;
@@ -9,6 +38,10 @@ public class CustomScore{
         this.status = status;
     }
 
+    /**
+     * 
+     * @return true sse l'elemento chiamante e' finale, quindi ha uno tra questi stati: DRAW, WIN o LOSE
+     */
     public Boolean isFinal(){
         if(this.status == EvalStatus.WIN || this.status == EvalStatus.LOSE || this.status == EvalStatus.DRAW){
             return true;
@@ -16,22 +49,11 @@ public class CustomScore{
         return false;
     }
 
-    // Restituisce true se l'elemento che chiama la funzione e' meglio del parametro passato, false altrimenti
-    // In caso di pareggio restituisce true (per evitare altri scambi)
-
-    /* 
-        Rappresentazione concettuale dello score:
-
-        NOT DEFINED:    Score della partita standard
-        CANT_WIN:       Score della partita standard
-        CANT_LOSE:      Score della partita standard
-        DRAW:           Distanza del pareggio, piu' e' alto maggiore e' la distanza   
-        WIN:            Distanza della vittoria, piu' e' alto maggiore e' la distanza  
-        LOSE:           Distanza della sconfitta, piu' e' alto maggiore e' la distanza
-
-        Quindi vogliamo massimizzare tutti gli score a parita di stato eccetto win, che vogliamo minimizzare
-
-    */
+    /**
+     * verifica che l'elemento che chiama la funzione sia maggiore o uguale dell'elemento passato
+     * @param b parametro che viene confrontato
+     * @return true sse l'elemento chiamante e' >= di b, false altrimenti.
+     */
     public Boolean compare(CustomScore b){
         if(this.status.value > b.status.value){
             return true;
@@ -62,6 +84,12 @@ public class CustomScore{
         }
     }
 
+    /**
+     * 
+     * @param a primo elemento
+     * @param b secondo elemento
+     * @return crea un nuovo elemento, uguale al maggiore tra i due.
+     */
     public static CustomScore maximize(CustomScore a, CustomScore b){
         CustomScore retval = null;
         if(a.status.value > b.status.value){
@@ -134,6 +162,10 @@ public class CustomScore{
         return new CustomScore(retval.score, retval.status);
     }
 
+    /**
+     * 
+     * @return un nuovo valore, uguale all'inverso del valore del chiamante
+     */
     public CustomScore invert(){
         CustomScore inverse = new CustomScore(this.score, this.status);
         switch(this.status){
