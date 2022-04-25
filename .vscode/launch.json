@@ -29,7 +29,8 @@
             "name": "Launch MNKPlayerTester",
             "request": "launch",
             "mainClass": "mnkgame.MNKPlayerTester",
-            "projectName": "bottargaPlayer_631a9744"
+            "projectName": "bottargaPlayer_631a9744",
+            "args": "${command:SpecifyProgramArgs}"
         },
         {
             "type": "java",

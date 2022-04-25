@@ -101,10 +101,36 @@ full_benchmark(){
     start_round "70 70 10"
 }
 
+almost_full_benchmark(){
+    start_round "3 3 3" 
+    start_round "4 3 3" 
+    start_round "4 4 3" 
+    start_round "4 4 4" 
+    start_round "5 4 4" 
+    start_round "5 5 4"  
+    start_round "5 5 5"  
+    start_round "6 4 4"  
+    start_round "6 5 4"  
+    start_round "6 6 4"  
+    start_round "6 6 5"  
+    start_round "6 6 6"  
+    start_round "7 4 4"  
+    start_round "7 5 4"  
+    start_round "7 6 4"  
+    start_round "7 7 4"  
+    start_round "7 5 5"  
+    start_round "7 6 5"  
+    start_round "7 7 5"  
+    start_round "7 7 6"  
+    start_round "7 7 7"  
+    start_round "8 8 4"  
+    start_round "10 10 5"
+}
+
 cd ..
 
 # Compile the sources
-javac -d source bottargaPlayer1/*.java bottargaPlayer_old/*.java mnkgame/*.java 2> >(grep -v "^Picked up _JAVA_OPTIONS:" >&2)
+javac -d source BottargaPlayer/*/*.java mnkgame/*.java 2> >(grep -v "^Picked up _JAVA_OPTIONS:" >&2)
 
 cd source
 # Create the temp file
@@ -117,8 +143,8 @@ echo ""
 echo " Benchmark by takenX10!!!"
 BENCHMARK_START=$SECONDS
 
-# start_round "3 3 3"
+#start_round "5 4 4"
 
-full_benchmark
+validator_benchmark
 
 quit_script
