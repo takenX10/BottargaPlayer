@@ -1,3 +1,20 @@
+###############
+#             #
+#   ( )   _   #
+#  (_` )_('>  #
+#  (__,~_)8   #
+#    _YY_     #
+###############
+#
+# Use:          Prints the recap of a bechmark file (useful when the file is full of log prints) with just
+#               the scores of every round played, except for the first one (don't know why)
+#
+# Disclaimer:   this file is not meant to be bulletproof, I made it quickly just to get the benchmarker done
+#               so use it at your own risk
+#
+# Known bugs:   Doesn't print the first round
+#               And I think it does break with strange symbols in player names like benchmark_parser.py
+
 import re
 import sys
 

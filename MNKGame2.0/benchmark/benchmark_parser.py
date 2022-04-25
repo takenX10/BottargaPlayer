@@ -1,5 +1,20 @@
+###############
+#             #
+#   ( )   _   #
+#  (_` )_('>  #
+#  (__,~_)8   #
+#    _YY_     #
+###############
+#
+# Use:          Prints the final score of a logfile, just pass the logfile path as parameter
+#
+# Disclaimer:   this file is not meant to be bulletproof, I made it quickly just to get the benchmarker done
+#               so use it at your own risk
+#
+# Known bugs:   Some player names break the regex, watch out for strange symbols
 import re
 import sys
+
 
 def main():
     try:

@@ -1,16 +1,34 @@
 #!/bin/bash
+###############
+#             #
+#   ( )   _   #
+#  (_` )_('>  #
+#  (__,~_)8   #
+#    _YY_     #
+###############
+# Disclaimer:   this file is not meant to be bulletproof, I made it quickly just to get the benchmarker done
+#               so use it at your own risk
+#
+# Features: If you want to change the parameters inside the compilation like time or rounds, there are 
+#           some variables under here that you can modify
+#           
+#           you can also change the rounds that are played at the end of the file, just uncomment
+#           the lines of the game configuration or creat your own configuration by writing
+#           start_rond "M N K"
+#           for each round you want to play
+
+time=10
+round_per_type=2
+tempfile=/tmp/tempfile.txt
+
+var1=$1
+var2=$2
+var3=../benchmark/benchmark_logs/$3
 if [ "$#" -ne 3 ];
 then
     echo "Usage: ./benchmark.sh mnkgame.player1 mnkgame.player2 logname.txt"
     exit 1
 fi
-
-time=10
-round_per_type=2
-tempfile=/tmp/tempfile.txt
-var1=$1
-var2=$2
-var3=../benchmark/benchmark_logs/$3
 
 # $1-> game configuration
 start_round(){
@@ -143,8 +161,25 @@ echo ""
 echo " Benchmark by takenX10!!!"
 BENCHMARK_START=$SECONDS
 
+<<<<<<< Updated upstream
 #start_round "5 4 4"
 
 validator_benchmark
+=======
+<<<<<<< Updated upstream
+# start_round "3 3 3"
+
+full_benchmark
+=======
+# Insert the custom game configuration under here, I prepared some:
+# validator_benchmark
+# full_benchmark
+# almost_full_benchmark
+# partial_benchmark
+# big_benchmark
+
+#####
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 
 quit_script
