@@ -3,13 +3,19 @@ import BottargaPlayer.Utils.Cell.*;
 import mnkgame.MNKCell;
 import mnkgame.MNKCellState;
 
+/**
+ * Modificato il loop dell'algoritmo negamax in modo da non considerare alpha e beta
+ */
 public class Alphabeta extends BottargaPlayer.Utils.Player.Alphabeta {
     public Alphabeta(int M, int N, int K, boolean first, MNKCell[] MC, MNKCell[] FC, Integer timeout, boolean debugPrint, boolean debugLevels) {
         super(M, N, K, first, MC, FC, timeout, debugPrint, debugLevels);
     }
 
+    /**
+     * e' stato semplicemente tolto tutto quello che riguarda alpha e beta
+     */
     @Override
-    protected CustomScore loop(int depth, int sign, MNKCellState stato, CustomScore alpha, CustomScore beta, MNKCell node){
+    protected CustomScore loop(int depth, int sign, MNKCellState stato, CustomMNKCell[] currentFreeCells, CustomScore alpha, CustomScore beta, MNKCell node){
         CustomScore maxscore = minusInf;
         CustomScore tmpscore;
         int i;

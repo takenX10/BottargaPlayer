@@ -2,7 +2,9 @@ package BottargaPlayer.PlayerAlphabeta;
 
 import mnkgame.MNKCell;
 
-// Classe negamax 
+/**
+ * Rispetto a PlayerBetterNegamax abbiamo aggiunto i tagli dati da alpha e beta
+ */
 public class Player extends BottargaPlayer.Utils.Player.Player {
 
     @Override

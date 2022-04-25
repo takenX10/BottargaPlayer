@@ -3,26 +3,16 @@ package BottargaPlayer.PlayerTranspositionCuts;
 import mnkgame.MNKPlayer;
 import mnkgame.MNKCell;
 
-// Classe negamax 
-public class Player implements MNKPlayer{
-    private int M;
-    private int N;
-    private int K;
-    private boolean first;
-    private int timeout;
-    @Override
-    public void initPlayer(int M, int N, int K, boolean first, int timeout_in_secs) {
-        this.M = M;
-        this.N = N;
-        this.K = K;
-        this.timeout = timeout_in_secs;
-        this.first = first;
-    }
+/**
+ * Rispetto a PlayerTransposition sono stati aggiunti i alpha-beta cuts per 
+ * entry della tabella non di tipo EXACT (quindi LOWER e UPPER).
+ */
+public class Player extends BottargaPlayer.Utils.Player.Player{
 
+    // Ridefinita per utilizzare la classe Alphabeta corretta
     @Override
     public MNKCell selectCell(MNKCell[] FC, MNKCell[] MC) {
         Alphabeta runner = new Alphabeta(this.M, this.N, this.K, this.first, MC, FC, timeout, false, false);
-
         return runner.iterativeNegamax();
     }
 

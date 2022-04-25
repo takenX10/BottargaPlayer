@@ -161,7 +161,7 @@ public class Alphabeta {
      * @param node nodo corrente
      * @return lo score della cella corrente tramite ricerca negamax.
      */
-    protected CustomScore loop(int depth, int sign, MNKCellState stato, CustomScore alpha, CustomScore beta, MNKCell node){
+    protected CustomScore loop(int depth, int sign, MNKCellState stato, CustomMNKCell[] currentFreeCells, CustomScore alpha, CustomScore beta, MNKCell node){
         CustomScore maxscore = minusInf;
         CustomScore tmpscore;
         int i;
@@ -212,7 +212,7 @@ public class Alphabeta {
      * @param beta  valore di beta corrente
      * @return  L'eval migliore che il negamax riesce a tirare fuori (il return value finale e' inutile).
      */
-    protected CustomScore negamax(int depth, int sign, MNKCell node, CustomMNKCell[] fc, MNKCellState stato, CustomScore alpha, CustomScore beta) {   
+    protected CustomScore negamax(int depth, int sign, MNKCell node, CustomMNKCell[] currentFreeCells, MNKCellState stato, CustomScore alpha, CustomScore beta) {   
         // timer e valori per benchmark
         if(checkTime()){
             return this.minusInf;
@@ -226,7 +226,7 @@ public class Alphabeta {
         }
 
         // eseguo il corpo principale del negamax (in cui avviene la ricorsione)
-        score = loop(depth, sign, stato, alpha, beta, node);
+        score = loop(depth, sign, stato, currentFreeCells, alpha, beta, node);
 
         // riporto la matrice allo stato originale
         this.currentMatrix.single_invert_matrix(node, stato);

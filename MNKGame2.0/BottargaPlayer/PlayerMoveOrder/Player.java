@@ -1,9 +1,11 @@
 package BottargaPlayer.PlayerMoveOrder;
 
-import mnkgame.MNKPlayer;
 import mnkgame.MNKCell;
 
-// Classe negamax 
+/**
+ * Rispetto a PlayerAlphabeta abbiamo modificato il loop del negamax in modo da
+ * riordinare il primo strato del game tree
+ */
 public class Player extends BottargaPlayer.Utils.Player.Player {
     @Override
     public MNKCell selectCell(MNKCell[] FC, MNKCell[] MC) {

@@ -2,6 +2,13 @@ package BottargaPlayer.PlayerNegamax;
 
 import BottargaPlayer.Utils.Cell.EvalStatus;
 
+
+/**
+ * In questa versione di UpdateEvalMatrix l'aggiornamento avviene in maniera incrementale.
+ * Quindi gli elementi nella matrice incrementano o decrementano di 1 ogni volta che viene aggiunta
+ * una mossa nella corrispettiva riga. Nella versione finale invece che incrementare di uno, incrementiamo
+ * in potenze di 10. Abbiamo dovuto ridefinire solo la update_matrix e la invert_matrix
+ */
 public class UpdateEvalMatrix extends BottargaPlayer.Utils.Matrix.UpdateEvalMatrix {
 
     public UpdateEvalMatrix(int M, int N, int K, boolean first_player, int[][][] M_Matrix, int[][][] N_Matrix,

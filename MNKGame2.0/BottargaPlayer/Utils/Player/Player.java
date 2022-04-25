@@ -3,7 +3,6 @@ package BottargaPlayer.Utils.Player;
 import mnkgame.MNKPlayer;
 import mnkgame.MNKCell;
 
-// Classe negamax 
 public class Player implements MNKPlayer{
     protected int M;
     protected int N;

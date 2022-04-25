@@ -11,6 +11,5 @@ public class TableValues {
     public BitSet type;    // 2 bit sono sufficienti: 10 -> exact | 00 -> lower | 01 -> upper
     public int depth;       // La profondita serve perchè se troviamo una corrispondenza ad una profondita inferiore dobbiamo usare quella
     public int maxDepth;
-    // TODO inserisci questa
-    public MNKCell next;    // migliore mossa sotto di questa, utile per move ordering.
+    public MNKCell next;    // migliore mossa sotto di questa, utile per move ordering, anche se non l'abbiamo utilizzata
 }

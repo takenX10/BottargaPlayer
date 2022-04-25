@@ -10,13 +10,20 @@ public class Alphabeta extends BottargaPlayer.Utils.Player.Alphabeta{
         super(M, N, K, first, MC, FC, timeout, debugPrint, debugLevels);
     }
 
+    /**
+     * Il loop e' custom perche' a differenza dell'alphabeta le celle da visitare vengono 
+     * decise tramite l'algoritmo scritto in MoveOrder, evitando cosi di scorrere tutte le
+     * celle ogni volta. C'e' da dire che anche se cosi vengono attraversate solo le celle libere, per ottenerle
+     * sono stati svolti molti passaggi che computazionalmente rendono il costo finale uguale, se non
+     * addirittura peggiore di scorrerre direttamente tutte le celle e controllare se sono libere oppure no.
+     */
     @Override
-    protected CustomScore loop(int depth, int sign, MNKCellState stato, CustomScore alpha, CustomScore beta, MNKCell node){
+    protected CustomScore loop(int depth, int sign, MNKCellState stato, CustomMNKCell[] currentFreeCells, CustomScore alpha, CustomScore beta, MNKCell node){
         CustomScore maxscore = minusInf;
         CustomScore tmpscore;
         int i;
         int draw = 0;
-        MoveOrder myOrder = new MoveOrder(FC, node, currentMatrix, stato, currentMaxDepth - depth);
+        MoveOrder myOrder = new MoveOrder(currentFreeCells, node, currentMatrix, stato, currentMaxDepth - depth);
         CustomMNKCell currentCell;
         while((currentCell = myOrder.getCell()) != null){
             tmpscore = negamax(depth - 1, -sign, currentCell.cell, myOrder.cells, (stato == this.me ? this.enemy : this.me), beta.invert(), alpha.invert()).invert();
