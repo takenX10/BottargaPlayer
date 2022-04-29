@@ -248,7 +248,7 @@ public class Alphabeta {
                 System.out.println("Livello "+currentMaxDepth);
             }
             // return value di negamax inutile
-            negamax(currentMaxDepth, 1, null, null, this.enemy, this.minusInf, this.inf);
+            negamax(currentMaxDepth, 1, null, this.FC, this.enemy, this.minusInf, this.inf);
             maxValue();
             
             if(debugLevels){
