@@ -29,7 +29,7 @@ public class Alphabeta extends BottargaPlayer.Utils.Player.Alphabeta{
             tmpscore = negamax(depth - 1, -sign, currentCell.cell, myOrder.cells, (stato == this.me ? this.enemy : this.me), beta.invert(), alpha.invert()).invert();
             if( node == null ){ // per il primo giro
                 if(!this.endNegamax){
-                    i=0;
+                    i = 0;
                     while(currentCell.cell != this.FC[i].cell) i++;
                     this.FC[i] = new CustomMNKCell(currentCell.cell, false, tmpscore);
                 }

@@ -20,7 +20,7 @@ public class Player implements MNKPlayer{
 
     @Override
     public MNKCell selectCell(MNKCell[] FC, MNKCell[] MC) {
-        Alphabeta runner = new Alphabeta(this.M, this.N, this.K, this.first, MC, FC, timeout, false, false);
+        Alphabeta runner = new Alphabeta(this.M, this.N, this.K, this.first, MC, FC, timeout, true, true);
         return runner.iterativeNegamax();
     }
 

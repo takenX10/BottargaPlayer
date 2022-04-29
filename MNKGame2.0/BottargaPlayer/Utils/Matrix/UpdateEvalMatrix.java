@@ -5,44 +5,79 @@ import mnkgame.MNKCellState;
 import java.lang.Math;
 import BottargaPlayer.Utils.Cell.*;
 
-//La classe serve ad aggiornare le 4 matrici dell'eval
-//La classe riceve in input: le 4 matrici, le coordinate X,Y del punto in cui, nella matrice di partenza,
-//è stata aggiunta una X ( che da ora in poi chiamerò genericamente 'simbolo' )
-
-/*
-* Questa classe nasce per aggiornare le 4 matrici dell'eval.
-* La classe contiene dei metodi per l'aggiornamento delle 4 matrici dopo una singola mossa
-* La classe contiene un metodo per l'aggiornamento delle 4 matrici dopo una serie di mosse, questa serie di mosse viene presa in input
-* come un vettore MNKCell[] contenente le coordinate della cella e chi ha eseguito quella mossa (Player1 o Player2)
-*
-*
+/** 
+ * La classe nasce per aggiornare le 4 matrici dell'eval.
+ * Contiene dei metodi per l'aggiornamento sia dopo una singola mossa che dopo una serie di mosse.
 */
 public class UpdateEvalMatrix {
-    protected boolean first_player; //Parametro che mi dice se sono il primo a giocare. If True io sarò considerato P1, else P2
-    /* Mi è utile saperlo per interpretare il valore in MNKCellState in cui ad una cella si assegna P1 o P2 in base a chi l'ha scelta. */
-    protected int x; // Coordinata x del punto in cui viene aggiunto il nuovo simbolo, si parte da zero
-    protected int y; // Coordinata y del punto in cui viene aggiunto il nuovo simbolo, si parte da zero
-    protected boolean my_move; //La mossa che considero è mia o dell'avversario? True = mia, false otherwise
-    protected final int k; // valori del tris ( M, N, K ), in quanto tali partono da 1, non da zero. ( M = 5, abbiamo 5 righe in quanto conto da 1 a 5 )
-    protected final int m; //
+    // Parametro utile a capire se sono il primo a giocare.
+    protected boolean first_player;
 
-    //4 matrici dell'eval.
-    public int[][][] M_Matrix;  //Matrice delle righe
-    public int[][][] N_Matrix;  //Matrice delle colonne
-    public int[][][] K1_Matrix; // Matrice diagonali che vanno dal basso verso l'alto. (Lettura da sinistra a destra)
-    public int[][][] K2_Matrix; // Matrice diagonali che vanno dall'alto verso il basso. (Lettura da sinistra a destra)
+    // Parametro che mi dice se la mossa che considero è mia o dell'avversario.
+    /* Mi è utile saperlo per interpretare il valore in MNKCellState in cui ad una cella si assegna P1 o P2 in base a chi l'ha scelta. */
+    protected boolean my_move;
+    
+    // Coordinate in cui aggiungo i simboli. (Da 0 a M-1 oppure N-1)
+    protected int x;
+    protected int y;
+
+    // Valori del tris M, N, K
+    protected final int k;
+    protected final int m;
+
+    // Le 4 matrici dell'eval e 4 rispettive variabili che mi permettono di lavorare su di esse.
+    public int[][][] M_Matrix;
+    public int[][][] N_Matrix;
+    public int[][][] K1_Matrix;
+    public int[][][] K2_Matrix;
     protected int partial_sum_M_Matrix;
     protected int partial_sum_N_Matrix;
     protected int partial_sum_K1_Matrix;
     protected int partial_sum_K2_Matrix;
+
+    // Variabili che utilizzo per conteggiare le situazioni di pareggio.
     protected int conta_patta_p1;
     protected int conta_patta_p2;
-    protected final int ncelle;     // numero delle celle totali nelle varie matrici
-    //todo se so che in una serie di mosse una mi ha portato alla vittoria smetto di aggiornare tutte le matrici analizzando le altre mosse? Si
+
+    // Numero di celle totali nelle varie matrici.
+    protected final int ncelle;
+
+    // Eval attuale
     public CustomScore eval;
+
+    // Numero di simboli attualmente presenti in una board.
     public int symbolsInside;
 
-    //NB: Le coordinate X ed Y sottostanti partono da 0 (come prima cella) ed arrivano ad M-1 e N-1.
+    /* Variabili di lavoro */
+
+    // Dimensione colonne matrice M_Matrix.
+    public int limit_y;
+
+    //Dimensione righe matrice N_Matrix
+    public int limit_x;
+
+    // Numero di colonne della matrice K2_Matrix
+    public int K1_Matrix_Y;
+    // Idealmente la riga della matrice generale in cui comincia la nostra matrice K1 (Se viste sovrapposte)
+    public int K1_Location_X;
+
+    // Numero righe della matrice K2_Matrix 
+    public int K2_Matrix_X;
+
+    // Numero colonne matrice K2_Matrix
+    public int K2_Matrix_Y;
+
+    /**
+     * 
+     * @param M Righe.
+     * @param N Colonne.
+     * @param K Simboli da mettere in fila.
+     * @param first_player Gioco da primo giocatore?
+     * @param M_Matrix Matrice dell'eval per le righe.
+     * @param N_Matrix Matrice dell'eval per le colonne.
+     * @param K1_Matrix Matrice dell'eval per la diagonale dal basso verso l'alto.
+     * @param K2_Matrix Matrice dell'eval per la dianale dall'alto verso il basso.
+     */
     public UpdateEvalMatrix(int M, int N, int K, boolean first_player, int[][][] M_Matrix, int[][][] N_Matrix, int[][][] K1_Matrix, int[][][] K2_Matrix){
         this.symbolsInside = 0;
         this.conta_patta_p1 = 0;
@@ -59,10 +94,21 @@ public class UpdateEvalMatrix {
         this.partial_sum_N_Matrix = 0;
         this.partial_sum_K1_Matrix = 0;
         this.partial_sum_K2_Matrix = 0;
+
+        limit_x = N_Matrix.length - 1;
+        limit_y = M_Matrix[0].length - 1;
+        K1_Matrix_Y = K1_Matrix[0].length - 1;
+        K1_Location_X = m - K1_Matrix.length + 1;
+        K2_Matrix_X = K2_Matrix.length - 1;
+        K2_Matrix_Y = K2_Matrix[0].length - 1;
+
         this.eval = new CustomScore(0,EvalStatus.NOT_DEFINED);
     }
     
-    //Metodo per aggiornare le 4 matrici dell'eval considerando una serie di mosse
+    /**
+     * Metodo per aggiornare le 4 matrici dell'eval considerando una serie di mosse.
+     * @param move_list Vettore contenente le coordinate di ogni cella e chi dei due Player ha eseguito quella mossa.
+     */
     public void multiple_update_matrix(MNKCell[] move_list){
         if(move_list != null){
             for (int i = 0; i < move_list.length; i++){
@@ -71,7 +117,12 @@ public class UpdateEvalMatrix {
         }
     }
 
-    public void single_update_matrix(MNKCell cell, MNKCellState state){ //Metodo per aggiornare tutte le 4 matrici dell'eval considerando una singola mossa
+    /**
+     * Metodo per aggiornare tutte le 4 matrici dell'eval considerando una singola mossa.
+     * @param cell Cella in cui è stata aggiunto un simbolo.
+     * @param state A quale dei due giocatori toccava nel momento in cui è stato inserito il nuovo simbolo.
+     */
+    public void single_update_matrix(MNKCell cell, MNKCellState state){
             if(cell != null){
                 this.symbolsInside++;
                 CustomScore startingScore = new CustomScore(this.eval.score, this.eval.status);
@@ -87,7 +138,11 @@ public class UpdateEvalMatrix {
             }
     }
 
-
+/**
+ * Metodo utile ad annullare un aggiornamento fatto delle 4 matrici dell'eval.
+ * @param cell Cella in cui è stato aggiunto il simbolo da rimuovere.
+ * @param state Giocatore a cui toccava nel momento in cui è stato inserito il simbolo da rimuovere.
+ */
     public void single_invert_matrix(MNKCell cell, MNKCellState state){
         if(cell != null){
             this.symbolsInside--;
@@ -104,6 +159,14 @@ public class UpdateEvalMatrix {
         }
     }
 
+    /**
+     * Questo metodo permette di calcolare lo stato (score) dell'eval.
+     * @param M Matrice dell'eval per le righe.
+     * @param N Matrice dell'eval per le colonne.
+     * @param K1 Matrice dell'eval per le diagonali dal basso verso l'alto.
+     * @param K2 Matrice dell'eval per le diagonali dall'alto verso il basso.
+     * @param startingScore Score dell'eval nel moomento della chiamata a questo metodo.
+     */
     protected void calcolate_eval_value(int[][][] M, int[][][] N, int[][][] K1, int[][][] K2, CustomScore startingScore){
         if(eval.status != EvalStatus.WIN && eval.status != EvalStatus.LOSE) {
             if(conta_patta_p1 == ncelle && conta_patta_p2 == ncelle){
@@ -127,6 +190,14 @@ public class UpdateEvalMatrix {
         }
     }
 
+    /**
+     * Metodo per aggiornare singolarmente una matrice dell'eval.
+     * @param x Coordinata x del nuovo simbolo aggiunto.
+     * @param y Coordinata y del nuovo simbolo aggiunto.
+     * @param matrix Matrice sulla quale eseguire l'operazione di aggiornamento.
+     * @param partial_sum Valore parziale del valore dell'eval prima della chiamata al metodo.
+     * @return
+     */
     protected int update_matrix(int x, int y, int[][][] matrix, int partial_sum){
         if(this.my_move){
             double pow = Math.pow(10, matrix[x][y][0] - 1);
@@ -168,16 +239,25 @@ public class UpdateEvalMatrix {
         return partial_sum;
     }
 
+    /**
+     * Metodo per annullare un update di una matrice dell'eval eseguito.
+     * @param x Coordinata x del simbolo da rimuovere.
+     * @param y Coordinata y del simbolo da rimuovere.
+     * @param mymove Parametro necessario per capire se è stata una mia mosssa quella di aggiunta del simbolo.
+     * @param matrix Matrice sulla quale annullare l'update dell'eval eseguito.
+     * @param partial_sum Valore parziale dell'eval nel momento della chiamata al metodo.
+     * @return partial_sum
+     */
     protected int invert_matrix(int x, int y, boolean mymove, int[][][] matrix, int partial_sum){
         if(mymove){
             double pow = Math.pow(10, matrix[x][y][0] - 2);
             if(matrix[x][y][0] == k){
-                this.eval.status = EvalStatus.NOT_DEFINED; // per dirgli di aggiornarlo
+                this.eval.status = EvalStatus.NOT_DEFINED; //Per forzarne l'aggiornamento
             }else if(matrix[x][y][1] > 0){
                 if(matrix[x][y][0] == 1) {
                     partial_sum -= Math.pow(10, matrix[x][y][1] - 1) - 1;
                 }else {
-                    partial_sum += pow * 10 - pow; // per annullare partial_sum--; dopo
+                    partial_sum += pow * 10 - pow; 
                 }
             }
             if(matrix[x][y][0] == 1){
@@ -190,7 +270,7 @@ public class UpdateEvalMatrix {
         }else{
             double pow = Math.pow(10, matrix[x][y][1] - 2);
             if(matrix[x][y][1] == k){
-                this.eval.status = EvalStatus.NOT_DEFINED; // per dirgli di aggiornarlo
+                this.eval.status = EvalStatus.NOT_DEFINED; // Per forzarne l'aggiornamento
             }else if(matrix[x][y][0] > 0){
                 if(matrix[x][y][1] == 1) {
                     partial_sum += Math.pow(10, matrix[x][y][0] - 1) - 1;
@@ -212,12 +292,11 @@ public class UpdateEvalMatrix {
         return partial_sum;
     }
 
-    //Aggiornamento valori della matrice M_Matrix ( Matrice delle righe )
+    /**
+     * Aggiornamento valori della matrice M_Matrix ( Matrice delle righe )
+     */
     public void update_M_Matrix(){
         if (M_Matrix != null){
-            //todo Le successive due righe sono qui per leggibilità, per una maggiore efficienza spostarle nel metodo di init
-            int limit_y = M_Matrix[0].length - 1; //Dimensione colonne matrice M_Matrix
-
             //Aggiorno tutti i valori alla sinistra
             for ( int i = 0; i < k && (y-i >= 0); i++ ){ //y-i non deve portarmi fuori dal range matrice.
                 if( (y-i <= limit_y)){
@@ -227,11 +306,11 @@ public class UpdateEvalMatrix {
         }
     }
 
-    //Aggiornamento valori matrice N_Matrix ( Matrice delle colonne )
+    /** 
+     * Aggiornamento valori matrice N_Matrix ( Matrice delle colonne )
+     */
     protected void update_N_Matrix(){
         if (N_Matrix != null){
-            //todo Le successive due righe sono qui per leggibilità, per una maggiore efficienza spostarle nel metodo di init
-            int limit_x = N_Matrix.length - 1; //Dimensione righe matrice N_Matrix
             //Aggiorno tutti i valori in alto
             for ( int i = 0; i < k && ( x-i >= 0 ); i++ ) {
                 if ((x - i <= limit_x)) {
@@ -241,13 +320,11 @@ public class UpdateEvalMatrix {
         }
     }
 
-    //Aggiornamento valori matrice K1_Matrix ( Matrice delle diagonali dal basso verso l'alto )
+    /**
+     *Aggiornamento valori matrice K1_Matrix ( Matrice delle diagonali dal basso verso l'alto )
+     */
     protected void update_K1_Matrix(){
         if (K1_Matrix != null){
-            //todo Le successive due righe sono qui per leggibilità, per una maggiore efficienza verranno spostate nel metodo di init
-            int K1_Matrix_Y = K1_Matrix[0].length - 1; // Numero colonne matrice K2_Matrix contate da zero
-            int K1_Location_X = m - K1_Matrix.length + 1; //Riga della matrice in cui comincia la nostra matrice K1 (Parte arancio in foglio UNO )
-
             //Aggiorno tutti i valori nella diagonale muovendomi in direzione ' in basso a sinstra '
             for (int i = 0; i < k && x+i <= m && y-i >= 0; i++){
                 if ( (x+i) >= K1_Location_X && y-i <= K1_Matrix_Y){
@@ -256,13 +333,11 @@ public class UpdateEvalMatrix {
             }
         }
     }
-
+    /**
+     *Aggiornamento valori matrice K2_Matrix ( Matrice delle diagonali dall'alto verso il basso )
+     */
     protected void update_K2_Matrix(){
         if (K2_Matrix != null){
-            //todo Le successive due righe sono qui per leggibilità, per una maggiore efficienza verranno spostate nel metodo di init
-            int K2_Matrix_X = K2_Matrix.length - 1; //Numero righe matrice K2_Matrix contate partendo da zero
-            int K2_Matrix_Y = K2_Matrix[0].length - 1; //Numero colonne matrice K2_Matrix contato partendo da zero
-
             //Aggiorno tutti i valori nella diagonale muovendomi in direzione ' in alto a sinistra '
             for (int i = 0; i < k && (x-i) >= 0 && (y-i) >= 0; i++){
                 if (x-i <= K2_Matrix_X && y-i <= K2_Matrix_Y){
@@ -272,11 +347,11 @@ public class UpdateEvalMatrix {
         }
     }
 
+    /**
+     * Opposto di Update_M_Matrix: per annullare l'aggiornamento della matrice dell'eval.
+     */
     protected void invert_M_Matrix(){
         if (M_Matrix != null){
-            //todo Le successive due righe sono qui per leggibilità, per una maggiore efficienza spostarle nel metodo di init
-            int limit_y = M_Matrix[0].length - 1; //Dimensione colonne matrice M_Matrix
-
             //Aggiorno tutti i valori alla sinistra
             for ( int i = 0; i < k && (y-i >= 0); i++ ){ //y-i non deve portarmi fuori dal range matrice.
                 if( (y-i <= limit_y)){
@@ -286,10 +361,11 @@ public class UpdateEvalMatrix {
         }
     }
 
+    /**
+     * Opposto di Update_N_Matrix: per annullare l'aggiornamento della matrice dell'eval.
+     */
     protected void invert_N_Matrix(){
         if (N_Matrix != null){
-            //todo Le successive due righe sono qui per leggibilità, per una maggiore efficienza spostarle nel metodo di init
-            int limit_x = N_Matrix.length - 1; //Dimensione righe matrice N_Matrix
             //Aggiorno tutti i valori in alto
             for ( int i = 0; i < k && ( x-i >= 0 ); i++ ) {
                 if ((x - i <= limit_x)) {
@@ -299,12 +375,11 @@ public class UpdateEvalMatrix {
         }
     }
 
+    /**
+     * Opposto di Update_K1_Matrix: per annullare l'aggiornamento della matrice dell'eval.
+     */
     protected void invert_K1_Matrix(){
         if (K1_Matrix != null){
-            //todo Le successive due righe sono qui per leggibilità, per una maggiore efficienza verranno spostate nel metodo di init
-            int K1_Matrix_Y = K1_Matrix[0].length - 1; // Numero colonne matrice K2_Matrix contate da zero
-            int K1_Location_X = m - K1_Matrix.length + 1; //Riga della matrice in cui comincia la nostra matrice K1 (Parte arancio in foglio UNO )
-
             //Aggiorno tutti i valori nella diagonale muovendomi in direzione ' in basso a sinstra '
             for (int i = 0; i < k && x+i <= m && y-i >= 0; i++){
                 if ( (x+i) >= K1_Location_X && y-i <= K1_Matrix_Y){
@@ -314,12 +389,11 @@ public class UpdateEvalMatrix {
         }
     }
 
+    /**
+     * Opposto di Update_K2_Matrix: per annullare l'aggiornamento della matrice dell'eval.
+     */
     protected void invert_K2_Matrix(){
         if (K2_Matrix != null){
-            //todo Le successive due righe sono qui per leggibilità, per una maggiore efficienza verranno spostate nel metodo di init
-            int K2_Matrix_X = K2_Matrix.length - 1; //Numero righe matrice K2_Matrix contate partendo da zero
-            int K2_Matrix_Y = K2_Matrix[0].length - 1; //Numero colonne matrice K2_Matrix contato partendo da zero
-
             //Aggiorno tutti i valori nella diagonale muovendomi in direzione ' in alto a sinistra '
             for (int i = 0; i < k && (x-i) >= 0 && (y-i) >= 0; i++){
                 if (x-i <= K2_Matrix_X && y-i <= K2_Matrix_Y){

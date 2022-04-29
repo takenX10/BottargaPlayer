@@ -161,16 +161,10 @@ echo ""
 echo " Benchmark by takenX10!!!"
 BENCHMARK_START=$SECONDS
 
-<<<<<<< Updated upstream
-#start_round "5 4 4"
 
-validator_benchmark
-=======
-<<<<<<< Updated upstream
-# start_round "3 3 3"
+#start_round "3 3 3"
+almost_full_benchmark
 
-full_benchmark
-=======
 # Insert the custom game configuration under here, I prepared some:
 # validator_benchmark
 # full_benchmark
@@ -179,7 +173,5 @@ full_benchmark
 # big_benchmark
 
 #####
->>>>>>> Stashed changes
->>>>>>> Stashed changes
 
 quit_script

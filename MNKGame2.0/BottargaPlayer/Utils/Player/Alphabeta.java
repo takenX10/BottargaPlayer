@@ -82,7 +82,7 @@ public class Alphabeta {
 
         // inizializza matrice per eval
         EvalMatrix defaultMatrix = new EvalMatrix(M,N,K);
-        this.currentMatrix = new UpdateEvalMatrix(M,N,K,first, defaultMatrix.M_Matrix(), defaultMatrix.N_Matrix(), defaultMatrix.K1_Matrix(), defaultMatrix.K2_Matrix());
+        this.currentMatrix = new UpdateEvalMatrix(M,N,K,first, defaultMatrix.getM_Matrix(), defaultMatrix.getN_Matrix(), defaultMatrix.getK1_Matrix(), defaultMatrix.getK2_Matrix());
         this.currentMatrix.multiple_update_matrix(MC);
 
         // inizializza array delle celle vuote

@@ -1,8 +1,8 @@
 package BottargaPlayer.Utils.Cell;
 
 /**
- * CANT_WIN e DRAW hanno lo stesso valore perche' questo aiuta nei confronti
- * in CustomScore
+ * Assegno ad ogni possibile situazione nella table uno score: più alto è migliore è lo stato in cui mi trovo.
+ * CANT_WIN e DRAW hanno lo stesso valore perche' questo aiuta nei confronti in CustomScore
  */
 public enum EvalStatus {
     LOSE(-2),
@@ -14,6 +14,9 @@ public enum EvalStatus {
     
     public final Integer value;
 
+    /**
+     * @param value score della table che sto valutando.
+     */
     EvalStatus(Integer value){
         this.value = value;
     }
