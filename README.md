@@ -2,7 +2,7 @@
 Giocatore per progetto di Algoritmi e strutture dati UniBO 2020/21
 
 ## English Readers
-Sorry, this project is made for my university degree, if you someone is actually interested in having the entire project translated I am willing to do it, but keep in mind my english level is not that good so there might be some typos.
+I am sorry but this project is made for my university degree, if you someone is actually interested in having the entire project translated I am willing to do it, but keep in mind my english level is not that good so there might be some typos.
 
 ## La relazione
 Per avere una relazione e la documentazione completa, aprire il documento latex, qui di seguito e' presente solo una lista delle tecniche utilizzate
