@@ -182,7 +182,7 @@ public class UpdateEvalMatrix {
             }else{  
                 this.eval.status = EvalStatus.NOT_DEFINED;
             }
-            this.eval.score = (double)(partial_sum_M_Matrix + partial_sum_N_Matrix + partial_sum_K1_Matrix + partial_sum_K2_Matrix);
+            this.eval.score = (double)((partial_sum_M_Matrix + partial_sum_N_Matrix + partial_sum_K1_Matrix + partial_sum_K2_Matrix) / 4);
         }else{
             if(startingScore.status != EvalStatus.WIN && startingScore.status != EvalStatus.LOSE){
                 this.eval.score = (double)this.symbolsInside;
